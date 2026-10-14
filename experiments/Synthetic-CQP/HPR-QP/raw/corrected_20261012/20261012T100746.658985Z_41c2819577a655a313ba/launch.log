@@ -1,0 +1,73 @@
+ENVIRONMENT Dict{String, Any}("julia_threads" => 1, "julia" => "1.10.4", "load_path" => ["@", "@stdlib"], "CUDA_jl" => "5.11.0", "cuda_runtime" => "13.2.0", "cuda_driver_api" => "13.2.0", "gpu_name" => "NVIDIA A100-SXM4-80GB", "manifest_sha256" => "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3", "blas_threads" => 1)
+WARMUP random_1000000.mps
+Reading file: /home/20031492r/Data/QP_data/RANDOM/denser/random_1000000.mps
+Reading MPS file: /home/20031492r/Data/QP_data/RANDOM/denser/random_1000000.mps
+nnz A = 199998053
+nnz Q = 400895504
+Reading file time = 611.6127581596375 seconds
+Formulating QP...
+Deleted 1000000 rows of A that are all zeros.
+has 0 >= constraints
+has 10000000 <= constraints
+has 0 boxed constraints
+dimension of Q is (1000000, 1000000)
+dimension of A is (10000000, 1000000)
+dimension of b is (10000000,)
+dimension of c is (1000000,)
+dimension of l is (1000000,)
+dimension of u is (1000000,)
+number of equalities = 0
+QP formulation without C
+QP formulation time = 54.93523812294006 seconds
+norm_b_org: 30.271946022320886
+norm_c_org: 5.0928597268732805
+scaling time = 638.3162360191345 seconds
+copy to GPU starts...
+copy to GPU ends, time = 10.954263925552368 seconds
+Power iteration converged in 1300 iterations. The largest eigenvalue is 0.1831147489405313
+Power iteration converged in 146 iterations. The largest eigenvalue is 0.05831565196170612
+lambda_max A = 0.1922704863875579
+lambda_max Q = 0.06123143455979143
+norm_b = 14155.007947567789
+norm_c = 18.413946934779375
+initial sigma = 768.7112381557097
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+max_nnz_A_row = 48
+max_nnz_A_col = 274
+max_nnz_Q_col = 923
+use customized
+use CUSPARSE for large problem
+   0    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     33.53 0 0 0 0 0
+  10    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.15 0 0 0 0 0
+  20    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.15 0 0 0 0 0
+  30    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.16 0 0 0 0 0
+  40    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.16 0 0 0 0 0
+  50    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.16 0 0 0 0 0
+  60    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.20 0 0 0 0 0
+  70    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.39 0 0 0 0 0
+  80    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.58 0 0 0 0 0
+  90    9.68e-01    8.36e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    7.69e+02     34.77 0 0 0 0 0
+first restart, current gap = 242.38705014724047
+
+ primal_move = 1.773540748578404e9 dual_move = 1.1221763477457634e6
+restart at current iter 100
+ 100    2.94e-01    1.81e-01    2.42e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.33 1 0 0 0 0
+ 110    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.37 1 0 0 0 0
+ 120    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.38 1 0 0 0 0
+ 130    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.38 1 0 0 0 0
+ 140    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.38 1 0 0 0 0
+ 150    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.39 1 0 0 0 0
+ 160    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.42 1 0 0 0 0
+ 170    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.61 1 0 0 0 0
+ 180    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.80 1 0 0 0 0
+ 190    2.94e-01    1.81e-01    4.16e+02    2.42e+02    5.182439e+06    8.502319e+06    3.90e-01    2.59e+02     36.98 1 0 0 0 0
+will restart by long time
+ primal_move = 1.4740344837541127e8 dual_move = 1.3469282683983324e6
+restart at current iter 200
+ 200    1.37e-01    2.72e-02    1.42e+02    1.42e+02    1.125120e+07    1.472454e+07    2.36e-01    4.35e+01     38.29 2 0 0 1 0
+FINISHED revision_denser random_1000000.mps completed
+[ Info: Using 'QP_Direct' as NAME (l. 1)
+[ Info: Using 'OBJ' as objective (l. 3)
+[ Info: Using 'RHS1' as RHS (l. 210998059)
+[ Info: Using 'BND1' as BOUNDS (l. 220998061)

@@ -1,0 +1,10 @@
+Instance: QSCSD1
+runtime                  | residuals                  |  solution information      | relative residuals      |
+#iter   #kkt     seconds | pr norm  du norm   gap     |  pr obj   pr norm  du norm | rel pr  rel du  rel gap |
+0       6.2e+01  1.8e-01 | 1.0e+00  0.0e+00   0.0e+00 |  0.0e+00  0.0e+00  0.0e+00 | 5.0e-01 0.0e+00 0.0e+00 |
+3648    3.8e+03  7.4e+00 | 2.6e-10  4.0e-08   6.5e-09 |  8.7e+00  5.3e-01  8.7e+00 | 1.3e-10 6.6e-09 6.8e-10 |
+Avg solution:
+  pr_infeas= 2.58213e-10 pr_obj=    8.666666676 dual_infeas= 3.96048e-08 dual_obj=     8.66666667
+  primal norms: L1=    3.794526373, L2=    1.077172177, Linf=   0.4890891845
+  dual norms:   L1=    1507.643254, L2=    198.1360247, Linf=    51.22257856
+Terminated after 3649 iterations: OPTIMAL

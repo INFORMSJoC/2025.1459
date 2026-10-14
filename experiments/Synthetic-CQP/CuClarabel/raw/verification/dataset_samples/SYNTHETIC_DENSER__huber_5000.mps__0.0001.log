@@ -1,0 +1,38 @@
+-------------------------------------------------------------
+           Clarabel.jl v0.10.0  -  Clever Acronym              
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 1505000
+  constraints   = 1500000
+  nnz(P)        = 500000
+  nnz(A)        = 3499803
+  cones (total) = 2
+    : Zero        = 1,  numel = 500000
+    : Nonnegative = 1,  numel = 1000000
+
+settings:
+  linear algebra: direct / cudss, precision: Float64
+  max iter = 2147483647, time limit = 3600.000000,  max step = 0.990
+  tol_feas = 1.0e-04, tol_gap_abs = 1.0e-04, tol_gap_rel = 1.0e-04,
+  static reg : on, ϵ1 = 1.0e-08, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-07
+  iter refine: on, reltol = 1.0e-12, abstol = 1.0e-12, 
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-04, max_scale = 1.0e+04
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -9.6235e+05   3.3887e+05  3.84e+00  9.69e-01  6.51e-01  1.00e+00  2.59e+01   ------   
+  1   5.6924e+03   1.8967e+05  3.23e+01  4.68e-01  2.60e-01  4.58e+00  1.24e+01  9.89e-01  
+  2   1.9577e+05   2.0110e+05  2.72e-02  5.48e-02  3.09e-02  1.36e+00  2.03e+00  9.05e-01  
+  3   2.2417e+05   2.1589e+05  3.84e-02  8.95e-04  4.85e-04  9.71e-02  1.87e-01  9.90e-01  
+  4   2.1941e+05   2.1836e+05  4.79e-03  9.89e-06  5.25e-06  8.95e-03  1.70e-02  9.90e-01  
+  5   2.1875e+05   2.1866e+05  4.05e-04  1.05e-07  5.55e-08  6.42e-04  1.26e-03  9.90e-01  
+  6   2.1869e+05   2.1869e+05  2.82e-05  1.10e-09  5.82e-10  3.77e-05  7.98e-05  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = solved
+total time =  20.5s (setup time =  19.3s, solve time =  1.16s)

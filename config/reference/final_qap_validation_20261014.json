@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-10-14",
+  "native_record": "experiments/Large-QAP/HPR-QP/raw/verification/QAP_large/random_8192.mat.json",
+  "comparison": {
+    "group": "QAP_large",
+    "name": "random_8192.mat",
+    "verdict": "reproduced",
+    "status": "OPTIMAL",
+    "saved_status": "OPTIMAL",
+    "iter": 208100,
+    "saved_iter": "208100",
+    "iteration_match": true,
+    "residual": 9.815390848125697e-09,
+    "saved_residual": "9.815390848125697e-9",
+    "objective": 1.083045277286596,
+    "saved_objective": "1.083045277286596",
+    "scaled_objective_difference": 0.0,
+    "seconds": 125587.86932492256,
+    "saved_seconds": "126547.94230985641",
+    "gpu": "0",
+    "error": "",
+    "iter_3": null,
+    "saved_iter_3": null,
+    "iter_4": 300,
+    "saved_iter_4": "300",
+    "iter_6": 101400,
+    "saved_iter_6": "101400"
+  },
+  "checkpoint_iterations_match": true,
+  "run_finished_timestamp_as_recorded": "2026-10-13T13:34:56.629",
+  "solver_hours": 34.88551925692293
+}

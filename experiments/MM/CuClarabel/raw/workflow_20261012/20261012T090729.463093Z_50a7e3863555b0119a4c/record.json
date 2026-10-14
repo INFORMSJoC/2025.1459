@@ -1,0 +1,49 @@
+{
+  "state": "completed",
+  "solver": "CuClarabel",
+  "experiment": "MM",
+  "case_id": "MM_test_version__CVXQP3_S.mps",
+  "started_utc": "2026-10-12T09:07:29.463322+00:00",
+  "rows": [
+    {
+      "solver": "CuClarabel",
+      "case_id": "MM_test_version__CVXQP3_S.mps",
+      "case": "CVXQP3_S.mps",
+      "group": "MM_test_version",
+      "subset": "all",
+      "tolerance": 1e-08,
+      "status": "OPTIMAL",
+      "solved": true,
+      "iterations": 11.0,
+      "seconds": 0.361630229,
+      "objective": 11716.182224701015,
+      "residual": 1.148710465436723e-12,
+      "source": "fresh",
+      "measurement_origin": "local_run",
+      "raw_file": "/home/20031492r/Results/HPRQP_submission_20261011/current_workflow_tests_20261012/experiments/MM/CuClarabel/runs/20261012T090729.463093Z_50a7e3863555b0119a4c/native/MM__CVXQP3_S.mps__1.0e-8.json",
+      "status_basis": "native solver",
+      "objective_basis": "native log objective",
+      "wall_seconds": 125.38936046510935,
+      "note": "",
+      "model_revision": null
+    }
+  ],
+  "input_path": "/home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/data/inputs/MM_mps/CVXQP3_S.mps",
+  "gpu": "1",
+  "cpu_threads": 32,
+  "solver_time_limit": 3600,
+  "hard_time_limit": 600.0,
+  "host_memory_limit_gb": 0,
+  "input_sha256": "71349c462b8d5de7f10177c71e40481eef6618f64592c440852c8ed428be61b4",
+  "exit_code": 0,
+  "wall_seconds": 125.38936046510935,
+  "peak_sampled_rss_bytes": 0,
+  "command": [
+    "/home/20031492r/.julia/juliaup/julia-1.10.4+0.x64.linux.gnu/bin/julia",
+    "--startup-file=no",
+    "--project=/home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/environment/CuClarabel",
+    "/home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/scripts/jump_worker.jl",
+    "/home/20031492r/Results/HPRQP_submission_20261011/current_workflow_tests_20261012/experiments/MM/CuClarabel/runs/20261012T090729.463093Z_50a7e3863555b0119a4c/job.json"
+  ],
+  "finished_utc": "2026-10-12T09:09:34.867650+00:00"
+}

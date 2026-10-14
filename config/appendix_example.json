@@ -1,0 +1,16 @@
+{
+  "source": "HPR-QP-IJOC-R1.tex, example-concrete",
+  "Q": [[20.0, 0.1], [0.1, 0.2]],
+  "A": [[1.0, 1.0], [3.0, 1.0]],
+  "c": [-1.0, -1.0],
+  "b": [5.0, 10.0],
+  "constraint": "A*x <= b; x >= 0",
+  "lambda_A": 12.2,
+  "lambda_Q": 21.0,
+  "sigma": 1.0,
+  "stoptol": 1e-8,
+  "restart": -1,
+  "check_iter": 100,
+  "check_iter_provenance": "Packaged solver default; original appendix driver has not been located.",
+  "paper_approximate_iterations": {"dual": 840, "primal1": 1700}
+}

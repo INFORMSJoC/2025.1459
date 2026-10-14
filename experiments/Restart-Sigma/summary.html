@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Restart and penalty-update curves for QSCSD1</title><style>body{font:15px system-ui;margin:32px;color:#222}table{border-collapse:collapse}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:left}th{background:#eee}</style>
+<h1>Restart-Sigma: Restart and penalty-update curves for QSCSD1</h1>
+<p>R2 Figure 1</p>
+<p>Archived paper results are the baseline. Each available fresh row replaces its archived row, including unsuccessful solves. Unrun cases retain archived results. <strong>Mixed summaries are not full fresh benchmarks.</strong> Native failures use the paper time cap; guard stops and execution errors withhold the effective timing aggregate.</p>
+<p><a href="summary.csv">Summary CSV</a> · <a href="comparison.csv">Archived versus fresh</a> · <a href="results.csv">Selected per-case results and sources</a></p>
+<table><tr><th>solver</th><th>subset</th><th>tolerance</th><th>cases</th><th>fresh_cases</th><th>archived_cases</th><th>source</th><th>solved</th><th>time_SGM10</th><th>archived_time_SGM10</th><th>historical_attempt_errors</th><th>curves_reproduced</th><th>note</th></tr>
+<tr><td>HPR-QP</td><td>all</td><td>1e-08</td><td>3</td><td>3</td><td>0</td><td>fresh</td><td>2</td><td></td><td></td><td>0</td><td>3</td><td>Fresh measurements; shared-hardware times may vary</td></tr>
+</table><h2>Solver files</h2><ul>
+<li>HPR-QP: <a href="HPR-QP/archived.csv">archived.csv</a> · <a href="HPR-QP/fresh.csv">fresh.csv</a></li>
+</ul><p>Input provenance, settings, native residuals and logs are linked by raw_file. For curve experiments, curves_reproduced counts matching sample sequences; solved still counts attainment of the stopping tolerance. Different solver residual definitions are not a common KKT certificate. Iteration differences and historical manuscript discrepancies remain visible.</p>

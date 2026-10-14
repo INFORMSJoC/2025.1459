@@ -1,0 +1,49 @@
+{
+  "environment": {
+    "CUDA_jl": "5.11.0",
+    "blas_threads": 1,
+    "cuda_driver_api": "13.2.0",
+    "cuda_runtime": "13.2.0",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "julia": "1.10.4",
+    "julia_threads": 1,
+    "load_path": [
+      "@",
+      "@stdlib"
+    ],
+    "manifest_sha256": "03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690"
+  },
+  "execution": "completed",
+  "finished": "2026-10-11T20:30:15.271",
+  "gpu": "0",
+  "group": "MM_test_version",
+  "input_path": "/home/20031492r/Data/QP_data/MM_mps/HS268.mps",
+  "name": "HS268.mps",
+  "phase": "full",
+  "reference": {
+    "name": "HS268.mps",
+    "iter": "29500",
+    "alg_time": "1.04778003692627",
+    "res": "9.9207681083731E-09",
+    "primal_obj": "-1.45519152283669E-11",
+    "status": "OPTIMAL",
+    "iter_4": "2900",
+    "time_4": "0.112275123596191",
+    "iter_6": "5200",
+    "time_6": "0.213819026947021",
+    "power_time": "0.00550103187561035"
+  },
+  "result": {
+    "iter": 29500,
+    "iter_4": 2900,
+    "iter_6": 5200,
+    "output_type": "OPTIMAL",
+    "power_time": 0.006043910980224609,
+    "primal_obj": -1.4551915228366852e-11,
+    "residuals": 9.920768108373095e-9,
+    "time": 2.1463239192962646,
+    "time_4": 0.7331819534301758,
+    "time_6": 0.8393030166625977
+  },
+  "started": "2026-10-11T20:30:13.123"
+}

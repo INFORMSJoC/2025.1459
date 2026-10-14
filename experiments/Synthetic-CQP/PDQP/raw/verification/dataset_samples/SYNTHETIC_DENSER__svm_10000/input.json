@@ -1,0 +1,13 @@
+{
+  "id": "SYNTHETIC_DENSER__svm_10000",
+  "solver": "PDQP",
+  "family": "SYNTHETIC_DENSER",
+  "name": "svm_10000.mps",
+  "relative_path": "RANDOM/denser/svm_10000.mps",
+  "tolerances": [
+    1e-08
+  ],
+  "settings": {},
+  "path": "/home/20031492r/Data/QP_data/RANDOM/denser/svm_10000.mps",
+  "sha256": "cc70ffa5c66daa2f4d2c83ded9b749c124d5f9450716ca8bc1069e636df2d277"
+}

@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+CuClarabel,QAPLIB__esc64a.mat,esc64a.mat,QAPLIB,all,1e-08,OPTIMAL,True,6.0,1.284045781,0.336174920297046,6.99263016863359e-10,fresh,verification_run,experiments/QAPLIB/CuClarabel/raw/workflow_20261012/20261012T091154.012903Z_d9de787f2b52b84526f9/native/QAPLIB__esc64a.mps__1.0e-8.json,native solver,native log objective,36.85672828182578,,

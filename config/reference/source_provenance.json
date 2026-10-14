@@ -1,0 +1,274 @@
+{
+  "implicit": {
+    "module": "HPRQP_implicit",
+    "entry": "HPRQP_implicit.jl",
+    "base": "outputs/HPRQP_implicit_trials/original_source",
+    "algorithm_override": null,
+    "standalone": false,
+    "used_by_groups": [
+      "LASSO_UCI",
+      "LASSO_synthetic",
+      "QAPLIB",
+      "QAP_large"
+    ],
+    "packaged_files": [
+      {
+        "path": "src/variants/implicit/HPRQP_implicit.jl",
+        "sha256": "bd6c02d5821d46343983bbe5155b339074f9508b2761fc14abebc4167a838016"
+      },
+      {
+        "path": "src/variants/implicit/algorithm.jl",
+        "sha256": "cdca9c3aab70c93a419c0027277b8484668d59e7e7a6f3a3ef609e00cb52fb2a"
+      },
+      {
+        "path": "src/variants/implicit/changes.patch",
+        "sha256": "47a57a44832e9767406d80a014ba67a60a711b522d602473af7ea61939dc3a4b"
+      },
+      {
+        "path": "src/variants/implicit/kernels.jl",
+        "sha256": "679f93ee09d23fcc368073b7dedf9d531b54fbf89f909ef7127b93b156138114"
+      },
+      {
+        "path": "src/variants/implicit/remove_unused_plot_import.patch",
+        "sha256": "ce49f8fabf2dfc6a7a07fb70ce32dfd1fa8f47f257fd62eb31942984d67fb2b1"
+      },
+      {
+        "path": "src/variants/implicit/structs.jl",
+        "sha256": "0dfc532951e4b30295ec211692a5a792896b9d632348be66ece075d577b711af"
+      },
+      {
+        "path": "src/variants/implicit/utils.jl",
+        "sha256": "4c62e8185bfcea632d126cad1a19fa74a2af5eda17f6745581fbb263691a5dcd"
+      },
+      {
+        "path": "src/variants/implicit/portable_warmup.patch",
+        "sha256": "b0abcc099f28e56338634c657137e140a7cc8251bf61c8fefad2861d22c157ee"
+      }
+    ],
+    "portability_note": "Legacy run_dataset warmup now uses bundled package-relative data. The reviewer run_file algorithm and its explicit warmup are unchanged."
+  },
+  "primal1": {
+    "module": "Main",
+    "entry": "solver.jl",
+    "base": "outputs/HPRQP_submission_inventory/results/hprqp_raw/additional_original_runs/Jul9_HPRQPprimal_MM_mps_4/HPRQP.jl",
+    "algorithm_override": null,
+    "standalone": true,
+    "used_by_groups": [
+      "primal1"
+    ],
+    "packaged_files": [
+      {
+        "path": "src/variants/primal1/changes.patch",
+        "sha256": "49e0e0bf4e7f8db5a7f39b3bab07aa2a0dd9aebe709003ef7d7a67f4407226e7"
+      },
+      {
+        "path": "src/variants/primal1/solver.jl",
+        "sha256": "3f7d9aa771af6561be102efbec2b16a0cdd95f74d77181ef8badbd3ff2141dc2"
+      }
+    ]
+  },
+  "primal2": {
+    "module": "Main",
+    "entry": "solver.jl",
+    "base": "outputs/HPRQP_submission_inventory/results/hprqp_raw/additional_original_runs/Jul9_HPRQPprimal2_MM_mps_4/HPRQP.jl",
+    "algorithm_override": null,
+    "standalone": true,
+    "used_by_groups": [
+      "primal2"
+    ],
+    "packaged_files": [
+      {
+        "path": "src/variants/primal2/changes.patch",
+        "sha256": "77189ced2c718c4bee6d4855fc967a5b7a4858be48b400cc1624e0fc3003d8dd"
+      },
+      {
+        "path": "src/variants/primal2/solver.jl",
+        "sha256": "16ee9185151c3d9309986908ff2a10b97b1b02708e0b1fcac296cddedd280fd3"
+      }
+    ]
+  },
+  "tr_mat": {
+    "module": "HPRSOCP",
+    "entry": "HPRSOCP.jl",
+    "base": "outputs/HPRQP_server_full_run/remote_sources/workspace_test/HPRSOC_scaling/HPRSOC",
+    "algorithm_override": "outputs/HPRQP_submission_inventory/results/hprqp_raw/revision/TRmat/Nov7_HPRSOCP_GPU_TRmat_scaling_singleSOCfixed_original_1e-8/HPRSOCP.jl",
+    "standalone": false,
+    "used_by_groups": [
+      "revision_TR_mat",
+      "revision_TR_mat_large"
+    ],
+    "packaged_files": [
+      {
+        "path": "src/variants/tr_mat/HPRSOCP.jl",
+        "sha256": "8a7df99ea254c7a342f9d1583b4ad2b87d0deef3261ff99498bc451af6b773a9"
+      },
+      {
+        "path": "src/variants/tr_mat/algorithm.jl",
+        "sha256": "43f540ccbefdf3bd781b1d6551aabcedbbbeede36c2f3c39aee6d87c246293ad"
+      },
+      {
+        "path": "src/variants/tr_mat/changes.patch",
+        "sha256": "ef89258159987f3338e31ccaa909b7f070716d01a7d291b4570cce3f98f09729"
+      },
+      {
+        "path": "src/variants/tr_mat/kernels.jl",
+        "sha256": "b8feb28dd22f92e127d18f539c6f76239062a95e9001168a2e2a02370687c1dd"
+      },
+      {
+        "path": "src/variants/tr_mat/remove_unused_plot_import.patch",
+        "sha256": "173cb413b082eb7c0491b503ab7bd83ddf731e53fb353ed803b3156d5605034f"
+      },
+      {
+        "path": "src/variants/tr_mat/structs.jl",
+        "sha256": "348e06f3a70d21156fda0354e9e6422c6a262e4c57342b4599aa275f6ff58bfb"
+      },
+      {
+        "path": "src/variants/tr_mat/utils.jl",
+        "sha256": "9bec92b696cb32d8258b12c696ba17f17fecd4832475602d76d43bbc75e369c0"
+      }
+    ]
+  },
+  "figure_QSCSD1": {
+    "used_by_groups": [
+      "figure_QSCSD1"
+    ],
+    "packaged_files": [
+      {
+        "path": "src/variants/figure_QSCSD1/HPRQP_zxwyw.jl",
+        "sha256": "6bff17b89df77ffe9aed584634650a68847260958faed8f9cd2a663bef84cfba"
+      },
+      {
+        "path": "src/variants/figure_QSCSD1/algorithm.jl",
+        "sha256": "3042edcb7a726c89a90934743f83953aaa29fb120fe6c29e3d6fff5be32057e5"
+      },
+      {
+        "path": "src/variants/figure_QSCSD1/kernels.jl",
+        "sha256": "d26d9959f69f2452bb664f3616525291fcbd31713dbee2226dc9b1f00fb61657"
+      },
+      {
+        "path": "src/variants/figure_QSCSD1/remove_unused_plot_import.patch",
+        "sha256": "959850989d27e53d659e83aa8a2b8d3fa3c9a681a550875368374e11815c6195"
+      },
+      {
+        "path": "src/variants/figure_QSCSD1/structs.jl",
+        "sha256": "42f677d9a358ceb727f47f6a322ba08d5e51513608eb959af2d22ab6f072fd71"
+      },
+      {
+        "path": "src/variants/figure_QSCSD1/utils.jl",
+        "sha256": "fb0e4d12412c9ed3c9d08dc52cef4e511f8a5268d3494df860df697516dce720"
+      },
+      {
+        "path": "src/variants/figure_QSCSD1/portable_warmup.patch",
+        "sha256": "16129b136b6a887b2a32d29056571e69bf85803366a4cc8bb7116d0eaaf16e3d"
+      }
+    ],
+    "portability_note": "Legacy run_dataset warmup now uses bundled package-relative data. The reviewer run_file algorithm and its explicit warmup are unchanged."
+  },
+  "_third_party": {
+    "CuClarabel": {
+      "source_location": "/home/chenkaihuang/workspace/solvers/CuClarabel",
+      "base_commit": "83b292a00a927419eeb0cb00f05f38e2119efb17",
+      "packaged_path": "src/competitors/CuClarabel",
+      "patches": "src/competitors/patches"
+    },
+    "SCS": {
+      "source_location": "/home/chenkaihuang/workspace/solvers/SCS.jl",
+      "base_commit": "6e7bc7d110a6a5fac915943e478de302bffb3be8",
+      "packaged_path": "src/competitors/SCS",
+      "patches": "src/competitors/patches"
+    },
+    "PDQP": {
+      "source_location": "/home/20031492r/workspace_test/PDQP.jl",
+      "base_commit": "135035a55348736b6748dd6511f974db7e615160",
+      "historical_working_tree_modified_files": [
+        "src/quadratic_programming_io.jl",
+        "src/solve_log.jl",
+        "src/solver_gpu.jl"
+      ],
+      "historical_driver": "scripts/solve_0.jl (untracked in collected working tree)",
+      "packaged_path": "src/competitors/PDQP",
+      "packaging_patch": "src/competitors/patches/PDQP_no_solution_vectors.patch",
+      "note": "Collected working-tree snapshot, not the unmodified upstream commit; retained-file integrity is recorded by the release SHA256 manifest."
+    }
+  },
+  "main": {
+    "module": "HPRQP_zxwyw",
+    "entry": "HPRQP_zxwyw.jl",
+    "base": "/home/chenkaihuang/Documents/HPRQP_paper/test_version",
+    "algorithm_override": null,
+    "standalone": false,
+    "used_by_groups": [
+      "MM_test_version",
+      "synthetic_paper",
+      "LASSO_UCI_R1_explicit",
+      "LASSO_synthetic_R1_explicit",
+      "revision_denser"
+    ],
+    "packaged_files": [
+      {
+        "path": "src/variants/main/HPRQP_zxwyw.jl",
+        "sha256": "896d903442c7b72634036b303780ea7e47b0f7bf5b62a2de67eee932cc19c043"
+      },
+      {
+        "path": "src/variants/main/algorithm.jl",
+        "sha256": "06c36d24086d8e5c91b80e6ea1e2988fb2ad11afe68f807251035af5691fed80"
+      },
+      {
+        "path": "src/variants/main/changes.patch",
+        "sha256": "ece9fcd6e6af88a0ca93f8c36953e4542a67944264ee07dd6530f166ad7d746d"
+      },
+      {
+        "path": "src/variants/main/explicit_lasso_option.patch",
+        "sha256": "cdf511a1c94fad91a4000edf21ad849ed6f6b2a31000026faee37f67b3ce3379"
+      },
+      {
+        "path": "src/variants/main/kernels.jl",
+        "sha256": "568ccf455bf57bfda4fdff8d8a01d10ba43d81f8a12584e5181a4f09b9d16f88"
+      },
+      {
+        "path": "src/variants/main/remove_unused_plot_import.patch",
+        "sha256": "a474370fc756b8d12a1bf1ee1f44f743938d520ca8a68e97299c409184b27959"
+      },
+      {
+        "path": "src/variants/main/structs.jl",
+        "sha256": "f01665762fb00e0c0f8951f3a6169ed4530d7f6d45bcefeb42c517b215ddc70e"
+      },
+      {
+        "path": "src/variants/main/utils.jl",
+        "sha256": "fb0e4d12412c9ed3c9d08dc52cef4e511f8a5268d3494df860df697516dce720"
+      },
+      {
+        "path": "src/variants/main/portable_warmup.patch",
+        "sha256": "53b2314977cc3b5dff425936e6d8458184e336588f5124e3e911c8cc567e0e8c"
+      }
+    ],
+    "previous_package_name": "dual_test",
+    "explicit_lasso_sources": {
+      "LASSO_UCI_R1_explicit": {
+        "used_by_groups": [
+          "LASSO_UCI_R1_explicit"
+        ]
+      },
+      "LASSO_synthetic_R1_explicit": {
+        "used_by_groups": [
+          "LASSO_synthetic_R1_explicit"
+        ]
+      }
+    },
+    "explicit_lasso_option": "force_general_q=true reproduces the archived R1 general-matrix path. Default false retains the original main behavior.",
+    "denser_correction": {
+      "previous_source": {
+        "module": "HPRQP_zxwyw",
+        "entry": "HPRQP_zxwyw.jl",
+        "base": "/home/chenkaihuang/Documents/HPRQP_paper/test_version",
+        "algorithm_override": "outputs/HPRQP_submission_inventory/results/hprqp_raw/revision/RANDOMdenser/Nov2_HPRQP_RANDOM_denser_equality_paperversion/HPRQP.jl",
+        "standalone": false,
+        "used_by_groups": [
+          "revision_denser"
+        ]
+      },
+      "reason": "Old utility multiplier originated in a UCI data conversion per author; it is not part of the intended denser benchmark. Use original MPS coefficients."
+    },
+    "portability_note": "Legacy run_dataset warmup now uses bundled package-relative data. The reviewer run_file algorithm and its explicit warmup are unchanged."
+  }
+}

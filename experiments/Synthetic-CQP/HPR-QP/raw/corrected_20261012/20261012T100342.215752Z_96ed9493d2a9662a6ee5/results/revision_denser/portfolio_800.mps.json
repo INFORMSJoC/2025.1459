@@ -1,0 +1,67 @@
+{
+  "environment": {
+    "CUDA_jl": "5.11.0",
+    "blas_threads": 1,
+    "cuda_driver_api": "13.2.0",
+    "cuda_runtime": "13.2.0",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "julia": "1.10.4",
+    "julia_threads": 1,
+    "load_path": [
+      "@",
+      "@stdlib"
+    ],
+    "manifest_sha256": "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3"
+  },
+  "execution": "completed",
+  "finished": "2026-10-12T18:07:44.156",
+  "force_general_q": false,
+  "gpu": "2",
+  "group": "revision_denser",
+  "input_path": "/home/20031492r/Data/QP_data/RANDOM/denser/portfolio_800.mps",
+  "model_revision": "original_mps_objective_v1",
+  "name": "portfolio_800.mps",
+  "parameters": {
+    "alpha": 2.0,
+    "do_warm_up": false,
+    "lambda_factor": 1.05,
+    "max_iter": 2147483647,
+    "mode": "linearize",
+    "restart": -1,
+    "sigma": -1.0,
+    "sigma_fixed": false,
+    "sigma_method": 0,
+    "spmv_mode": "auto",
+    "stoptol": 1.0e-8,
+    "time_limit": 3600.0,
+    "useGPU": true
+  },
+  "phase": "reviewer_entrypoint",
+  "reference": {
+    "name": "portfolio_800.mps",
+    "iter": "114300",
+    "alg_time": "72.22765111923218",
+    "res": "9.686606095566548e-9",
+    "primal_obj": "57.55117508785969",
+    "status": "OPTIMAL",
+    "iter_4": "72700",
+    "time_4": "46.08448505401611",
+    "iter_6": "92300",
+    "time_6": "58.38692092895508",
+    "power_time": "0.003031015396118164"
+  },
+  "result": {
+    "iter": 112500,
+    "iter_4": 59200,
+    "iter_6": 91000,
+    "output_type": "OPTIMAL",
+    "power_time": 0.002913951873779297,
+    "primal_obj": 75.05748288915746,
+    "residuals": 9.98296657121711e-9,
+    "time": 71.11124610900879,
+    "time_4": 37.49053692817688,
+    "time_6": 57.23571801185608
+  },
+  "source_variant": "main",
+  "started": "2026-10-12T18:05:32.770"
+}

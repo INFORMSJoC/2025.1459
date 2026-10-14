@@ -1,0 +1,10 @@
+Instance: esc64a
+runtime                  | residuals                  |  solution information      | relative residuals      |
+#iter   #kkt     seconds | pr norm  du norm   gap     |  pr obj   pr norm  du norm | rel pr  rel du  rel gap |
+0       6.8e+01  1.7e-01 | 1.0e+00  0.0e+00   0.0e+00 |  0.0e+00  0.0e+00  0.0e+00 | 5.0e-01 0.0e+00 0.0e+00 |
+384     4.8e+02  7.7e-01 | 2.3e-11  1.0e-13   1.6e-11 |  3.4e-01  1.6e-02  3.1e-02 | 1.2e-11 9.7e-14 1.2e-11 |
+Avg solution:
+  pr_infeas= 2.34063e-11 pr_obj=   0.3361749203 dual_infeas= 1.00825e-13 dual_obj=   0.3361749203
+  primal norms: L1=    77.32198318, L2=    1.231707371, Linf=  0.02790208339
+  dual norms:   L1=    8.694016745, L2=    1.260773966, Linf=   0.3856842222
+Terminated after 385 iterations: OPTIMAL

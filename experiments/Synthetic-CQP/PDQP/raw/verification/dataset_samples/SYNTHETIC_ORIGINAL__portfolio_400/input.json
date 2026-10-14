@@ -1,0 +1,13 @@
+{
+  "id": "SYNTHETIC_ORIGINAL__portfolio_400",
+  "solver": "PDQP",
+  "family": "SYNTHETIC_ORIGINAL",
+  "name": "portfolio_400.mps",
+  "relative_path": "RANDOM/new/portfolio_400.mps",
+  "tolerances": [
+    1e-08
+  ],
+  "settings": {},
+  "path": "/home/20031492r/Data/QP_data/RANDOM/new/portfolio_400.mps",
+  "sha256": "e2b56f1c4791f5ff8eb3308f88a3fd7e78ef184dd0805f3180cae34fc4c9a60c"
+}

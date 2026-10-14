@@ -1,0 +1,37 @@
+--- a/src/gpucones/coneops_socone_gpu.jl
++++ b/src/gpucones/coneops_socone_gpu.jl
+@@ -230,7 +230,9 @@
+         end
+     
+         wscale = _sqrt_soc_residual_gpu(wi)
+-        wi ./= wscale
++        @inbounds for j in eachindex(wi)
++            wi[j] /= wscale
++        end
+ 
+         #try to force badly scaled w to come out normalized
+         w1sq = zero(T)
+@@ -249,7 +251,10 @@
+         @inbounds for j in 2:length(λi)
+             λi[j] = coef*(c1*si[j] +c2*zi[j])
+         end
+-        λi .*= sqrt(sscale*zscale)
++        factor = sqrt(sscale*zscale)
++        @inbounds for j in eachindex(λi)
++            λi[j] *= factor
++        end
+     end
+ 
+     return nothing
+@@ -443,7 +448,10 @@
+         @inbounds for ind in 2:size_i
+             Hsblocki[(ind-1)*size_i + ind] += one(T)
+         end
+-        Hsblocki .*= η[n_sparse_soc+i]^2
++        factor = η[n_sparse_soc+i]^2
++        @inbounds for j in eachindex(Hsblocki)
++            Hsblocki[j] *= factor
++        end
+     end
+ 
+     return nothing

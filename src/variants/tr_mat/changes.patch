@@ -1,0 +1,422 @@
+--- outputs/HPRQP_server_full_run/remote_sources/workspace_test/HPRSOC_scaling/HPRSOC/utils.jl
++++ tr_mat/utils.jl
+@@ -1240,7 +1240,7 @@
+     seed = 1
+     n, n = size(Q)
+     q = CuVector(randn(Random.MersenneTwister(seed), n)) .+ 1e-8 # Initial random vector
+-    q ./= CUDA.norm(q)
++    q ./= LinearAlgebra.norm(q)
+     # z = CuVector(rand(m)) .+ 1e-8
+     z = CUDA.zeros(Float64, n)
+     q_new = CUDA.zeros(Float64, n)
+@@ -1249,11 +1249,11 @@
+     for i in 1:max_iterations
+         # mul!(ATq, AT, q)
+         CUDA.CUSPARSE.mv!('N', 1, Q, q, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        q_new .= z / CUDA.norm(z)
+-        error = CUDA.norm(q_new - q)
++        q_new .= z / LinearAlgebra.norm(z)
++        error = LinearAlgebra.norm(q_new - q)
+         if error < tolerance
+             CUDA.CUSPARSE.mv!('N', 1, Q, q_new, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-            lambda_max = CUDA.dot(q_new, z)
++            lambda_max = LinearAlgebra.dot(q_new, z)
+             println("Power iteration converged in ", i, " iterations. The largest eigenvalue is ", lambda_max)
+             return lambda_max
+         end
+@@ -1262,7 +1262,7 @@
+     println("Power iteration did not converge within the specified tolerance.")
+     println("The maximum iteration is ", max_iterations, " and the error is ", error)
+     CUDA.CUSPARSE.mv!('N', 1, Q, q_new, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-    lambda_max = CUDA.dot(q_new, z)
++    lambda_max = LinearAlgebra.dot(q_new, z)
+     return lambda_max
+ end
+ 
+@@ -1270,7 +1270,7 @@
+     seed = 1
+     m, n = size(A)
+     q = CuVector(randn(Random.MersenneTwister(seed), m)) .+ 1e-8 # Initial random vector
+-    q ./= CUDA.norm(q)
++    q ./= LinearAlgebra.norm(q)
+     # z = CuVector(rand(m)) .+ 1e-8
+     z = CUDA.zeros(Float64, n)
+     q_new = CUDA.zeros(Float64, m)
+@@ -1280,12 +1280,12 @@
+         # mul!(ATq, AT, q)
+         CUDA.CUSPARSE.mv!('N', 1, AT, q, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         CUDA.CUSPARSE.mv!('N', 1, A, z, 0, q_new, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        q_new ./= CUDA.norm(q_new)
+-        error = CUDA.norm(q_new - q)
++        q_new ./= LinearAlgebra.norm(q_new)
++        error = LinearAlgebra.norm(q_new - q)
+         if error < tolerance
+             CUDA.CUSPARSE.mv!('N', 1, AT, q_new, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+             CUDA.CUSPARSE.mv!('N', 1, A, z, 0, q, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-            lambda_max = CUDA.dot(q_new, q)
++            lambda_max = LinearAlgebra.dot(q_new, q)
+             println("Power iteration converged in ", i, " iterations. The largest eigenvalue is ", lambda_max)
+             return lambda_max
+         end
+@@ -1295,7 +1295,7 @@
+     println("The maximum iteration is ", max_iterations, " and the error is ", error)
+     CUDA.CUSPARSE.mv!('N', 1, AT, q_new, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+     CUDA.CUSPARSE.mv!('N', 1, A, z, 0, q, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-    lambda_max = CUDA.dot(q_new, q)
++    lambda_max = LinearAlgebra.dot(q_new, q)
+     return lambda_max
+ end
+ 
+@@ -1313,12 +1313,12 @@
+     error = 1.0
+     for i in 1:max_iterations
+         q .= z
+-        q ./= CUDA.norm(q)
++        q ./= LinearAlgebra.norm(q)
+         CUDA.CUSPARSE.mv!('N', 1, AT, q, 0, ATq, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         CUDA.CUSPARSE.mv!('N', 1, A, ATq, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        lambda_max = CUDA.dot(q, z)
++        lambda_max = LinearAlgebra.dot(q, z)
+         q .= z .- lambda_max .* q        # error 
+-        error = CUDA.norm(q) / (CUDA.norm(z) + lambda_max)
++        error = LinearAlgebra.norm(q) / (LinearAlgebra.norm(z) + lambda_max)
+         if error < tolerance
+             # lambda_max = dot(b_new, A * (AT * b_new))
+             println("Power iteration converged in ", i, " iterations. The largest eigenvalue is ", lambda_max)
+@@ -1341,12 +1341,12 @@
+     error = 1.0
+     for i in 1:max_iterations
+         q .= z
+-        q ./= CUDA.norm(q)
++        q ./= LinearAlgebra.norm(q)
+         # mul!(ATq, AT, q)
+         CUDA.CUSPARSE.mv!('N', 1, Q, q, 0, z, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        lambda_max = CUDA.dot(q, z)
++        lambda_max = LinearAlgebra.dot(q, z)
+         q .= z .- lambda_max .* q        # error 
+-        error = CUDA.norm(q) / (CUDA.norm(z) + lambda_max)
++        error = LinearAlgebra.norm(q) / (LinearAlgebra.norm(z) + lambda_max)
+ 
+         if error < tolerance
+             # lambda_max = dot(b_new, A * (AT * b_new))
+--- outputs/HPRQP_server_full_run/remote_sources/workspace_test/HPRSOC_scaling/HPRSOC/kernels.jl
++++ tr_mat/kernels.jl
+@@ -437,7 +437,7 @@
+         
+         # Step 2: Compute norm (single SOC case - compute directly on GPU)
+         #v = @view ws.z_bar[2:ws.n]
+-        #norm_s = sqrt(CUDA.dot(v, v))
++        #norm_s = sqrt(LinearAlgebra.dot(v, v))
+         # Store in temp array (avoid scalar indexing by using fill!)
+         #CUDA.fill!(ws.SOC_norms_temp, norm_s)
+         
+@@ -460,7 +460,7 @@
+         @cuda threads=256 blocks=ceil(Int, ws.n / 256) compute_zbar_single_SOC_kernel!(ws.z_bar, ws.x, ws.Qw, ws.ATy, ws.c, ws.sigma, 1, ws.n)
+         # Step 2: Compute norm on GPU (only non-head elements)
+         v = @view ws.z_bar[2:ws.n]
+-        norm_s = sqrt(CUDA.dot(v, v))
++        norm_s = sqrt(LinearAlgebra.dot(v, v))
+ 	t_val = CUDA.@allowscalar ws.z_bar[1]
+         # Step 3: Apply projection and update in parallel (pass t as parameter to avoid race condition)
+         @cuda threads = 256 blocks = ceil(Int, ws.n / 256) project_and_update_single_SOC_kernel!(
+@@ -560,8 +560,8 @@
+     @cuda threads = 256 blocks = ceil(Int, ws.n / 256) cust_update_zxw1_kernel!(ws.dx, ws.Q.rowPtr, ws.Q.colVal, ws.Q.nzVal,
+         ws.w_bar, ws.w, ws.z_bar, ws.x_bar, ws.x_hat, ws.last_x, ws.x, ws.Qw, ws.ATy, ws.c, ws.tempv, ws.l, ws.u, ws.sigma, fact1, fact2, Halpern_fact1, Halpern_fact2, ws.n)
+ 
+-    # if (CUDA.norm(ws.Qw_hat - ws.Qw) > 1e-11)
+-    #     error("Qw_hat: ", CUDA.norm(ws.Qw_hat - ws.Qw))
++    # if (LinearAlgebra.norm(ws.Qw_hat - ws.Qw) > 1e-11)
++    #     error("Qw_hat: ", LinearAlgebra.norm(ws.Qw_hat - ws.Qw))
+     # end
+ end
+ 
+@@ -1410,36 +1410,36 @@
+ 
+ function compute_M_norm_gpu!(ws::HPRSOCP_workspace_gpu, Q_is_diag::Bool, noC::Bool)
+     if noC
+-        M_norm = ws.sigma * ws.lambda_max_A * CUDA.dot(ws.dy, ws.dy)
+-        M_norm += 1 / ws.sigma * CUDA.dot(ws.dx, ws.dx)
++        M_norm = ws.sigma * ws.lambda_max_A * LinearAlgebra.dot(ws.dy, ws.dy)
++        M_norm += 1 / ws.sigma * LinearAlgebra.dot(ws.dx, ws.dx)
+         CUDA.CUSPARSE.mv!('N', 1, ws.AT, ws.dy, 0, ws.ATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.dw, 0, ws.dQw, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        M_norm += 2 * CUDA.dot(ws.ATdy, ws.dx)
++        M_norm += 2 * LinearAlgebra.dot(ws.ATdy, ws.dx)
+         if !Q_is_diag
+-            M_norm += ws.sigma * ws.lambda_max_Q * CUDA.dot(ws.dw, ws.dQw)
+-            M_norm -= ws.sigma * CUDA.dot(ws.dQw, ws.dQw)
++            M_norm += ws.sigma * ws.lambda_max_Q * LinearAlgebra.dot(ws.dw, ws.dQw)
++            M_norm -= ws.sigma * LinearAlgebra.dot(ws.dQw, ws.dQw)
+         end
+     else
+-        M_norm = ws.sigma * ws.lambda_max_A * CUDA.dot(ws.dy, ws.dy)
++        M_norm = ws.sigma * ws.lambda_max_A * LinearAlgebra.dot(ws.dy, ws.dy)
+         CUDA.CUSPARSE.mv!('N', 1, ws.AT, ws.dy, 0, ws.ATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.ATdy, 0, ws.QATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.dw, 0, ws.dQw, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        M_norm += 1 / ws.sigma * CUDA.dot(ws.dx, ws.dx)
+-        M_norm -= 2 * ws.sigma * CUDA.dot(ws.dQw, ws.ATdy)
+-        M_norm += 2 * CUDA.dot(ws.ATdy, ws.dx)
+-        M_norm -= 2 * CUDA.dot(ws.dQw, ws.dx)
++        M_norm += 1 / ws.sigma * LinearAlgebra.dot(ws.dx, ws.dx)
++        M_norm -= 2 * ws.sigma * LinearAlgebra.dot(ws.dQw, ws.ATdy)
++        M_norm += 2 * LinearAlgebra.dot(ws.ATdy, ws.dx)
++        M_norm -= 2 * LinearAlgebra.dot(ws.dQw, ws.dx)
+ 
+         if Q_is_diag
+             ws.ATdy .*= ws.fact_M
+-            M_norm += CUDA.dot(ws.ATdy, ws.QATdy)
++            M_norm += LinearAlgebra.dot(ws.ATdy, ws.QATdy)
+         else
+-            M_norm += (ws.sigma * ws.sigma) / (1 + ws.sigma * ws.lambda_max_Q) * CUDA.dot(ws.ATdy, ws.QATdy)
++            M_norm += (ws.sigma * ws.sigma) / (1 + ws.sigma * ws.lambda_max_Q) * LinearAlgebra.dot(ws.ATdy, ws.QATdy)
+         end
+ 
+         if Q_is_diag
+-            M_norm += ws.sigma * CUDA.dot(ws.dQw, ws.dQw)
++            M_norm += ws.sigma * LinearAlgebra.dot(ws.dQw, ws.dQw)
+         else
+-            M_norm += ws.sigma * ws.lambda_max_Q * CUDA.dot(ws.dw, ws.dQw)
++            M_norm += ws.sigma * ws.lambda_max_Q * LinearAlgebra.dot(ws.dw, ws.dQw)
+         end
+     end
+     # M_norm = max(1e-24, M_norm)
+@@ -1449,36 +1449,36 @@
+ 
+ # function compute_M_norm_gpu2!(ws::HPRSOCP_workspace_gpu, Q_is_diag::Bool, noC::Bool)
+ #     if noC
+-#         M_1 = ws.sigma * ws.lambda_max_A * CUDA.dot(ws.dy, ws.dy)
+-#         M_1 += 1 / ws.sigma * CUDA.dot(ws.dx, ws.dx)
++#         M_1 = ws.sigma * ws.lambda_max_A * LinearAlgebra.dot(ws.dy, ws.dy)
++#         M_1 += 1 / ws.sigma * LinearAlgebra.dot(ws.dx, ws.dx)
+ #         CUDA.CUSPARSE.mv!('N', 1, ws.AT, ws.dy, 0, ws.ATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+ #         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.dw, 0, ws.dQw, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-#         M_1 += 2 * CUDA.dot(ws.ATdy, ws.dx)
++#         M_1 += 2 * LinearAlgebra.dot(ws.ATdy, ws.dx)
+ #         if !Q_is_diag
+-#             M_2 = ws.sigma * ws.lambda_max_Q * CUDA.dot(ws.dw, ws.dQw)
+-#             M_2 -= 2 * ws.sigma * CUDA.dot(ws.dQw, ws.dQw)
++#             M_2 = ws.sigma * ws.lambda_max_Q * LinearAlgebra.dot(ws.dw, ws.dQw)
++#             M_2 -= 2 * ws.sigma * LinearAlgebra.dot(ws.dQw, ws.dQw)
+ #             M_norm = max(M_2, 0) + max(M_1, 0)
+ #             if min(M_1, M_2) < -1e-8
+ #                 println("M_1 = $M_1,M_2 = $M_2")
+ #             end
+ #         end
+ #     else
+-#         M_norm = ws.sigma * ws.lambda_max_A * CUDA.dot(ws.dy, ws.dy)
++#         M_norm = ws.sigma * ws.lambda_max_A * LinearAlgebra.dot(ws.dy, ws.dy)
+ #         CUDA.CUSPARSE.mv!('N', 1, ws.AT, ws.dy, 0, ws.ATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+ #         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.ATdy, 0, ws.QATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+ #         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.dw, 0, ws.dQw, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-#         M_norm += 1 / ws.sigma * CUDA.dot(ws.dx, ws.dx)
+-#         M_norm -= 2 * ws.sigma * CUDA.dot(ws.dQw, ws.ATdy)
+-#         M_norm += 2 * CUDA.dot(ws.ATdy, ws.dx)
+-#         M_norm -= 2 * CUDA.dot(ws.dQw, ws.dx)
++#         M_norm += 1 / ws.sigma * LinearAlgebra.dot(ws.dx, ws.dx)
++#         M_norm -= 2 * ws.sigma * LinearAlgebra.dot(ws.dQw, ws.ATdy)
++#         M_norm += 2 * LinearAlgebra.dot(ws.ATdy, ws.dx)
++#         M_norm -= 2 * LinearAlgebra.dot(ws.dQw, ws.dx)
+ 
+ #         if Q_is_diag
+ #             ws.ATdy .*= ws.fact_M
+-#             M_norm += CUDA.dot(ws.ATdy, ws.QATdy) # sGS term
+-#             M_norm += ws.sigma * CUDA.dot(ws.dQw, ws.dQw)
++#             M_norm += LinearAlgebra.dot(ws.ATdy, ws.QATdy) # sGS term
++#             M_norm += ws.sigma * LinearAlgebra.dot(ws.dQw, ws.dQw)
+ #         else
+-#             M_norm += (ws.sigma * ws.sigma) / (1 + ws.sigma * ws.lambda_max_Q) * CUDA.dot(ws.ATdy, ws.QATdy)  # sGS term
+-#             M_norm += ws.sigma * ws.lambda_max_Q * CUDA.dot(ws.dw, ws.dQw)
++#             M_norm += (ws.sigma * ws.sigma) / (1 + ws.sigma * ws.lambda_max_Q) * LinearAlgebra.dot(ws.ATdy, ws.QATdy)  # sGS term
++#             M_norm += ws.sigma * ws.lambda_max_Q * LinearAlgebra.dot(ws.dw, ws.dQw)
+ #         end
+ #         # M_2 = M_1
+ 
+@@ -1495,16 +1495,16 @@
+ 
+ 
+ function compute_M_norm_gpu2!(ws::HPRSOCP_workspace_gpu)
+-    M_1 = ws.sigma * ws.lambda_max_A * CUDA.dot(ws.dy, ws.dy)
++    M_1 = ws.sigma * ws.lambda_max_A * LinearAlgebra.dot(ws.dy, ws.dy)
+     CUDA.CUSPARSE.mv!('N', 1, ws.AT, ws.dy, 0, ws.ATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+     CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.ATdy, 0, ws.QATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+     CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.dw, 0, ws.dQw, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-    M_1 -= 2 * ws.sigma * CUDA.dot(ws.dQw, ws.ATdy)
+-    M_2 = 1 / ws.sigma * CUDA.dot(ws.dx, ws.dx)
+-    M_2 += 2 * CUDA.dot(ws.ATdy, ws.dx)
+-    M_2 -= 2 * CUDA.dot(ws.dQw, ws.dx)
+-    M_3 = (ws.sigma * ws.sigma) / (1 + ws.sigma * ws.lambda_max_Q) * CUDA.dot(ws.ATdy, ws.QATdy)  # sGS term
+-    M_1 += ws.sigma * ws.lambda_max_Q * CUDA.dot(ws.dw, ws.dQw)
++    M_1 -= 2 * ws.sigma * LinearAlgebra.dot(ws.dQw, ws.ATdy)
++    M_2 = 1 / ws.sigma * LinearAlgebra.dot(ws.dx, ws.dx)
++    M_2 += 2 * LinearAlgebra.dot(ws.ATdy, ws.dx)
++    M_2 -= 2 * LinearAlgebra.dot(ws.dQw, ws.dx)
++    M_3 = (ws.sigma * ws.sigma) / (1 + ws.sigma * ws.lambda_max_Q) * LinearAlgebra.dot(ws.ATdy, ws.QATdy)  # sGS term
++    M_1 += ws.sigma * ws.lambda_max_Q * LinearAlgebra.dot(ws.dw, ws.dQw)
+     M_2 += max(M_1, 0)
+     # M_norm = M_2 + M_3
+     M_norm = max(M_2, 0) + max(M_3, 0)
+@@ -1591,7 +1591,7 @@
+     # Objective using GPU operations, reusing tempv
+     function f_gpu(x)
+         @. tempv = d / (1.0 + x * Q)
+-        return a * x + b / x + x^2 * CUDA.dot(c, tempv)
++        return a * x + b / x + x^2 * LinearAlgebra.dot(c, tempv)
+     end
+ 
+     # Initialize bracket
+--- outputs/HPRQP_server_full_run/remote_sources/workspace_test/HPRSOC_scaling/HPRSOC/HPRSOCP.jl
++++ tr_mat/HPRSOCP.jl
+@@ -9,6 +9,7 @@
+ using QPSReader
+ using SparseArrays
+ using LinearAlgebra
++using Statistics
+ using CUDA
+ using CUDA.CUSPARSE
+ using Printf
+--- outputs/HPRQP_server_full_run/remote_sources/workspace_test/HPRSOC_scaling/HPRSOC/algorithm.jl
++++ tr_mat/algorithm.jl
+@@ -14,21 +14,21 @@
+ 
+ 
+         ### obj
+-        # res.primal_obj = CUDA.dot(ws.c, ws.x_bar)
++        # res.primal_obj = LinearAlgebra.dot(ws.c, ws.x_bar)
+         CUSPARSE.mv!('N', 1, ws.Q, ws.x_bar, 0, ws.Qx, 'O', CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         # CUSPARSE.mv!('N', 1, ws.Q, ws.w_bar, 0, ws.Qw_bar, 'O', CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         res.primal_obj_bar = sc.b_scale * sc.c_scale *
+-                             (CUDA.dot(ws.c, ws.x_bar) + 0.5 * CUDA.dot(ws.x_bar, ws.Qx)) + socp.obj_constant
++                             (LinearAlgebra.dot(ws.c, ws.x_bar) + 0.5 * LinearAlgebra.dot(ws.x_bar, ws.Qx)) + socp.obj_constant
+ 
+ 
+         res.dual_obj_bar =
+             sc.b_scale * sc.c_scale *
+-            (-0.5 * CUDA.dot(ws.x_bar, ws.Qx)
++            (-0.5 * LinearAlgebra.dot(ws.x_bar, ws.Qx)
+              # (-0.5 * dot(ws.w_bar, ws.Qw_bar)
+-             #  + CUDA.dot(min.(ws.y_bar, 0), ws.AU) + CUDA.dot(max.(ws.y_bar, 0), ws.AL)
+-             + CUDA.dot(ws.y_bar, ws.b)
+-             #  + CUDA.dot(min.(ws.z_bar, 0), ws.u) + CUDA.dot(max.(ws.z_bar, 0), ws.l))
+-             + CUDA.dot(ws.z_bar, ws.x_bar)) + socp.obj_constant
++             #  + LinearAlgebra.dot(min.(ws.y_bar, 0), ws.AU) + LinearAlgebra.dot(max.(ws.y_bar, 0), ws.AL)
++             + LinearAlgebra.dot(ws.y_bar, ws.b)
++             #  + LinearAlgebra.dot(min.(ws.z_bar, 0), ws.u) + LinearAlgebra.dot(max.(ws.z_bar, 0), ws.l))
++             + LinearAlgebra.dot(ws.z_bar, ws.x_bar)) + socp.obj_constant
+         # res.dual_obj_bar = sc.b_scale * sc.c_scale * res.dual_obj + socp.obj_constant
+ 
+         res.rel_gap_bar = abs(res.primal_obj_bar - res.dual_obj_bar) / (1 + max(abs(res.primal_obj_bar), abs(res.dual_obj_bar)))
+@@ -36,20 +36,20 @@
+ 
+         ### Rd
+         compute_Rd_gpu!(ws)
+-        res.err_Rd_bar = CUDA.norm(ws.Rd)
++        res.err_Rd_bar = LinearAlgebra.norm(ws.Rd)
+ 
+         ws.Rd .*= sc.col_norm * sc.c_scale
+         ws.ATdy .*= sc.col_norm * sc.c_scale
+         ws.Qx .*= sc.col_norm * sc.c_scale
+-        res.err_Rd_org_bar = CUDA.norm(ws.Rd, Inf) / (1.0 + maximum([sc.norm_c_org, CUDA.norm(ws.ATdy, Inf), CUDA.norm(ws.Qx, Inf)]))
++        res.err_Rd_org_bar = LinearAlgebra.norm(ws.Rd, Inf) / (1.0 + maximum([sc.norm_c_org, LinearAlgebra.norm(ws.ATdy, Inf), LinearAlgebra.norm(ws.Qx, Inf)]))
+ 
+         ### Rp
+         if ws.m > 0
+             compute_Rp_gpu!(ws)
+-            res.err_Rp_bar = CUDA.norm(ws.Rp)
++            res.err_Rp_bar = LinearAlgebra.norm(ws.Rp)
+             ws.Rp .*= sc.row_norm * sc.b_scale
+             ws.Ax .*= sc.row_norm * sc.b_scale
+-            res.err_Rp_org_bar = CUDA.norm(ws.Rp, Inf) / (1.0 + max(sc.norm_b_org, CUDA.norm(ws.Ax, Inf)))
++            res.err_Rp_org_bar = LinearAlgebra.norm(ws.Rp, Inf) / (1.0 + max(sc.norm_b_org, LinearAlgebra.norm(ws.Ax, Inf)))
+         end
+ 
+         if iter == 0
+@@ -59,7 +59,7 @@
+             if ws.number_lu_x > 0
+                 @cuda threads = 256 blocks = ceil(Int, ws.number_lu_x / 256) compute_xlu_kernel!(ws.dx, ws.x_bar, ws.l, ws.u, ws.number_lu_x)
+             end
+-            res.err_Rp_org_bar += CUDA.norm(ws.dx, Inf)
++            res.err_Rp_org_bar += LinearAlgebra.norm(ws.dx, Inf)
+         end
+         res.KKTx_and_gap_org_bar = max(res.err_Rp_org_bar, res.err_Rd_org_bar, res.rel_gap_bar)
+         # res.KKTx_org_bar = max(res.err_Rp_org_bar, res.err_K_org_bar, res.err_Rd_org_bar, res.err_z_org_bar, res.err_Comp_org_bar) 
+@@ -89,16 +89,16 @@
+ 
+ 
+         ### obj
+-        # res.primal_obj = CUDA.dot(ws.c, ws.x_bar)
++        # res.primal_obj = LinearAlgebra.dot(ws.c, ws.x_bar)
+         CUSPARSE.mv!('N', 1, socp_org.Q, ws.dx, 0, ws.Qx, 'O', CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         # CUSPARSE.mv!('N', 1, ws.Q, ws.w_bar, 0, ws.Qw_bar, 'O', CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        res.primal_obj_bar = 0.5 * CUDA.dot(ws.dx, ws.Qx) + CUDA.dot(socp_org.c, ws.dx) + socp.obj_constant
+-
+-        res.dual_obj_bar = (CUDA.dot(ws.dy, socp_org.b)
++        res.primal_obj_bar = 0.5 * LinearAlgebra.dot(ws.dx, ws.Qx) + LinearAlgebra.dot(socp_org.c, ws.dx) + socp.obj_constant
++
++        res.dual_obj_bar = (LinearAlgebra.dot(ws.dy, socp_org.b)
+                             -
+-                            0.5 * CUDA.dot(ws.dx, ws.Qx)
++                            0.5 * LinearAlgebra.dot(ws.dx, ws.Qx)
+                             +
+-                            CUDA.dot(ws.dz, ws.dx)) + socp.obj_constant
++                            LinearAlgebra.dot(ws.dz, ws.dx)) + socp.obj_constant
+         # res.dual_obj_bar = sc.b_scale * sc.c_scale * res.dual_obj + socp.obj_constant
+ 
+         res.rel_gap_bar = abs(res.primal_obj_bar - res.dual_obj_bar) / (1 + max(abs(res.primal_obj_bar), abs(res.dual_obj_bar)))
+@@ -107,9 +107,9 @@
+         ### Rd
+         CUDA.CUSPARSE.mv!('N', 1, socp_org.AT, ws.dy, 0, ws.ATdy, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+         @cuda threads = 256 blocks = ceil(Int, ws.n / 256) compute_Rd_kernel!(ws.ATdy, ws.dz, socp_org.c, ws.Qx, ws.Rd, ws.n)
+-        # res.err_Rd_bar = CUDA.norm(ws.Rd)
+-
+-        res.err_Rd_org_bar = CUDA.norm(ws.Rd, Inf) / (1.0 + maximum([sc.norm_c_org, CUDA.norm(ws.ATdy, Inf), CUDA.norm(ws.Qx, Inf)]))
++        # res.err_Rd_bar = LinearAlgebra.norm(ws.Rd)
++
++        res.err_Rd_org_bar = LinearAlgebra.norm(ws.Rd, Inf) / (1.0 + maximum([sc.norm_c_org, LinearAlgebra.norm(ws.ATdy, Inf), LinearAlgebra.norm(ws.Qx, Inf)]))
+ 
+         ### Rp
+         if ws.m > 0
+@@ -119,8 +119,8 @@
+                 @cuda threads = 256 blocks = ceil(Int, ws.number_SOC_con / 256) compute_Rp_SOC_kernel!(ws.Rp, socp_org.b, ws.Ax, ws.number_ineq, ws.number_eq, ws.SOC_con_idx, ws.number_SOC_con, ws.m)
+             end
+ 
+-            # res.err_Rp_bar = CUDA.norm(ws.Rp)
+-            res.err_Rp_org_bar = CUDA.norm(ws.Rp, Inf) / (1.0 + max(sc.norm_b_org, CUDA.norm(ws.Ax, Inf)))
++            # res.err_Rp_bar = LinearAlgebra.norm(ws.Rp)
++            res.err_Rp_org_bar = LinearAlgebra.norm(ws.Rp, Inf) / (1.0 + max(sc.norm_b_org, LinearAlgebra.norm(ws.Ax, Inf)))
+         end
+ 
+         if iter == 0
+@@ -130,7 +130,7 @@
+             if ws.number_lu_x > 0
+                 @cuda threads = 256 blocks = ceil(Int, ws.number_lu_x / 256) compute_xlu_kernel!(ws.x_hat, ws.x_bar, socp_org.l, socp_org.u, ws.number_lu_x)
+             end
+-            res.err_Rp_org_bar += CUDA.norm(ws.x_hat, Inf)
++            res.err_Rp_org_bar += LinearAlgebra.norm(ws.x_hat, Inf)
+         end
+         res.KKTx_and_gap_org_bar = max(res.err_Rp_org_bar, res.err_Rd_org_bar, res.rel_gap_bar)
+         # res.KKTx_org_bar = max(res.err_Rp_org_bar, res.err_K_org_bar, res.err_Rd_org_bar, res.err_z_org_bar, res.err_Comp_org_bar) 
+@@ -155,10 +155,10 @@
+         end
+         axpby_gpu!(1.0, ws.w_bar, -1.0, ws.last_w, ws.dw, ws.n)
+         CUDA.CUSPARSE.mv!('N', 1, ws.Q, ws.dw, 0, ws.dQw, 'O', CUDA.CUSPARSE.CUSPARSE_SPMV_CSR_ALG2)
+-        a = ws.lambda_max_A * CUDA.dot(ws.dy, ws.dy) - 2 * CUDA.dot(ws.dQw, ws.ATdy)
+-        b = CUDA.dot(ws.dx, ws.dx)
+-        a += ws.lambda_max_Q * CUDA.dot(ws.dw, ws.dQw)
+-        c = CUDA.dot(ws.ATdy, ws.QATdy)
++        a = ws.lambda_max_A * LinearAlgebra.dot(ws.dy, ws.dy) - 2 * LinearAlgebra.dot(ws.dQw, ws.ATdy)
++        b = LinearAlgebra.dot(ws.dx, ws.dx)
++        a += ws.lambda_max_Q * LinearAlgebra.dot(ws.dw, ws.dQw)
++        c = LinearAlgebra.dot(ws.ATdy, ws.QATdy)
+         d = ws.lambda_max_Q
+         a = max(a, 1e-12)
+         b = max(b, 1e-12)
+@@ -555,7 +555,7 @@
+     println("iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time")
+ 
+     if useGPU
+-        # println(CUDA.memory_status())
++        # # obsolete memory diagnostic omitted
+     end
+ 
+     AAT = A_SOC * A_SOC'

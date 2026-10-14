@@ -1,0 +1,65 @@
+{
+  "checked_on": "2026-10-14",
+  "upload": {
+    "state": "completed",
+    "pid": 906774,
+    "updated": "2026-10-14T04:57:58.202820+00:00",
+    "destination": "/2025.1459",
+    "volumes": 178,
+    "total_bytes": 182462532638,
+    "exit_code": 0,
+    "checks_passed": true
+  },
+  "rename": {
+    "state": "completed",
+    "pid": 911371,
+    "updated": "2026-10-14T05:03:45.606059+00:00",
+    "total": 74,
+    "completed": 74,
+    "checks_passed": true
+  },
+  "archive_parts": 178,
+  "archive_bytes": 182462532638,
+  "final_names_and_sizes_match": true,
+  "obsolete_synthetic_names_absent": true,
+  "hash_verification": "rclone Dropbox content-hash comparison: all 170 HPR and 8 competitor volumes passed; 170 HPR volumes rechecked after rename",
+  "automated_download_urls_configured": false,
+  "organization": {
+    "checked_on": "2026-10-14",
+    "status": "completed",
+    "moved_volumes": 178,
+    "failures": 0,
+    "same_dropbox_file_ids_and_sizes": true,
+    "destination_paths_verified": true,
+    "root_checksum_updated": true,
+    "folders": {
+      "MM": 1,
+      "Synthetic-CQP": 56,
+      "Lasso-UCI": 4,
+      "Lasso-Synthetic": 74,
+      "QAPLIB/HPR-QP": 1,
+      "Large-QAP": 4,
+      "Trust-Region": 30,
+      "QAPLIB/Competitors": 8
+    },
+    "extraction_checks": [
+      "current organized cache passed",
+      "flat cache passed",
+      "previous nested cache passed",
+      "unsafe archive path rejected"
+    ],
+    "subsequent_consolidation": {
+      "moved_volumes": 86,
+      "failures": 0,
+      "unchanged_file_ids_and_sizes": true,
+      "removed_empty_folders": [
+        "Trust-Region/Standard",
+        "Trust-Region/Large",
+        "Synthetic-CQP/Original",
+        "Synthetic-CQP/Denser"
+      ],
+      "all_178_destination_paths_and_sizes_verified": true,
+      "root_checksum_updated": true
+    }
+  }
+}

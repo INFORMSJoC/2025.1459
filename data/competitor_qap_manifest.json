@@ -1,0 +1,398 @@
+[
+  {
+    "path": "QAP/mps/esc128.mps",
+    "bytes": 96170645,
+    "sha256": "90f89903fff5e9e4717ff9dc148c56799a4ccaf504503d892cb055173cba9dd5",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/esc128.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/esc64a.mps",
+    "bytes": 17775743,
+    "sha256": "3de86e2e9bf420f6a33e07d1267c44f57e535ebdc552bba33715cef92de93aaa",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/esc64a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa50a.mps",
+    "bytes": 146794998,
+    "sha256": "f201b6160c7578d38adf10d33849b53d2ac262a787c975ce4caf68cea9e03db6",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa50a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa50b.mps",
+    "bytes": 143781752,
+    "sha256": "284ab7ff7a9b5fea503d19ce409f8fc1b72d92aeeab7f7468a67781fa3c273b8",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa50b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa60a.mps",
+    "bytes": 302226053,
+    "sha256": "9576953b8d80db1ca77ad05a294ff0e28ef16ea8485fb19242b95b68b87fc2c2",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa60a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa60b.mps",
+    "bytes": 300010458,
+    "sha256": "9c712cfc6d450331dc3d230892dfa6a9e3ef8ef29ec5feba6e7ad10fd6ec8f64",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa60b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa70a.mps",
+    "bytes": 563580412,
+    "sha256": "e48d726846680eba561085127104ff74fc0dd2ee1b017b3fa543baa8a5891307",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa70a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa70b.mps",
+    "bytes": 553997659,
+    "sha256": "cc88717bef65016a2159844dafaa01ac92b7ba74ebdca0e4e388f03edd77f544",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa70b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa80a.mps",
+    "bytes": 961720903,
+    "sha256": "8c0670bdd0c887c299d95ca58ef09d7fe7375f6462fc75326789dc1aad821187",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa80a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa80b.mps",
+    "bytes": 948750006,
+    "sha256": "3769263fdaac02b9f31a5245b75ff8c99419ff46559e6108a78e01431587be4c",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa80b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa90a.mps",
+    "bytes": 1537219544,
+    "sha256": "253547dbbeb0efd4ef5a4b6a5f07d76074c19eb4e799dac24da267afb2ed037e",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa90a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/lipa90b.mps",
+    "bytes": 1522084647,
+    "sha256": "dc761dc49424aa868848fd95713340124e5167f81ea6b923e5398475ef676777",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/lipa90b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko100a.mps",
+    "bytes": 1640109207,
+    "sha256": "55782e1f2bbe02bd974a18eefb813885f735680548d54cd58964c2d61e1b7209",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko100a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko100b.mps",
+    "bytes": 1635724950,
+    "sha256": "af876dce4546062e5a10dca8ac1707f0b63c068ab7d9b2b72ecf63c3790ee537",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko100b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko100c.mps",
+    "bytes": 1615670563,
+    "sha256": "2ccb0b196085e6ada655acc31d5a55ad8ee1e3fd6ab26c039ac986c1a8750895",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko100c.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko100d.mps",
+    "bytes": 1612616448,
+    "sha256": "2fe8f266e8eb2677ac9237dc136611a0b3220614cd09b2496fc05e7daaad62e9",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko100d.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko100e.mps",
+    "bytes": 1609339347,
+    "sha256": "b6cf46451a2f60f838333118e7f285f7cbe852dd6bb3fd2fcd299f6f75e67329",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko100e.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko100f.mps",
+    "bytes": 1618711198,
+    "sha256": "82ad29d329971663754ed09424e14c336e4f527fa047c8b01b0921190ad8ae94",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko100f.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko56.mps",
+    "bytes": 161682051,
+    "sha256": "653fd990a88749e23f8d5c8bce0926891ad90d6c3bd95f7c4c3defa70b097805",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko56.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko64.mps",
+    "bytes": 273560810,
+    "sha256": "a95f3d20a28689ed0eee659264dcedc8e479146fa0f6139a2b93593a1b300461",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko64.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko72.mps",
+    "bytes": 442779773,
+    "sha256": "741a16a9a7d1b4ff3a2e8b085cdf2b28f1528ebba2ba3edc3a96a89bca13c8dc",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko72.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/sko81.mps",
+    "bytes": 690643691,
+    "sha256": "8ad3731dcad597b40e044dafb3294f830b08614971222c732e21152ce8ddb941",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/sko81.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai100a.mps",
+    "bytes": 2299961197,
+    "sha256": "63d4420b1559551e34942ece2e6598a81da0abe37ebfbc65f4ddb8adf2fb378c",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai100a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai100b.mps",
+    "bytes": 1638433569,
+    "sha256": "6a6cc971e502b909a708ad2c55ffadcd33794329587ab772d4e359c3c86368e7",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai100b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai150b.mps",
+    "bytes": 8321698065,
+    "sha256": "bbc3f17c0e33edb5ec0be8351fee795d5c1943ea913b5d811f27c081e86f06a9",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai150b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai256c.mps",
+    "bytes": 12982986075,
+    "sha256": "4a1c6d5de3c7a2fba0c54d8414bb9f0a3f8e8b149d9479959b1f1921d5453cd7",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai256c.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai50a.mps",
+    "bytes": 144266718,
+    "sha256": "6cfc91b86f84a0ea729318caa7e9fa0d5124fb2aa5619756053639e44b75cb28",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai50a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai50b.mps",
+    "bytes": 102334301,
+    "sha256": "a5c461e54d2a902b06af712b7468e5592fca4a24e74f7f4ea267ffd1d40743bb",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai50b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai60a.mps",
+    "bytes": 298671830,
+    "sha256": "a4f06639adb939feef6e139d520f50f637f49f96b41616892d5a10641e6c6946",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai60a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai60b.mps",
+    "bytes": 211235122,
+    "sha256": "8ff9034c7cbcfc8f2023c6ae2c7171995105349d164cb3170eb948ea531bf06c",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai60b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai64c.mps",
+    "bytes": 16439995,
+    "sha256": "de9e09e6e779343315d08d369fa0425932f8b8c9419974b718e5a3cf13b46111",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai64c.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai80a.mps",
+    "bytes": 942178234,
+    "sha256": "dc5f19dfc6f298d40d55eed443b9fb7e9eebd069ffb38f878fec82c5a5a4419d",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai80a.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tai80b.mps",
+    "bytes": 669786331,
+    "sha256": "27a1793535856b26f9df05e05326d10d0ebdc85d6d655e615b8b50be73162c4e",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tai80b.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/tho150.mps",
+    "bytes": 5119342191,
+    "sha256": "6aebc2efa16c13c7c8de1a2553e403fa7a69c63bf423d97a6ea69ae6e6db108a",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/tho150.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/wil100.mps",
+    "bytes": 2114935780,
+    "sha256": "bd913028f84521ee1a1823e6bec0ab502473f94b6ada2df5405bac57891c67a2",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/wil100.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  },
+  {
+    "path": "QAP/mps/wil50.mps",
+    "bytes": 132474926,
+    "sha256": "cd16f520c940c12ddd3b59915b778dc980744491accfdd968071c085a36f81c8",
+    "server_host": "20031492r@10.21.6.103",
+    "server_path": "/home/20031492r/Data/QP_data/QAP/mps/wil50.mps",
+    "bundled": false,
+    "groups": [
+      "QAPLIB_competitors"
+    ]
+  }
+]

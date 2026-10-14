@@ -1,0 +1,75 @@
+CASE LASER.mps settings=JSON.Object{String, Any}("max_iter" => 2147483647, "time_limit" => 3600.0, "stoptol" => 1.0e-8, "useGPU" => true, "sigma_fixed" => false, "restart" => -1, "mode" => "linearize", "sigma_method" => 0, "spmv_mode" => "CUSPARSE", "sigma" => -1.0, "alpha" => 2.0, "lambda_factor" => 1.05, "do_warm_up" => false)
+Reading MPS file: /home/20031492r/Data/QP_data/MM_mps/LASER.mps
+[ Info: Using 'SPLINE' as NAME (l. 2)
+[ Info: Using 'OBJ' as objective (l. 4)
+[ Info: Using 'RHS1' as RHS (l. 5007)
+[ Info: Using 'BND1' as BOUNDS (l. 6008)
+Deleted 0 rows of A that are all zeros.
+has 0 >= constraints
+has 0 <= constraints
+has 0 boxed constraints
+dimension of Q is (2002, 2002)
+dimension of A is (1000, 2002)
+dimension of b is (1000,)
+dimension of c is (2002,)
+dimension of l is (2002,)
+dimension of u is (2002,)
+number of equalities = 1000
+norm_b_org: 254.5
+norm_c_org: 0.0
+initial sigma = 1.0
+Power iteration converged in 1694 iterations. The largest eigenvalue is 0.7013188384179523
+Power iteration converged in 194 iterations. The largest eigenvalue is 0.7221124467952458
+lambda_max A = 0.7083320268021318
+lambda_max Q = 0.7293335712631982
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+SPMV mode = customized
+   0    1.00e+00    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00      0.53 0 0 0 0 0
+first restart, current gap = 75.74868981783482
+
+ 100    4.61e-02    1.06e-02    Inf    7.57e+01    1.924811e+06    2.782825e+06    3.08e-01    1.00e+00      0.53 0 0 0 0 0
+sigma old: 1.0 sigma_new = 1.135713691939909 primal_move = 6095.069674083044 dual_move = 8614.201306255874
+
+restart at current iter 100
+will restart by sufficient decrease, last restart gap = 72.21879145473879 current gap = 11.897523323205268
+will restart by long time
+ 200    9.34e-03    1.04e-03    7.22e+01    1.19e+01    2.311697e+06    2.403954e+06    3.84e-02    1.14e+00      0.54 1 1 0 1 0
+sigma old: 1.135713691939909 sigma_new = 5.086288900957712 primal_move = 288.2606896700468 dual_move = 1892.021792561733
+
+restart at current iter 200
+will restart by sufficient decrease, last restart gap = 25.1870025123864 current gap = 1.77265302547586
+will restart by long time
+ 300    5.07e-04    4.22e-04    2.52e+01    1.77e+00    2.404684e+06    2.411769e+06    2.94e-03    5.09e+00      0.54 2 2 0 2 0
+sigma old: 5.086288900957712 sigma_new = 7.804141351738354 primal_move = 77.18266092912727 dual_move = 608.4811594227333
+
+restart at current iter 300
+will restart by sufficient decrease, last restart gap = 1.936125889401792 current gap = 0.08136414407346668
+will restart by long time
+ 400    9.60e-06    3.94e-05    1.94e+00    8.14e-02    2.409515e+06    2.409789e+06    1.14e-04    7.80e+00      0.55 3 3 0 3 0
+sigma old: 7.804141351738354 sigma_new = 5.3688888731925175 primal_move = 4.506898112934772 dual_move = 24.18731042150357
+
+restart at current iter 400
+KKT < 1e-3 at iter = 400
+will restart by sufficient decrease, last restart gap = 0.07566411475481877 current gap = 0.0017125516483904523
+will restart by long time
+ 500    5.87e-07    6.55e-07    7.57e-02    1.71e-03    2.409607e+06    2.409604e+06    1.06e-06    5.37e+00      0.55 4 4 0 4 0
+sigma old: 5.3688888731925175 sigma_new = 4.927027827009573 primal_move = 0.11061530485428685 dual_move = 0.5450036268540509
+
+restart at current iter 500
+will restart by sufficient decrease, last restart gap = 0.001599995921552374 current gap = 0.00015432510561349315
+ 600    5.27e-08    2.53e-08    1.60e-03    1.54e-04    2.409602e+06    2.409601e+06    2.39e-07    4.93e+00      0.56 5 5 0 4 0
+sigma old: 4.927027827009573 sigma_new = 13.254048954780252 primal_move = 0.004385381462358439 dual_move = 0.0581241777701998
+
+restart at current iter 600
+KKT < 1e-6 at iter = 600
+will restart by sufficient decrease, last restart gap = 0.00023528393822570083 current gap = 1.0572062807253425e-5
+ 700    7.69e-10    7.10e-09    2.35e-04    1.06e-05    2.409601e+06    2.409601e+06    1.54e-08    1.33e+01      0.56 6 6 0 4 0
+sigma old: 13.254048954780252 sigma_new = 7.311985355042074 primal_move = 0.0004840582402551038 dual_move = 0.0035394264699137147
+
+restart at current iter 700
+will restart by sufficient decrease, last restart gap = 1.1205045730493738e-5 current gap = 3.659773245849076e-7
+ 800    1.17e-10    1.49e-10    1.12e-05    3.66e-07    2.409601e+06    2.409601e+06    2.88e-10    7.31e+00      0.57 7 7 0 4 0
+sigma old: 7.311985355042074 sigma_new = 16.999633439160352 primal_move = 1.0534108667021043e-5 dual_move = 0.0001790759866775889
+
+restart at current iter 800

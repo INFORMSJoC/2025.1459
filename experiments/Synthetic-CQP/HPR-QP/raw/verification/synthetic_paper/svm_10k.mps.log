@@ -1,0 +1,98 @@
+CASE svm_10k.mps settings=JSON.Object{String, Any}("max_iter" => 2147483647, "time_limit" => 3600.0, "stoptol" => 1.0e-8, "useGPU" => true, "sigma_fixed" => false, "restart" => -1, "mode" => "linearize", "sigma_method" => 0, "spmv_mode" => "auto", "sigma" => -1.0, "alpha" => 2.0, "lambda_factor" => 1.05, "do_warm_up" => false)
+Reading file: /home/20031492r/Data/QP_data/RANDOM/new/svm_10k.mps
+Reading MPS file: /home/20031492r/Data/QP_data/RANDOM/new/svm_10k.mps
+[ Info: Using 'QP_Direct' as NAME (l. 2)
+[ Info: Using 'OBJ' as objective (l. 4)
+[ Info: Using 'RHS1' as RHS (l. 3400005)
+[ Info: Using 'BND1' as BOUNDS (l. 4400006)
+nnz A = 1399998
+nnz Q = 10000
+Reading file time = 5.848252058029175 seconds
+Formulating QP...
+Deleted 0 rows of A that are all zeros.
+has 0 >= constraints
+has 1000000 <= constraints
+has 0 boxed constraints
+dimension of Q is (1010000, 1010000)
+dimension of A is (1000000, 1010000)
+dimension of b is (1000000,)
+dimension of c is (1010000,)
+dimension of l is (1010000,)
+dimension of u is (1010000,)
+number of equalities = 0
+QP formulation with C
+QP formulation time = 0.4402048587799072 seconds
+norm_b_org: 1.0
+norm_c_org: 0.5
+scaling time = 2.91711688041687 seconds
+Q is diagonal
+copy to GPU starts...
+copy to GPU ends, time = 0.021416902542114258 seconds
+Power iteration converged in 642 iterations. The largest eigenvalue is 0.9999735499450064
+lambda_max A = 1.0499722274422567
+lambda_max Q = 0.9153371157705456
+norm_b = 998.8804055895765
+norm_c = 500.0
+initial sigma = 1.9977608111791532
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+max_nnz_A_row = 7
+max_nnz_A_col = 65
+max_nnz_Q_col = 1
+use customized
+use CUSPARSE for large problem
+   0    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.27 0 0 0 0 0
+  10    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.27 0 0 0 0 0
+  20    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.27 0 0 0 0 0
+  30    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.27 0 0 0 0 0
+  40    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.27 0 0 0 0 0
+  50    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.27 0 0 0 0 0
+  60    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.28 0 0 0 0 0
+  70    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.28 0 0 0 0 0
+  80    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.28 0 0 0 0 0
+  90    5.00e-01    3.33e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    2.00e+00      0.29 0 0 0 0 0
+first restart, current gap = 11.819726209364307
+
+restart at current iter 100
+ 100    1.02e-02    6.48e-03    1.18e+01    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.32 1 0 0 0 0
+ 110    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.32 1 0 0 0 0
+ 120    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.32 1 0 0 0 0
+ 130    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.32 1 0 0 0 0
+ 140    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.32 1 0 0 0 0
+ 150    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.33 1 0 0 0 0
+ 160    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.33 1 0 0 0 0
+ 170    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.33 1 0 0 0 0
+ 180    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.33 1 0 0 0 0
+ 190    1.02e-02    6.48e-03    2.58e+00    1.18e+01    4.924150e+05    5.077018e+05    3.01e-02    1.96e+00      0.34 1 0 0 0 0
+will restart by sufficient decrease, last restart gap = 2.5765536115127965 current gap = 0.007904150008564138
+will restart by long time
+restart at current iter 200
+ 200    8.82e-06    7.61e-06    7.90e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.37 2 1 0 1 0
+KKT < 1e-4 at iter = 200
+ 210    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.37 2 1 0 1 0
+ 220    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.37 2 1 0 1 0
+ 230    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.37 2 1 0 1 0
+ 240    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.37 2 1 0 1 0
+ 250    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.38 2 1 0 1 0
+ 260    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.38 2 1 0 1 0
+ 270    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.38 2 1 0 1 0
+ 280    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.38 2 1 0 1 0
+ 290    8.82e-06    7.61e-06    1.83e-03    7.90e-03    4.999979e+05    4.999976e+05    5.24e-07    1.91e+00      0.39 2 1 0 1 0
+will restart by sufficient decrease, last restart gap = 0.0018323810068787802 current gap = 1.4460500429542135e-5
+will restart by long time
+restart at current iter 300
+ 300    1.14e-08    3.53e-08    1.45e-05    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.42 3 2 0 2 0
+KKT < 1e-6 at iter = 300
+ 310    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.42 3 2 0 2 0
+ 320    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.42 3 2 0 2 0
+ 330    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.42 3 2 0 2 0
+ 340    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.42 3 2 0 2 0
+ 350    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.43 3 2 0 2 0
+ 360    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.43 3 2 0 2 0
+ 370    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.43 3 2 0 2 0
+ 380    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.43 3 2 0 2 0
+ 390    1.14e-08    3.53e-08    3.39e-06    1.45e-05    4.999975e+05    4.999975e+05    1.08e-08    1.96e+00      0.44 3 2 0 2 0
+will restart by sufficient decrease, last restart gap = 3.3904054477279915e-6 current gap = 2.9324651323761543e-8
+will restart by long time
+restart at current iter 400
+ 400    1.34e-10    7.74e-11    2.93e-08    2.93e-08    4.999975e+05    4.999975e+05    5.87e-12    1.88e+00      0.47 4 3 0 3 0

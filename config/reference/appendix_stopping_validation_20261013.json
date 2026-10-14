@@ -1,0 +1,268 @@
+{
+  "checked_on": "2026-10-14",
+  "scope": "Diagnostic only; not selected as default experiment results",
+  "preconditioning": "Ruiz, bc, l2 and Pock-Chambolle all disabled",
+  "sigma": 1,
+  "sigma_fixed": true,
+  "residual_check_interval": 20,
+  "restart_check_interval": 100,
+  "default_iterations": {
+    "dual": 900,
+    "primal1": 1700
+  },
+  "interpretation": "Stopping every 20 iterations with the baseline restart schedule gives dual 840 and primal1 1620. Original historical driver/settings have not been recovered.",
+  "runs": {
+    "dual": {
+      "environment": {
+        "CUDA_jl": "5.11.0",
+        "blas_threads": 1,
+        "cuda_driver_api": "13.2.0",
+        "cuda_runtime": "13.2.0",
+        "gpu_name": "NVIDIA A100-SXM4-80GB",
+        "julia": "1.10.4",
+        "julia_threads": 1,
+        "load_path": [
+          "@",
+          "@stdlib"
+        ],
+        "manifest_sha256": "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3"
+      },
+      "execution": "completed",
+      "finished": "2026-10-13T10:09:31.324",
+      "group": "appendix_concrete",
+      "input_path": "/home/20031492r/Results/HPRQP_submission_20261011/appendix_stopping_diagnostic_20261013/config/appendix_example.json",
+      "name": "dual",
+      "parameters": {
+        "source": "HPR-QP-IJOC-R1.tex, example-concrete",
+        "Q": [
+          [
+            20.0,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ]
+        ],
+        "A": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "c": [
+          -1.0,
+          -1.0
+        ],
+        "b": [
+          5.0,
+          10.0
+        ],
+        "constraint": "A*x <= b; x >= 0",
+        "lambda_A": 12.2,
+        "lambda_Q": 21.0,
+        "sigma": 1.0,
+        "stoptol": 1e-08,
+        "restart": -1,
+        "check_iter": 100,
+        "check_iter_provenance": "Packaged solver default; original appendix driver has not been located.",
+        "paper_approximate_iterations": {
+          "dual": 840,
+          "primal1": 1700
+        },
+        "residual_check_interval": 20,
+        "restart_check_interval": 100,
+        "diagnostic": "Separate stopping checks from restart checks. Hypothesis test, not recovered historical settings."
+      },
+      "provenance": "Reconstructed driver; historical iteration counts not independently verified",
+      "result": {
+        "iter": 840,
+        "iter_4": 420,
+        "iter_6": 640,
+        "output_type": "OPTIMAL",
+        "power_time": 7.152557373046875e-06,
+        "primal_obj": -2.506249999991292,
+        "residuals": 8.753260491745547e-09,
+        "time": 11.233018159866333,
+        "time_4": 11.199018001556396,
+        "time_6": 11.217550039291382
+      },
+      "started": "2026-10-13T10:08:57.867"
+    },
+    "primal1": {
+      "environment": {
+        "CUDA_jl": "5.11.0",
+        "blas_threads": 1,
+        "cuda_driver_api": "13.2.0",
+        "cuda_runtime": "13.2.0",
+        "gpu_name": "NVIDIA A100-SXM4-80GB",
+        "julia": "1.10.4",
+        "julia_threads": 1,
+        "load_path": [
+          "@",
+          "@stdlib"
+        ],
+        "manifest_sha256": "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3"
+      },
+      "execution": "completed",
+      "finished": "2026-10-13T10:09:39.800",
+      "group": "appendix_concrete",
+      "input_path": "/home/20031492r/Results/HPRQP_submission_20261011/appendix_stopping_diagnostic_20261013/config/appendix_example.json",
+      "name": "primal1",
+      "parameters": {
+        "source": "HPR-QP-IJOC-R1.tex, example-concrete",
+        "Q": [
+          [
+            20.0,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ]
+        ],
+        "A": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "c": [
+          -1.0,
+          -1.0
+        ],
+        "b": [
+          5.0,
+          10.0
+        ],
+        "constraint": "A*x <= b; x >= 0",
+        "lambda_A": 12.2,
+        "lambda_Q": 21.0,
+        "sigma": 1.0,
+        "stoptol": 1e-08,
+        "restart": -1,
+        "check_iter": 100,
+        "check_iter_provenance": "Packaged solver default; original appendix driver has not been located.",
+        "paper_approximate_iterations": {
+          "dual": 840,
+          "primal1": 1700
+        },
+        "residual_check_interval": 20,
+        "restart_check_interval": 100,
+        "diagnostic": "Separate stopping checks from restart checks. Hypothesis test, not recovered historical settings."
+      },
+      "provenance": "Reconstructed driver; historical iteration counts not independently verified",
+      "result": {
+        "iter": 1620,
+        "iter_3": 1320,
+        "iter_6": 1520,
+        "output_type": "OPTIMAL",
+        "power_time": 2.002716064453125e-05,
+        "primal_obj": -2.506249999999165,
+        "residuals": 2.017770636652248e-09,
+        "time": 2.8942291736602783,
+        "time_3": 2.875108003616333,
+        "time_6": 2.887874126434326
+      },
+      "started": "2026-10-13T10:09:32.477"
+    }
+  },
+  "restart_comparison": [
+    {
+      "method": "dual",
+      "baseline_restarts": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "diagnostic_restarts": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "same_restart_history": true,
+      "common_checkpoints": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "printed_metrics_identical_at_common_checkpoints": true
+    },
+    {
+      "method": "primal1",
+      "baseline_restarts": [
+        100,
+        200,
+        400,
+        600,
+        800,
+        1000,
+        1300,
+        1400,
+        1500,
+        1600
+      ],
+      "diagnostic_restarts": [
+        100,
+        200,
+        400,
+        600,
+        800,
+        1000,
+        1300,
+        1400,
+        1500,
+        1600
+      ],
+      "same_restart_history": true,
+      "common_checkpoints": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900,
+        1000,
+        1100,
+        1200,
+        1300,
+        1400,
+        1500,
+        1600
+      ],
+      "printed_metrics_identical_at_common_checkpoints": true
+    }
+  ],
+  "diagnostic_patches": {
+    "main": "--- src/variants/main/algorithm.jl\n+++ src/variants/main/algorithm.jl\n@@ -697,7 +697,7 @@\n     end\n \n     for iter = 0:params.max_iter\n-        compute_residuals_gpu(ws, qp, scaling_info, residuals, params, true, check_iter, iter)\n+        compute_residuals_gpu(ws, qp, scaling_info, residuals, params, true, 20, iter)\n \n         ### check break ###\n         status = check_break(residuals, iter, t_start_alg, params)\n",
+    "primal1": "--- src/variants/primal1/solver.jl\n+++ src/variants/primal1/solver.jl\n@@ -2390,7 +2390,7 @@\n         # end\n \n         ### compute residuals ###\n-        if rem(iter, check_iter) == 0\n+        if rem(iter, 20) == 0\n             if params.useGPU\n                 compute_residuals_gpu(ws, qp, scaling_info, residuals, params, false, params.check_iter, iter)\n             else\n"
+  }
+}

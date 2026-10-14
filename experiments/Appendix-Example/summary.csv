@@ -1,0 +1,3 @@
+solver,subset,tolerance,cases,fresh_cases,archived_cases,source,solved,archived_solved,time_SGM10,archived_time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,historical_attempt_errors,curves_reproduced,note
+HPR-QP,all,1e-08,1,1,0,fresh,1,1,,,,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-p1,all,1e-08,1,1,0,fresh,1,1,,,,True,0,0,,Fresh measurements; shared-hardware times may vary

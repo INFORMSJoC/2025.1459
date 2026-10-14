@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+SCS,QAPLIB__esc64a.mat,esc64a.mat,QAPLIB,all,1e-08,OPTIMAL,True,75.0,0.054128657,0.33617492029563334,3.0692818024144205e-12,fresh,verification_run,experiments/QAPLIB/SCS/raw/verification/dataset_samples/QAPLIB__esc64a.mps__1.0e-8.json,native solver,native log objective,0.617,,

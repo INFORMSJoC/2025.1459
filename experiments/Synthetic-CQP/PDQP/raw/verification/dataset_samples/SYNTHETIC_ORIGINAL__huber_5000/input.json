@@ -1,0 +1,13 @@
+{
+  "id": "SYNTHETIC_ORIGINAL__huber_5000",
+  "solver": "PDQP",
+  "family": "SYNTHETIC_ORIGINAL",
+  "name": "huber_5000.mps",
+  "relative_path": "RANDOM/new/huber_5000.mps",
+  "tolerances": [
+    1e-08
+  ],
+  "settings": {},
+  "path": "/home/20031492r/Data/QP_data/RANDOM/new/huber_5000.mps",
+  "sha256": "1f5f93542d830b9f479c262cf9081e446d1226177352d5ee70adaf90817e6410"
+}

@@ -1,0 +1,11 @@
+--- a/src/kktsolvers/gpu/directldl_cudss.jl
++++ b/src/kktsolvers/gpu/directldl_cudss.jl
+@@ -34,7 +34,7 @@
+ function refactor!(ldlsolver::CUDSSDirectLDLSolver{T}) where{T}
+ 
+     # Update the KKT matrix in the cudss solver
+-    cudss_set(ldlsolver.cudssSolver.matrix,ldlsolver.KKT)
++    CUDSS.cudss_update(ldlsolver.cudssSolver.matrix,ldlsolver.KKT)
+ 
+     # Refactorization
+     cudss("factorization", ldlsolver.cudssSolver, ldlsolver.x, ldlsolver.b)

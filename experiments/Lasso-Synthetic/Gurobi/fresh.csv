@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+Gurobi,LASSO_synthetic__lasso_10000_500000.mps,lasso_10000_500000.mps,LASSO_synthetic,all,1e-08,OPTIMAL,True,13.0,79.32603096961975,34113.24113615579,0.0,fresh,verification_run,experiments/Lasso-Synthetic/Gurobi/raw/verification/dataset_samples/LASSO_SYNTHETIC__lasso_10000_500000.mps__1.0e-8.json,native solver,full objective,90.441,,

@@ -1,0 +1,73 @@
+ENVIRONMENT Dict{String, Any}("julia_threads" => 1, "julia" => "1.10.4", "load_path" => ["@", "@stdlib"], "CUDA_jl" => "5.11.0", "cuda_runtime" => "13.2.0", "cuda_driver_api" => "13.2.0", "gpu_name" => "NVIDIA A100-SXM4-80GB", "manifest_sha256" => "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3", "blas_threads" => 1)
+WARMUP svm_200000.mps
+Reading file: /home/20031492r/Data/QP_data/RANDOM/denser/svm_200000.mps
+Reading MPS file: /home/20031492r/Data/QP_data/RANDOM/denser/svm_200000.mps
+nnz A = 99999182
+nnz Q = 200000
+Reading file time = 290.3455421924591 seconds
+Formulating QP...
+Deleted 0 rows of A that are all zeros.
+has 0 >= constraints
+has 20000000 <= constraints
+has 0 boxed constraints
+dimension of Q is (20200000, 20200000)
+dimension of A is (20000000, 20200000)
+dimension of b is (20000000,)
+dimension of c is (20200000,)
+dimension of l is (20200000,)
+dimension of u is (20200000,)
+number of equalities = 0
+QP formulation with C
+QP formulation time = 32.14607000350952 seconds
+norm_b_org: 1.0
+norm_c_org: 0.5
+scaling time = 242.03557682037354 seconds
+Q is diagonal
+copy to GPU starts...
+copy to GPU ends, time = 9.255091905593872 seconds
+Power iteration converged in 2245 iterations. The largest eigenvalue is 0.9999053652458858
+lambda_max A = 1.0499006335081802
+lambda_max Q = 0.7318359203952638
+norm_b = 4460.917335863849
+norm_c = 2236.06797749979
+initial sigma = 1.9949828809997654
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+max_nnz_A_row = 19
+max_nnz_A_col = 493
+max_nnz_Q_col = 1
+use customized
+use CUSPARSE for large problem
+   0    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     33.43 0 0 0 0 0
+  10    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.13 0 0 0 0 0
+  20    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.13 0 0 0 0 0
+  30    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.13 0 0 0 0 0
+  40    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.14 0 0 0 0 0
+  50    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.16 0 0 0 0 0
+  60    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.27 0 0 0 0 0
+  70    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.38 0 0 0 0 0
+  80    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.49 0 0 0 0 0
+  90    5.00e-01    3.33e-01    Inf    Inf    1.000000e+00    1.000000e+00    0.00e+00    1.99e+00     34.60 0 0 0 0 0
+first restart, current gap = 44.932619046421046
+
+restart at current iter 100
+ 100    9.66e-03    6.24e-03    4.49e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.62 1 0 0 0 0
+ 110    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.65 1 0 0 0 0
+ 120    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.65 1 0 0 0 0
+ 130    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.66 1 0 0 0 0
+ 140    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.66 1 0 0 0 0
+ 150    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.67 1 0 0 0 0
+ 160    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.78 1 0 0 0 0
+ 170    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     35.89 1 0 0 0 0
+ 180    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     36.00 1 0 0 0 0
+ 190    9.66e-03    6.24e-03    1.03e+01    4.49e+01    9.879929e+06    1.010871e+07    2.26e-02    1.96e+00     36.11 1 0 0 0 0
+will restart by sufficient decrease, last restart gap = 10.311882061850769 current gap = 0.06766444450826026
+will restart by long time
+restart at current iter 200
+ 200    7.81e-06    6.76e-06    6.77e-02    6.77e-02    9.999999e+06    9.999990e+06    9.28e-07    2.11e+00     36.82 2 1 0 1 0
+KKT < 1e-4 at iter = 200
+FINISHED revision_denser svm_200000.mps completed
+[ Info: Using 'QP_Direct' as NAME (l. 1)
+[ Info: Using 'OBJ' as objective (l. 3)
+[ Info: Using 'RHS1' as RHS (l. 139999188)
+[ Info: Using 'BND1' as BOUNDS (l. 159999190)

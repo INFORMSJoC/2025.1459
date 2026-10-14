@@ -1,0 +1,64 @@
+{
+  "environment": {
+    "CUDA_jl": "5.11.0",
+    "blas_threads": 1,
+    "cuda_driver_api": "13.2.0",
+    "cuda_runtime": "13.2.0",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "julia": "1.10.4",
+    "julia_threads": 1,
+    "load_path": [
+      "@",
+      "@stdlib"
+    ],
+    "manifest_sha256": "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3"
+  },
+  "execution": "completed",
+  "finished": "2026-10-12T01:49:13.902",
+  "gpu": "1",
+  "group": "LASSO_synthetic_R1_explicit",
+  "input_path": "/home/20031492r/Data/QP_data/LASSO/02/lasso_1000000_10000000.mps",
+  "name": "lasso_1000000_10000000.mps",
+  "parameters": {
+    "alpha": 2.0,
+    "do_warm_up": false,
+    "lambda_factor": 1.05,
+    "max_iter": 2147483647,
+    "mode": "linearize",
+    "restart": -1,
+    "sigma": -1.0,
+    "sigma_fixed": false,
+    "sigma_method": 0,
+    "spmv_mode": "auto",
+    "stoptol": 1.0e-8,
+    "time_limit": 3600.0,
+    "useGPU": true
+  },
+  "phase": "portable",
+  "reference": {
+    "name": "lasso_1000000_10000000.mps",
+    "iter": "2900",
+    "alg_time": "203.76429796218872",
+    "res": "9.509773148844288e-9",
+    "primal_obj": "6.117814380952074e7",
+    "status": "OPTIMAL",
+    "iter_4": "1400",
+    "time_4": "100.26175808906555",
+    "iter_6": "2100",
+    "time_6": "148.56878209114075",
+    "power_time": "2.7297680377960205"
+  },
+  "result": {
+    "iter": 2900,
+    "iter_4": 1400,
+    "iter_6": 2100,
+    "output_type": "OPTIMAL",
+    "power_time": 2.643454074859619,
+    "primal_obj": 6.117814380952074e7,
+    "residuals": 9.509773148844288e-9,
+    "time": 203.06827998161316,
+    "time_4": 99.43263912200928,
+    "time_6": 147.79333400726318
+  },
+  "started": "2026-10-12T00:35:07.730"
+}

@@ -1,0 +1,22 @@
+Author-generated HPR-QP numerical datasets
+
+The rights controlled by the HPR-QP authors in the following numerical
+input datasets are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0):
+- RANDOM/new/ and RANDOM/denser/ (60 synthetic CQP inputs)
+- LASSO/synthetic/ (12 synthetic Lasso inputs)
+- QAP/mat_random/, including large/ (6 random QAP inputs)
+- TR/mat/, including large/ (17 trust-region inputs)
+
+Attribution: Kaihuang Chen, Defeng Sun, Yancheng Yuan, Guojun Zhang and
+Xinyuan Zhao; HPR-QP: A dual Halpern Peaceman–Rachford method for solving
+large scale convex composite quadratic programming; repository 2025.1459,
+https://github.com/INFORMSJoC/2025.1459.
+
+License: https://creativecommons.org/licenses/by/4.0/
+Retain source credit and indicate modifications when sharing adapted data.
+
+This declaration covers only rights controlled by the HPR-QP authors.
+It does not relicense MM, QAPLIB, Lasso-UCI or other third-party data.
+OSQP-derived generator code retains Apache-2.0 and its copyright notices;
+scientific attribution to OSQP remains in data/README.md.

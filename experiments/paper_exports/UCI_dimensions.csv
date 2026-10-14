@@ -1,0 +1,12 @@
+instance,p,q,nnz_A,source
+abalone7,4177,6435,22873422,"manuscript tab:uci-info; transcription, not remeasured"
+bodyfat7,252,116280,29302560,"manuscript tab:uci-info; transcription, not remeasured"
+E2006.test,3308,150358,4559533,"manuscript tab:uci-info; transcription, not remeasured"
+E2006.train,16087,150360,19971015,"manuscript tab:uci-info; transcription, not remeasured"
+housing7,506,77520,39225120,"manuscript tab:uci-info; transcription, not remeasured"
+log1p.E2006.test,3308,4272226,22474250,"manuscript tab:uci-info; transcription, not remeasured"
+log1p.E2006.train,16087,4272227,96731839,"manuscript tab:uci-info; transcription, not remeasured"
+mpg7,392,3432,1174932,"manuscript tab:uci-info; transcription, not remeasured"
+pyrim5,74,201376,8054057,"manuscript tab:uci-info; transcription, not remeasured"
+space_ga9,3107,5005,15550535,"manuscript tab:uci-info; transcription, not remeasured"
+triazines4,186,635376,77638169,"manuscript tab:uci-info; transcription, not remeasured"

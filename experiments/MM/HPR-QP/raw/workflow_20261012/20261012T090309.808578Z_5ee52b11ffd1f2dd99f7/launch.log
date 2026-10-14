@@ -1,0 +1,70 @@
+ENVIRONMENT Dict{String, Any}("julia_threads" => 1, "julia" => "1.10.4", "load_path" => ["@", "@stdlib"], "CUDA_jl" => "5.11.0", "cuda_runtime" => "13.2.0", "cuda_driver_api" => "13.2.0", "gpu_name" => "NVIDIA A100-SXM4-80GB", "manifest_sha256" => "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3", "blas_threads" => 1)
+WARMUP CVXQP3_M.mps
+Reading file: /home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/data/inputs/MM_mps/CVXQP3_M.mps
+Reading MPS file: /home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/data/inputs/MM_mps/CVXQP3_M.mps
+nnz A = 2247
+nnz Q = 6968
+Reading file time = 0.9029080867767334 seconds
+Formulating QP...
+Deleted 0 rows of A that are all zeros.
+has 0 >= constraints
+has 0 <= constraints
+has 0 boxed constraints
+dimension of Q is (1000, 1000)
+dimension of A is (750, 1000)
+dimension of b is (750,)
+dimension of c is (1000,)
+dimension of l is (1000,)
+dimension of u is (1000,)
+number of equalities = 750
+QP formulation with C
+QP formulation time = 0.2260589599609375 seconds
+norm_b_org: 6.0
+norm_c_org: 0.0
+scaling time = 0.44699621200561523 seconds
+copy to GPU starts...
+copy to GPU ends, time = 7.02836799621582 seconds
+Power iteration converged in 96 iterations. The largest eigenvalue is 0.6064493692866845
+Power iteration converged in 446 iterations. The largest eigenvalue is 0.9139670773500865
+lambda_max A = 0.6367718377510188
+lambda_max Q = 0.9596654312175908
+norm_b = 1464.5880401737206
+norm_c = 0.0
+initial sigma = 1.0
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+max_nnz_A_row = 3
+max_nnz_A_col = 8
+max_nnz_Q_col = 9
+use customized
+   0    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.15 0 0 0 0 0
+  10    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.82 0 0 0 0 0
+  20    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.82 0 0 0 0 0
+  30    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+  40    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+  50    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+  60    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+  70    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+  80    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+  90    2.05e+01    0.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00     11.83 0 0 0 0 0
+first restart, current gap = 18.402559135360658
+
+restart at current iter 100
+ 100    4.93e-02    1.70e-02    1.84e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.12 1 0 0 0 0
+ 110    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.14 1 0 0 0 0
+ 120    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.14 1 0 0 0 0
+ 130    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.14 1 0 0 0 0
+ 140    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.14 1 0 0 0 0
+ 150    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.14 1 0 0 0 0
+ 160    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.14 1 0 0 0 0
+ 170    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.15 1 0 0 0 0
+ 180    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.15 1 0 0 0 0
+ 190    4.93e-02    1.70e-02    1.46e+01    1.84e+01    1.052569e+06    1.119280e+06    5.96e-02    9.86e-01     12.15 1 0 0 0 0
+will restart by long time
+restart at current iter 200
+ 200    3.84e-02    1.04e-03    6.98e+00    6.98e+00    1.082147e+06    1.097471e+06    1.40e-02    2.46e-01     12.15 2 0 0 1 0
+FINISHED MM_test_version CVXQP3_M.mps completed
+[ Info: Using 'CVXQP3' as NAME (l. 2)
+[ Info: Using 'OBJ' as objective (l. 4)
+[ Info: Using 'RHS1' as RHS (l. 3154)
+[ Info: Using 'BND1' as BOUNDS (l. 3905)

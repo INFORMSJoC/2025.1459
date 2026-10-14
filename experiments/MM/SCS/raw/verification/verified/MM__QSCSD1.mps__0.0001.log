@@ -1,0 +1,30 @@
+------------------------------------------------------------------
+	       SCS v3.2.7 - Splitting Conic Solver
+	(c) Brendan O'Donoghue, Stanford University, 2012
+------------------------------------------------------------------
+problem:  variables n: 760, constraints m: 837
+cones: 	  z: primal zero / dual free vars: 77
+	  l: linear vars: 760
+settings: eps_abs: 1.0e-04, eps_rel: 1.0e-04, eps_infeas: 1.0e-07
+	  alpha: 1.50, scale: 1.00e-01, adaptive_scale: 1
+	  max_iters: 2147483647, normalize: 1, rho_x: 1.00e-06
+	  acceleration_lookback: 10, acceleration_interval: 10
+	  time_limit_secs: 3.60e+03
+	  compiled with openmp parallelization enabled
+lin-sys:  sparse-indirect GPU
+	  nnz(A): 3148, nnz(P): 745
+------------------------------------------------------------------
+ iter | pri res | dua res |   gap   |   obj   |  scale  | time (s)
+------------------------------------------------------------------
+     0| 1.00e+02  5.00e+00  8.86e+04 -4.43e+04  1.00e-01  8.17e-02 
+   250| 1.90e-02  8.42e-02  6.17e-02  8.17e+00  1.31e+00  2.66e+00 
+   500| 3.66e-03  2.90e-03  1.55e-02  8.56e+00  1.31e+00  5.08e+00 
+   750| 1.47e-03  1.95e-03  5.41e-03  8.65e+00  1.31e+00  7.38e+00 
+  1000| 4.16e-05  6.96e-05  3.19e-04  8.67e+00  1.31e+00  9.43e+00 
+------------------------------------------------------------------
+status:  solved
+timings: total: 9.43e+00s = setup: 2.50e-03s + solve: 9.43e+00s
+	 lin-sys: 9.22e+00s, cones: 1.92e-03s, accel: 1.64e-03s
+------------------------------------------------------------------
+objective = 8.666517
+------------------------------------------------------------------

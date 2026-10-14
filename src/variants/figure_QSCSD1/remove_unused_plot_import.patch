@@ -1,0 +1,12 @@
+--- verified_server/HPRQP_zxwyw.jl
++++ release/HPRQP_zxwyw.jl
+@@ -15,8 +15,7 @@
+ using DataFrames
+ using Random
+ using Logging
+-using Plots
+-
++# Plotting is handled by scripts/postprocess.py in the release.
+ include("structs.jl")
+ include("utils.jl")
+ include("kernels.jl")

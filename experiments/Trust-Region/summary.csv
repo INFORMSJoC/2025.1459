@@ -1,0 +1,13 @@
+solver,subset,tolerance,cases,fresh_cases,archived_cases,source,solved,archived_solved,time_SGM10,archived_time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,historical_attempt_errors,curves_reproduced,note
+HPR-QP,all,1e-08,17,17,0,fresh,17,17,8.736892365390482,8.878991574292321,427.18191284002796,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP,all,1e-06,17,17,0,fresh,17,17,8.219364635231848,8.364697071489584,337.82360742003806,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP,all,0.0001,17,17,0,fresh,17,17,7.68234044499669,7.8337310513302505,199.99999999999994,True,0,0,,Fresh measurements; shared-hardware times may vary
+SCS,all,1e-08,17,0,17,archived,12,12,214.17998140125087,214.17998140125087,,False,0,0,,Archived fallback
+SCS,all,1e-06,17,0,17,archived,12,12,211.93529887933457,211.93529887933457,,False,0,0,,Archived fallback
+SCS,all,0.0001,17,0,17,archived,12,12,208.4616302881379,208.4616302881379,,False,0,0,,Archived fallback
+CuClarabel,all,1e-08,17,0,17,archived,6,6,852.1933601461342,852.1933601461342,,False,0,0,,Archived fallback
+CuClarabel,all,1e-06,17,0,17,archived,6,6,820.9983674865193,820.9983674865193,,False,0,0,,Archived fallback
+CuClarabel,all,0.0001,17,0,17,archived,6,6,792.7511606009524,792.7511606009524,,False,0,0,,Archived fallback
+Gurobi,all,1e-08,17,0,17,archived,2,2,2626.50091926871,2626.50091926871,,False,0,0,,Archived fallback
+Gurobi,all,1e-06,17,0,17,archived,2,2,2626.50091926871,2626.50091926871,,False,0,0,,Archived fallback
+Gurobi,all,0.0001,17,0,17,archived,2,2,2626.50091926871,2626.50091926871,,False,0,0,,Archived fallback

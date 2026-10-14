@@ -1,0 +1,35 @@
+{
+  "execution": "completed",
+  "finished": "2026-10-11T17:33:40.700",
+  "gpu": "0",
+  "group": "revision_TR_mat_large",
+  "input_path": "/home/20031492r/Data/QP_data/TR/mat/large/d10000000.mat",
+  "name": "d10000000.mat",
+  "phase": "preflight",
+  "reference": {
+    "name": "d10000000.mat",
+    "iter": "400",
+    "alg_time": "63.42151999473572",
+    "res": "4.941642940440612e-9",
+    "primal_obj": "-3154.7561102697045",
+    "status": "OPTIMAL",
+    "iter_4": "200",
+    "time_4": "52.61312389373779",
+    "iter_6": "300",
+    "time_6": "58.01612091064453",
+    "power_time": "31.830261945724487"
+  },
+  "result": {
+    "iter": 400,
+    "iter_4": 200,
+    "iter_6": 300,
+    "output_type": "OPTIMAL",
+    "power_time": 32.416062116622925,
+    "primal_obj": -3154.7561102697045,
+    "residuals": 4.941642940440612e-9,
+    "time": 55.375422954559326,
+    "time_4": 44.55107307434082,
+    "time_6": 49.964741945266724
+  },
+  "started": "2026-10-11T17:18:25.709"
+}

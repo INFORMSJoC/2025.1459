@@ -1,0 +1,11 @@
+--- before/algorithm.jl
++++ after/algorithm.jl
+@@ -1121,7 +1121,7 @@
+         powerlist = []
+     end
+ 
+-    FILE_NAME = "/home/20031492r/Data/QP_data/MM_mps/AUG2D.mps"
++    FILE_NAME = normpath(joinpath(@__DIR__, "..", "..", "..", "data", "inputs", "MM_mps", "AUG2D.mps"))
+     if params.do_warm_up
+         println("warm up starts: ---------------------------------------------------------------------------------------------------------- ")
+         t_start_all = time()

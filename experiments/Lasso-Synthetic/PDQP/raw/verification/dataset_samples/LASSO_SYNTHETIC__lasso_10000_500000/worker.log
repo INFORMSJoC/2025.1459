@@ -1,0 +1,10 @@
+Instance: lasso_10000_500000
+runtime                  | residuals                  |  solution information      | relative residuals      |
+#iter   #kkt     seconds | pr norm  du norm   gap     |  pr obj   pr norm  du norm | rel pr  rel du  rel gap |
+0       9.4e+01  1.8e-01 | 1.3e+01  4.3e+00   0.0e+00 |  0.0e+00  0.0e+00  0.0e+00 | 9.3e-01 8.1e-01 0.0e+00 |
+11136   1.1e+04  8.8e+00 | 6.2e-08  1.3e-08   1.8e-07 |  3.4e+04  6.5e+00  4.9e+00 | 4.3e-09 2.2e-09 5.1e-12 |
+Avg solution:
+  pr_infeas= 6.15918e-08 pr_obj=    34113.24113 dual_infeas= 1.31954e-08 dual_obj=    34113.24113
+  primal norms: L1=     31973.5259, L2=    311.3591833, Linf=    13.60709139
+  dual norms:   L1=    3138283.545, L2=    3386.210572, Linf=     35.0475427
+Terminated after 11137 iterations: OPTIMAL

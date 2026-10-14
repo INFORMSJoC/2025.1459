@@ -1,0 +1,10 @@
+Instance: CVXQP3_S
+runtime                  | residuals                  |  solution information      | relative residuals      |
+#iter   #kkt     seconds | pr norm  du norm   gap     |  pr obj   pr norm  du norm | rel pr  rel du  rel gap |
+0       5.2e+01  1.7e-01 | 6.0e+00  0.0e+00   0.0e+00 |  0.0e+00  0.0e+00  0.0e+00 | 8.6e-01 0.0e+00 0.0e+00 |
+7488    7.7e+03  1.0e+01 | 1.3e-09  0.0e+00   1.1e-04 |  1.2e+04  1.3e+00  8.6e+02 | 1.9e-10 0.0e+00 9.5e-09 |
+Avg solution:
+  pr_infeas= 1.33143e-09 pr_obj=     11943.4322 dual_infeas=           0 dual_obj=    11943.43209
+  primal norms: L1=    1664.742196, L2=    247.2476072, Linf=     68.6031233
+  dual norms:   L1=    2491.088867, L2=    389.7608288, Linf=    186.9071108
+Terminated after 7489 iterations: OPTIMAL

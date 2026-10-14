@@ -1,0 +1,10 @@
+Instance: equality_5000
+runtime                  | residuals                  |  solution information      | relative residuals      |
+#iter   #kkt     seconds | pr norm  du norm   gap     |  pr obj   pr norm  du norm | rel pr  rel du  rel gap |
+0       7.0e+01  1.8e-01 | 3.0e+01  3.8e+00   0.0e+00 |  1.0e+00  0.0e+00  0.0e+00 | 9.7e-01 7.9e-01 0.0e+00 |
+1536    1.7e+03  1.5e+00 | 2.5e-08  8.0e-07   1.1e-05 |  4.9e+04  4.0e+00  6.3e+01 | 8.0e-10 4.4e-09 2.4e-10 |
+Avg solution:
+  pr_infeas= 2.46012e-08 pr_obj=    48552.35202 dual_infeas= 8.03399e-07 dual_obj=    48552.35201
+  primal norms: L1=    196612.6439, L2=    3508.334513, Linf=    201.8376161
+  dual norms:   L1=     26321.6584, L2=    661.0217681, Linf=    53.17919644
+Terminated after 1537 iterations: OPTIMAL

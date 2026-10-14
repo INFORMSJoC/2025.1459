@@ -1,0 +1,49 @@
+{
+  "environment": {
+    "CUDA_jl": "5.11.0",
+    "blas_threads": 1,
+    "cuda_driver_api": "13.2.0",
+    "cuda_runtime": "13.2.0",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "julia": "1.10.4",
+    "julia_threads": 1,
+    "load_path": [
+      "@",
+      "@stdlib"
+    ],
+    "manifest_sha256": "03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690"
+  },
+  "execution": "completed",
+  "finished": "2026-10-11T20:35:46.673",
+  "gpu": "2",
+  "group": "MM_test_version",
+  "input_path": "/home/20031492r/Data/QP_data/MM_mps/QRECIPE.mps",
+  "name": "QRECIPE.mps",
+  "phase": "full",
+  "reference": {
+    "name": "QRECIPE.mps",
+    "iter": "1200",
+    "alg_time": "0.250688076019287",
+    "res": "1.82486558864046E-09",
+    "primal_obj": "-266.616000026937",
+    "status": "OPTIMAL",
+    "iter_4": "900",
+    "time_4": "0.236173868179321",
+    "iter_6": "1200",
+    "time_6": "0.250685930252075",
+    "power_time": "0.189738035202026"
+  },
+  "result": {
+    "iter": 1200,
+    "iter_4": 900,
+    "iter_6": 1200,
+    "output_type": "OPTIMAL",
+    "power_time": 0.20660400390625,
+    "primal_obj": -266.61600002693746,
+    "residuals": 1.824865588640458e-9,
+    "time": 0.270219087600708,
+    "time_4": 0.2548360824584961,
+    "time_6": 0.2702178955078125
+  },
+  "started": "2026-10-11T20:35:46.399"
+}

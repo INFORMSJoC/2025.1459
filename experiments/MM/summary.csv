@@ -1,0 +1,16 @@
+solver,subset,tolerance,cases,fresh_cases,archived_cases,source,solved,archived_solved,time_SGM10,archived_time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,historical_attempt_errors,curves_reproduced,note
+HPR-QP,all,1e-08,137,137,0,fresh,128,128,13.28109045307744,12.646553458769578,23731.220857135057,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP,all,1e-06,137,137,0,fresh,129,129,11.058403192926672,10.503446506698172,16834.87043574414,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP,all,0.0001,137,137,0,fresh,131,130,7.8627897171265495,7.4175159274900935,8687.629376036957,True,0,0,,Fresh measurements; shared-hardware times may vary
+PDQP,all,1e-08,137,2,135,mixed,124,124,42.79841745031596,42.4526876627575,,False,0,0,,Mixed sources: not a full fresh benchmark
+PDQP,all,1e-06,137,2,135,mixed,125,125,33.34878546404143,33.11868567425444,,False,0,0,,Mixed sources: not a full fresh benchmark
+PDQP,all,0.0001,137,2,135,mixed,133,133,11.4189639255289,11.33137481997483,,False,0,0,,Mixed sources: not a full fresh benchmark
+SCS,all,1e-08,137,2,135,mixed,93,93,165.10068622075087,165.01888012491088,,False,0,0,,Mixed sources: not a full fresh benchmark
+SCS,all,1e-06,137,2,135,mixed,103,103,126.05163693868477,126.01100798478177,,False,0,0,,Mixed sources: not a full fresh benchmark
+SCS,all,0.0001,137,2,135,mixed,123,123,38.11513045817503,38.14372513191541,,False,0,0,,Mixed sources: not a full fresh benchmark
+CuClarabel,all,1e-08,137,2,135,mixed,124,124,7.792503405505247,7.784197074757511,,False,0,0,,Mixed sources: not a full fresh benchmark
+CuClarabel,all,1e-06,137,2,135,mixed,130,130,3.713529229217153,3.709477167404449,,False,0,0,,Mixed sources: not a full fresh benchmark
+CuClarabel,all,0.0001,137,2,135,mixed,136,136,0.7335406539825744,0.7278980473530527,,False,0,0,,Mixed sources: not a full fresh benchmark
+Gurobi,all,1e-08,137,2,135,mixed,135,135,1.2112031400214711,1.2112967815267588,,False,0,0,,Mixed sources: not a full fresh benchmark
+Gurobi,all,1e-06,137,2,135,mixed,137,137,0.39540644465057007,0.39541973662121954,,False,0,0,,Mixed sources: not a full fresh benchmark
+Gurobi,all,0.0001,137,2,135,mixed,137,137,0.37809703415659257,0.3781134849621903,,False,0,0,,Mixed sources: not a full fresh benchmark

@@ -1,0 +1,73 @@
+ENVIRONMENT Dict{String, Any}("julia_threads" => 1, "julia" => "1.10.4", "load_path" => ["@", "@stdlib"], "CUDA_jl" => "5.11.0", "cuda_runtime" => "13.2.0", "cuda_driver_api" => "13.2.0", "gpu_name" => "NVIDIA A100-SXM4-80GB", "manifest_sha256" => "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3", "blas_threads" => 1)
+WARMUP mpg_scale_expanded7.mps
+Reading file: /home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/data/inputs/LASSO/uci/mpg_scale_expanded7.mps
+Reading MPS file: /home/20031492r/Results/HPRQP_submission_20261011/main_corrected_package/data/inputs/LASSO/uci/mpg_scale_expanded7.mps
+nnz A = 1174184
+nnz Q = 392
+Reading file time = 2.465744972229004 seconds
+Formulating QP...
+Deleted 7256 rows of A that are all zeros.
+has 3432 >= constraints
+has 3432 <= constraints
+has 0 boxed constraints
+dimension of Q is (7256, 7256)
+dimension of A is (7256, 7256)
+dimension of b is (7256,)
+dimension of c is (7256,)
+dimension of l is (7256,)
+dimension of u is (7256,)
+number of equalities = 392
+QP formulation without C
+QP formulation time = 0.3578519821166992 seconds
+norm_b_org: 46.6
+norm_c_org: 9.190800000000001
+scaling time = 1.052187204360962 seconds
+Q is diagonal
+copy to GPU starts...
+copy to GPU ends, time = 6.994247198104858 seconds
+Power iteration converged in 10 iterations. The largest eigenvalue is 0.4999999163347657
+Power iteration converged in 2 iterations. The largest eigenvalue is 0.49999999999999983
+lambda_max A = 0.524999912151504
+lambda_max Q = 0.5249999999999998
+norm_b = 46.06865762166144
+norm_c = 380.7254926613662
+initial sigma = 0.12100229301597333
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+max_nnz_A_row = 3433
+max_nnz_A_col = 394
+max_nnz_Q_col = 1
+use CUSPARSE
+   0    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     12.89 0 0 0 0 0
+  10    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  20    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  30    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  40    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  50    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  60    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  70    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.44 0 0 0 0 0
+  80    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.45 0 0 0 0 0
+  90    9.79e-01    9.02e-01    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.21e-01     13.45 0 0 0 0 0
+first restart, current gap = 4.353686033618664
+
+ primal_move = 44926.9868206418 dual_move = 465414.98356128257
+restart at current iter 100
+ 100    4.37e-02    9.93e-01    4.35e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.73 1 0 0 0 0
+ 110    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.75 1 0 0 0 0
+ 120    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.75 1 0 0 0 0
+ 130    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.75 1 0 0 0 0
+ 140    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.76 1 0 0 0 0
+ 150    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.76 1 0 0 0 0
+ 160    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.76 1 0 0 0 0
+ 170    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.77 1 0 0 0 0
+ 180    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.77 1 0 0 0 0
+ 190    4.37e-02    9.93e-01    4.66e+00    4.35e+00    2.016141e+03    4.545657e+03    5.56e-01    1.71e-01     13.77 1 0 0 0 0
+will restart by long time
+ primal_move = 4245.680254495756 dual_move = 11987.323745527303
+restart at current iter 200
+ 200    1.19e-02    9.76e-01    1.35e+00    1.35e+00    1.918588e+03    2.373820e+03    1.92e-01    4.27e-01     13.78 2 0 0 1 0
+FINISHED LASSO_UCI_R1_explicit mpg_scale_expanded7.mps completed
+[ Info: Using 'matlab' as NAME (l. 2)
+[ Info: Using 'OBJ' as objective (l. 4)
+[ Info: Using 'RHS1' as RHS (l. 1184879)
+[ Info: Using 'BND1' as BOUNDS (l. 1185272)

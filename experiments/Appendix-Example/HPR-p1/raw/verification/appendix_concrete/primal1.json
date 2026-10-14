@@ -1,0 +1,78 @@
+{
+  "environment": {
+    "CUDA_jl": "5.11.0",
+    "blas_threads": 1,
+    "cuda_driver_api": "13.2.0",
+    "cuda_runtime": "13.2.0",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "julia": "1.10.4",
+    "julia_threads": 1,
+    "load_path": [
+      "@",
+      "@stdlib"
+    ],
+    "manifest_sha256": "12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3"
+  },
+  "execution": "completed",
+  "finished": "2026-10-11T21:55:22.041",
+  "group": "appendix_concrete",
+  "input_path": "/home/20031492r/Results/HPRQP_submission_20261011/portable/examples/concrete/input.json",
+  "name": "primal1",
+  "parameters": {
+    "source": "HPR-QP-IJOC-R1.tex, example-concrete",
+    "Q": [
+      [
+        20.0,
+        0.1
+      ],
+      [
+        0.1,
+        0.2
+      ]
+    ],
+    "A": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        3.0,
+        1.0
+      ]
+    ],
+    "c": [
+      -1.0,
+      -1.0
+    ],
+    "b": [
+      5.0,
+      10.0
+    ],
+    "constraint": "A*x <= b; x >= 0",
+    "lambda_A": 12.2,
+    "lambda_Q": 21.0,
+    "sigma": 1.0,
+    "stoptol": 1.0e-8,
+    "restart": -1,
+    "check_iter": 100,
+    "check_iter_provenance": "Packaged solver default; original appendix driver has not been located.",
+    "paper_approximate_iterations": {
+      "dual": 840,
+      "primal1": 1700
+    }
+  },
+  "provenance": "Reconstructed driver; historical iteration counts not independently verified",
+  "result": {
+    "iter": 1700,
+    "iter_3": 1400,
+    "iter_6": 1600,
+    "output_type": "OPTIMAL",
+    "power_time": 2.002716064453125e-5,
+    "primal_obj": -2.5062499999998566,
+    "residuals": 7.156044344930914e-10,
+    "time": 2.7385292053222656,
+    "time_3": 2.7071502208709717,
+    "time_6": 2.7280421257019043
+  },
+  "started": "2026-10-11T21:55:15.031"
+}

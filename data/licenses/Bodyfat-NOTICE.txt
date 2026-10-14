@@ -1,0 +1,18 @@
+Bodyfat dataset — original distribution notice
+
+Applies to: LASSO/uci/bodyfat_scale_expanded7.mps, including the
+corresponding input in the external Lasso-UCI archive.
+
+Source: StatLib, https://lib.stat.cmu.edu/datasets/bodyfat
+Accessed: 2026-10-14.
+Data supplied by Dr. A. Garth Fisher. The source states that he gave
+"permission to freely distribute the data and use for non-commercial purposes."
+
+Retain this non-commercial condition; this is not an MIT or CC BY grant.
+The prepared HPR-QP input applies scaling/feature expansion and a Lasso-to-CQP
+formulation to data obtained through the LIBSVM collection.
+
+Source reference:
+K. W. Penrose, A. G. Nelson and A. G. Fisher (1985), Generalized body
+composition prediction equation for men using simple measurement techniques,
+Medicine and Science in Sports and Exercise, 17(2), p. 189 (abstract).

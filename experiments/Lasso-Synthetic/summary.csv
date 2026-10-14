@@ -1,0 +1,19 @@
+solver,subset,tolerance,cases,fresh_cases,archived_cases,source,solved,archived_solved,time_SGM10,archived_time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,historical_attempt_errors,curves_reproduced,note
+HPR-QP,all,1e-08,12,12,0,fresh,12,12,25.426054559714117,25.467273967154632,1490.510108757491,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP,all,1e-06,12,12,0,fresh,12,12,18.472909884704737,18.507238781324844,1021.5619543245969,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP,all,0.0001,12,12,0,fresh,12,12,11.156764103962228,11.18645080407764,554.1501812856228,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP-explicit,all,1e-08,12,12,0,fresh,12,12,46.74301930361151,46.82946103074547,2708.9836920731227,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP-explicit,all,1e-06,12,12,0,fresh,12,12,35.21174413241846,35.28634824440264,1960.9235206914138,True,0,0,,Fresh measurements; shared-hardware times may vary
+HPR-QP-explicit,all,0.0001,12,12,0,fresh,12,12,26.05745421068297,26.12396949689085,1322.2075376245832,True,0,0,,Fresh measurements; shared-hardware times may vary
+PDQP,all,1e-08,12,1,11,mixed,11,11,139.33108433246403,139.2480890389706,,False,0,0,,Mixed sources: not a full fresh benchmark
+PDQP,all,1e-06,12,1,11,mixed,11,11,113.28652445734481,113.23688457178629,,False,0,0,,Mixed sources: not a full fresh benchmark
+PDQP,all,0.0001,12,1,11,mixed,11,11,90.60967428760202,90.54356875455447,,False,0,0,,Mixed sources: not a full fresh benchmark
+SCS,all,1e-08,12,0,12,archived,0,0,3600.0000000000027,3600.0000000000027,,False,0,0,,Archived fallback
+SCS,all,1e-06,12,0,12,archived,0,0,3600.0000000000027,3600.0000000000027,,False,0,0,,Archived fallback
+SCS,all,0.0001,12,0,12,archived,0,0,3600.0000000000027,3600.0000000000027,,False,0,0,,Archived fallback
+CuClarabel,all,1e-08,12,1,11,mixed,2,2,1404.6478019107412,1405.7560511424135,,False,0,0,,Mixed sources: not a full fresh benchmark
+CuClarabel,all,1e-06,12,0,12,archived,2,2,1401.2671791950156,1401.2671791950156,,False,0,0,,Archived fallback
+CuClarabel,all,0.0001,12,0,12,archived,2,2,1394.9150401253253,1394.9150401253253,,False,0,0,,Archived fallback
+Gurobi,all,1e-08,12,1,11,mixed,2,2,1847.6682997393764,1701.0276187079714,,False,0,0,,Mixed sources: not a full fresh benchmark
+Gurobi,all,1e-06,12,0,12,archived,2,2,1691.9490860571887,1691.9490860571887,,False,0,0,,Archived fallback
+Gurobi,all,0.0001,12,0,12,archived,2,2,1684.3961861314654,1684.3961861314654,,False,0,0,,Archived fallback

@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><title>Maros–Mészáros QP collection</title><style>body{font:15px system-ui;margin:32px;color:#222}table{border-collapse:collapse}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:left}th{background:#eee}</style>
+<h1>MM: Maros–Mészáros QP collection</h1>
+<p>R2 Table 2; Online Supplement Appendix D.2 (performance profiles)</p>
+<p>Archived paper results are the baseline. Each available fresh row replaces its archived row, including unsuccessful solves. Unrun cases retain archived results. <strong>Mixed summaries are not full fresh benchmarks.</strong> Native failures use the paper time cap; guard stops and execution errors withhold the effective timing aggregate.</p>
+<p><a href="summary.csv">Summary CSV</a> · <a href="comparison.csv">Archived versus fresh</a> · <a href="results.csv">Selected per-case results and sources</a></p>
+<table><tr><th>solver</th><th>subset</th><th>tolerance</th><th>cases</th><th>fresh_cases</th><th>archived_cases</th><th>source</th><th>solved</th><th>time_SGM10</th><th>archived_time_SGM10</th><th>historical_attempt_errors</th><th>curves_reproduced</th><th>note</th></tr>
+<tr><td>HPR-QP</td><td>all</td><td>1e-08</td><td>137</td><td>137</td><td>0</td><td>fresh</td><td>128</td><td>13.2811</td><td>12.6466</td><td>0</td><td></td><td>Fresh measurements; shared-hardware times may vary</td></tr>
+<tr><td>HPR-QP</td><td>all</td><td>1e-06</td><td>137</td><td>137</td><td>0</td><td>fresh</td><td>129</td><td>11.0584</td><td>10.5034</td><td>0</td><td></td><td>Fresh measurements; shared-hardware times may vary</td></tr>
+<tr><td>HPR-QP</td><td>all</td><td>0.0001</td><td>137</td><td>137</td><td>0</td><td>fresh</td><td>131</td><td>7.86279</td><td>7.41752</td><td>0</td><td></td><td>Fresh measurements; shared-hardware times may vary</td></tr>
+<tr><td>PDQP</td><td>all</td><td>1e-08</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>124</td><td>42.7984</td><td>42.4527</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>PDQP</td><td>all</td><td>1e-06</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>125</td><td>33.3488</td><td>33.1187</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>PDQP</td><td>all</td><td>0.0001</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>133</td><td>11.419</td><td>11.3314</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>SCS</td><td>all</td><td>1e-08</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>93</td><td>165.101</td><td>165.019</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>SCS</td><td>all</td><td>1e-06</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>103</td><td>126.052</td><td>126.011</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>SCS</td><td>all</td><td>0.0001</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>123</td><td>38.1151</td><td>38.1437</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>CuClarabel</td><td>all</td><td>1e-08</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>124</td><td>7.7925</td><td>7.7842</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>CuClarabel</td><td>all</td><td>1e-06</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>130</td><td>3.71353</td><td>3.70948</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>CuClarabel</td><td>all</td><td>0.0001</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>136</td><td>0.733541</td><td>0.727898</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>Gurobi</td><td>all</td><td>1e-08</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>135</td><td>1.2112</td><td>1.2113</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>Gurobi</td><td>all</td><td>1e-06</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>137</td><td>0.395406</td><td>0.39542</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+<tr><td>Gurobi</td><td>all</td><td>0.0001</td><td>137</td><td>2</td><td>135</td><td>mixed</td><td>137</td><td>0.378097</td><td>0.378113</td><td>0</td><td></td><td>Mixed sources: not a full fresh benchmark</td></tr>
+</table><h2>Solver files</h2><ul>
+<li>HPR-QP: <a href="HPR-QP/archived.csv">archived.csv</a> · <a href="HPR-QP/fresh.csv">fresh.csv</a></li>
+<li>PDQP: <a href="PDQP/archived.csv">archived.csv</a> · <a href="PDQP/fresh.csv">fresh.csv</a></li>
+<li>SCS: <a href="SCS/archived.csv">archived.csv</a> · <a href="SCS/fresh.csv">fresh.csv</a></li>
+<li>CuClarabel: <a href="CuClarabel/archived.csv">archived.csv</a> · <a href="CuClarabel/fresh.csv">fresh.csv</a></li>
+<li>Gurobi: <a href="Gurobi/archived.csv">archived.csv</a> · <a href="Gurobi/fresh.csv">fresh.csv</a></li>
+</ul><p>Input provenance, settings, native residuals and logs are linked by raw_file. For curve experiments, curves_reproduced counts matching sample sequences; solved still counts attainment of the stopping tolerance. Different solver residual definitions are not a common KKT certificate. Iteration differences and historical manuscript discrepancies remain visible.</p>

@@ -1,0 +1,18 @@
+--- a/algorithm.jl
++++ b/algorithm.jl
+@@ -942,10 +942,11 @@
+     if params.do_warm_up
+         println("warm up starts: ---------------------------------------------------------------------------------------------------------- ")
+         t_start_all = time()
+-        problem_type = params.problem_type
+-        params.problem_type = "LASSO"
+-        results = run_file(normpath(joinpath(@__DIR__, "..", "..", "..", "data", "inputs", "LASSO", "synthetic", "lasso_10000_500000.mps")), params)
+-        params.problem_type = problem_type
++        # Warm up the selected dataset without requiring a large bundled Lasso file.
++        warmup_file = findfirst(f -> isfile(joinpath(data_path, f)) &&
++            lowercase(splitext(f)[2]) in (".mps", ".qps", ".mat"), files)
++        warmup_file === nothing && error("No supported input file found in " * data_path)
++        results = run_file(joinpath(data_path, files[warmup_file]), params)
+         all_time = time() - t_start_all
+         println("warm up time: ", all_time)
+         println("warm up ends ----------------------------------------------------------------------------------------------------------")

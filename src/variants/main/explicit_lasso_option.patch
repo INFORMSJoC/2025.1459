@@ -1,0 +1,23 @@
+--- main/algorithm.jl
++++ main/algorithm.jl (explicit Lasso option)
+@@ -915,7 +915,7 @@
+ 
+ end
+ 
+-function run_file(FILE_NAME, params, x_path="", y_path="")
++function run_file(FILE_NAME, params, x_path="", y_path=""; force_general_q=false)
+     # io = open(FILE_NAME)
+     # qp = Logging.with_logger(Logging.NullLogger()) do
+     #     readqps(io, mpsformat=:free)
+@@ -972,7 +972,10 @@
+         if standard_qp.Q_is_diag
+             println("Q is diagonal")
+         end
+-        # standard_qp.Q_is_diag = false
++        # R1 explicit Lasso uses the general-matrix path even for diagonal Q.
++        if force_general_q
++            standard_qp.Q_is_diag = false
++        end
+         # return standard_qp, scaling_info
+ 
+         t_start_gpu = time()
