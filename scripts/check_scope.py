@@ -14,7 +14,7 @@ for x in m:
  expected={g['id'] for g in gs if any(c['path']==x['path'] for c in g['cases'])}
  if set(x['groups'])!=expected:issues.append('Incorrect input membership '+x['path'])
 for f in (r/'data').rglob('*'):
- if f.is_file() and f.suffix in ['.mps','.mat'] and f.name!='warmup.mps' and str(f.relative_to(r/'data')) not in paths | {x['path'] for x in json.loads((r/'scripts/config/data/competitor_qap_manifest.json').read_text())}:issues.append('Extra bundled input '+str(f))
+ if f.is_file() and f.suffix in ['.mps','.mat'] and str(f.relative_to(r/'data')) not in ['Support/warmup.mps','Appendix-Example/instance.mps'] and str(f.relative_to(r/'data')) not in paths | {x['path'] for x in json.loads((r/'scripts/config/data/competitor_qap_manifest.json').read_text())}:issues.append('Extra bundled input '+str(f))
 for g in gs:
  if not (r/'src/variants'/g['variant']/g['entry']).is_file():issues.append('Missing source entry '+g['id'])
  if g['probe'] not in actual[g['id']]:issues.append('Probe outside paper scope '+g['id'])
@@ -22,10 +22,12 @@ index=json.loads((r/'scripts/config/data/archives/archive_index.json').read_text
 if index.get('complete') and {x['path'] for d in index['datasets'] for x in d['inputs']}!=paths:issues.append('Completed archive index does not cover every paper input')
 for d in index['datasets']:
  if any(x['path'] not in paths for x in d['inputs']):issues.append('Archive contains non-paper input '+d['dataset'])
-for path in ['data/Appendix-Example/instance.json','scripts/run_concrete_example.jl']:
+for path in ['data/Appendix-Example/instance.mps','scripts/run_concrete_example.jl']:
  if not (r/path).is_file():issues.append('Missing appendix example file '+path)
-for row in csv.DictReader((r/'results/raw_results/verification_snapshot.csv').open()):
- if not (r/row['raw_file']).is_file():issues.append('Missing native result '+row['raw_file'])
+for table in (r/'results/reproduced_results').glob('*/solver_*/summary.csv'):
+ for row in csv.DictReader(table.open()):
+  path=row.get('raw_file','').split('#')[0]
+  if path and not (r/path).is_file():issues.append('Missing native result '+path)
 cat=load_catalog()
 inputs=m+json.loads((r/'scripts/config/data/competitor_qap_manifest.json').read_text())
 inventory={x['path']:x for x in inputs}

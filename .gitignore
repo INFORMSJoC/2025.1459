@@ -2,7 +2,9 @@
 /.julia-depot/
 /.reviewer_locks/
 /downloads/
-/results/raw_results/*/*/runs/
+/results/reproduced_results/*/solver_*/raw/runs/
+/.reviewer_runtime/
+**/.summary.lock
 /results/setup_logs/
 /data/*/inputs/
 __pycache__/

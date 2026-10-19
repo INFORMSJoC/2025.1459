@@ -1,0 +1,5 @@
+result_set,solver,subset,tolerance,expected_cases,measured_cases,pending_cases,solved,time_SGM10,iteration_SGM10,status,execution_failures,note
+paper,HPR-QP,all,1e-08,1,1,0,1,not available,not available,available,0,
+paper,HPR-p1,all,1e-08,1,1,0,1,not available,not available,available,0,
+reproduced,HPR-QP,all,1e-08,1,1,0,1,not available,not available,available,0,
+reproduced,HPR-p1,all,1e-08,1,1,0,1,not available,not available,available,0,

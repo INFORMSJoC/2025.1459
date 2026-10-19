@@ -1,40 +1,33 @@
-# Reproduction coverage and result interpretation
+# Result coverage and interpretation
 
 The package covers the revised paper's ten named experiments. The [README experiment table](../README.md#replicating) maps each command to its manuscript table or figure.
 
-Completed HPR measurements cover **365/365 benchmark and curve checks**, including time-limit outcomes. The two-method appendix example is also included. Competing solvers were tested on selected cases across all 26 applicable solver/dataset combinations; they have not all been rerun on complete datasets. Completed coverage does not mean that every case converged or that every value is identical to its paper reference.
+The preserved HPR measurements cover 365 benchmark and curve checks, including time-limit outcomes. The two-method appendix example is also included. Competing solvers have selected rerun measurements across applicable dataset combinations; these are not complete reruns of every dataset. Completed coverage does not mean that every case converged or every value equals its paper reference.
 
 ## Reading the results
 
-Start with `results/paper_results/experiments/<name>/summary.html` or `summary.csv`. These report solved counts and SGM10. `results.csv` contains per-instance values and `comparison.csv` compares fresh and archived measurements. Each solver's `archived.csv` holds the paper reference values, while `fresh.csv` holds available rerun values. Native solver records and logs are retained under `results/raw_results/<experiment>/<solver>/raw/`. New runs write to the sibling `runs/<attempt>/` and update the experiment summary automatically.
+Use [the result guide](../results/README.md). Original paper values and reruns are stored separately by experiment and solver. Each reproduced experiment's `summary.csv` presents the `paper` result set followed by `reproduced`. Incomplete aggregate cells say `to be reproduced`, with measured and pending counts beside them. Solver `summary.csv` files hold actual per-case measurements and `statistics.csv` files hold aggregates. Raw records reside with their solver.
 
-Fresh results replace the corresponding archived rows, including unsuccessful outcomes. Unrun rows retain archived values, and mixed summaries identify their sources. External time or memory guard stops, interruptions and execution failures withhold the effective timing aggregate. Setup and input failures appear as attempt errors.
+Each `comparison.csv` contains only observed differences. Runtime-only changes and unrun cases are excluded; their absence is not proof of reproduction. Iteration counts are compared exactly when both are recorded. Solved-status synonyms are treated as equivalent, and `REFERENCE_CURVE` is a reference label rather than a solver termination. Objectives on the same recorded basis are flagged when `abs(reproduced - paper) / max(1, abs(paper)) > 1e-6`, using the existing validation threshold. This screens differences; it is not an optimality guarantee. Missing or incomparable objective values are not treated as disagreements. Curve mismatches are included when the runner's saved curve check reports one.
 
-SGM10 is `exp(mean(log(x + 10))) - 10`. Standard experiment failures use the 3,600-second cap; Large-QAP uses its configured 360,000-second cap. Missing tolerance-checkpoint values remain blank. Solver residual definitions differ, so objectives and termination information should be read together with each solver's native records.
+The `expected` column is `yes` only when a documented mechanism explains the change: corrected model, different time-limit endpoint. `consistent with rounding` means preserved CuClarabel objectives agree to five significant digits; this is a precision comparison. `not established` means at least one difference lacks a confirmed explanation. Matching objectives alone do not prove why iteration counts changed. Every retained row includes its explanation and source paths.
 
-For ordinary converged HPR comparisons, the checks require OPTIMAL termination, a final residual at most 1.01e-8 and scaled objective difference at most 1e-6. Iteration equality is reported separately. Curve checks compare the saved iteration grid and pointwise log10 residuals, allowing a deviation of 0.01. A no-restart curve can match its reference without reaching the stopping tolerance. Runtime and occasional iteration differences can occur across executions; timeout endpoints also depend on machine throughput.
+SGM10 is `exp(mean(log(x + 10))) - 10`. Ordinary failures use the 3,600-second cap; Large-QAP uses its configured 360,000-second cap. Missing tolerance checkpoints remain blank. An incomplete dataset, external time/memory guard, interruption or execution failure withholds the full timing aggregate. Partial competitor data is excluded from full-dataset performance profiles.
 
-## Representative launcher results
+Solver residual definitions differ, so objectives and termination information should be read together with native records. Some competitor references contain rounded objectives; a small difference from the unrounded rerun need not indicate disagreement at paper precision. Iteration equality is reported separately from objective agreement. Curve comparisons use the saved iteration grid and pointwise log10 residual deviation at most 0.01; a no-restart curve can match without reaching the stopping tolerance.
 
-These cases completed through `run.sh` on the tested A100 server. The ten workers took approximately 9.4 minutes in total, including startup and warmup. They used a shared machine, with one CPU thread for Gurobi; these sample times are workflow checks, not isolated performance measurements.
+## Known differences
 
-| Experiment | Solver | Case | Result |
-|---|---|---|---|
-| MM | HPR-QP (main) | CVXQP3_M.mps | 40,900 iterations; archived objective/count reproduced |
-| QAPLIB | HPR-QP (implicit) | sko64.mat | 23,300 iterations; archived objective/count reproduced |
-| Lasso-UCI | HPR-QP (implicit) | mpg_scale_expanded7.mps | 6,600 iterations; archived objective/count reproduced |
-| Lasso-UCI | HPR-QP-explicit (main) | mpg_scale_expanded7.mps | 13,800 iterations; archived objective/count reproduced |
-| Trust-Region | HPR-QP | d10000.mat | 500 iterations; archived objective/count reproduced |
-| MM | PDQP | CVXQP3_S.mps | OPTIMAL, 7,488 iterations; objective/count agree |
-| MM | SCS | CVXQP3_S.mps | OPTIMAL, 325 versus archived 300 iterations; objective agrees |
-| MM | CuClarabel | CVXQP3_S.mps | OPTIMAL, 11 iterations; objective/count agree |
-| MM | Gurobi | CVXQP3_S.mps | OPTIMAL, 13 iterations; objective agrees; reference CSV has no iteration count |
-| QAPLIB | CuClarabel | esc64a.mps | OPTIMAL, 6 iterations; objective/count agree |
+At tolerance 1e-8, the 128 converged MM HPR cases agree with their reference objectives; the other nine reach the time limit in both records. HPR objective comparisons also agree for the 36 QAPLIB, six Large-QAP, 11 Lasso-UCI, 12 Lasso-Synthetic and 17 Trust-Region cases. Timing and occasional iteration differences remain visible.
 
-The numerical records, solver settings and environment information accompany the experiment results. See [environment details](ENVIRONMENT.md) for pinned versions and [experiment costs](EXPERIMENTS.md) for full-dataset planning estimates.
+The denser synthetic HPR runs use the corrected original-MPS objective. Their historical old-loader objectives are not valid targets for that formulation. Paper values remain unchanged in `paper_results`; corrected reruns remain in `reproduced_results`.
 
-## Package checks
+The appendix example gives 900 dual and 1,700 primal iterations, consistent with R2 Online Supplement Appendix E. Objectives and the four matrix norms agree at the paper's precision.
 
-`./scripts/run.sh check` verifies release hashes, experiment scope, data-catalog consistency, the relocated result/data indexes, documentation links and relative Julia source dependencies. Benchmark files are external and can be checked separately with `scripts/manage_data.py verify`. The manifests describe 315 inputs across HPR and explicit-QAP competitor formats. Full datasets are downloaded separately following the [data guide](../data/README.md).
+Preserved CuClarabel benchmark measurements retain their original environment information, including earlier compatibility-patched runs. The executable package now uses unmodified CuClarabel with its compatible Julia 1.11.5 environment. These old timings are not relabeled as measurements of the current environment. Separate development validation checks are excluded from the distributed results.
 
-The launcher has been checked for interruption, process cleanup, resuming completed runs, guard-failure reporting, paths containing spaces and split-archive extraction. Table and grayscale-figure generation is available through `./scripts/run.sh tables` and `./scripts/run.sh figures`. Solver records and per-instance comparisons remain available for inspecting numerical results.
+## Running and checking
+
+`./scripts/run.sh check` verifies release hashes, experiment/data scope, native-source links, result layout and relative Julia dependencies. `scripts/manage_data.py verify` checks external benchmark files. The inventory describes 315 input representations.
+
+`./scripts/run.sh refresh`, `tables` and `figures` rebuild reports from the separate paper and rerun CSVs. The launcher uses the dataset writers for HPR benchmark output and CSV for launch status/normalized measurements. The figure driver writes curve CSVs. Competitor-native records retain their original formats. See [environment details](ENVIRONMENT.md) for dependencies and [experiment costs](EXPERIMENTS.md) for planning.

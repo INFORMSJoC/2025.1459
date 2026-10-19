@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+Gurobi,QAPLIB__esc64a.mat,esc64a.mat,QAPLIB,all,1e-08,OPTIMAL,True,11.0,0.41115593910217285,0.3361749181788582,0.0,fresh,verification_run,results/reproduced_results/exp_QAPLIB/solver_Gurobi/raw/QAPLIB__esc64a.mat__1e-08/QAPLIB__esc64a.mps__1.0e-8.json,native solver,full objective,0.626,,

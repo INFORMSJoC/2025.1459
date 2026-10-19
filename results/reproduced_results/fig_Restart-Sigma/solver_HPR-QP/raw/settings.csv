@@ -1,0 +1,28 @@
+case,section,key,value
+no_restart,environment,CUDA_jl,5.11.0
+no_restart,environment,blas_threads,1
+no_restart,environment,cuda_driver_api,13.2.0
+no_restart,environment,cuda_runtime,13.2.0
+no_restart,environment,gpu_name,NVIDIA A100-SXM4-80GB
+no_restart,environment,julia,1.10.4
+no_restart,environment,julia_threads,1
+no_restart,environment,load_path,"['@', '@stdlib']"
+no_restart,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+adaptive_restart,environment,CUDA_jl,5.11.0
+adaptive_restart,environment,blas_threads,1
+adaptive_restart,environment,cuda_driver_api,13.2.0
+adaptive_restart,environment,cuda_runtime,13.2.0
+adaptive_restart,environment,gpu_name,NVIDIA A100-SXM4-80GB
+adaptive_restart,environment,julia,1.10.4
+adaptive_restart,environment,julia_threads,1
+adaptive_restart,environment,load_path,"['@', '@stdlib']"
+adaptive_restart,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+adaptive_restart_sigma,environment,CUDA_jl,5.11.0
+adaptive_restart_sigma,environment,blas_threads,1
+adaptive_restart_sigma,environment,cuda_driver_api,13.2.0
+adaptive_restart_sigma,environment,cuda_runtime,13.2.0
+adaptive_restart_sigma,environment,gpu_name,NVIDIA A100-SXM4-80GB
+adaptive_restart_sigma,environment,julia,1.10.4
+adaptive_restart_sigma,environment,julia_threads,1
+adaptive_restart_sigma,environment,load_path,"['@', '@stdlib']"
+adaptive_restart_sigma,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690

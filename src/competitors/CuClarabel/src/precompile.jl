@@ -171,7 +171,8 @@ function __precompile_gpu()
         Clarabel.ZeroConeT(1),
         Clarabel.SecondOrderConeT(2),
         Clarabel.ExponentialConeT(),
-        Clarabel.PowerConeT(0.5) # Paper workload has no PSD cones.  
+        Clarabel.PowerConeT(0.5),
+        Clarabel.PSDTriangleConeT(1)  
         ];
     nvars = sum(Clarabel.nvars.(cones))
     P = A = sparse(I(nvars)*1.)

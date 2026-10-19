@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+PDQP,all,1e-08,137,137,124,42.4526876627575,,True,0,Complete measured dataset
+PDQP,all,1e-06,137,137,125,33.11868567425444,,True,0,Complete measured dataset
+PDQP,all,0.0001,137,137,133,11.33137481997483,,True,0,Complete measured dataset

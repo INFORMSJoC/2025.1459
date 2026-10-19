@@ -25,10 +25,11 @@ case "$HPR_ACTION" in
   ./scripts/run.sh MM HPR-QP --cases CVXQP3_S.mps QSCSD1.mps
   ./scripts/run.sh ALL ALL --data-root /path/to/QP_data --plan
   ./scripts/run.sh refresh                         Refresh experiment summaries
-  ./scripts/run.sh tables                          Regenerate tables (corrected synthetic HPR; other historical references)
-  ./scripts/run.sh figures                         Regenerate grayscale paper figures
-Main results: results/paper_results/experiments/<name>/summary.html and summary.csv.
+  ./scripts/run.sh tables                          Regenerate tables
+  ./scripts/run.sh figures                         Regenerate paper and reproduced figures
+Main results: results/reproduced_results/<experiment>/summary.csv and comparison.csv.
 Full ALL can take days to weeks. See README.md for experiment/solver mappings.
+Set JULIA_BIN to Julia 1.10.4 and CUCLARABEL_JULIA_BIN to Julia 1.11.5.
 Use --help after an experiment for device, budget, data and output options.
 HELP
     ;;

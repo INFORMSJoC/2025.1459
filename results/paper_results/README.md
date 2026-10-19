@@ -1,17 +1,7 @@
-# Paper tables, figures and experiment summaries
+# Original paper results
 
-[paper_result_map.csv](paper_result_map.csv) maps the manuscript tables and figures to experiments.
+Each `exp_<name>/solver_<name>/summary.csv` contains the original paper's per-case measurements. `raw/` holds the underlying solver tables; shared source tables are in the experiment's `sources/`. Some historical logs were not preserved and are not fabricated. Solver `statistics.csv` reports calculated aggregates. Experiment-level `summary.csv` uses the printed R2 aggregates from `sources/reported_statistics.csv` where available.
 
-- [tables_and_figures](tables_and_figures/): the CSV exports and `figures/` PDFs previously called `paper_exports`.
-- `experiments/<experiment>/summary.html` and `summary.csv`: solved counts and SGM10, with explicit fresh/archived source counts.
-- `experiments/<experiment>/results.csv`: selected per-case measurements and raw-source paths.
-- `experiments/<experiment>/comparison.csv`: fresh-versus-archived differences.
-- `experiments/<experiment>/<solver>/{archived,fresh}.csv`: solver-specific tables.
+The figure experiment uses `fig_Restart-Sigma/`. Its original curve data and drawing are preserved. Other experiment figures are regenerated from paper measurements; corrections to known joins/statuses retain the original source tables for inspection.
 
-Available experiments: [Primal-Dual](experiments/Primal-Dual/summary.html), [MM](experiments/MM/summary.html), [Synthetic-CQP](experiments/Synthetic-CQP/summary.html), [Lasso-UCI](experiments/Lasso-UCI/summary.html), [Lasso-Synthetic](experiments/Lasso-Synthetic/summary.html), [QAPLIB](experiments/QAPLIB/summary.html), [Large-QAP](experiments/Large-QAP/summary.html), [Trust-Region](experiments/Trust-Region/summary.html), [Restart-Sigma](experiments/Restart-Sigma/summary.html), [Appendix-Example](experiments/Appendix-Example/summary.html).
-
-Every available fresh row replaces its archived row, including unsuccessful solves; unrun rows use archived values. Mixed summaries are not complete fresh benchmarks. Execution failures withhold timing aggregates. Original numerical discrepancies, corrected-model checks and source labels remain visible.
-
-Synthetic-CQP exports use selected corrected-model HPR measurements and archived competitor timings. Other exports remain historical references. `Synthetic_HPR_R2_comparison.csv` reports differences from the manuscript; the manuscript itself has not been changed by this layout revision.
-
-Regenerate from the repository root with `./scripts/run.sh refresh`, `tables`, or `figures`.
+Reruns and paper-versus-rerun comparisons belong to [reproduced_results](../reproduced_results/README.md). See the [result guide](../README.md) for the full layout.

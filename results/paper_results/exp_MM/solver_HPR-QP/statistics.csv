@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+HPR-QP,all,1e-08,137,137,128,12.646553458769578,23155.45680493984,True,0,Complete measured dataset
+HPR-QP,all,1e-06,137,137,129,10.503446506698172,16498.23014460939,True,0,Complete measured dataset
+HPR-QP,all,0.0001,137,137,130,7.4175159274900935,8552.169088989072,True,0,Complete measured dataset

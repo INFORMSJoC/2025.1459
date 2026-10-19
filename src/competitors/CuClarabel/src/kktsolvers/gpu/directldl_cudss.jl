@@ -34,7 +34,7 @@ ldlsolver_matrix_shape(::Val{:cudss}) = :full
 function refactor!(ldlsolver::CUDSSDirectLDLSolver{T}) where{T}
 
     # Update the KKT matrix in the cudss solver
-    CUDSS.cudss_update(ldlsolver.cudssSolver.matrix,ldlsolver.KKT)
+    cudss_set(ldlsolver.cudssSolver.matrix,ldlsolver.KKT)
 
     # Refactorization
     cudss("factorization", ldlsolver.cudssSolver, ldlsolver.x, ldlsolver.b)

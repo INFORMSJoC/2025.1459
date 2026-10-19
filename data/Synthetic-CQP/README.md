@@ -21,6 +21,6 @@ Extracted path beneath `--data-root`: `Synthetic-CQP/inputs/{original,denser}/*.
 From the repository root:
 
 ```bash
-python3 scripts/manage_data.py extract --groups synthetic_paper revision_denser --cache /path/to/2025.1459 --data-root /path/to/data
-python3 scripts/manage_data.py verify --groups synthetic_paper revision_denser --data-root /path/to/data
+python3 scripts/manage_data.py extract --groups synthetic_standard synthetic_denser --cache /path/to/2025.1459 --data-root /path/to/data
+python3 scripts/manage_data.py verify --groups synthetic_standard synthetic_denser --data-root /path/to/data
 ```

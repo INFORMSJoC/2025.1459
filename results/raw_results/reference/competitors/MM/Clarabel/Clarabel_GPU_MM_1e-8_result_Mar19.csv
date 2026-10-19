@@ -1,3 +1,0 @@
-name,iter,time,obj,status
-CVXQP3_S.mps,11,0.12,11716,solved
-QSCSD1.mps,10,0.081,8.6667,solved

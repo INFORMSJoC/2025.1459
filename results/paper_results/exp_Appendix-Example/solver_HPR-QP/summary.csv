@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+HPR-QP,appendix__dual,dual,appendix_concrete,all,1e-08,PAPER_APPROXIMATE_COUNT,True,900.0,,-2.50625,,archived,paper_archive,results/paper_results/exp_Appendix-Example/solver_HPR-QP/raw/HPRQP_zxwyw_result.csv#dual,R2 Online Supplement Appendix E,full objective,,R2 Online Supplement Appendix E: approximately 900 dual / 1700 primal iterations.,

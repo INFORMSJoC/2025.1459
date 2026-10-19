@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+PDQP,all,1e-08,60,60,56,53.54105385013646,,True,0,Complete measured dataset
+PDQP,all,1e-06,60,60,57,43.3567843482599,,True,0,Complete measured dataset
+PDQP,all,0.0001,60,60,57,34.43125028682685,,True,0,Complete measured dataset
+PDQP,Huge,1e-08,11,11,9,121.92093214146428,,True,0,Complete measured dataset
+PDQP,Huge,1e-06,11,11,9,104.26932729812528,,True,0,Complete measured dataset
+PDQP,Huge,0.0001,11,11,9,81.8528310567164,,True,0,Complete measured dataset
+PDQP,Large,1e-08,33,33,31,59.06384410988636,,True,0,Complete measured dataset
+PDQP,Large,1e-06,33,33,32,47.0263501580057,,True,0,Complete measured dataset
+PDQP,Large,0.0001,33,33,32,37.97775995449446,,True,0,Complete measured dataset
+PDQP,Medium,1e-08,16,16,16,22.38051166384986,,True,0,Complete measured dataset
+PDQP,Medium,1e-06,16,16,16,17.55679181801468,,True,0,Complete measured dataset
+PDQP,Medium,0.0001,16,16,16,13.017648079324271,,True,0,Complete measured dataset

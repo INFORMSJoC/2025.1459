@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+CuClarabel,all,1e-08,137,137,124,7.784197074757511,,True,0,Complete measured dataset
+CuClarabel,all,1e-06,137,137,130,3.709477167404449,,True,0,Complete measured dataset
+CuClarabel,all,0.0001,137,137,136,0.7278980473530527,,True,0,Complete measured dataset

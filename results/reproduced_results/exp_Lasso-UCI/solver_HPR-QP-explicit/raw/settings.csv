@@ -1,0 +1,165 @@
+case,section,key,value
+E2006.test.mps,environment,CUDA_jl,5.11.0
+E2006.test.mps,environment,blas_threads,1
+E2006.test.mps,environment,cuda_driver_api,13.2.0
+E2006.test.mps,environment,cuda_runtime,13.2.0
+E2006.test.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+E2006.test.mps,environment,julia,1.10.4
+E2006.test.mps,environment,julia_threads,1
+E2006.test.mps,environment,load_path,"['@', '@stdlib']"
+E2006.test.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+E2006.train.mps,environment,CUDA_jl,5.11.0
+E2006.train.mps,environment,blas_threads,1
+E2006.train.mps,environment,cuda_driver_api,13.2.0
+E2006.train.mps,environment,cuda_runtime,13.2.0
+E2006.train.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+E2006.train.mps,environment,julia,1.10.4
+E2006.train.mps,environment,julia_threads,1
+E2006.train.mps,environment,load_path,"['@', '@stdlib']"
+E2006.train.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+abalone_scale_expanded7.mps,environment,CUDA_jl,5.11.0
+abalone_scale_expanded7.mps,environment,blas_threads,1
+abalone_scale_expanded7.mps,environment,cuda_driver_api,13.2.0
+abalone_scale_expanded7.mps,environment,cuda_runtime,13.2.0
+abalone_scale_expanded7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+abalone_scale_expanded7.mps,environment,julia,1.10.4
+abalone_scale_expanded7.mps,environment,julia_threads,1
+abalone_scale_expanded7.mps,environment,load_path,"['@', '@stdlib']"
+abalone_scale_expanded7.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+bodyfat_scale_expanded7.mps,environment,CUDA_jl,5.11.0
+bodyfat_scale_expanded7.mps,environment,blas_threads,1
+bodyfat_scale_expanded7.mps,environment,cuda_driver_api,13.2.0
+bodyfat_scale_expanded7.mps,environment,cuda_runtime,13.2.0
+bodyfat_scale_expanded7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+bodyfat_scale_expanded7.mps,environment,julia,1.10.4
+bodyfat_scale_expanded7.mps,environment,julia_threads,1
+bodyfat_scale_expanded7.mps,environment,load_path,"['@', '@stdlib']"
+bodyfat_scale_expanded7.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+housing_scale_expanded7.mps,environment,CUDA_jl,5.11.0
+housing_scale_expanded7.mps,environment,blas_threads,1
+housing_scale_expanded7.mps,environment,cuda_driver_api,13.2.0
+housing_scale_expanded7.mps,environment,cuda_runtime,13.2.0
+housing_scale_expanded7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+housing_scale_expanded7.mps,environment,julia,1.10.4
+housing_scale_expanded7.mps,environment,julia_threads,1
+housing_scale_expanded7.mps,environment,load_path,"['@', '@stdlib']"
+housing_scale_expanded7.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+log1p.E2006.test.mps,environment,CUDA_jl,5.11.0
+log1p.E2006.test.mps,environment,blas_threads,1
+log1p.E2006.test.mps,environment,cuda_driver_api,13.2.0
+log1p.E2006.test.mps,environment,cuda_runtime,13.2.0
+log1p.E2006.test.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+log1p.E2006.test.mps,environment,julia,1.10.4
+log1p.E2006.test.mps,environment,julia_threads,1
+log1p.E2006.test.mps,environment,load_path,"['@', '@stdlib']"
+log1p.E2006.test.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+log1p.E2006.train.mps,environment,CUDA_jl,5.11.0
+log1p.E2006.train.mps,environment,blas_threads,1
+log1p.E2006.train.mps,environment,cuda_driver_api,13.2.0
+log1p.E2006.train.mps,environment,cuda_runtime,13.2.0
+log1p.E2006.train.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+log1p.E2006.train.mps,environment,julia,1.10.4
+log1p.E2006.train.mps,environment,julia_threads,1
+log1p.E2006.train.mps,environment,load_path,"['@', '@stdlib']"
+log1p.E2006.train.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+log1p.E2006.train.mps,parameters,alpha,2.0
+log1p.E2006.train.mps,parameters,do_warm_up,False
+log1p.E2006.train.mps,parameters,lambda_factor,1.05
+log1p.E2006.train.mps,parameters,max_iter,2147483647
+log1p.E2006.train.mps,parameters,mode,linearize
+log1p.E2006.train.mps,parameters,restart,-1
+log1p.E2006.train.mps,parameters,sigma,-1.0
+log1p.E2006.train.mps,parameters,sigma_fixed,False
+log1p.E2006.train.mps,parameters,sigma_method,0
+log1p.E2006.train.mps,parameters,spmv_mode,auto
+log1p.E2006.train.mps,parameters,stoptol,1e-08
+log1p.E2006.train.mps,parameters,time_limit,3600.0
+log1p.E2006.train.mps,parameters,useGPU,True
+mpg_scale_expanded7.mps,environment,CUDA_jl,5.11.0
+mpg_scale_expanded7.mps,environment,blas_threads,1
+mpg_scale_expanded7.mps,environment,cuda_driver_api,13.2.0
+mpg_scale_expanded7.mps,environment,cuda_runtime,13.2.0
+mpg_scale_expanded7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+mpg_scale_expanded7.mps,environment,julia,1.10.4
+mpg_scale_expanded7.mps,environment,julia_threads,1
+mpg_scale_expanded7.mps,environment,load_path,"['@', '@stdlib']"
+mpg_scale_expanded7.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+mpg_scale_expanded7.mps,parameters,alpha,2.0
+mpg_scale_expanded7.mps,parameters,do_warm_up,False
+mpg_scale_expanded7.mps,parameters,lambda_factor,1.05
+mpg_scale_expanded7.mps,parameters,max_iter,2147483647
+mpg_scale_expanded7.mps,parameters,mode,linearize
+mpg_scale_expanded7.mps,parameters,restart,-1
+mpg_scale_expanded7.mps,parameters,sigma,-1.0
+mpg_scale_expanded7.mps,parameters,sigma_fixed,False
+mpg_scale_expanded7.mps,parameters,sigma_method,0
+mpg_scale_expanded7.mps,parameters,spmv_mode,auto
+mpg_scale_expanded7.mps,parameters,stoptol,1e-08
+mpg_scale_expanded7.mps,parameters,time_limit,3600.0
+mpg_scale_expanded7.mps,parameters,useGPU,True
+pyrim_scaled_expanded5.mps,environment,CUDA_jl,5.11.0
+pyrim_scaled_expanded5.mps,environment,blas_threads,1
+pyrim_scaled_expanded5.mps,environment,cuda_driver_api,13.2.0
+pyrim_scaled_expanded5.mps,environment,cuda_runtime,13.2.0
+pyrim_scaled_expanded5.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+pyrim_scaled_expanded5.mps,environment,julia,1.10.4
+pyrim_scaled_expanded5.mps,environment,julia_threads,1
+pyrim_scaled_expanded5.mps,environment,load_path,"['@', '@stdlib']"
+pyrim_scaled_expanded5.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+pyrim_scaled_expanded5.mps,parameters,alpha,2.0
+pyrim_scaled_expanded5.mps,parameters,do_warm_up,False
+pyrim_scaled_expanded5.mps,parameters,lambda_factor,1.05
+pyrim_scaled_expanded5.mps,parameters,max_iter,2147483647
+pyrim_scaled_expanded5.mps,parameters,mode,linearize
+pyrim_scaled_expanded5.mps,parameters,restart,-1
+pyrim_scaled_expanded5.mps,parameters,sigma,-1.0
+pyrim_scaled_expanded5.mps,parameters,sigma_fixed,False
+pyrim_scaled_expanded5.mps,parameters,sigma_method,0
+pyrim_scaled_expanded5.mps,parameters,spmv_mode,auto
+pyrim_scaled_expanded5.mps,parameters,stoptol,1e-08
+pyrim_scaled_expanded5.mps,parameters,time_limit,3600.0
+pyrim_scaled_expanded5.mps,parameters,useGPU,True
+space_ga_scale_expanded9.mps,environment,CUDA_jl,5.11.0
+space_ga_scale_expanded9.mps,environment,blas_threads,1
+space_ga_scale_expanded9.mps,environment,cuda_driver_api,13.2.0
+space_ga_scale_expanded9.mps,environment,cuda_runtime,13.2.0
+space_ga_scale_expanded9.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+space_ga_scale_expanded9.mps,environment,julia,1.10.4
+space_ga_scale_expanded9.mps,environment,julia_threads,1
+space_ga_scale_expanded9.mps,environment,load_path,"['@', '@stdlib']"
+space_ga_scale_expanded9.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+space_ga_scale_expanded9.mps,parameters,alpha,2.0
+space_ga_scale_expanded9.mps,parameters,do_warm_up,False
+space_ga_scale_expanded9.mps,parameters,lambda_factor,1.05
+space_ga_scale_expanded9.mps,parameters,max_iter,2147483647
+space_ga_scale_expanded9.mps,parameters,mode,linearize
+space_ga_scale_expanded9.mps,parameters,restart,-1
+space_ga_scale_expanded9.mps,parameters,sigma,-1.0
+space_ga_scale_expanded9.mps,parameters,sigma_fixed,False
+space_ga_scale_expanded9.mps,parameters,sigma_method,0
+space_ga_scale_expanded9.mps,parameters,spmv_mode,auto
+space_ga_scale_expanded9.mps,parameters,stoptol,1e-08
+space_ga_scale_expanded9.mps,parameters,time_limit,3600.0
+space_ga_scale_expanded9.mps,parameters,useGPU,True
+triazines_scaled_expanded4.mps,environment,CUDA_jl,5.11.0
+triazines_scaled_expanded4.mps,environment,blas_threads,1
+triazines_scaled_expanded4.mps,environment,cuda_driver_api,13.2.0
+triazines_scaled_expanded4.mps,environment,cuda_runtime,13.2.0
+triazines_scaled_expanded4.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+triazines_scaled_expanded4.mps,environment,julia,1.10.4
+triazines_scaled_expanded4.mps,environment,julia_threads,1
+triazines_scaled_expanded4.mps,environment,load_path,"['@', '@stdlib']"
+triazines_scaled_expanded4.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+triazines_scaled_expanded4.mps,parameters,alpha,2.0
+triazines_scaled_expanded4.mps,parameters,do_warm_up,False
+triazines_scaled_expanded4.mps,parameters,lambda_factor,1.05
+triazines_scaled_expanded4.mps,parameters,max_iter,2147483647
+triazines_scaled_expanded4.mps,parameters,mode,linearize
+triazines_scaled_expanded4.mps,parameters,restart,-1
+triazines_scaled_expanded4.mps,parameters,sigma,-1.0
+triazines_scaled_expanded4.mps,parameters,sigma_fixed,False
+triazines_scaled_expanded4.mps,parameters,sigma_method,0
+triazines_scaled_expanded4.mps,parameters,spmv_mode,auto
+triazines_scaled_expanded4.mps,parameters,stoptol,1e-08
+triazines_scaled_expanded4.mps,parameters,time_limit,3600.0
+triazines_scaled_expanded4.mps,parameters,useGPU,True

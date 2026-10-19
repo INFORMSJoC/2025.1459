@@ -11,6 +11,6 @@ Run these commands from the repository root:
 - `python3 scripts/test_reviewer_runner.py`: orchestration regression tests, using synthetic fixtures and simulated Julia workers.
 - `python3 scripts/build_release.py --output /path/outside/repository/review.zip`: rebuild release checksums and ZIP.
 
-[config](config/README.md) contains execution settings and data inventories, not numerical result records. [environments](environments/README.md) contains pinned dependencies. `catalog.py` joins settings to the separately preserved archived measurements under `results/raw_results/reference`.
+[config](config/README.md) contains execution settings and data inventories, not numerical result records. [environments](environments/README.md) contains pinned dependencies. `catalog.py` joins settings to the per-solver paper CSVs under `results/paper_results`.
 
-The launcher accepts the new per-family input layout and the previous external `QP_data` layout. Output roots now contain `raw_results/` and `paper_results/`. The current defaults are described in [data](../data/README.md) and [results](../results/README.md).
+The launcher accepts the new per-family input layout and the previous external `QP_data` layout. Output roots now contain `reproduced_results/` and `paper_results/`. The current defaults are described in [data](../data/README.md) and [results](../results/README.md).

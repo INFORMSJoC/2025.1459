@@ -1,3 +1,0 @@
-method,iter,paper_approx_iter,time,primal_obj,residual,status,check_iter,sigma,lambda_A,lambda_Q,scaling
-dual,900,840,11.777687788009644,-2.50624999999641,3.608235931120376e-9,OPTIMAL,100,1.0,12.2,21.0,false
-primal1,1700,1700,2.7385292053222656,-2.5062499999998566,7.156044344930914e-10,OPTIMAL,100,1.0,12.2,21.0,false

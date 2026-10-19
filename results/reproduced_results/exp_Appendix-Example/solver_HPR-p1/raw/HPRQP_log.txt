@@ -1,0 +1,75 @@
+CASE primal1
+Reconstructed appendix example; check_iter=100; fixed sigma=1; no scaling; lambda_A=12.2; lambda_Q=21.0
+Deleted 0 rows of A that are all zeros.
+has 0 >= constraints
+has 2 <= constraints
+has 0 boxed constraints
+dimension of Q is (2, 2)
+dimension of A is (2, 2)
+dimension of b is (2,)
+dimension of c is (2,)
+dimension of l is (2,)
+dimension of u is (2,)
+number of equalities = 0
+norm_b_org: 10.0
+norm_c_org: 1.0
+lambda_max A = 12.2
+lambda_max Q = 21.0
+HPRQP solver starts...
+iter    errRp     errRd     last_gap    current_gap     p_obj    d_obj    gap    sigma    time
+SPMV mode = customized
+   0    0.00e+00    1.00e+00    Inf    Inf    0.000000e+00    0.000000e+00    0.00e+00    1.00e+00      1.96 0 0 0 0 0
+first restart, current gap = 0.10049690264648363
+
+ 100    0.00e+00    2.89e-01    Inf    1.00e-01    -1.670993e+00    -4.622590e-01    4.53e-01    1.00e+00      2.58 0 0 0 0 0
+
+restart at current iter 100
+will restart by long time
+ 200    0.00e+00    1.67e-01    9.99e-02    5.83e-02    -2.225058e+00    -1.116928e+00    3.44e-01    1.00e+00      2.59 1 0 0 1 0
+
+restart at current iter 200
+ 300    0.00e+00    9.71e-02    5.80e-02    3.38e-02    -2.411593e+00    -1.631640e+00    2.29e-01    1.00e+00      2.60 2 0 0 1 0
+will restart by long time
+ 400    0.00e+00    6.31e-02    5.80e-02    2.20e-02    -2.466360e+00    -1.916865e+00    1.59e-01    1.00e+00      2.61 2 0 0 2 0
+
+restart at current iter 400
+ 500    0.00e+00    3.66e-02    2.18e-02    1.27e-02    -2.492831e+00    -2.154558e+00    9.68e-02    1.00e+00      2.62 3 0 0 2 0
+will restart by long time
+ 600    0.00e+00    2.38e-02    2.18e-02    8.27e-03    -2.500603e+00    -2.274864e+00    6.45e-02    1.00e+00      2.63 3 0 0 3 0
+
+restart at current iter 600
+ 700    0.00e+00    1.38e-02    8.22e-03    4.80e-03    -2.504359e+00    -2.370620e+00    3.82e-02    1.00e+00      2.64 4 0 0 3 0
+will restart by long time
+ 800    0.00e+00    8.95e-03    8.22e-03    3.12e-03    -2.505462e+00    -2.417765e+00    2.50e-02    1.00e+00      2.65 4 0 0 4 0
+
+restart at current iter 800
+ 900    0.00e+00    5.19e-03    3.10e-03    1.81e-03    -2.505995e+00    -2.454719e+00    1.46e-02    1.00e+00      2.66 5 0 0 4 0
+will restart by long time
+1000    0.00e+00    3.37e-03    3.10e-03    1.17e-03    -2.506152e+00    -2.472738e+00    9.53e-03    1.00e+00      2.67 5 0 0 5 0
+
+restart at current iter 1000
+1100    0.00e+00    1.96e-03    1.17e-03    6.81e-04    -2.506227e+00    -2.486784e+00    5.55e-03    1.00e+00      2.68 6 0 0 5 0
+1200    0.00e+00    1.27e-03    1.17e-03    4.42e-04    -2.506249e+00    -2.493609e+00    3.61e-03    1.00e+00      2.69 6 0 0 5 0
+will restart by sufficient decrease, last restart gap = 0.0011671700698072409 current gap = 0.00020348472689557938
+will restart by long time
+1300    3.96e-06    5.89e-04    1.17e-03    2.03e-04    -2.506250e+00    -2.500392e+00    1.67e-03    1.00e+00      2.70 6 1 0 6 0
+
+restart at current iter 1300
+will restart by sufficient decrease, last restart gap = 0.00018804780737859104 current gap = 6.229043950111424e-6
+1400    5.71e-07    4.58e-06    1.88e-04    6.23e-06    -2.506250e+00    -2.506204e+00    1.30e-05    1.00e+00      2.71 7 2 0 6 0
+
+restart at current iter 1400
+KKT < 1e-3 at iter = 1400
+will restart by sufficient decrease, last restart gap = 6.154747348131392e-6 current gap = 1.7061099938109035e-7
+1500    2.26e-09    4.15e-07    6.15e-06    1.71e-07    -2.506250e+00    -2.506254e+00    1.18e-06    1.00e+00      2.72 8 3 0 6 0
+
+restart at current iter 1500
+will restart by sufficient decrease, last restart gap = 1.5693465868700362e-7 current gap = 4.490306466730781e-9
+1600    0.00e+00    7.47e-09    1.57e-07    4.49e-09    -2.506250e+00    -2.506250e+00    2.12e-08    1.00e+00      2.73 9 4 0 6 0
+
+restart at current iter 1600
+KKT < 1e-6 at iter = 1600
+will restart by sufficient decrease, last restart gap = 4.4663150476614574e-9 current gap = 1.4124846803902028e-10
+1700    0.00e+00    2.53e-10    4.47e-09    1.41e-10    -2.506250e+00    -2.506250e+00    7.16e-10    1.00e+00      2.74 10 5 0 6 0
+
+restart at current iter 1700

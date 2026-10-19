@@ -230,9 +230,7 @@ function _kernel_update_scaling_soc!(
         end
     
         wscale = _sqrt_soc_residual_gpu(wi)
-        @inbounds for j in eachindex(wi)
-            wi[j] /= wscale
-        end
+        wi ./= wscale
 
         #try to force badly scaled w to come out normalized
         w1sq = zero(T)
@@ -251,10 +249,7 @@ function _kernel_update_scaling_soc!(
         @inbounds for j in 2:length(λi)
             λi[j] = coef*(c1*si[j] +c2*zi[j])
         end
-        factor = sqrt(sscale*zscale)
-        @inbounds for j in eachindex(λi)
-            λi[j] *= factor
-        end
+        λi .*= sqrt(sscale*zscale)
     end
 
     return nothing
@@ -448,10 +443,7 @@ function _kernel_get_Hs_soc_dense!(
         @inbounds for ind in 2:size_i
             Hsblocki[(ind-1)*size_i + ind] += one(T)
         end
-        factor = η[n_sparse_soc+i]^2
-        @inbounds for j in eachindex(Hsblocki)
-            Hsblocki[j] *= factor
-        end
+        Hsblocki .*= η[n_sparse_soc+i]^2
     end
 
     return nothing

@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+Gurobi,all,1e-08,11,11,11,91.25733992092785,,True,0,Complete measured dataset
+Gurobi,all,1e-06,11,11,11,77.98028188522606,,True,0,Complete measured dataset
+Gurobi,all,0.0001,11,11,11,71.21670798420253,,True,0,Complete measured dataset

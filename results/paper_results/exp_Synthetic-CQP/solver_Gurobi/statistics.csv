@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+Gurobi,all,1e-08,60,60,35,311.92014593810916,,True,0,Complete measured dataset
+Gurobi,all,1e-06,60,60,35,305.5034227799029,,True,0,Complete measured dataset
+Gurobi,all,0.0001,60,60,36,296.15115626225145,,True,0,Complete measured dataset
+Gurobi,Huge,1e-08,11,11,4,1649.954168188124,,True,0,Complete measured dataset
+Gurobi,Huge,1e-06,11,11,4,1637.8383392033459,,True,0,Complete measured dataset
+Gurobi,Huge,0.0001,11,11,4,1538.5744253042265,,True,0,Complete measured dataset
+Gurobi,Large,1e-08,33,33,19,321.0690040490944,,True,0,Complete measured dataset
+Gurobi,Large,1e-06,33,33,19,313.8928344550166,,True,0,Complete measured dataset
+Gurobi,Large,0.0001,33,33,20,304.5287811758001,,True,0,Complete measured dataset
+Gurobi,Medium,1e-08,16,16,12,88.38016929056901,,True,0,Complete measured dataset
+Gurobi,Medium,1e-06,16,16,12,85.92542410933682,,True,0,Complete measured dataset
+Gurobi,Medium,0.0001,16,16,12,85.00725593473582,,True,0,Complete measured dataset

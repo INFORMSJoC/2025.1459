@@ -21,6 +21,6 @@ Extracted path beneath `--data-root`: `Trust-Region/inputs/*.mat and large/*.mat
 From the repository root:
 
 ```bash
-python3 scripts/manage_data.py extract --groups revision_TR_mat revision_TR_mat_large --cache /path/to/2025.1459 --data-root /path/to/data
-python3 scripts/manage_data.py verify --groups revision_TR_mat revision_TR_mat_large --data-root /path/to/data
+python3 scripts/manage_data.py extract --groups trust_region trust_region_large --cache /path/to/2025.1459 --data-root /path/to/data
+python3 scripts/manage_data.py verify --groups trust_region trust_region_large --data-root /path/to/data
 ```

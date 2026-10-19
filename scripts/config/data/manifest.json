@@ -4,7 +4,7 @@
     "bytes": 2963920,
     "sha256": "c3bad6461e2cad7e1528ec40e788b295274d8c24c6f63341f22224e81855e062",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -17,7 +17,7 @@
     "bytes": 2985122,
     "sha256": "5ef8639715e1e7d518f47dab4ce86e955da423b23af9bef95c6a4a8394f672bd",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -30,7 +30,7 @@
     "bytes": 2523098,
     "sha256": "2a881aae156b74ea937b39a5a8769eb2725cdddcd626caf6daf55d126087a147",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -43,7 +43,7 @@
     "bytes": 2504470,
     "sha256": "aff8f1afb948b2a1853f076000b98c1b423fd7986f2c5e7dac13e3b09270522b",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -56,7 +56,7 @@
     "bytes": 442739,
     "sha256": "e2328c5bf37dee609de127a15e0ddf2236e98c859098128908239137e8d6c6b1",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -69,7 +69,7 @@
     "bytes": 506340,
     "sha256": "aa1aed34eaeef9dccf2f7083b11c900139454210a76f84c60d99e7562008294f",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -82,7 +82,7 @@
     "bytes": 429899,
     "sha256": "25ca5ddcf31168eb0b45f2ee61983d376abb8ff697e8e491d99ee665e65ddd08",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -95,7 +95,7 @@
     "bytes": 366298,
     "sha256": "c60498c916439744b7f2c720356c580bc04fe99e9b87a394550e95f9e52b2c2d",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -108,7 +108,7 @@
     "bytes": 24988778,
     "sha256": "e6f0a05f4d6ae38183849a298cfc4994b000b421d9fb957e6c5d5448985f68bc",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -121,7 +121,7 @@
     "bytes": 16452093,
     "sha256": "9abd3ac85486c0d33cc22041c99365dd746a13d03f1c83cb9ed3054a94632d0d",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -134,7 +134,7 @@
     "bytes": 664199,
     "sha256": "3a0ba2e0833c530a427dd3d2a3528f42a07c2664bd29ebe173616f74dfb935c7",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -147,7 +147,7 @@
     "bytes": 2696834,
     "sha256": "725cabc204fba23af7ef9c56a430c628fab22b6275feea1f412b2b414f771e87",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -160,7 +160,7 @@
     "bytes": 1909228,
     "sha256": "dc822abd7c9b8f762180a255ce427d1d47ab3547ce6761c6db539f506b373554",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -173,7 +173,7 @@
     "bytes": 10930017,
     "sha256": "591401a273033e28453b448bbb20498befafb3fc90d99e88ffe2091ac70be836",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -186,7 +186,7 @@
     "bytes": 7634527,
     "sha256": "9680fe73f4b850c23445f49f2eb6be09ac60f5e812b24703383a3457e1eed726",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -199,7 +199,7 @@
     "bytes": 17347715,
     "sha256": "8ab672b641a892c20013fe5055f8bdc110989c3bf2d715bf07d6a979fb9e16e6",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -212,7 +212,7 @@
     "bytes": 2376149,
     "sha256": "a2e67c472a5e9defcb7e96bb4fcfb4da453ec9b29056b8d4aa0c0ad69d02c50c",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -227,7 +227,7 @@
     "bytes": 233266,
     "sha256": "c9fb6840d13c146d2bc012d7a17909960c1ecca4a108bba0cc5a19cbb48a7a3f",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -242,7 +242,7 @@
     "bytes": 22643,
     "sha256": "f14490a115756945a809665c97e65906821b9eb9e3bd46e87a638c927a0a631a",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -255,7 +255,7 @@
     "bytes": 2122675,
     "sha256": "7187f11f2886c5f9d0f977f4aea2e82f018246c5be28fd8dae416543c4c600c7",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -270,7 +270,7 @@
     "bytes": 207942,
     "sha256": "53c9f1475800b4d7e8c3851a4ac1ac31cba9c7e805db036e4650b1c0417ac812",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -285,7 +285,7 @@
     "bytes": 20134,
     "sha256": "ca5ef93f4590200f243b94a8c2df2e768706f67d760287f119243014703d8f0b",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -298,7 +298,7 @@
     "bytes": 2629623,
     "sha256": "ef3dcf997a6fb2f73763f7dba0786c37eff05ceb7fcd519282d811f12adb8fa4",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -313,7 +313,7 @@
     "bytes": 258590,
     "sha256": "5f2baffe6abdb9859fea17a7f48333115d32762b502dde754306c9b816f4486e",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -328,7 +328,7 @@
     "bytes": 25152,
     "sha256": "71349c462b8d5de7f10177c71e40481eef6618f64592c440852c8ed428be61b4",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -341,7 +341,7 @@
     "bytes": 60892,
     "sha256": "6cc86b22c61182250f12be95047c37d880d36bcd81558f6308947baef80ab255",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -354,7 +354,7 @@
     "bytes": 1939755,
     "sha256": "b04bef1b18b0d5fcda7db53a1a6c0ee6403ccb5cf66df73e3389a4355cbb0dcf",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -367,7 +367,7 @@
     "bytes": 103503,
     "sha256": "d87847c344a11635e28e430783ed15e930e6ec87229f866d042ad3aee6ae3b50",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -380,7 +380,7 @@
     "bytes": 129904,
     "sha256": "2c0761010b7df97ca1bfc3da9f1e9be91b60756ca6b4b354b975a433fdd766ef",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -393,7 +393,7 @@
     "bytes": 175828,
     "sha256": "1c4a2b2c21a4bcd4ffb433603594bbd5e81ba89b7d9f747469c4c74d741a42c8",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -406,7 +406,7 @@
     "bytes": 82648,
     "sha256": "df2229ccc23a17a40e0e1d9a0f941f7a98fa24b943f9adb27723d00e432b0f2c",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -419,7 +419,7 @@
     "bytes": 59856,
     "sha256": "9ca53e024abd2271182e4253dccd1ae36efe8870627d3a621871bd6442b7b6f2",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -432,7 +432,7 @@
     "bytes": 49883,
     "sha256": "4f05410fd3b732ea3921aa640a3017dc50f88f5700721fdc97dbed4728639c44",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -445,7 +445,7 @@
     "bytes": 67293,
     "sha256": "2cc278fdd668f4f34e517c3f3806c8885e265e6610fdbb7a5c728cffaa896589",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -458,7 +458,7 @@
     "bytes": 122328,
     "sha256": "8ea32895d681f113ddffe6e126c6af2015bb0a004a1675f1667665a114f72b8e",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -471,7 +471,7 @@
     "bytes": 37423686,
     "sha256": "560cdf658496127ca6ef38aaea1787a6d940673b5022880abbed4bc6618221f9",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -486,7 +486,7 @@
     "bytes": 1752,
     "sha256": "41c18ffca14d0faa116ae05800d3bd9e2c7a561e28e217f54d3fca2c1b19a881",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -499,7 +499,7 @@
     "bytes": 96421,
     "sha256": "599677e6aed78436fd28ddd0e1a49bdd116cd05cb592e8ac308b854d761bb51a",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -512,7 +512,7 @@
     "bytes": 137557,
     "sha256": "6fdc48c1ca676a27c42cdbbe8e2fa8cd5060b71ca1ca7b7d5af2373543746017",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -525,7 +525,7 @@
     "bytes": 3962,
     "sha256": "b78b184c20cf264e7e7d019548947a2403d5d0b3bb72473f65a50eccb8ff47f5",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -538,7 +538,7 @@
     "bytes": 374,
     "sha256": "0307a01d1eb4b9879927667e849d65bb14978a10b5f6b0937438ad51cb4271c6",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -551,7 +551,7 @@
     "bytes": 1688,
     "sha256": "f3a8e9f2ffedb58d42a99391a4ad3113d0f6f4c372a6837e7dd2babedcc3c3e4",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -564,7 +564,7 @@
     "bytes": 448,
     "sha256": "3713af1d3c9f1ff19fdd305cf9ea0f5d50c39d4f9d4ffcf94e19d0e4a2cd63b5",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -577,7 +577,7 @@
     "bytes": 479,
     "sha256": "32d6099ddd615a980655eaf00763134379a9dec08d03d8c6689092eb598668ac",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -590,7 +590,7 @@
     "bytes": 771,
     "sha256": "b9abff1ee432936514f9a8437ebb4a80eea8fbdff1642848057e8c173ab28e6a",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -603,7 +603,7 @@
     "bytes": 746,
     "sha256": "410db02a51f613536a59571f02e64bb8b871f70cea48b5378181e8841e22aec5",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -616,7 +616,7 @@
     "bytes": 905,
     "sha256": "87478e9675bc4e1b8defc6104518516be3a71dd2d3561c7ab7cfb52888bd3756",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -629,7 +629,7 @@
     "bytes": 733,
     "sha256": "8bfdfe29989916074e699f92ab536f698d2eea96f47b84737903fd36ca188c52",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -642,7 +642,7 @@
     "bytes": 1025739,
     "sha256": "46d2338d54b810878fee3b35004747ba4b12bc46b31804e8a8be071033d49928",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -655,7 +655,7 @@
     "bytes": 975738,
     "sha256": "1eb60257fcac5635adde0c04220bad93eaa0734dea781e207660179b04904de8",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -668,7 +668,7 @@
     "bytes": 678273,
     "sha256": "504fef260156550a140754e38555e8834ac803b2887a97e3d902528821ac5c28",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -681,7 +681,7 @@
     "bytes": 342257,
     "sha256": "886099fee9cc9320489da0dcd913db1c8122256e1b3e04add9a9327471c7dbfa",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -696,7 +696,7 @@
     "bytes": 1748699,
     "sha256": "c5e563851cec096ef5eea93b8799df4673920049b5adf7bb980be60befa109d2",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -709,7 +709,7 @@
     "bytes": 1743824,
     "sha256": "165c7a3c63e1b50be9d6bcf89fab7edeb13faea28d225c5ccc79a38613938f8d",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -722,7 +722,7 @@
     "bytes": 1743774,
     "sha256": "f0cab9264e0b0a8a1be0ec799dea03e1ddec84dbf55f3e92917c5abe51810192",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -735,7 +735,7 @@
     "bytes": 1743807,
     "sha256": "d9223b49e24af2d980df78e99c3f1da6b450ba45c9d37224a7ac362d3fa36b4b",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -748,7 +748,7 @@
     "bytes": 1749685,
     "sha256": "d94a3c9c9be7f9590c5a02211433dbb4a9c6d2bb4b4647063fb10c92116897ef",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -761,7 +761,7 @@
     "bytes": 1750946,
     "sha256": "c6533fa55b6970c6b86e22e6944a97777d4b629dc737c71e4734240de2abb4e9",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -774,7 +774,7 @@
     "bytes": 1751768,
     "sha256": "02f4939a1e3360bb28e51e9beb64e665584fc7f6a6fa60bd8cfaec59c1c6b920",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -787,7 +787,7 @@
     "bytes": 1739433,
     "sha256": "e7b64b1ba493d2baa47211018051fb4f6d5dcce95e207467dac7c9f661e8c1cd",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -800,7 +800,7 @@
     "bytes": 1748839,
     "sha256": "0af90e532786e0e14465f7b3a85c946e4011d0e4fa317e668216625fa12a8fe3",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -813,7 +813,7 @@
     "bytes": 1748586,
     "sha256": "e816d9eeea9887067eabf40cd1921f7b864a4b38b2e0ebcd12bf8bcfea493f4d",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -826,7 +826,7 @@
     "bytes": 1743795,
     "sha256": "7cacba855082315f5a4f554b23c0aa868d456bc22efc9434a43ce0b6b1c548ec",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -839,7 +839,7 @@
     "bytes": 1743791,
     "sha256": "e71c3803f3151f959c5b4280ff6e9072245cefb7144bbbb85bad398fdabd4e69",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -852,7 +852,7 @@
     "bytes": 2016,
     "sha256": "43bc1a2ec53807b4dd6b70ad6250e5e2074a5f832c19b9b29e7d0c98fe834af7",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -865,7 +865,7 @@
     "bytes": 281216,
     "sha256": "5d48866265af6d9500950bc9153513e7963b53aa21c28685abdcca6821fdd532",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -880,7 +880,7 @@
     "bytes": 161372,
     "sha256": "1cfeefe357000c62ea5ff40f4c383955005a045fb880dd5a31986cde5742998b",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -893,7 +893,7 @@
     "bytes": 1463983,
     "sha256": "3eafb40480c747da60485972417a305dc0b6bb968bbf98298de757ef9b29f208",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -906,7 +906,7 @@
     "bytes": 177256,
     "sha256": "707e0a7fefda14e3e28f9612994fbda5bdb128a0e041079a0e5a6a768cb9d077",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -919,7 +919,7 @@
     "bytes": 256009,
     "sha256": "fd79966ed7c43f4c101f8e85b9a78878fa634fa41d205b99b289d120374039e0",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -932,7 +932,7 @@
     "bytes": 614452,
     "sha256": "5dce11ff1b4d8f5880d5d008d6e6608fbd773eabb2fd84f44f9b399d1be4c432",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -945,7 +945,7 @@
     "bytes": 507513,
     "sha256": "3720601f6338c8a45fcb4347d2515ad2ffd87f9712376288f9bc467a4ccb6282",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -958,7 +958,7 @@
     "bytes": 65616,
     "sha256": "6a2dd3c69e8628cab90ef6911603b5468fbefb98f5f782f5111be7834e7afcec",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -971,7 +971,7 @@
     "bytes": 52382,
     "sha256": "bb6e59b9bb21585d098bcccd64f2a90900e96e516a44b22f95b0c8fe91149043",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -984,7 +984,7 @@
     "bytes": 72135,
     "sha256": "16b2ceab4b9f09a97d88a4eaad61f6f4584276176ffb9700559ca287a18761b5",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -997,7 +997,7 @@
     "bytes": 132240,
     "sha256": "16dfbe0e4a1fb8273e44866c20db0261ca6ad884a34edd4542d5d3b5a164364d",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1010,7 +1010,7 @@
     "bytes": 1887269,
     "sha256": "13223d9b4a7bc5cb31e8d85bec997fdf10b3d23472099c111dcc86618b3c29f9",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1025,7 +1025,7 @@
     "bytes": 17563,
     "sha256": "3a436b5868f7301a4d0e4bb64aebc5657cf50a4ab0bedde5d7f33bcf7926fdf4",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1038,7 +1038,7 @@
     "bytes": 3234,
     "sha256": "310bd955252908b9b5697b61a7fc5684f6a16f41fb3b53b399d15c7ba38e8b1f",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1051,7 +1051,7 @@
     "bytes": 85346,
     "sha256": "3d12fadf9a21de81a75e046a15cbbeb34eee6f3264e68d293e7da04af0491c85",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1064,7 +1064,7 @@
     "bytes": 107086,
     "sha256": "118300552771f00d4b7567903a34322eea126dad8a3bd237c89782a8424d7353",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1077,7 +1077,7 @@
     "bytes": 50683,
     "sha256": "ed046e1aadbc6c95d49faefb6577b947ec35833e97186cd04cecf537bc3f1fcf",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1090,7 +1090,7 @@
     "bytes": 68194,
     "sha256": "ef592ba4f1d6d468f77b132a9e51efbd9a0015b1cd0fd248e7e686e5a4f3d553",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1103,7 +1103,7 @@
     "bytes": 89214,
     "sha256": "830741725edd299e6efe99f3d143b814d31f51b63d432633c18cacbc87288141",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1116,7 +1116,7 @@
     "bytes": 112671,
     "sha256": "672c1b2f304bfa3a7e3a292d44698e1f1f4bd4a3ef7f8352250b2b4943527cc5",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1129,7 +1129,7 @@
     "bytes": 198762,
     "sha256": "f5c87c7b743ed4956e2744a42acd68061195fb979a6b4fe709c3f5e0626ddc42",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1142,7 +1142,7 @@
     "bytes": 255060,
     "sha256": "125fe54002548418ea275a4b12569058c802207ed67b690f72ef5b09e0038308",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1155,7 +1155,7 @@
     "bytes": 164936,
     "sha256": "8cc3d496d2fc6abbe6dcc3736ee282ec3db02fc3ecb0288ac3df1fa3739f08e8",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1168,7 +1168,7 @@
     "bytes": 120435,
     "sha256": "16f12d3a7b052a14b9cb9f6931f286a5c523ab23cf401170a20ea00205e2902d",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1183,7 +1183,7 @@
     "bytes": 221912,
     "sha256": "047a38b7ee12803c34149264b08fcb98361fe4e497e91f46055665987d537864",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1196,7 +1196,7 @@
     "bytes": 328766,
     "sha256": "b6ed06c54812533398d2992c6f10665ab3f02e7d6ed03ed976980ef328962587",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1209,7 +1209,7 @@
     "bytes": 106489,
     "sha256": "e40b79b5a5638cfce1f1502ac8f67e4c0c47b37bf749909a1fd7dd1b6eaf56d8",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1222,7 +1222,7 @@
     "bytes": 93433,
     "sha256": "301e816619f81e0b86c8fef7acd48a3d1935ef118cb3b7b74813bceb867a3566",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1235,7 +1235,7 @@
     "bytes": 18999,
     "sha256": "1b8f0497c9363388199cef0728faef8effa1a639bc1563a1bc7a8a40a4f1c580",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1248,7 +1248,7 @@
     "bytes": 142414,
     "sha256": "a6dacde2ce359d447f61ec9ff1f8b88daf859650fcb937de9f312a620b9f4fda",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1261,7 +1261,7 @@
     "bytes": 49706,
     "sha256": "649c14f1b4e86efedecc9ef76dc03d1ac72bd6bf0305d71f1667d2b114b9b9c9",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1274,7 +1274,7 @@
     "bytes": 142970,
     "sha256": "937edc1249807dbbe02ec867bf88d079527781966a18e3e45bbf07f4e55ab219",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1287,7 +1287,7 @@
     "bytes": 466219,
     "sha256": "2c9d11b352e86fb4c21723cb756e5c05505536c65da60c29bef7869f0de477e4",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1302,7 +1302,7 @@
     "bytes": 431,
     "sha256": "2378ec48c371e4a930320f28e19a6ac38d536a945342b0db51269e74dd958583",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1315,7 +1315,7 @@
     "bytes": 26713,
     "sha256": "8370725d647fafc315741927bccf2736cfe744276dc2ef7c7444cd15548432a3",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1328,7 +1328,7 @@
     "bytes": 19107,
     "sha256": "6b2ac62180be032b875691014014c74c1bfed8b7a63dba541d8f7c30ee8ad456",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1341,7 +1341,7 @@
     "bytes": 71104,
     "sha256": "3029131ed66a3aea66988c3ccd756572e072b10f3753d2fbe4780c4afbff554b",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1354,7 +1354,7 @@
     "bytes": 19319,
     "sha256": "497ad110e3c5695fcc969fa15b6da2039d27cbfc843b240895c889e132cf2d3b",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1367,7 +1367,7 @@
     "bytes": 102586,
     "sha256": "8d7902a1511c41aada067fdcf2b34793e8e8cb308ef625e7988983c01acd207f",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1380,7 +1380,7 @@
     "bytes": 196649,
     "sha256": "b49929ea034c7b6ccad9ede9fab9420d68200044e628a4a5a742740041b70119",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1393,7 +1393,7 @@
     "bytes": 282683,
     "sha256": "e783ecffd4d49d4a65780ee7f39338d717e62999c0e4cfbe52ae4190e04ef7c9",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1408,7 +1408,7 @@
     "bytes": 57090,
     "sha256": "8863841993574588fbf4c6a3682c8cd0bcc61085be48f6c71d69d317281963b7",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1421,7 +1421,7 @@
     "bytes": 134669,
     "sha256": "18c0f29d33be89bb914d956847ca2d7d4d71f8ea4a33c3cc23b069cb23c4b150",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1436,7 +1436,7 @@
     "bytes": 123838,
     "sha256": "edef0bf885f06b43ac9678b210031ce47dfd321920f0f2862fb66447fdda7c3d",
     "groups": [
-      "MM_test_version",
+      "MM",
       "figure_QSCSD1"
     ],
     "download_url": null,
@@ -1450,7 +1450,7 @@
     "bytes": 224655,
     "sha256": "4557b64ffcef72bc05a908f3e02cdf59b981b22ffa860167d3cffb0a84c97251",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1465,7 +1465,7 @@
     "bytes": 438152,
     "sha256": "39215ee8337e7f14492300336e12c4444f5e17148ff30485d2c2664dba5be4d5",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1480,7 +1480,7 @@
     "bytes": 66918,
     "sha256": "23d40dac4de96c080cad5bfa674721ea5a5c4c9ec04d0a40163866eaa550bf89",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1493,7 +1493,7 @@
     "bytes": 265560,
     "sha256": "04feedab7bbe87017f114fcaa44dc33909690ea5dc1b776b9d391668fc37efd1",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1508,7 +1508,7 @@
     "bytes": 351705,
     "sha256": "5b22ad2adda9e08bf96fd35c5837cfc70afcd778cf083abf57a733f5f31fb73a",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1523,7 +1523,7 @@
     "bytes": 169440,
     "sha256": "8585b1081d447751c76b0b26b62487ac170432a22c8795b35b9d7038d7f0af57",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1538,7 +1538,7 @@
     "bytes": 38867,
     "sha256": "380d9b422cebb698f8c40144efe061f302ab09293e0ad55fbc1550ca6e50a709",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1551,7 +1551,7 @@
     "bytes": 24155,
     "sha256": "a6f081d7f90d72f60f1baf75a28c6ef1ce699e5c0825d08f7911a5b3f9b5fd84",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1564,7 +1564,7 @@
     "bytes": 1054261,
     "sha256": "36ac86db684b9cebf439083a0fb3198cc6e95323c7ec0fe98ade7a6bdf11b159",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1579,7 +1579,7 @@
     "bytes": 249357,
     "sha256": "2beb3cc23145134e071d55f7e1a21a65a2339dedde7edc16cc95ffb1b92f6097",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1594,7 +1594,7 @@
     "bytes": 176298,
     "sha256": "53da668302386bcbc701180b214197d8111a3051adb1de7f4a3623dfea9b9ef5",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1609,7 +1609,7 @@
     "bytes": 1402920,
     "sha256": "d2eba18f3d4bd776844928f0eeca32f4fe771bdc6e9f6ef6756937fe25594322",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1624,7 +1624,7 @@
     "bytes": 588929,
     "sha256": "802594e9f11cb2b936c0786de3ebcc7990117d3405ccd10825f4d9abc20112fc",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1639,7 +1639,7 @@
     "bytes": 2252229,
     "sha256": "c60674698c261926eb9ebaf0d7acf8e54e849121a4560ea1cea5547fd393c31c",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1654,7 +1654,7 @@
     "bytes": 791941,
     "sha256": "5f66bfc50283989c960df506b7ae98fdff35be356bcb75f62fd0987de535c193",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1669,7 +1669,7 @@
     "bytes": 354079,
     "sha256": "5f0652f1eaeb272b104668f75a0e57441c52bf3051f0ed700c0f79d5e862e8fd",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1684,7 +1684,7 @@
     "bytes": 154788,
     "sha256": "a56073476054b937a3a781001cedb48cbec054d9a5249c01166bb6126f3eda3e",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1697,7 +1697,7 @@
     "bytes": 111840,
     "sha256": "1c9e0e847f2a23021efe92feec10f873e266f3ec27f61266ad306f896ec41a6d",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1712,7 +1712,7 @@
     "bytes": 1687,
     "sha256": "3e8db9d2af6e2625cd4abfd5cf5025cc468d8c38ec1e3516774910027ddcd44a",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1725,7 +1725,7 @@
     "bytes": 706869,
     "sha256": "c92fb04baa989562b95fd6f93a55be304b096a0ca6426fa29b856a675b67a1d9",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1738,7 +1738,7 @@
     "bytes": 710890,
     "sha256": "42ab7d57b74c35127b009abe036624944ce0409cab2fe97174aa7cc6950c76d9",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1751,7 +1751,7 @@
     "bytes": 1427012,
     "sha256": "9b04f60e22adf6b8568f6976c85fd8aec1145ad9f2d0fc6ab5ebf4f96c681245",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1764,7 +1764,7 @@
     "bytes": 1428820,
     "sha256": "c1fcbc779a0c535054519e15dbcd80d3654282185ff41c623ff250d567a56154",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1779,7 +1779,7 @@
     "bytes": 1399882,
     "sha256": "d085cbcbcc2e65e40ddcafb74e4620c6de6e24c898c6efb3b1ca2267710d8444",
     "groups": [
-      "MM_test_version",
+      "MM",
       "primal1",
       "primal2"
     ],
@@ -1794,7 +1794,7 @@
     "bytes": 259,
     "sha256": "fd3ce0cf542881fe90b0d44f29bf437c3b7cb2606108f08e8cdb080b7d07eda1",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1807,7 +1807,7 @@
     "bytes": 2262526,
     "sha256": "31e51fe0533a71bd80fd5950e2bfd4b4060c56deb94d7a3389a6c2fdd40aa23a",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1820,7 +1820,7 @@
     "bytes": 350273,
     "sha256": "ef0b443a7cccbd203fd734ec6ceb9cfe80f627d3e95b7f78d08eeb261f5c4470",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1833,7 +1833,7 @@
     "bytes": 409,
     "sha256": "ae42d405574f0fca8e244645a7d2da57443c3ca5dbf67843e13e2b391cd0491c",
     "groups": [
-      "MM_test_version"
+      "MM"
     ],
     "download_url": null,
     "bundled": false,
@@ -1846,7 +1846,7 @@
     "bytes": 823583571,
     "sha256": "4d347cb51f79dd527e6853abcf03053e18992870b62ddcef926d7f9fe1708c88",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1859,7 +1859,7 @@
     "bytes": 1862505734,
     "sha256": "3663da70c2d2e02a5954c7548d4aa89b0dc5bfc64f6c4086174df9e29672cc38",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1872,7 +1872,7 @@
     "bytes": 33061449,
     "sha256": "12429d3d3202346615f38108779b6267f01091671bfeb2f5312613497f04108c",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1885,7 +1885,7 @@
     "bytes": 3319300749,
     "sha256": "7451c0834d04099a021d0567b76cb0ac28490163c6c0ccad337ea26a638733d0",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1898,7 +1898,7 @@
     "bytes": 205795184,
     "sha256": "3f0916daf0b5f36908f4e6b379336378a08d8c1fee248830a42e0c7de654c243",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1911,7 +1911,7 @@
     "bytes": 359655388,
     "sha256": "6664c78c81a666e500497f20b572eb855016eeb8e2d21cbddccfe0d808e88b74",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1924,7 +1924,7 @@
     "bytes": 3867292039,
     "sha256": "be692ee0a6337cd765343b516f3face9afc5828f03ccd85a9e5e0b45338f34d7",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1937,7 +1937,7 @@
     "bytes": 748450051,
     "sha256": "024b8ccb20ecec4f1c99423cbd0a6062f162d478934b6e419204a27d73a0643c",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1950,7 +1950,7 @@
     "bytes": 166386575,
     "sha256": "d9a1d6283bc7f898fcca9468ecc7eb8107ee14d742f7508551535eaa288e84e4",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1963,7 +1963,7 @@
     "bytes": 1917453272,
     "sha256": "ab56d1cd21e16edb65ecb05fbcd88d52c1c750816b839283e4eb6573ef771b34",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1976,7 +1976,7 @@
     "bytes": 303506132,
     "sha256": "31a1620a2de0ea77c55751a59d9b2fb70453d05270d41027e38be7fc68e96882",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -1989,7 +1989,7 @@
     "bytes": 3167030305,
     "sha256": "9b95c7cf3fe6f10eebedf55cd66ba5fb9dd52db135e36c35946e7e2f4f6e6d15",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2002,7 +2002,7 @@
     "bytes": 617179375,
     "sha256": "c0024f2ba5aaa429e69bc54e919d1425832c8c68ff5adb4c3067673e2013df62",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2015,7 +2015,7 @@
     "bytes": 150252276,
     "sha256": "1f5f93542d830b9f479c262cf9081e446d1226177352d5ee70adaf90817e6410",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2028,7 +2028,7 @@
     "bytes": 1568323627,
     "sha256": "e2ce7a77319d535379ae5ac683bae7ada7961039a226eea73c06eefa98e3dd30",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2041,7 +2041,7 @@
     "bytes": 416552544,
     "sha256": "e2b56f1c4791f5ff8eb3308f88a3fd7e78ef184dd0805f3180cae34fc4c9a60c",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2054,7 +2054,7 @@
     "bytes": 649657441,
     "sha256": "49eae7198d4465a15f3b0b9cb28c2d08b3ba2f5eeda15b82fc2749f863760caf",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2067,7 +2067,7 @@
     "bytes": 934365825,
     "sha256": "19109e910e39b616d86bb4d26c868861f9c6ab9043844924a5c1e05870a77a98",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2080,7 +2080,7 @@
     "bytes": 1270651030,
     "sha256": "0927221ef03c278b273371da5e1b28688f4c60f8ca8d3ff41d3ab343ce7d8019",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2093,7 +2093,7 @@
     "bytes": 1658532854,
     "sha256": "9be0448838ca1ac7f118e44bbef5137a0239f0c383e39f6ed0df360483b15787",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2106,7 +2106,7 @@
     "bytes": 2012536229,
     "sha256": "40ea12489b3880217e37a26b8b97b8532f946e3a242e738da73bc07c130ff768",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2119,7 +2119,7 @@
     "bytes": 194755366,
     "sha256": "eb05c59821d796eaa6737509a8d576695f931c25dffb444282592dff7ab95cf7",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2132,7 +2132,7 @@
     "bytes": 10364409380,
     "sha256": "ea9b00e69e031d828596a45b6dcdf84f6b737d0a9909a22a72950481cdae5f5c",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2145,7 +2145,7 @@
     "bytes": 1002681655,
     "sha256": "67a21bf0d790a37796dee66efb7659b8fa3f44c39d834a550a6a54dc6bd82e8e",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2158,7 +2158,7 @@
     "bytes": 97136595,
     "sha256": "8cfb2a707484dd503fde8cdd0442fd8a1437c8844b9476ea9325f94e9de0d921",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2171,7 +2171,7 @@
     "bytes": 1382865120,
     "sha256": "e625dcc197b7ae44384e2df8f7b4bb03974622b6817c9296f1c74f81cf562c08",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2184,7 +2184,7 @@
     "bytes": 132869306,
     "sha256": "a72a059009838ced85ea7444c4450071b40aeb550269ce7213f88fef3d2e3e3a",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2197,7 +2197,7 @@
     "bytes": 2829990878,
     "sha256": "f4e943c69d2747234a1c7c427de557cfb4bdce3ce06ffac557f22d85648c822d",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2210,7 +2210,7 @@
     "bytes": 271708891,
     "sha256": "fde24ef6d742eb5ea39fe102cf0a94eb0d27aada3e123583d2223ec7ba38f67e",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2223,7 +2223,7 @@
     "bytes": 688283388,
     "sha256": "fa48ac444c2b0c53aa92ac438c9f85fc299b052b9b39ee77fcfda705bcd75a76",
     "groups": [
-      "synthetic_paper"
+      "synthetic_standard"
     ],
     "download_url": null,
     "bundled": false,
@@ -2237,7 +2237,7 @@
     "sha256": "aa34f24d979ad1b057053891ac23fa33f1391c5935c711b80169880ea74c9ca4",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2252,7 +2252,7 @@
     "sha256": "4c1c58c32c6b90d39395d1893e0dafac42ffefd2e29135072150d400802bc407",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2267,7 +2267,7 @@
     "sha256": "a48e902f2ce721b363ab1756933d50de35e656cfdee09b693071e6345fd4f588",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2282,7 +2282,7 @@
     "sha256": "887c08c1e7870eb2d0f599bf475abb91acff663535ea3e9aae346b6dbcb7567f",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2297,7 +2297,7 @@
     "sha256": "8ee2eb08e4fd51635f5bebb82112a384e2d52ec5951f6edf410c41c6fa20699c",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2312,7 +2312,7 @@
     "sha256": "05ee98eaf2628239174a8324b8caa5b456a96978a51c323965e49e6fc2251d21",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2327,7 +2327,7 @@
     "sha256": "78baeca09275bf485f8ad9b58e8e411164902c917600206fa2b2d16fd5e18c27",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2342,7 +2342,7 @@
     "sha256": "de96f4469352095a47fa639e1b6725e3db709d3b476d95f15a485d04db2ed286",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2357,7 +2357,7 @@
     "sha256": "4a1fe7a74cbd21dd806fa121a153b40b49daba4ee5ca0dac143199234fe50f51",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2372,7 +2372,7 @@
     "sha256": "c428407c727f00d6c0f1cf31876fc5e1363a929e117e2de6df2852bb8a92ced3",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2387,7 +2387,7 @@
     "sha256": "0e9c3ff2a2c365dedf9b2a114841972ea7235ca089428af9d2be56e67ba481f1",
     "groups": [
       "LASSO_UCI",
-      "LASSO_UCI_R1_explicit"
+      "lasso_uci_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2402,7 +2402,7 @@
     "sha256": "1e09c356db0d91881119e313875f2d3a9e92b78db049af3af73887697601804c",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2417,7 +2417,7 @@
     "sha256": "c77a04477e33954d30e957f73aff1c5743a993125ccc65d326c52d8eb446808c",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2432,7 +2432,7 @@
     "sha256": "207fcfb67d42e4e9dfa1688a204f67b8a5490742dc5de3b2d811a6ff4f1497a3",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2447,7 +2447,7 @@
     "sha256": "e5e484c2c501a3d1babeaa9d5043905566a2e27a119c6c78454c8eb329e730e3",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2462,7 +2462,7 @@
     "sha256": "763b5cfd6d182067d86790f7a3f288a4c1ffa3d94a5d6221e4610c7d3000b737",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2477,7 +2477,7 @@
     "sha256": "1ea2db89aac8ae025daa836602acb3a16f03c511c21a5309f0e2902c04265e50",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2492,7 +2492,7 @@
     "sha256": "5636628780d562fbe82147b464436e7ac5db21e49338b1432739ed4af8db0415",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2507,7 +2507,7 @@
     "sha256": "d14ec16cbe0b17afd45774c338a9c20479e9064534c06b9c4f41d26582e9de67",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2522,7 +2522,7 @@
     "sha256": "69053af7945ae527670002088a7314ebbfdfadac6926a8689a17132e82babfbb",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2537,7 +2537,7 @@
     "sha256": "daf74b866986ab833a7b7214ef95ce6e2b87403e5cf804871bfc3221a45d4be9",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2552,7 +2552,7 @@
     "sha256": "b3786a7dba61227d127e4a9bdefd4ef14d85d42596482f07646f2c98f2e67bb0",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -2567,7 +2567,7 @@
     "sha256": "4258546fb4619fcd7c81343a8c4c7309e61b8c9944c3d0345a6a430c0b02eac1",
     "groups": [
       "LASSO_synthetic",
-      "LASSO_synthetic_R1_explicit"
+      "lasso_synthetic_explicit"
     ],
     "download_url": null,
     "bundled": false,
@@ -3127,7 +3127,7 @@
     "bytes": 823585853,
     "sha256": "c792d1687d83580195994f56ae9d4fd256ce3be2444a2b038c2ba92f9a88877f",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3140,7 +3140,7 @@
     "bytes": 1862513034,
     "sha256": "13d1454de9589e1d2dc6665961f68eaddb3f09c90743bfaa2c84fb6e7495501d",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3153,7 +3153,7 @@
     "bytes": 33058259,
     "sha256": "eb868042ea78d42883b4b85a3315ce82a96402f4e43fb06dc27078c813ea2f3a",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3166,7 +3166,7 @@
     "bytes": 3319354503,
     "sha256": "e93c248441cfd8cda9ece9c2f8e313e80d84eb067aea0b603b66666cd49bc5ee",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3179,7 +3179,7 @@
     "bytes": 205797606,
     "sha256": "5f74920fe2a71540b9f7b7d774320a55333aa1f3e4a541a6c72468e22b3f3d41",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3192,7 +3192,7 @@
     "bytes": 2459918318,
     "sha256": "89223f93dd8375a3deb888a7835196483e3f7ea29038acb21ed9216da68f43f0",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3205,7 +3205,7 @@
     "bytes": 9631035499,
     "sha256": "dfda28fc2d90a75db36ac409240f4bcd3f534c95b9d6f5bbfeb260a3571c928f",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3218,7 +3218,7 @@
     "bytes": 21421395518,
     "sha256": "361355e9e81f40c8734dd0d567d91ff858918be19172dd46d78e8225bd8f35e0",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3231,7 +3231,7 @@
     "bytes": 37429880631,
     "sha256": "2b3822ca790b9323ec82157299749a78e9f294b470246bc3bfc43f8a11d9282e",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3244,7 +3244,7 @@
     "bytes": 640313554,
     "sha256": "5f783f630ee0e887b13ec8374897045b4aa1e66f4d9cbc2e3756ee514c38d4ce",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3257,7 +3257,7 @@
     "bytes": 402623847,
     "sha256": "6992c478d9d89884032972bbf2537fdbcfb130492bbf41b102451eb30aa47996",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3270,7 +3270,7 @@
     "bytes": 4176343232,
     "sha256": "7fb1eee6394b617feb0fc142123669d9a1dd4d8e2337b008d15997560d109e0e",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3283,7 +3283,7 @@
     "bytes": 817445309,
     "sha256": "586be956cf7cde1e340c1c15a9eafd0d6636d9ea85e7249885b402be55d8b112",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3296,7 +3296,7 @@
     "bytes": 199705292,
     "sha256": "22bd9959c83f574d439ec345bdeecdbe6166c32f03a3a1651f51fe07ef70a524",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3309,7 +3309,7 @@
     "bytes": 2071966000,
     "sha256": "c2d3878f47ab7ed791125a1c3dd99dce24a33bc030e1cf536134274d80e302be",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3322,7 +3322,7 @@
     "bytes": 416552544,
     "sha256": "e2b56f1c4791f5ff8eb3308f88a3fd7e78ef184dd0805f3180cae34fc4c9a60c",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3335,7 +3335,7 @@
     "bytes": 649657441,
     "sha256": "49eae7198d4465a15f3b0b9cb28c2d08b3ba2f5eeda15b82fc2749f863760caf",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3348,7 +3348,7 @@
     "bytes": 934365825,
     "sha256": "19109e910e39b616d86bb4d26c868861f9c6ab9043844924a5c1e05870a77a98",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3361,7 +3361,7 @@
     "bytes": 1270651030,
     "sha256": "0927221ef03c278b273371da5e1b28688f4c60f8ca8d3ff41d3ab343ce7d8019",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3374,7 +3374,7 @@
     "bytes": 1658532854,
     "sha256": "9be0448838ca1ac7f118e44bbef5137a0239f0c383e39f6ed0df360483b15787",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3387,7 +3387,7 @@
     "bytes": 2064219737,
     "sha256": "6cd785803ad4e05d69b2062592b0d8a489ca486683c3f8d4b226b46c109700c3",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3400,7 +3400,7 @@
     "bytes": 21428809745,
     "sha256": "044646836b0d87b8b3d2ff5a57881a31b7a94fb8dc64b51036a2b9241ca6ec4f",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3413,7 +3413,7 @@
     "bytes": 1029996821,
     "sha256": "e4ef57e34c3d9a9211a89a10e7e4d4dfbccbfb2128fb9e99a12474bb39a1c05f",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3426,7 +3426,7 @@
     "bytes": 10671306099,
     "sha256": "1ea7849edaaf9293030a48c7035a9b525d354949d3b7a01458853d2ce1d2a532",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3439,7 +3439,7 @@
     "bytes": 17125555718,
     "sha256": "1f824d1b81b748b897d4bce160a99acb94e9143dad40d59b71028a77321152ba",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3452,7 +3452,7 @@
     "bytes": 320679475,
     "sha256": "cc70ffa5c66daa2f4d2c83ded9b749c124d5f9450716ca8bc1069e636df2d277",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3465,7 +3465,7 @@
     "bytes": 3298924573,
     "sha256": "7c9076c32b33f89e14e7689ceda70fad1ce527c0195e71ff83fa7243e3895c78",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3478,7 +3478,7 @@
     "bytes": 651324203,
     "sha256": "917ab827084266d963afbfa68b0b48595fc70c404d3047a9fbba807dbdcf0e36",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3491,7 +3491,7 @@
     "bytes": 6739686877,
     "sha256": "df36fe46d90096f3ed8016d60da8216ebff5d2d434ca49386572f9b89843b3f7",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3504,7 +3504,7 @@
     "bytes": 1643742560,
     "sha256": "4ab440e710166ffa3c8c1e2c705e176377839dc128a2a0ad47a2424d6bc80d79",
     "groups": [
-      "revision_denser"
+      "synthetic_denser"
     ],
     "download_url": null,
     "bundled": false,
@@ -3517,7 +3517,7 @@
     "bytes": 5174867,
     "sha256": "fabae9b36c49fddb4bf44c6eb169157f8283de50c51457390844758223619920",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3530,7 +3530,7 @@
     "bytes": 54758956,
     "sha256": "6ee496ec7a017881f2ea9891304b74c1a1e36610ed2788686f4c5dff6e4d8fc1",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3543,7 +3543,7 @@
     "bytes": 571315750,
     "sha256": "4b401d104309aa3c43401427a0db97f1f5399b82fc1720a6769d882ddae15903",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3556,7 +3556,7 @@
     "bytes": 10520312,
     "sha256": "d87bab9b004fb7b90836735bab87924e0ae29dc67a40cd66f907f194bf7180ef",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3569,7 +3569,7 @@
     "bytes": 111242133,
     "sha256": "f5f747ebcf4019ea4f76ce750c62844ed72b1ddff33b8c2b318112433ce16f43",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3582,7 +3582,7 @@
     "bytes": 1149158835,
     "sha256": "207a1deb995ffe952a4fbf782123bc9d26d77671356c893276101cd8cc6f044e",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3595,7 +3595,7 @@
     "bytes": 21388994,
     "sha256": "1b55e917889b9981e2717431674552a783c204ef493c049f0bd8f607eb6ba9aa",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3608,7 +3608,7 @@
     "bytes": 225844841,
     "sha256": "021f3a55be7659d10770a25d2d4b244427459f3cd8177ef3c1a085957c3b6905",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3621,7 +3621,7 @@
     "bytes": 2322680507,
     "sha256": "72f162b96237bd9e59173ffbc2c27e5413d070ea25f7cae84d9b5639a94a6200",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3634,7 +3634,7 @@
     "bytes": 32465370,
     "sha256": "103c3e730cf5c162f031ffb689ad2723d7c0da6a4e4dba4cd769e6c263764537",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3647,7 +3647,7 @@
     "bytes": 340913417,
     "sha256": "5d67ca0cfed2bf11247a61fbfb5ecf0d8554d7b734f1352fd7d88dbd11f2e43b",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3660,7 +3660,7 @@
     "bytes": 3510919834,
     "sha256": "dc8a65dc3ff3df8f91319881cd776062e844f59a55ed5898588a1dbf384d664a",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3673,7 +3673,7 @@
     "bytes": 43599539,
     "sha256": "78d8d47b9b6ddc856209b2642e785b767260b59b69700a55aa60c782371cf64c",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3686,7 +3686,7 @@
     "bytes": 456184198,
     "sha256": "1cb545a560f1cdd0388feed26d1d860221831707cf9d948267ad456f7ffa5058",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3699,7 +3699,7 @@
     "bytes": 4708202739,
     "sha256": "03fccf3550496afe6474a2721dee5466f0e1605ca0da2f8ef5a6434192ea94c1",
     "groups": [
-      "revision_TR_mat"
+      "trust_region"
     ],
     "download_url": null,
     "bundled": false,
@@ -3712,7 +3712,7 @@
     "bytes": 5911328962,
     "sha256": "c5dc8e46d5cd5eae7fe9c1c6d5fefe036b7c4b26263e57966d2480d5547ad758",
     "groups": [
-      "revision_TR_mat_large"
+      "trust_region_large"
     ],
     "download_url": null,
     "bundled": false,
@@ -3725,7 +3725,7 @@
     "bytes": 11988182881,
     "sha256": "bc304debee39e91e07dd04b9a267aa5b9ea731c16b9694b7af4a90cab9cc8b65",
     "groups": [
-      "revision_TR_mat_large"
+      "trust_region_large"
     ],
     "download_url": null,
     "bundled": false,

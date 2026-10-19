@@ -1,6 +1,6 @@
 # Data used in the paper
 
-One directory per instance type provides an exact instance list, source, preparation description and applicable license notices. No third-party benchmark input files are bundled in this Git snapshot. The previous 40 MM/QAPLIB quick-start files have been removed; benchmark runs require external inputs. The author-defined Appendix example and a tiny initialization-only support input remain bundled.
+One directory per instance type provides an exact instance list, source, preparation description and applicable license notices. No third-party benchmark input files are bundled in this Git snapshot. Benchmark runs require external inputs. The author-defined Appendix example and a tiny initialization-only support input remain bundled.
 
 | Instance type | Selection | Origin |
 |---|---:|---|
@@ -11,7 +11,7 @@ One directory per instance type provides an exact instance list, source, prepara
 | [QAPLIB](QAPLIB/README.md) | 36, in MAT and MPS | Third-party QAP cases; authors' convex relaxations |
 | [Large-QAP](Large-QAP/README.md) | 6 | Author-generated |
 | [Trust-Region](Trust-Region/README.md) | 17 | Author-generated |
-| [Appendix-Example](Appendix-Example/README.md) | 1 configuration | Author-defined paper example |
+| [Appendix-Example](Appendix-Example/README.md) | 1 MPS instance | Author-defined paper example |
 | [Support](Support/README.md) | 1 tiny QP | Initialization only; excluded from benchmark results |
 
 The HPR inventory contains 279 inputs (476.7 GB uncompressed). Competitor QAP runs use 36 additional MPS representations (53.4 GB). The `instances.csv` files list all 315 benchmark representations and their exact SHA-256 hashes. Subset memberships, including Primal-Dual and Restart-Sigma, are recorded by experiment group. The authors' rights in the 95 generated inputs are CC BY 4.0; third-party data keep their original terms.
@@ -40,8 +40,8 @@ Files ending in `.partNNN` are consecutive pieces of a compressed archive, not i
 From the repository root, extract just MM as follows:
 
 ```bash
-python3 scripts/manage_data.py extract --groups MM_test_version --cache /path/to/2025.1459 --data-root /path/to/data
-python3 scripts/manage_data.py verify --groups MM_test_version --data-root /path/to/data
+python3 scripts/manage_data.py extract --groups MM --cache /path/to/2025.1459 --data-root /path/to/data
+python3 scripts/manage_data.py verify --groups MM --data-root /path/to/data
 ./scripts/run.sh MM HPR-QP --data-root /path/to/data --plan
 ```
 

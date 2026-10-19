@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+CuClarabel,all,1e-08,60,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,all,1e-06,60,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,all,0.0001,60,7,7,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Huge,1e-08,11,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Huge,1e-06,11,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Huge,0.0001,11,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Large,1e-08,33,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Large,1e-06,33,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Large,0.0001,33,2,2,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Medium,1e-08,16,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Medium,1e-06,16,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+CuClarabel,Medium,0.0001,16,5,5,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld

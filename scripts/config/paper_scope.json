@@ -1,5 +1,5 @@
 {
-  "MM_test_version": [
+  "MM": [
     "AUG2D.mps",
     "AUG2DC.mps",
     "AUG2DCQP.mps",
@@ -275,7 +275,7 @@
     "STCQP1.mps",
     "STCQP2.mps"
   ],
-  "revision_denser": [
+  "synthetic_denser": [
     "control_1000.mps",
     "control_1500.mps",
     "control_200.mps",
@@ -307,7 +307,7 @@
     "svm_200000.mps",
     "svm_50000.mps"
   ],
-  "revision_TR_mat": [
+  "trust_region": [
     "d10000.mat",
     "d100000.mat",
     "d1000000.mat",
@@ -324,7 +324,7 @@
     "d800000.mat",
     "d8000000.mat"
   ],
-  "revision_TR_mat_large": [
+  "trust_region_large": [
     "d10000000.mat",
     "d20000000.mat"
   ],
@@ -333,7 +333,7 @@
     "adaptive_restart",
     "adaptive_restart_sigma"
   ],
-  "synthetic_paper": [
+  "synthetic_standard": [
     "control_1000.mps",
     "control_1500.mps",
     "control_200.mps",
@@ -365,7 +365,7 @@
     "svm_20k.mps",
     "svm_50k.mps"
   ],
-  "LASSO_UCI_R1_explicit": [
+  "lasso_uci_explicit": [
     "E2006.test.mps",
     "E2006.train.mps",
     "abalone_scale_expanded7.mps",
@@ -378,7 +378,7 @@
     "space_ga_scale_expanded9.mps",
     "triazines_scaled_expanded4.mps"
   ],
-  "LASSO_synthetic_R1_explicit": [
+  "lasso_synthetic_explicit": [
     "lasso_1000000_10000000.mps",
     "lasso_1000000_5000000.mps",
     "lasso_10000_1000000.mps",

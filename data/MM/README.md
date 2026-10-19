@@ -21,6 +21,6 @@ Extracted path beneath `--data-root`: `MM/inputs/*.mps`.
 From the repository root:
 
 ```bash
-python3 scripts/manage_data.py extract --groups MM_test_version --cache /path/to/2025.1459 --data-root /path/to/data
-python3 scripts/manage_data.py verify --groups MM_test_version --data-root /path/to/data
+python3 scripts/manage_data.py extract --groups MM --cache /path/to/2025.1459 --data-root /path/to/data
+python3 scripts/manage_data.py verify --groups MM --data-root /path/to/data
 ```

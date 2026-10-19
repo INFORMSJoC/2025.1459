@@ -1,4 +1,0 @@
-solver,subset,tolerance,cases,fresh_cases,archived_cases,source,solved,archived_solved,time_SGM10,archived_time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,historical_attempt_errors,curves_reproduced,note
-HPR-QP,all,1e-08,30,30,0,fresh,30,30,4.6789868406638995,4.144960714675134,18419.73114695625,True,0,0,,Fresh measurements; shared-hardware times may vary
-HPR-p1,all,1e-08,30,30,0,fresh,30,30,8.496568326343496,7.313846004522581,29707.943764342155,True,0,0,,Fresh measurements; shared-hardware times may vary
-HPR-p2,all,1e-08,30,30,0,fresh,30,30,10.83903848883251,8.627699412336575,39704.45991075508,True,0,0,,Fresh measurements; shared-hardware times may vary

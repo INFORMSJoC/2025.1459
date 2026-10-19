@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+HPR-QP,all,1e-08,60,60,60,21.32533089868033,6724.190109110608,True,0,Complete measured dataset
+HPR-QP,all,1e-06,60,60,60,15.600126259154617,4588.202715035715,True,0,Complete measured dataset
+HPR-QP,all,0.0001,60,60,60,10.14598212029765,2636.524726540969,True,0,Complete measured dataset
+HPR-QP,Huge,1e-08,11,11,11,61.174639048085226,4075.6085359933995,True,0,Complete measured dataset
+HPR-QP,Huge,1e-06,11,11,11,44.358686991638486,2693.777084282743,True,0,Complete measured dataset
+HPR-QP,Huge,0.0001,11,11,11,29.29085537844712,1557.3075570770745,True,0,Complete measured dataset
+HPR-QP,Large,1e-08,33,33,33,21.995545007546703,9037.410453776587,True,0,Complete measured dataset
+HPR-QP,Large,1e-06,33,33,33,16.422261325143285,6438.891166481857,True,0,Complete measured dataset
+HPR-QP,Large,0.0001,33,33,33,10.34987053545268,3846.387251559383,True,0,Complete measured dataset
+HPR-QP,Medium,1e-08,16,16,16,7.056424953992071,5154.161014571271,True,0,Complete measured dataset
+HPR-QP,Medium,1e-06,16,16,16,4.292144630687776,3287.3309030781643,True,0,Complete measured dataset
+HPR-QP,Medium,0.0001,16,16,16,2.4658778267753405,1735.2945658930553,True,0,Complete measured dataset

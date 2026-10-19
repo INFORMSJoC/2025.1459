@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+SCS,all,1e-08,60,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,all,1e-06,60,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,all,0.0001,60,4,4,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Huge,1e-08,11,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Huge,1e-06,11,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Huge,0.0001,11,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Large,1e-08,33,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Large,1e-06,33,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Large,0.0001,33,1,1,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Medium,1e-08,16,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Medium,1e-06,16,0,0,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+SCS,Medium,0.0001,16,3,3,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld

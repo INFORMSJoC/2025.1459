@@ -1,11 +1,8 @@
-using JSON, Dates, LinearAlgebra
+using JSON, Dates, LinearAlgebra, CSV, DataFrames
 BLAS.set_num_threads(1)
 root=dirname(@__DIR__)
 job=JSON.parsefile(ARGS[1])
 g=job["group"]
-function atomic_json(path, value)
-    mkpath(dirname(path));tmp=path*".tmp";open(tmp,"w") do io;JSON.print(io,value,2);end;mv(tmp,path,force=true)
-end
 include(joinpath(root,"scripts","verify_environment.jl"))
 include(joinpath(root,"src","variants",g["variant"],g["entry"]))
 M=g["module"]=="Main" ? Main : getfield(Main,Symbol(g["module"]))
@@ -43,17 +40,8 @@ function solve_case(case, warm=false)
     end
     return M.run_file(file,p)
 end
-function results_dict(r)
-    d=Dict{String,Any}()
-    for k in [:iter,:iter_3,:iter_4,:iter_6,:time,:time_3,:time_4,:time_6,:power_time,:primal_obj,:residuals,:output_type,:plot_iter,:plot_KKT]
-        if hasproperty(r,k) && isdefined(r,k);v=getproperty(r,k);d[string(k)]=v isa AbstractFloat && !isfinite(v) ? string(v) : v;end
-    end
-    return d
-end
-output_root=job["output_root"]
-out=joinpath(output_root,"results",g["id"])
-mkpath(out)
-# Warm-up every fresh Julia process; main solves always restore original settings.
+out=joinpath(job["output_root"],"native");mkpath(out)
+# Preserve the same separate warmup used by the bounded launcher.
 try
     println("WARMUP ",job["cases"][1]["name"]);flush(stdout)
     solve_case(job["cases"][1],true)
@@ -62,27 +50,38 @@ catch e
 end
 GC.gc(true)
 if !g["cpu"];CUDA.reclaim();end
-for case in job["cases"]
-    name=case["name"];dest=joinpath(out,name*".json")
-    isfile(dest) && continue
-    atomic_json(joinpath(output_root,"progress",job["id"]*".json"),Dict("group"=>g["id"],"case"=>name,"started_epoch"=>time(),"time_limit"=>g["params"]["time_limit"]))
-    record=Dict{String,Any}("name"=>name,"group"=>g["id"],"input_path"=>case["path"],"reference"=>case["reference"],"started"=>string(now()),"gpu"=>get(ENV,"CUDA_VISIBLE_DEVICES",""),"phase"=>job["phase"],"environment"=>environment_record,"parameters"=>merge(g["params"],get(case,"params",Dict())),"source_variant"=>g["variant"],"force_general_q"=>get(g,"force_general_q",false),"model_revision"=>get(g,"model_revision",""))
-    try
-        open(joinpath(out,name*".log"),"w") do io
+if g["kind"]=="figure"
+    for case in job["cases"]
+        r=open(joinpath(out,"HPRQP_log.txt"),"w") do io
             redirect_stdout(io) do
-                redirect_stderr(io) do
-                    println("CASE ",name," settings=",g["params"])
-                    r=solve_case(case)
-                    record["result"]=results_dict(r)
-                    record["execution"]="completed"
-                end
+                solve_case(case)
             end
         end
-    catch e
-        record["execution"]="error";record["error"]=sprint(showerror,e,catch_backtrace())
+        value(k)=hasproperty(r,k) && isdefined(r,k) ? getproperty(r,k) : missing
+        CSV.write(joinpath(out,"HPRQP_zxwyw_result.csv"),DataFrame(name=[case["name"]],iter=[r.iter],alg_time=[r.time],res=[r.residuals],primal_obj=[r.primal_obj],status=[r.output_type],iter_4=[value(:iter_4)],time_4=[value(:time_4)],iter_6=[value(:iter_6)],time_6=[value(:time_6)],power_time=[value(:power_time)]))
+        CSV.write(joinpath(out,"curves.csv"),DataFrame(case=fill(case["name"],length(r.plot_iter)),sample=collect(0:length(r.plot_iter)-1),iteration=r.plot_iter,optimality=r.plot_KKT))
     end
-    record["finished"]=string(now());atomic_json(dest,record)
-    println("FINISHED ",g["id"]," ",name," ",record["execution"]);flush(stdout)
-    GC.gc(true)
-    if !g["cpu"];CUDA.reclaim();end
+else
+    # The original dataset writers receive a temporary directory containing only
+    # the requested inputs. Their CSV/log output remains native dataset output.
+    mktempdir() do inputs
+        for case in job["cases"]
+            symlink(case["path"],joinpath(inputs,case["name"]))
+        end
+        if g["kind"]=="primal"
+            M.run_dataset(inputs*"/",out*"/",g["params"]["time_limit"],g["params"]["stoptol"],false,0,true)
+        else
+            p=parameters();p.do_warm_up=false
+            if g["variant"]=="main"
+                M.run_dataset(inputs*"/",out*"/",p,0;force_general_q=get(g,"force_general_q",false))
+            else
+                M.run_dataset(inputs*"/",out*"/",p,0)
+            end
+        end
+    end
 end
+# The source is already versioned under src; omit dataset-writer source copies.
+for filename in ["HPRQP.jl","HPRSOCP.jl"]
+    path=joinpath(out,filename);isfile(path) && rm(path)
+end
+println("FINISHED ",g["id"]);flush(stdout)

@@ -3,10 +3,11 @@
 from pathlib import Path
 import argparse,copy,csv,datetime,fcntl,hashlib,json,os,queue,shutil,signal,threading,time,uuid
 from concurrent.futures import ThreadPoolExecutor,as_completed
-from experiment_results import ROOT,atomic_json,row,refresh,hpr_rows,jump_rows,pdqp_rows,number
+from experiment_results import ROOT,atomic_json,row,refresh,hpr_rows,jump_rows,pdqp_rows,number,save_run,load_run,hpr_csv_record
 from process_watchdog import run_guarded
 from data_paths import locate_input
 from catalog import load_catalog, load_groups
+from result_paths import solver_path,experiment_path
 CAT=load_catalog()
 def norm(s):return s.lower().replace('_','-')
 def resolve_exp(s):
@@ -19,11 +20,12 @@ def main():
  p.add_argument('experiment',nargs='?',default='list',help='Descriptive experiment name, ALL, list, refresh, or setup')
  p.add_argument('solver',nargs='?',default='HPR-QP',help='HPR-QP, HPR-p1, HPR-p2, HPR-QP-explicit, PDQP, SCS, CuClarabel, Gurobi, or ALL')
  p.add_argument('--cases',nargs='+',help='Exact names or group__name keys from the mapping; duplicate synthetic names select both groups')
- p.add_argument('--groups',nargs='+',help='Optional source group ids, e.g. synthetic_paper or revision_denser')
+ p.add_argument('--groups',nargs='+',help='Optional source group ids, e.g. synthetic_standard or synthetic_denser')
  p.add_argument('--tolerances',nargs='+',type=float,choices=[1e-4,1e-6,1e-8])
  p.add_argument('--data-root',type=Path,default=Path(os.environ.get('HPR_DATA_ROOT',str(ROOT/'data'))))
  p.add_argument('--output',type=Path,default=ROOT/'results')
- p.add_argument('--julia',default=os.environ.get('JULIA_BIN','julia'))
+ p.add_argument('--julia',default=os.environ.get('JULIA_BIN','julia'),help='Julia 1.10.4 executable for HPR-QP and other solvers')
+ p.add_argument('--cuclarabel-julia',default=os.environ.get('CUCLARABEL_JULIA_BIN'),help='Julia 1.11.5 executable for CuClarabel; defaults to --julia for a standalone CuClarabel run')
  p.add_argument('--gpu',default='0');p.add_argument('--gpus',help='Comma-separated physical GPUs; one solver worker at a time on each GPU')
  p.add_argument('--jobs',type=int,default=1,help='Concurrent workers; default 1 for timing isolation')
  p.add_argument('--cpu-threads',type=int,default=32,help='Gurobi threads; 32 follows the archived default; CPU Gurobi jobs never overlap within this package')
@@ -43,7 +45,7 @@ def main():
   print('Preview:     ./scripts/run.sh QAPLIB HPR-QP --plan')
   print('Optional case check: ./scripts/run.sh MM HPR-QP --cases CVXQP3_S.mps QSCSD1.mps')
   print('Dataset costs and paper mapping: docs/EXPERIMENTS.md')
-  print('Results:     results/paper_results/experiments/<name>/summary.html (source-labelled)')
+  print('Results:     results/reproduced_results/<experiment>/summary.csv and comparison.csv')
   return 0
  if a.experiment.lower()=='refresh':
   for e in CAT:refresh(e,a.output)
@@ -57,7 +59,9 @@ def main():
    env=dict(os.environ);env['JULIA_LOAD_PATH']='@:@stdlib';env.pop('LD_LIBRARY_PATH',None)
    env['JULIA_DEPOT_PATH']=os.environ.get('HPR_DEPOT_PATH' if s.startswith('HPR') else 'COMPETITOR_DEPOT_PATH',os.environ.get('JULIA_DEPOT_PATH',str(ROOT/'.julia-depot')))
    logfile=a.output/'setup_logs'/(s+'.log');print('Installing pinned environment:',s,flush=True)
-   result=run_guarded([a.julia,'--startup-file=no','--project='+str(project),'-e','using Pkg; @assert VERSION==v"1.10.4" "Use Julia 1.10.4"; Pkg.instantiate()'],env,logfile,a.hard_time_limit or 3600)
+   julia=(a.cuclarabel_julia or a.julia) if s=='CuClarabel' else a.julia
+   version='1.11.5' if s=='CuClarabel' else '1.10.4'
+   result=run_guarded([julia,'--startup-file=no','--project='+str(project),'-e',f'using Pkg; @assert VERSION==v"{version}" "Use Julia {version} for {s}"; Pkg.instantiate()'],env,logfile,a.hard_time_limit or 3600)
    if result['state']!='completed':print('Setup failed:',result['state'],logfile);return 2
   return 0
  chosen=CAT if a.experiment.upper()=='ALL' else [resolve_exp(a.experiment)]
@@ -83,7 +87,11 @@ def main():
     c['tolerances']=ts
     soft=a.time_limit or spec['time_limit'];hard=a.hard_time_limit or soft+(14400 if s.startswith('HPR') else 900)
     for tol in ts if spec['kind']=='jump' else [None]:
-     key=json.dumps([s,spec['kind'],c['group'],c['name'],tol,soft,hard,a.cpu_threads,a.memory_gb])
+     identity=[s,spec['kind'],c['group'],c['name'],tol,soft,hard,a.cpu_threads,a.memory_gb]
+     if s=='CuClarabel':
+      environment=ROOT/'scripts/environments/CuClarabel'
+      identity.append(hashlib.sha256(b''.join((environment/name).read_bytes() for name in ['Project.toml','Manifest.toml','LocalPreferences.toml'])).hexdigest())
+     key=json.dumps(identity)
      task=tasks.setdefault(key,dict(solver=s,kind=spec['kind'],soft=soft,hard=hard,tol=tol,targets=[],token=hashlib.sha256(key.encode()).hexdigest()[:20]))
      task['targets'].append((e,spec,c))
     if e not in active:active.append(e)
@@ -109,8 +117,12 @@ def main():
  for e in active:
   if e.get('validation_note'):print('MODEL CORRECTION: '+e['validation_note'])
  if a.plan:return 2 if missing else 0
- exe=shutil.which(a.julia) or (a.julia if Path(a.julia).is_file() else None)
- if not exe:p.error('Julia 1.10.4 not found; set JULIA_BIN or use --julia')
+ executables={}
+ for s in {task['solver'] for task in tasks}:
+  julia=(a.cuclarabel_julia or a.julia) if s=='CuClarabel' else a.julia
+  exe=shutil.which(julia) or (julia if Path(julia).is_file() else None)
+  if not exe:p.error('Julia executable not found for '+s+': '+julia+'; set JULIA_BIN / CUCLARABEL_JULIA_BIN or use --julia / --cuclarabel-julia')
+  executables[s]=exe
  for e in active:refresh(e,a.output)
  stop=threading.Event();resource_queue=queue.Queue()
  for g in gpus:resource_queue.put(g)
@@ -122,13 +134,14 @@ def main():
  locks=ROOT/'.reviewer_locks';locks.mkdir(exist_ok=True);hash_cache={};hash_lock=threading.Lock();print_lock=threading.Lock()
  def message(s):
   with print_lock:print(s,flush=True)
- def completed_for(path,case):
-  try:d=json.loads(path.read_text())
+ def completed_for(path,case,tolerance):
+  try:d=load_run(path.parent)
   except (OSError,ValueError):return False
-  return d.get('state')=='completed' and set(case['tolerances']) <= {r['tolerance'] for r in d.get('rows',[]) if not case.get('model_revision') or r.get('model_revision')==case['model_revision']}
+  expected={tolerance} if tolerance is not None else set(case['tolerances'])
+  return d.get('state')=='completed' and expected <= {r['tolerance'] for r in d.get('rows',[]) if not case.get('model_revision') or r.get('model_revision')==case['model_revision']}
  def execute(task):
-  e,sp,c0=task['targets'][0];c=copy.deepcopy(c0);c['tolerances']=sorted({t for _,_,cc in task['targets'] for t in cc['tolerances']});s=task['solver'];folders=[a.output/'raw_results'/ee['name']/s for ee,_,_ in task['targets']]
-  if not a.rerun and all(any(completed_for(f,next(cc for ee,_,cc in task['targets'] if a.output/'raw_results'/ee['name']/s==d)) for f in (d/'runs').glob('*_'+task['token']+'/record.json')) for d in folders):
+  e,sp,c0=task['targets'][0];c=copy.deepcopy(c0);c['tolerances']=sorted({t for _,_,cc in task['targets'] for t in cc['tolerances']});s=task['solver'];folders=[solver_path(a.output,ee['name'],s)/'raw' for ee,_,_ in task['targets']]
+  if not a.rerun and all(any(completed_for(f,next(cc for ee,_,cc in task['targets'] if solver_path(a.output,ee['name'],s)/'raw'==d),task['tol']) for f in (d/'runs').glob('*_'+task['token']+'/run.csv')) for d in folders):
    message('Resume: already completed '+e['name']+'/'+s+'/'+c['name']);return True
   if stop.is_set():return False
   gpu=None;lf=None
@@ -145,12 +158,20 @@ def main():
    if stop.is_set():return False
    stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')+'_'+task['token'];run=folders[0]/'runs'/stamp;run.mkdir(parents=True,exist_ok=True)
    record=dict(state='running',solver=s,experiment=e['name'],case_id=c['key'],started_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),rows=[],input_path=task['input'],gpu=gpu,cpu_threads=a.cpu_threads,solver_time_limit=task['soft'],hard_time_limit=task['hard'],host_memory_limit_gb=a.memory_gb)
-   atomic_json(run/'record.json',record)
+   save_run(run,record)
    def finish():
-    record['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();atomic_json(run/'record.json',record)
+    record['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();save_run(run,record)
     for ee,ss,cc in task['targets']:
-     dst=a.output/'raw_results'/ee['name']/s/'runs'/stamp
-     atomic_json(dst/'record.json',dict(record,experiment=ee['name'],rows=[r for r in record['rows'] if r['tolerance'] in cc['tolerances']]))
+     dst=solver_path(a.output,ee['name'],s)/'raw/runs'/stamp
+     target_rows=[dict(r) for r in record['rows'] if r['tolerance'] in cc['tolerances']]
+     if dst!=run:
+      if (run/'native').exists():shutil.copytree(run/'native',dst/'native',dirs_exist_ok=True)
+      if (run/'launch.log').exists():shutil.copy2(run/'launch.log',dst/'launch.log')
+      for rr0 in target_rows:
+       try:oldprefix=str(run.relative_to(ROOT));newprefix=str(dst.relative_to(ROOT))
+       except ValueError:oldprefix=str(run);newprefix=str(dst)
+       rr0['raw_file']=rr0['raw_file'].replace(oldprefix,newprefix)
+     save_run(dst,dict(record,experiment=ee['name'],rows=target_rows))
      refresh(ee,a.output)
    if not task['input']:
     record.update(state='INPUT_ERROR',error='Missing '+c['path']+'; see docs/EXPERIMENTS.md and data inventories');finish();message(record['error']);return False
@@ -170,18 +191,19 @@ def main():
    env=dict(os.environ);env.pop('LD_LIBRARY_PATH',None);env.update(JULIA_LOAD_PATH='@:@stdlib',JULIA_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',CUDA_VISIBLE_DEVICES=gpu or '',GKSwstype='100')
    env['JULIA_DEPOT_PATH']=os.environ.get('HPR_DEPOT_PATH' if s.startswith('HPR') else 'COMPETITOR_DEPOT_PATH',os.environ.get('JULIA_DEPOT_PATH',str(ROOT/'.julia-depot')))
    project=ROOT/'scripts/environments' if s.startswith('HPR') else ROOT/'scripts/environments'/s
-   command=[exe,'--startup-file=no','--project='+str(project)]
+   command=[executables[s],'--startup-file=no','--project='+str(project)]
+   jobpath=ROOT/'.reviewer_runtime'/stamp/'job.json';jobpath.parent.mkdir(parents=True,exist_ok=True)
    if task['kind'] in ['hpr','curve']:
     g=copy.deepcopy(next(g for g in load_groups() if g['id']==c['group']));case=next(x for x in g['cases'] if x['name']==c['name']);case['path']=str(path);g['params']['time_limit']=task['soft'];g['cases']=[case]
-    job=dict(id=task['token'],group=g,cases=[case],phase='reviewer_entrypoint',output_root=str(run));atomic_json(run/'job.json',job)
-    command += [str(ROOT/'scripts/run_worker.jl'),str(run/'job.json')]
+    job=dict(id=task['token'],group=g,cases=[case],phase='reviewer_entrypoint',output_root=str(run));atomic_json(jobpath,job)
+    command += [str(ROOT/'scripts/run_worker.jl'),str(jobpath)]
    elif task['kind']=='jump':
     settings=dict(c.get('settings',{}))
     if s=='Gurobi':settings['Threads']=a.cpu_threads
     jc=dict(family=c['family'],name=Path(c['path']).name,path=str(path),tolerances=[task['tol']],settings=settings)
     warm=dict(family='MM',name='CVXQP3_S.mps',path=str(ROOT/'data/Support/warmup.mps'))
-    atomic_json(run/'job.json',dict(solver=s,cases=[jc],tolerances=[task['tol']],output=str(run/'native'),warmup_case=warm,solver_time_limit=task['soft']))
-    command += [str(ROOT/'scripts/jump_worker.jl'),str(run/'job.json')]
+    atomic_json(jobpath,dict(solver=s,cases=[jc],tolerances=[task['tol']],output=str(run/'native'),warmup_case=warm,solver_time_limit=task['soft']))
+    command += [str(ROOT/'scripts/jump_worker.jl'),str(jobpath)]
    elif task['kind']=='pdqp':
     (run/'native').mkdir();env['HPR_COMPETITOR_META']=str(run/'native/environment.json')
     command += ['--load',str(ROOT/'scripts/pdqp_environment.jl'),str(ROOT/'src/competitors/PDQP/scripts/solve_0.jl'),'--instance_path',str(path),'--output_directory',str(run/'native'),'--tolerance','1e-8','--time_sec_limit',str(task['soft']),'--use_gpu','1']
@@ -192,11 +214,13 @@ def main():
    if result['state']=='completed':
     try:
      if task['kind'] in ['hpr','curve']:
-      nf=run/'results'/c['group']/(c['name']+'.json');native=json.loads(nf.read_text());rr=hpr_rows(c,s,native,str(nf));
-      for result_row in rr:result_row['model_revision']=native.get('model_revision','')
-      if native.get('execution')!='completed':record['state']='EXECUTION_ERROR'
+      nf=next((run/'native').glob('*result.csv'));native=hpr_csv_record(nf,c['name']);rr=hpr_rows(c,s,native,str(nf)+'#'+c['name'])
       if task['kind']=='curve':
        from compare_results import compare
+       native.update(group=c['group'],name=c['name'],reference=case['reference'])
+       samples=list(csv.DictReader((run/'native/curves.csv').open()))
+       native['result']['plot_iter']=[int(x['iteration']) for x in samples]
+       native['result']['plot_KKT']=[float(x['optimality']) for x in samples]
        verdict=compare(native)['verdict']
        for r in rr:r['note']='Full-curve comparison: '+verdict
      elif task['kind']=='jump':
@@ -205,7 +229,7 @@ def main():
      elif task['kind']=='pdqp':
       nf=next((run/'native').glob('*_summary.json'));rr=pdqp_rows(c,json.loads(nf.read_text()),str(nf))
      else:
-      nf=run/'native/raw_results.csv';native=next(x for x in csv.DictReader(nf.open()) if x['method']==c['method']);rr=[row(c,s,1e-8,status=native['status'],solved=native['status']=='OPTIMAL',iterations=number(native['iter']),seconds=number(native['time']),objective=number(native['primal_obj']),residual=number(native['residual']),raw_file=str(nf),note='Reconstructed appendix driver; historical dual count remains unverified')]
+      nf=run/'native/raw_results.csv';native=next(x for x in csv.DictReader(nf.open()) if x['method']==c['method']);rr=[row(c,s,1e-8,status=native['status'],solved=native['status']=='OPTIMAL',iterations=number(native['iter']),seconds=number(native['time']),objective=number(native['primal_obj']),residual=number(native['residual']),raw_file=str(nf),note='R2 Online Supplement Appendix E example')]
     except (OSError,ValueError,KeyError,StopIteration) as ex:record.update(state='MISSING_RESULT',error=str(ex))
    if record['state']!='completed':
     ts=[task['tol']] if task['tol'] else c['tolerances'];rr=[row(c,s,t,status=record['state'],solved=False,wall_seconds=result['wall_seconds'],raw_file=str(run/'launch.log'),note=record.get('error','External guard or interruption; no archived substitution for this attempted row')) for t in ts]
@@ -214,6 +238,7 @@ def main():
     r['wall_seconds']=result['wall_seconds']
     try:r['raw_file']=str(Path(r['raw_file']).relative_to(ROOT))
     except ValueError:pass
+   if jobpath.exists():jobpath.unlink();jobpath.parent.rmdir()
    record['rows']=rr;finish();message(record['state']+' '+e['name']+'/'+s+'/'+c['name']);return record['state']=='completed'
   except Exception as ex:
    message('Launcher error '+e['name']+'/'+s+'/'+c['name']+': '+str(ex))
@@ -229,7 +254,7 @@ def main():
   if timer:timer.cancel()
   for sig,handler in old_handlers.items():signal.signal(sig,handler)
   for e in active:refresh(e,a.output)
- print('Reports:',a.output,'— open <experiment>/summary.html; archived/fresh sources are explicit.')
+ for e in active:print('Reports:',experiment_path(a.output,e['name'])/'summary.csv','and comparison.csv')
  return 130 if stop.is_set() else 0 if all(ok) else 2
 
 def re_safe(s):return ''.join(c if c.isalnum() or c in '-_' else '_' for c in s)

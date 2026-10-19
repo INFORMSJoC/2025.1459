@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+Gurobi,all,1e-08,11,1,1,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+Gurobi,all,1e-06,11,1,1,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld
+Gurobi,all,0.0001,11,1,1,,,False,0,Incomplete dataset; no paper-value fallback; aggregate withheld

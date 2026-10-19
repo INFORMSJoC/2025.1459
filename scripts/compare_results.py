@@ -1,5 +1,4 @@
-import math,json,csv,argparse
-from pathlib import Path
+import math
 
 def number(v):
     try:return float(v)
@@ -20,17 +19,3 @@ def compare(d):
     elif bs!='OPTIMAL' and s!='OPTIMAL':verdict='both_unsolved_review'
     else:verdict='mismatch_review'
     return dict(group=d['group'],name=d['name'],verdict=verdict,status=s,saved_status=bs,iter=a.get('iter'),saved_iter=b.get('iter'),iteration_match=matched,residual=a.get('residuals'),saved_residual=b.get('res'),objective=a.get('primal_obj'),saved_objective=b.get('primal_obj'),scaled_objective_difference=diff if math.isfinite(diff) else None,seconds=a.get('time'),saved_seconds=b.get('alg_time'),gpu=d.get('gpu'),error=d.get('error',''),iter_3=a.get('iter_3'),saved_iter_3=b.get('iter_3'),iter_4=a.get('iter_4'),saved_iter_4=b.get('iter_4'),iter_6=a.get('iter_6'),saved_iter_6=b.get('iter_6'))
-
-
-def summarize(root):
- from export_raw_results import export_runs
- export_runs([root],root/'raw_csv')
- rows=[compare(json.loads(p.read_text())) for p in sorted((root/'results').glob('*/*.json'))]
- if rows:
-  with (root/'comparison.csv').open('w',newline='') as f:
-   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
- counts={}
- for r in rows:counts[r['verdict']]=counts.get(r['verdict'],0)+1
- (root/'comparison_summary.json').write_text(json.dumps(counts,indent=2));return counts
-if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('output',type=Path);a=p.parse_args();print(summarize(a.output))

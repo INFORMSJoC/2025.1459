@@ -1,2 +1,0 @@
-solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
-HPR-p1,appendix__primal1,primal1,appendix_concrete,all,1e-08,OPTIMAL,True,1700.0,2.7385292053222656,-2.5062499999998566,7.156044344930914e-10,fresh,verification_run,results/raw_results/Appendix-Example/HPR-p1/raw/verification/appendix_concrete/primal1.json,native solver,full objective,7.01,Reconstructed example; historical dual ~840 remains unverified,

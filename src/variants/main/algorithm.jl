@@ -1056,7 +1056,7 @@ function run_file(FILE_NAME, params, x_path="", y_path=""; force_general_q=false
 
 end
 
-function run_dataset(data_path, result_path, params, device_number=0)
+function run_dataset(data_path, result_path, params, device_number=0; force_general_q=false)
     current_file = @__FILE__
     cp(current_file, result_path * "HPRQP.jl", force=true)
     CUDA.device!(device_number)
@@ -1107,7 +1107,7 @@ function run_dataset(data_path, result_path, params, device_number=0)
     if params.do_warm_up
         println("warm up starts: ---------------------------------------------------------------------------------------------------------- ")
         t_start_all = time()
-        results = run_file(FILE_NAME, params)
+        results = run_file(FILE_NAME, params; force_general_q=force_general_q)
         all_time = time() - t_start_all
         println("warm up time: ", all_time)
         println("warm up ends ----------------------------------------------------------------------------------------------------------")
@@ -1129,7 +1129,7 @@ function run_dataset(data_path, result_path, params, device_number=0)
                 # if params.do_warm_up
                 #     println("warm up starts: ---------------------------------------------------------------------------------------------------------- ")
                 #     t_start_all = time()
-                #     results = run_file(FILE_NAME, params)
+                #     results = run_file(FILE_NAME, params; force_general_q=force_general_q)
                 #     all_time = time() - t_start_all
                 #     println("warm up time: ", all_time)
                 #     println("warm up ends ----------------------------------------------------------------------------------------------------------")
@@ -1138,7 +1138,7 @@ function run_dataset(data_path, result_path, params, device_number=0)
 
                 println("main run starts: ----------------------------------------------------------------------------------------------------------")
                 t_start_all = time()
-                results = run_file(FILE_NAME, params)
+                results = run_file(FILE_NAME, params; force_general_q=force_general_q)
                 all_time = time() - t_start_all
                 println("main run ends----------------------------------------------------------------------------------------------------------")
 
