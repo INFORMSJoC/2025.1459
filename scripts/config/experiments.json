@@ -1,0 +1,2438 @@
+[
+  {
+    "id": "MM_test_version",
+    "variant": "main",
+    "module": "HPRQP_zxwyw",
+    "entry": "HPRQP_zxwyw.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "AUG2D.mps",
+        "path": "MM/inputs/AUG2D.mps",
+        "bytes": 2963920
+      },
+      {
+        "name": "AUG2DC.mps",
+        "path": "MM/inputs/AUG2DC.mps",
+        "bytes": 2985122
+      },
+      {
+        "name": "AUG2DCQP.mps",
+        "path": "MM/inputs/AUG2DCQP.mps",
+        "bytes": 2523098
+      },
+      {
+        "name": "AUG2DQP.mps",
+        "path": "MM/inputs/AUG2DQP.mps",
+        "bytes": 2504470
+      },
+      {
+        "name": "AUG3D.mps",
+        "path": "MM/inputs/AUG3D.mps",
+        "bytes": 442739
+      },
+      {
+        "name": "AUG3DC.mps",
+        "path": "MM/inputs/AUG3DC.mps",
+        "bytes": 506340
+      },
+      {
+        "name": "AUG3DCQP.mps",
+        "path": "MM/inputs/AUG3DCQP.mps",
+        "bytes": 429899
+      },
+      {
+        "name": "AUG3DQP.mps",
+        "path": "MM/inputs/AUG3DQP.mps",
+        "bytes": 366298
+      },
+      {
+        "name": "BOYD1.mps",
+        "path": "MM/inputs/BOYD1.mps",
+        "bytes": 24988778
+      },
+      {
+        "name": "BOYD2.mps",
+        "path": "MM/inputs/BOYD2.mps",
+        "bytes": 16452093
+      },
+      {
+        "name": "CONT-050.mps",
+        "path": "MM/inputs/CONT-050.mps",
+        "bytes": 664199
+      },
+      {
+        "name": "CONT-100.mps",
+        "path": "MM/inputs/CONT-100.mps",
+        "bytes": 2696834
+      },
+      {
+        "name": "CONT-101.mps",
+        "path": "MM/inputs/CONT-101.mps",
+        "bytes": 1909228
+      },
+      {
+        "name": "CONT-200.mps",
+        "path": "MM/inputs/CONT-200.mps",
+        "bytes": 10930017
+      },
+      {
+        "name": "CONT-201.mps",
+        "path": "MM/inputs/CONT-201.mps",
+        "bytes": 7634527
+      },
+      {
+        "name": "CONT-300.mps",
+        "path": "MM/inputs/CONT-300.mps",
+        "bytes": 17347715
+      },
+      {
+        "name": "CVXQP1_L.mps",
+        "path": "MM/inputs/CVXQP1_L.mps",
+        "bytes": 2376149
+      },
+      {
+        "name": "CVXQP1_M.mps",
+        "path": "MM/inputs/CVXQP1_M.mps",
+        "bytes": 233266
+      },
+      {
+        "name": "CVXQP1_S.mps",
+        "path": "MM/inputs/CVXQP1_S.mps",
+        "bytes": 22643
+      },
+      {
+        "name": "CVXQP2_L.mps",
+        "path": "MM/inputs/CVXQP2_L.mps",
+        "bytes": 2122675
+      },
+      {
+        "name": "CVXQP2_M.mps",
+        "path": "MM/inputs/CVXQP2_M.mps",
+        "bytes": 207942
+      },
+      {
+        "name": "CVXQP2_S.mps",
+        "path": "MM/inputs/CVXQP2_S.mps",
+        "bytes": 20134
+      },
+      {
+        "name": "CVXQP3_L.mps",
+        "path": "MM/inputs/CVXQP3_L.mps",
+        "bytes": 2629623
+      },
+      {
+        "name": "CVXQP3_M.mps",
+        "path": "MM/inputs/CVXQP3_M.mps",
+        "bytes": 258590
+      },
+      {
+        "name": "CVXQP3_S.mps",
+        "path": "MM/inputs/CVXQP3_S.mps",
+        "bytes": 25152
+      },
+      {
+        "name": "DPKLO1.mps",
+        "path": "MM/inputs/DPKLO1.mps",
+        "bytes": 60892
+      },
+      {
+        "name": "DTOC3.mps",
+        "path": "MM/inputs/DTOC3.mps",
+        "bytes": 1939755
+      },
+      {
+        "name": "DUAL1.mps",
+        "path": "MM/inputs/DUAL1.mps",
+        "bytes": 103503
+      },
+      {
+        "name": "DUAL2.mps",
+        "path": "MM/inputs/DUAL2.mps",
+        "bytes": 129904
+      },
+      {
+        "name": "DUAL3.mps",
+        "path": "MM/inputs/DUAL3.mps",
+        "bytes": 175828
+      },
+      {
+        "name": "DUAL4.mps",
+        "path": "MM/inputs/DUAL4.mps",
+        "bytes": 82648
+      },
+      {
+        "name": "DUALC1.mps",
+        "path": "MM/inputs/DUALC1.mps",
+        "bytes": 59856
+      },
+      {
+        "name": "DUALC2.mps",
+        "path": "MM/inputs/DUALC2.mps",
+        "bytes": 49883
+      },
+      {
+        "name": "DUALC5.mps",
+        "path": "MM/inputs/DUALC5.mps",
+        "bytes": 67293
+      },
+      {
+        "name": "DUALC8.mps",
+        "path": "MM/inputs/DUALC8.mps",
+        "bytes": 122328
+      },
+      {
+        "name": "EXDATA.mps",
+        "path": "MM/inputs/EXDATA.mps",
+        "bytes": 37423686
+      },
+      {
+        "name": "GENHS28.mps",
+        "path": "MM/inputs/GENHS28.mps",
+        "bytes": 1752
+      },
+      {
+        "name": "GOULDQP2.mps",
+        "path": "MM/inputs/GOULDQP2.mps",
+        "bytes": 96421
+      },
+      {
+        "name": "GOULDQP3.mps",
+        "path": "MM/inputs/GOULDQP3.mps",
+        "bytes": 137557
+      },
+      {
+        "name": "HS118.mps",
+        "path": "MM/inputs/HS118.mps",
+        "bytes": 3962
+      },
+      {
+        "name": "HS21.mps",
+        "path": "MM/inputs/HS21.mps",
+        "bytes": 374
+      },
+      {
+        "name": "HS268.mps",
+        "path": "MM/inputs/HS268.mps",
+        "bytes": 1688
+      },
+      {
+        "name": "HS35.mps",
+        "path": "MM/inputs/HS35.mps",
+        "bytes": 448
+      },
+      {
+        "name": "HS35MOD.mps",
+        "path": "MM/inputs/HS35MOD.mps",
+        "bytes": 479
+      },
+      {
+        "name": "HS51.mps",
+        "path": "MM/inputs/HS51.mps",
+        "bytes": 771
+      },
+      {
+        "name": "HS52.mps",
+        "path": "MM/inputs/HS52.mps",
+        "bytes": 746
+      },
+      {
+        "name": "HS53.mps",
+        "path": "MM/inputs/HS53.mps",
+        "bytes": 905
+      },
+      {
+        "name": "HS76.mps",
+        "path": "MM/inputs/HS76.mps",
+        "bytes": 733
+      },
+      {
+        "name": "HUES-MOD.mps",
+        "path": "MM/inputs/HUES-MOD.mps",
+        "bytes": 1025739
+      },
+      {
+        "name": "HUESTIS.mps",
+        "path": "MM/inputs/HUESTIS.mps",
+        "bytes": 975738
+      },
+      {
+        "name": "KSIP.mps",
+        "path": "MM/inputs/KSIP.mps",
+        "bytes": 678273
+      },
+      {
+        "name": "LASER.mps",
+        "path": "MM/inputs/LASER.mps",
+        "bytes": 342257
+      },
+      {
+        "name": "LISWET3.mps",
+        "path": "MM/inputs/LISWET3.mps",
+        "bytes": 1750946
+      },
+      {
+        "name": "LISWET4.mps",
+        "path": "MM/inputs/LISWET4.mps",
+        "bytes": 1751768
+      },
+      {
+        "name": "LISWET5.mps",
+        "path": "MM/inputs/LISWET5.mps",
+        "bytes": 1739433
+      },
+      {
+        "name": "LISWET6.mps",
+        "path": "MM/inputs/LISWET6.mps",
+        "bytes": 1748839
+      },
+      {
+        "name": "LOTSCHD.mps",
+        "path": "MM/inputs/LOTSCHD.mps",
+        "bytes": 2016
+      },
+      {
+        "name": "MOSARQP1.mps",
+        "path": "MM/inputs/MOSARQP1.mps",
+        "bytes": 281216
+      },
+      {
+        "name": "MOSARQP2.mps",
+        "path": "MM/inputs/MOSARQP2.mps",
+        "bytes": 161372
+      },
+      {
+        "name": "POWELL20.mps",
+        "path": "MM/inputs/POWELL20.mps",
+        "bytes": 1463983
+      },
+      {
+        "name": "PRIMAL1.mps",
+        "path": "MM/inputs/PRIMAL1.mps",
+        "bytes": 177256
+      },
+      {
+        "name": "PRIMAL2.mps",
+        "path": "MM/inputs/PRIMAL2.mps",
+        "bytes": 256009
+      },
+      {
+        "name": "PRIMAL3.mps",
+        "path": "MM/inputs/PRIMAL3.mps",
+        "bytes": 614452
+      },
+      {
+        "name": "PRIMAL4.mps",
+        "path": "MM/inputs/PRIMAL4.mps",
+        "bytes": 507513
+      },
+      {
+        "name": "PRIMALC1.mps",
+        "path": "MM/inputs/PRIMALC1.mps",
+        "bytes": 65616
+      },
+      {
+        "name": "PRIMALC2.mps",
+        "path": "MM/inputs/PRIMALC2.mps",
+        "bytes": 52382
+      },
+      {
+        "name": "PRIMALC5.mps",
+        "path": "MM/inputs/PRIMALC5.mps",
+        "bytes": 72135
+      },
+      {
+        "name": "PRIMALC8.mps",
+        "path": "MM/inputs/PRIMALC8.mps",
+        "bytes": 132240
+      },
+      {
+        "name": "Q25FV47.mps",
+        "path": "MM/inputs/Q25FV47.mps",
+        "bytes": 1887269
+      },
+      {
+        "name": "QADLITTL.mps",
+        "path": "MM/inputs/QADLITTL.mps",
+        "bytes": 17563
+      },
+      {
+        "name": "QAFIRO.mps",
+        "path": "MM/inputs/QAFIRO.mps",
+        "bytes": 3234
+      },
+      {
+        "name": "QBANDM.mps",
+        "path": "MM/inputs/QBANDM.mps",
+        "bytes": 85346
+      },
+      {
+        "name": "QBEACONF.mps",
+        "path": "MM/inputs/QBEACONF.mps",
+        "bytes": 107086
+      },
+      {
+        "name": "QBORE3D.mps",
+        "path": "MM/inputs/QBORE3D.mps",
+        "bytes": 50683
+      },
+      {
+        "name": "QBRANDY.mps",
+        "path": "MM/inputs/QBRANDY.mps",
+        "bytes": 68194
+      },
+      {
+        "name": "QCAPRI.mps",
+        "path": "MM/inputs/QCAPRI.mps",
+        "bytes": 89214
+      },
+      {
+        "name": "QE226.mps",
+        "path": "MM/inputs/QE226.mps",
+        "bytes": 112671
+      },
+      {
+        "name": "QETAMACR.mps",
+        "path": "MM/inputs/QETAMACR.mps",
+        "bytes": 198762
+      },
+      {
+        "name": "QFFFFF80.mps",
+        "path": "MM/inputs/QFFFFF80.mps",
+        "bytes": 255060
+      },
+      {
+        "name": "QFORPLAN.mps",
+        "path": "MM/inputs/QFORPLAN.mps",
+        "bytes": 164936
+      },
+      {
+        "name": "QGFRDXPN.mps",
+        "path": "MM/inputs/QGFRDXPN.mps",
+        "bytes": 120435
+      },
+      {
+        "name": "QGROW15.mps",
+        "path": "MM/inputs/QGROW15.mps",
+        "bytes": 221912
+      },
+      {
+        "name": "QGROW22.mps",
+        "path": "MM/inputs/QGROW22.mps",
+        "bytes": 328766
+      },
+      {
+        "name": "QGROW7.mps",
+        "path": "MM/inputs/QGROW7.mps",
+        "bytes": 106489
+      },
+      {
+        "name": "QISRAEL.mps",
+        "path": "MM/inputs/QISRAEL.mps",
+        "bytes": 93433
+      },
+      {
+        "name": "QPCBLEND.mps",
+        "path": "MM/inputs/QPCBLEND.mps",
+        "bytes": 18999
+      },
+      {
+        "name": "QPCBOEI1.mps",
+        "path": "MM/inputs/QPCBOEI1.mps",
+        "bytes": 142414
+      },
+      {
+        "name": "QPCBOEI2.mps",
+        "path": "MM/inputs/QPCBOEI2.mps",
+        "bytes": 49706
+      },
+      {
+        "name": "QPCSTAIR.mps",
+        "path": "MM/inputs/QPCSTAIR.mps",
+        "bytes": 142970
+      },
+      {
+        "name": "QPILOTNO.mps",
+        "path": "MM/inputs/QPILOTNO.mps",
+        "bytes": 466219
+      },
+      {
+        "name": "QPTEST.mps",
+        "path": "MM/inputs/QPTEST.mps",
+        "bytes": 431
+      },
+      {
+        "name": "QRECIPE.mps",
+        "path": "MM/inputs/QRECIPE.mps",
+        "bytes": 26713
+      },
+      {
+        "name": "QSC205.mps",
+        "path": "MM/inputs/QSC205.mps",
+        "bytes": 19107
+      },
+      {
+        "name": "QSCAGR25.mps",
+        "path": "MM/inputs/QSCAGR25.mps",
+        "bytes": 71104
+      },
+      {
+        "name": "QSCAGR7.mps",
+        "path": "MM/inputs/QSCAGR7.mps",
+        "bytes": 19319
+      },
+      {
+        "name": "QSCFXM1.mps",
+        "path": "MM/inputs/QSCFXM1.mps",
+        "bytes": 102586
+      },
+      {
+        "name": "QSCFXM2.mps",
+        "path": "MM/inputs/QSCFXM2.mps",
+        "bytes": 196649
+      },
+      {
+        "name": "QSCFXM3.mps",
+        "path": "MM/inputs/QSCFXM3.mps",
+        "bytes": 282683
+      },
+      {
+        "name": "QSCORPIO.mps",
+        "path": "MM/inputs/QSCORPIO.mps",
+        "bytes": 57090
+      },
+      {
+        "name": "QSCRS8.mps",
+        "path": "MM/inputs/QSCRS8.mps",
+        "bytes": 134669
+      },
+      {
+        "name": "QSCSD1.mps",
+        "path": "MM/inputs/QSCSD1.mps",
+        "bytes": 123838
+      },
+      {
+        "name": "QSCSD6.mps",
+        "path": "MM/inputs/QSCSD6.mps",
+        "bytes": 224655
+      },
+      {
+        "name": "QSCSD8.mps",
+        "path": "MM/inputs/QSCSD8.mps",
+        "bytes": 438152
+      },
+      {
+        "name": "QSCTAP1.mps",
+        "path": "MM/inputs/QSCTAP1.mps",
+        "bytes": 66918
+      },
+      {
+        "name": "QSCTAP2.mps",
+        "path": "MM/inputs/QSCTAP2.mps",
+        "bytes": 265560
+      },
+      {
+        "name": "QSCTAP3.mps",
+        "path": "MM/inputs/QSCTAP3.mps",
+        "bytes": 351705
+      },
+      {
+        "name": "QSEBA.mps",
+        "path": "MM/inputs/QSEBA.mps",
+        "bytes": 169440
+      },
+      {
+        "name": "QSHARE1B.mps",
+        "path": "MM/inputs/QSHARE1B.mps",
+        "bytes": 38867
+      },
+      {
+        "name": "QSHARE2B.mps",
+        "path": "MM/inputs/QSHARE2B.mps",
+        "bytes": 24155
+      },
+      {
+        "name": "QSHELL.mps",
+        "path": "MM/inputs/QSHELL.mps",
+        "bytes": 1054261
+      },
+      {
+        "name": "QSHIP04L.mps",
+        "path": "MM/inputs/QSHIP04L.mps",
+        "bytes": 249357
+      },
+      {
+        "name": "QSHIP04S.mps",
+        "path": "MM/inputs/QSHIP04S.mps",
+        "bytes": 176298
+      },
+      {
+        "name": "QSHIP08L.mps",
+        "path": "MM/inputs/QSHIP08L.mps",
+        "bytes": 1402920
+      },
+      {
+        "name": "QSHIP08S.mps",
+        "path": "MM/inputs/QSHIP08S.mps",
+        "bytes": 588929
+      },
+      {
+        "name": "QSHIP12L.mps",
+        "path": "MM/inputs/QSHIP12L.mps",
+        "bytes": 2252229
+      },
+      {
+        "name": "QSHIP12S.mps",
+        "path": "MM/inputs/QSHIP12S.mps",
+        "bytes": 791941
+      },
+      {
+        "name": "QSIERRA.mps",
+        "path": "MM/inputs/QSIERRA.mps",
+        "bytes": 354079
+      },
+      {
+        "name": "QSTAIR.mps",
+        "path": "MM/inputs/QSTAIR.mps",
+        "bytes": 154788
+      },
+      {
+        "name": "QSTANDAT.mps",
+        "path": "MM/inputs/QSTANDAT.mps",
+        "bytes": 111840
+      },
+      {
+        "name": "S268.mps",
+        "path": "MM/inputs/S268.mps",
+        "bytes": 1687
+      },
+      {
+        "name": "STADAT1.mps",
+        "path": "MM/inputs/STADAT1.mps",
+        "bytes": 706869
+      },
+      {
+        "name": "STADAT2.mps",
+        "path": "MM/inputs/STADAT2.mps",
+        "bytes": 710890
+      },
+      {
+        "name": "STADAT3.mps",
+        "path": "MM/inputs/STADAT3.mps",
+        "bytes": 1427012
+      },
+      {
+        "name": "STCQP1.mps",
+        "path": "MM/inputs/STCQP1.mps",
+        "bytes": 1428820
+      },
+      {
+        "name": "STCQP2.mps",
+        "path": "MM/inputs/STCQP2.mps",
+        "bytes": 1399882
+      },
+      {
+        "name": "TAME.mps",
+        "path": "MM/inputs/TAME.mps",
+        "bytes": 259
+      },
+      {
+        "name": "UBH1.mps",
+        "path": "MM/inputs/UBH1.mps",
+        "bytes": 2262526
+      },
+      {
+        "name": "YAO.mps",
+        "path": "MM/inputs/YAO.mps",
+        "bytes": 350273
+      },
+      {
+        "name": "ZECEVIC2.mps",
+        "path": "MM/inputs/ZECEVIC2.mps",
+        "bytes": 409
+      },
+      {
+        "name": "LISWET1.mps",
+        "path": "MM/inputs/LISWET1.mps",
+        "bytes": 1748699
+      },
+      {
+        "name": "LISWET10.mps",
+        "path": "MM/inputs/LISWET10.mps",
+        "bytes": 1743824
+      },
+      {
+        "name": "LISWET11.mps",
+        "path": "MM/inputs/LISWET11.mps",
+        "bytes": 1743774
+      },
+      {
+        "name": "LISWET12.mps",
+        "path": "MM/inputs/LISWET12.mps",
+        "bytes": 1743807
+      },
+      {
+        "name": "LISWET2.mps",
+        "path": "MM/inputs/LISWET2.mps",
+        "bytes": 1749685
+      },
+      {
+        "name": "LISWET7.mps",
+        "path": "MM/inputs/LISWET7.mps",
+        "bytes": 1748586
+      },
+      {
+        "name": "LISWET8.mps",
+        "path": "MM/inputs/LISWET8.mps",
+        "bytes": 1743795
+      },
+      {
+        "name": "LISWET9.mps",
+        "path": "MM/inputs/LISWET9.mps",
+        "bytes": 1743791
+      }
+    ],
+    "probe": "TAME.mps",
+    "note": ""
+  },
+  {
+    "id": "LASSO_UCI",
+    "variant": "implicit",
+    "module": "HPRQP_implicit",
+    "entry": "HPRQP_implicit.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false,
+      "problem_type": "LASSO"
+    },
+    "cases": [
+      {
+        "name": "E2006.test.mps",
+        "path": "Lasso-UCI/inputs/E2006_test.mps",
+        "bytes": 238507931
+      },
+      {
+        "name": "E2006.train.mps",
+        "path": "Lasso-UCI/inputs/E2006_train.mps",
+        "bytes": 930000412
+      },
+      {
+        "name": "abalone_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/abalone_scale_expanded7.mps",
+        "bytes": 1078343912
+      },
+      {
+        "name": "bodyfat_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/bodyfat_scale_expanded7.mps",
+        "bytes": 1398328688
+      },
+      {
+        "name": "housing_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/housing_scale_expanded7.mps",
+        "bytes": 1856585524
+      },
+      {
+        "name": "log1p.E2006.test.mps",
+        "path": "Lasso-UCI/inputs/log1p_E2006_test.mps",
+        "bytes": 1892153575
+      },
+      {
+        "name": "log1p.E2006.train.mps",
+        "path": "Lasso-UCI/inputs/log1p_E2006_train.mps",
+        "bytes": 4983930741
+      },
+      {
+        "name": "mpg_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/mpg_scale_expanded7.mps",
+        "bytes": 54133598
+      },
+      {
+        "name": "pyrim_scaled_expanded5.mps",
+        "path": "Lasso-UCI/inputs/pyrim_scaled_expanded5.mps",
+        "bytes": 290449881
+      },
+      {
+        "name": "space_ga_scale_expanded9.mps",
+        "path": "Lasso-UCI/inputs/space_ga_scale_expanded9.mps",
+        "bytes": 719695519
+      },
+      {
+        "name": "triazines_scaled_expanded4.mps",
+        "path": "Lasso-UCI/inputs/triazines_scaled_expanded4.mps",
+        "bytes": 2320897033
+      }
+    ],
+    "probe": "E2006.test.mps",
+    "note": ""
+  },
+  {
+    "id": "LASSO_synthetic",
+    "variant": "implicit",
+    "module": "HPRQP_implicit",
+    "entry": "HPRQP_implicit.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false,
+      "problem_type": "LASSO"
+    },
+    "cases": [
+      {
+        "name": "lasso_1000000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_1000000_10000000.mps",
+        "bytes": 49040976140
+      },
+      {
+        "name": "lasso_1000000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_1000000_5000000.mps",
+        "bytes": 24556996673
+      },
+      {
+        "name": "lasso_10000_1000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_10000_1000000.mps",
+        "bytes": 271948504
+      },
+      {
+        "name": "lasso_10000_500000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_10000_500000.mps",
+        "bytes": 136655797
+      },
+      {
+        "name": "lasso_200000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_200000_10000000.mps",
+        "bytes": 11656205605
+      },
+      {
+        "name": "lasso_200000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_200000_5000000.mps",
+        "bytes": 5807403343
+      },
+      {
+        "name": "lasso_400000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_400000_10000000.mps",
+        "bytes": 21002409232
+      },
+      {
+        "name": "lasso_400000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_400000_5000000.mps",
+        "bytes": 10494809737
+      },
+      {
+        "name": "lasso_600000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_600000_10000000.mps",
+        "bytes": 30348569580
+      },
+      {
+        "name": "lasso_600000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_600000_5000000.mps",
+        "bytes": 15182222114
+      },
+      {
+        "name": "lasso_800000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_800000_10000000.mps",
+        "bytes": 39694751270
+      },
+      {
+        "name": "lasso_800000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_800000_5000000.mps",
+        "bytes": 19839621423
+      }
+    ],
+    "probe": "lasso_10000_1000000.mps",
+    "note": ""
+  },
+  {
+    "id": "QAPLIB",
+    "variant": "implicit",
+    "module": "HPRQP_implicit",
+    "entry": "HPRQP_implicit.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false,
+      "problem_type": "QAP"
+    },
+    "cases": [
+      {
+        "name": "esc128.mat",
+        "path": "QAPLIB/inputs/implicit/esc128.mat",
+        "bytes": 75737
+      },
+      {
+        "name": "esc64a.mat",
+        "path": "QAPLIB/inputs/implicit/esc64a.mat",
+        "bytes": 17856
+      },
+      {
+        "name": "lipa50a.mat",
+        "path": "QAPLIB/inputs/implicit/lipa50a.mat",
+        "bytes": 37941
+      },
+      {
+        "name": "lipa50b.mat",
+        "path": "QAPLIB/inputs/implicit/lipa50b.mat",
+        "bytes": 42888
+      },
+      {
+        "name": "lipa60a.mat",
+        "path": "QAPLIB/inputs/implicit/lipa60a.mat",
+        "bytes": 56969
+      },
+      {
+        "name": "lipa60b.mat",
+        "path": "QAPLIB/inputs/implicit/lipa60b.mat",
+        "bytes": 64354
+      },
+      {
+        "name": "lipa70a.mat",
+        "path": "QAPLIB/inputs/implicit/lipa70a.mat",
+        "bytes": 78677
+      },
+      {
+        "name": "lipa70b.mat",
+        "path": "QAPLIB/inputs/implicit/lipa70b.mat",
+        "bytes": 89489
+      },
+      {
+        "name": "lipa80a.mat",
+        "path": "QAPLIB/inputs/implicit/lipa80a.mat",
+        "bytes": 104510
+      },
+      {
+        "name": "lipa80b.mat",
+        "path": "QAPLIB/inputs/implicit/lipa80b.mat",
+        "bytes": 119391
+      },
+      {
+        "name": "lipa90a.mat",
+        "path": "QAPLIB/inputs/implicit/lipa90a.mat",
+        "bytes": 133225
+      },
+      {
+        "name": "lipa90b.mat",
+        "path": "QAPLIB/inputs/implicit/lipa90b.mat",
+        "bytes": 152504
+      },
+      {
+        "name": "sko100a.mat",
+        "path": "QAPLIB/inputs/implicit/sko100a.mat",
+        "bytes": 137573
+      },
+      {
+        "name": "sko100b.mat",
+        "path": "QAPLIB/inputs/implicit/sko100b.mat",
+        "bytes": 137437
+      },
+      {
+        "name": "sko100c.mat",
+        "path": "QAPLIB/inputs/implicit/sko100c.mat",
+        "bytes": 137341
+      },
+      {
+        "name": "sko100d.mat",
+        "path": "QAPLIB/inputs/implicit/sko100d.mat",
+        "bytes": 137374
+      },
+      {
+        "name": "sko100e.mat",
+        "path": "QAPLIB/inputs/implicit/sko100e.mat",
+        "bytes": 137354
+      },
+      {
+        "name": "sko100f.mat",
+        "path": "QAPLIB/inputs/implicit/sko100f.mat",
+        "bytes": 137215
+      },
+      {
+        "name": "sko56.mat",
+        "path": "QAPLIB/inputs/implicit/sko56.mat",
+        "bytes": 40079
+      },
+      {
+        "name": "sko64.mat",
+        "path": "QAPLIB/inputs/implicit/sko64.mat",
+        "bytes": 50902
+      },
+      {
+        "name": "sko72.mat",
+        "path": "QAPLIB/inputs/implicit/sko72.mat",
+        "bytes": 70365
+      },
+      {
+        "name": "sko81.mat",
+        "path": "QAPLIB/inputs/implicit/sko81.mat",
+        "bytes": 87889
+      },
+      {
+        "name": "tai100a.mat",
+        "path": "QAPLIB/inputs/implicit/tai100a.mat",
+        "bytes": 187681
+      },
+      {
+        "name": "tai100b.mat",
+        "path": "QAPLIB/inputs/implicit/tai100b.mat",
+        "bytes": 223547
+      },
+      {
+        "name": "tai150b.mat",
+        "path": "QAPLIB/inputs/implicit/tai150b.mat",
+        "bytes": 456588
+      },
+      {
+        "name": "tai256c.mat",
+        "path": "QAPLIB/inputs/implicit/tai256c.mat",
+        "bytes": 51242
+      },
+      {
+        "name": "tai50a.mat",
+        "path": "QAPLIB/inputs/implicit/tai50a.mat",
+        "bytes": 44225
+      },
+      {
+        "name": "tai50b.mat",
+        "path": "QAPLIB/inputs/implicit/tai50b.mat",
+        "bytes": 52899
+      },
+      {
+        "name": "tai60a.mat",
+        "path": "QAPLIB/inputs/implicit/tai60a.mat",
+        "bytes": 65459
+      },
+      {
+        "name": "tai60b.mat",
+        "path": "QAPLIB/inputs/implicit/tai60b.mat",
+        "bytes": 78725
+      },
+      {
+        "name": "tai64c.mat",
+        "path": "QAPLIB/inputs/implicit/tai64c.mat",
+        "bytes": 2646
+      },
+      {
+        "name": "tai80a.mat",
+        "path": "QAPLIB/inputs/implicit/tai80a.mat",
+        "bytes": 119383
+      },
+      {
+        "name": "tai80b.mat",
+        "path": "QAPLIB/inputs/implicit/tai80b.mat",
+        "bytes": 142314
+      },
+      {
+        "name": "tho150.mat",
+        "path": "QAPLIB/inputs/implicit/tho150.mat",
+        "bytes": 376300
+      },
+      {
+        "name": "wil100.mat",
+        "path": "QAPLIB/inputs/implicit/wil100.mat",
+        "bytes": 139046
+      },
+      {
+        "name": "wil50.mat",
+        "path": "QAPLIB/inputs/implicit/wil50.mat",
+        "bytes": 31636
+      }
+    ],
+    "probe": "tai64c.mat",
+    "note": ""
+  },
+  {
+    "id": "QAP_large",
+    "variant": "implicit",
+    "module": "HPRQP_implicit",
+    "entry": "HPRQP_implicit.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 360000.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false,
+      "problem_type": "QAP"
+    },
+    "cases": [
+      {
+        "name": "random_1024.mat",
+        "path": "Large-QAP/inputs/random_1024.mat",
+        "bytes": 33559040
+      },
+      {
+        "name": "random_2048.mat",
+        "path": "Large-QAP/inputs/random_2048.mat",
+        "bytes": 134222336
+      },
+      {
+        "name": "random_256.mat",
+        "path": "Large-QAP/inputs/random_256.mat",
+        "bytes": 2101760
+      },
+      {
+        "name": "random_4096.mat",
+        "path": "Large-QAP/inputs/large/random_4096.mat",
+        "bytes": 536875520
+      },
+      {
+        "name": "random_512.mat",
+        "path": "Large-QAP/inputs/random_512.mat",
+        "bytes": 8393216
+      },
+      {
+        "name": "random_8192.mat",
+        "path": "Large-QAP/inputs/large/random_8192.mat",
+        "bytes": 2147488256
+      }
+    ],
+    "probe": "random_256.mat",
+    "note": ""
+  },
+  {
+    "id": "primal1",
+    "variant": "primal1",
+    "module": "Main",
+    "entry": "solver.jl",
+    "kind": "primal",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "CVXQP1_L.mps",
+        "path": "MM/inputs/CVXQP1_L.mps",
+        "bytes": 2376149
+      },
+      {
+        "name": "CVXQP1_M.mps",
+        "path": "MM/inputs/CVXQP1_M.mps",
+        "bytes": 233266
+      },
+      {
+        "name": "CVXQP2_L.mps",
+        "path": "MM/inputs/CVXQP2_L.mps",
+        "bytes": 2122675
+      },
+      {
+        "name": "CVXQP2_M.mps",
+        "path": "MM/inputs/CVXQP2_M.mps",
+        "bytes": 207942
+      },
+      {
+        "name": "CVXQP3_L.mps",
+        "path": "MM/inputs/CVXQP3_L.mps",
+        "bytes": 2629623
+      },
+      {
+        "name": "CVXQP3_M.mps",
+        "path": "MM/inputs/CVXQP3_M.mps",
+        "bytes": 258590
+      },
+      {
+        "name": "EXDATA.mps",
+        "path": "MM/inputs/EXDATA.mps",
+        "bytes": 37423686
+      },
+      {
+        "name": "LASER.mps",
+        "path": "MM/inputs/LASER.mps",
+        "bytes": 342257
+      },
+      {
+        "name": "MOSARQP1.mps",
+        "path": "MM/inputs/MOSARQP1.mps",
+        "bytes": 281216
+      },
+      {
+        "name": "Q25FV47.mps",
+        "path": "MM/inputs/Q25FV47.mps",
+        "bytes": 1887269
+      },
+      {
+        "name": "QGFRDXPN.mps",
+        "path": "MM/inputs/QGFRDXPN.mps",
+        "bytes": 120435
+      },
+      {
+        "name": "QPILOTNO.mps",
+        "path": "MM/inputs/QPILOTNO.mps",
+        "bytes": 466219
+      },
+      {
+        "name": "QSCFXM3.mps",
+        "path": "MM/inputs/QSCFXM3.mps",
+        "bytes": 282683
+      },
+      {
+        "name": "QSCRS8.mps",
+        "path": "MM/inputs/QSCRS8.mps",
+        "bytes": 134669
+      },
+      {
+        "name": "QSCSD6.mps",
+        "path": "MM/inputs/QSCSD6.mps",
+        "bytes": 224655
+      },
+      {
+        "name": "QSCSD8.mps",
+        "path": "MM/inputs/QSCSD8.mps",
+        "bytes": 438152
+      },
+      {
+        "name": "QSCTAP2.mps",
+        "path": "MM/inputs/QSCTAP2.mps",
+        "bytes": 265560
+      },
+      {
+        "name": "QSCTAP3.mps",
+        "path": "MM/inputs/QSCTAP3.mps",
+        "bytes": 351705
+      },
+      {
+        "name": "QSEBA.mps",
+        "path": "MM/inputs/QSEBA.mps",
+        "bytes": 169440
+      },
+      {
+        "name": "QSHELL.mps",
+        "path": "MM/inputs/QSHELL.mps",
+        "bytes": 1054261
+      },
+      {
+        "name": "QSHIP04L.mps",
+        "path": "MM/inputs/QSHIP04L.mps",
+        "bytes": 249357
+      },
+      {
+        "name": "QSHIP04S.mps",
+        "path": "MM/inputs/QSHIP04S.mps",
+        "bytes": 176298
+      },
+      {
+        "name": "QSHIP08L.mps",
+        "path": "MM/inputs/QSHIP08L.mps",
+        "bytes": 1402920
+      },
+      {
+        "name": "QSHIP08S.mps",
+        "path": "MM/inputs/QSHIP08S.mps",
+        "bytes": 588929
+      },
+      {
+        "name": "QSHIP12L.mps",
+        "path": "MM/inputs/QSHIP12L.mps",
+        "bytes": 2252229
+      },
+      {
+        "name": "QSHIP12S.mps",
+        "path": "MM/inputs/QSHIP12S.mps",
+        "bytes": 791941
+      },
+      {
+        "name": "QSIERRA.mps",
+        "path": "MM/inputs/QSIERRA.mps",
+        "bytes": 354079
+      },
+      {
+        "name": "QSTANDAT.mps",
+        "path": "MM/inputs/QSTANDAT.mps",
+        "bytes": 111840
+      },
+      {
+        "name": "STCQP1.mps",
+        "path": "MM/inputs/STCQP1.mps",
+        "bytes": 1428820
+      },
+      {
+        "name": "STCQP2.mps",
+        "path": "MM/inputs/STCQP2.mps",
+        "bytes": 1399882
+      }
+    ],
+    "probe": "QSTANDAT.mps",
+    "note": ""
+  },
+  {
+    "id": "primal2",
+    "variant": "primal2",
+    "module": "Main",
+    "entry": "solver.jl",
+    "kind": "primal",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "CVXQP1_L.mps",
+        "path": "MM/inputs/CVXQP1_L.mps",
+        "bytes": 2376149
+      },
+      {
+        "name": "CVXQP1_M.mps",
+        "path": "MM/inputs/CVXQP1_M.mps",
+        "bytes": 233266
+      },
+      {
+        "name": "CVXQP2_L.mps",
+        "path": "MM/inputs/CVXQP2_L.mps",
+        "bytes": 2122675
+      },
+      {
+        "name": "CVXQP2_M.mps",
+        "path": "MM/inputs/CVXQP2_M.mps",
+        "bytes": 207942
+      },
+      {
+        "name": "CVXQP3_L.mps",
+        "path": "MM/inputs/CVXQP3_L.mps",
+        "bytes": 2629623
+      },
+      {
+        "name": "CVXQP3_M.mps",
+        "path": "MM/inputs/CVXQP3_M.mps",
+        "bytes": 258590
+      },
+      {
+        "name": "EXDATA.mps",
+        "path": "MM/inputs/EXDATA.mps",
+        "bytes": 37423686
+      },
+      {
+        "name": "LASER.mps",
+        "path": "MM/inputs/LASER.mps",
+        "bytes": 342257
+      },
+      {
+        "name": "MOSARQP1.mps",
+        "path": "MM/inputs/MOSARQP1.mps",
+        "bytes": 281216
+      },
+      {
+        "name": "Q25FV47.mps",
+        "path": "MM/inputs/Q25FV47.mps",
+        "bytes": 1887269
+      },
+      {
+        "name": "QGFRDXPN.mps",
+        "path": "MM/inputs/QGFRDXPN.mps",
+        "bytes": 120435
+      },
+      {
+        "name": "QPILOTNO.mps",
+        "path": "MM/inputs/QPILOTNO.mps",
+        "bytes": 466219
+      },
+      {
+        "name": "QSCFXM3.mps",
+        "path": "MM/inputs/QSCFXM3.mps",
+        "bytes": 282683
+      },
+      {
+        "name": "QSCRS8.mps",
+        "path": "MM/inputs/QSCRS8.mps",
+        "bytes": 134669
+      },
+      {
+        "name": "QSCSD6.mps",
+        "path": "MM/inputs/QSCSD6.mps",
+        "bytes": 224655
+      },
+      {
+        "name": "QSCSD8.mps",
+        "path": "MM/inputs/QSCSD8.mps",
+        "bytes": 438152
+      },
+      {
+        "name": "QSCTAP2.mps",
+        "path": "MM/inputs/QSCTAP2.mps",
+        "bytes": 265560
+      },
+      {
+        "name": "QSCTAP3.mps",
+        "path": "MM/inputs/QSCTAP3.mps",
+        "bytes": 351705
+      },
+      {
+        "name": "QSEBA.mps",
+        "path": "MM/inputs/QSEBA.mps",
+        "bytes": 169440
+      },
+      {
+        "name": "QSHELL.mps",
+        "path": "MM/inputs/QSHELL.mps",
+        "bytes": 1054261
+      },
+      {
+        "name": "QSHIP04L.mps",
+        "path": "MM/inputs/QSHIP04L.mps",
+        "bytes": 249357
+      },
+      {
+        "name": "QSHIP04S.mps",
+        "path": "MM/inputs/QSHIP04S.mps",
+        "bytes": 176298
+      },
+      {
+        "name": "QSHIP08L.mps",
+        "path": "MM/inputs/QSHIP08L.mps",
+        "bytes": 1402920
+      },
+      {
+        "name": "QSHIP08S.mps",
+        "path": "MM/inputs/QSHIP08S.mps",
+        "bytes": 588929
+      },
+      {
+        "name": "QSHIP12L.mps",
+        "path": "MM/inputs/QSHIP12L.mps",
+        "bytes": 2252229
+      },
+      {
+        "name": "QSHIP12S.mps",
+        "path": "MM/inputs/QSHIP12S.mps",
+        "bytes": 791941
+      },
+      {
+        "name": "QSIERRA.mps",
+        "path": "MM/inputs/QSIERRA.mps",
+        "bytes": 354079
+      },
+      {
+        "name": "QSTANDAT.mps",
+        "path": "MM/inputs/QSTANDAT.mps",
+        "bytes": 111840
+      },
+      {
+        "name": "STCQP1.mps",
+        "path": "MM/inputs/STCQP1.mps",
+        "bytes": 1428820
+      },
+      {
+        "name": "STCQP2.mps",
+        "path": "MM/inputs/STCQP2.mps",
+        "bytes": 1399882
+      }
+    ],
+    "probe": "QSTANDAT.mps",
+    "note": ""
+  },
+  {
+    "id": "revision_denser",
+    "variant": "main",
+    "module": "HPRQP_zxwyw",
+    "entry": "HPRQP_zxwyw.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "control_1000.mps",
+        "path": "Synthetic-CQP/inputs/denser/control_1000.mps",
+        "bytes": 823585853
+      },
+      {
+        "name": "control_1500.mps",
+        "path": "Synthetic-CQP/inputs/denser/control_1500.mps",
+        "bytes": 1862513034
+      },
+      {
+        "name": "control_200.mps",
+        "path": "Synthetic-CQP/inputs/denser/control_200.mps",
+        "bytes": 33058259
+      },
+      {
+        "name": "control_2000.mps",
+        "path": "Synthetic-CQP/inputs/denser/control_2000.mps",
+        "bytes": 3319354503
+      },
+      {
+        "name": "control_500.mps",
+        "path": "Synthetic-CQP/inputs/denser/control_500.mps",
+        "bytes": 205797606
+      },
+      {
+        "name": "equality_10000.mps",
+        "path": "Synthetic-CQP/inputs/denser/equality_10000.mps",
+        "bytes": 2459918318
+      },
+      {
+        "name": "equality_20000.mps",
+        "path": "Synthetic-CQP/inputs/denser/equality_20000.mps",
+        "bytes": 9631035499
+      },
+      {
+        "name": "equality_30000.mps",
+        "path": "Synthetic-CQP/inputs/denser/equality_30000.mps",
+        "bytes": 21421395518
+      },
+      {
+        "name": "equality_40000.mps",
+        "path": "Synthetic-CQP/inputs/denser/equality_40000.mps",
+        "bytes": 37429880631
+      },
+      {
+        "name": "equality_5000.mps",
+        "path": "Synthetic-CQP/inputs/denser/equality_5000.mps",
+        "bytes": 640313554
+      },
+      {
+        "name": "huber_10000.mps",
+        "path": "Synthetic-CQP/inputs/denser/huber_10000.mps",
+        "bytes": 402623847
+      },
+      {
+        "name": "huber_100000.mps",
+        "path": "Synthetic-CQP/inputs/denser/huber_100000.mps",
+        "bytes": 4176343232
+      },
+      {
+        "name": "huber_20000.mps",
+        "path": "Synthetic-CQP/inputs/denser/huber_20000.mps",
+        "bytes": 817445309
+      },
+      {
+        "name": "huber_5000.mps",
+        "path": "Synthetic-CQP/inputs/denser/huber_5000.mps",
+        "bytes": 199705292
+      },
+      {
+        "name": "huber_50000.mps",
+        "path": "Synthetic-CQP/inputs/denser/huber_50000.mps",
+        "bytes": 2071966000
+      },
+      {
+        "name": "portfolio_400.mps",
+        "path": "Synthetic-CQP/inputs/denser/portfolio_400.mps",
+        "bytes": 416552544
+      },
+      {
+        "name": "portfolio_500.mps",
+        "path": "Synthetic-CQP/inputs/denser/portfolio_500.mps",
+        "bytes": 649657441
+      },
+      {
+        "name": "portfolio_600.mps",
+        "path": "Synthetic-CQP/inputs/denser/portfolio_600.mps",
+        "bytes": 934365825
+      },
+      {
+        "name": "portfolio_700.mps",
+        "path": "Synthetic-CQP/inputs/denser/portfolio_700.mps",
+        "bytes": 1270651030
+      },
+      {
+        "name": "portfolio_800.mps",
+        "path": "Synthetic-CQP/inputs/denser/portfolio_800.mps",
+        "bytes": 1658532854
+      },
+      {
+        "name": "random_100000.mps",
+        "path": "Synthetic-CQP/inputs/denser/random_100000.mps",
+        "bytes": 2064219737
+      },
+      {
+        "name": "random_1000000.mps",
+        "path": "Synthetic-CQP/inputs/denser/random_1000000.mps",
+        "bytes": 21428809745
+      },
+      {
+        "name": "random_50000.mps",
+        "path": "Synthetic-CQP/inputs/denser/random_50000.mps",
+        "bytes": 1029996821
+      },
+      {
+        "name": "random_500000.mps",
+        "path": "Synthetic-CQP/inputs/denser/random_500000.mps",
+        "bytes": 10671306099
+      },
+      {
+        "name": "random_800000.mps",
+        "path": "Synthetic-CQP/inputs/denser/random_800000.mps",
+        "bytes": 17125555718
+      },
+      {
+        "name": "svm_10000.mps",
+        "path": "Synthetic-CQP/inputs/denser/svm_10000.mps",
+        "bytes": 320679475
+      },
+      {
+        "name": "svm_100000.mps",
+        "path": "Synthetic-CQP/inputs/denser/svm_100000.mps",
+        "bytes": 3298924573
+      },
+      {
+        "name": "svm_20000.mps",
+        "path": "Synthetic-CQP/inputs/denser/svm_20000.mps",
+        "bytes": 651324203
+      },
+      {
+        "name": "svm_200000.mps",
+        "path": "Synthetic-CQP/inputs/denser/svm_200000.mps",
+        "bytes": 6739686877
+      },
+      {
+        "name": "svm_50000.mps",
+        "path": "Synthetic-CQP/inputs/denser/svm_50000.mps",
+        "bytes": 1643742560
+      }
+    ],
+    "probe": "huber_5000.mps",
+    "note": "Corrected to main on the original MPS objective. No c*=10. Historical scaled HPR results are retained only for provenance and must not be used as fallback for this model.",
+    "model_revision": "original_mps_objective_v1"
+  },
+  {
+    "id": "revision_TR_mat",
+    "variant": "tr_mat",
+    "module": "HPRSOCP",
+    "entry": "HPRSOCP.jl",
+    "kind": "tr_mat",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "d10000.mat",
+        "path": "Trust-Region/inputs/d10000.mat",
+        "bytes": 5174867
+      },
+      {
+        "name": "d100000.mat",
+        "path": "Trust-Region/inputs/d100000.mat",
+        "bytes": 54758956
+      },
+      {
+        "name": "d1000000.mat",
+        "path": "Trust-Region/inputs/d1000000.mat",
+        "bytes": 571315750
+      },
+      {
+        "name": "d20000.mat",
+        "path": "Trust-Region/inputs/d20000.mat",
+        "bytes": 10520312
+      },
+      {
+        "name": "d200000.mat",
+        "path": "Trust-Region/inputs/d200000.mat",
+        "bytes": 111242133
+      },
+      {
+        "name": "d2000000.mat",
+        "path": "Trust-Region/inputs/d2000000.mat",
+        "bytes": 1149158835
+      },
+      {
+        "name": "d40000.mat",
+        "path": "Trust-Region/inputs/d40000.mat",
+        "bytes": 21388994
+      },
+      {
+        "name": "d400000.mat",
+        "path": "Trust-Region/inputs/d400000.mat",
+        "bytes": 225844841
+      },
+      {
+        "name": "d4000000.mat",
+        "path": "Trust-Region/inputs/d4000000.mat",
+        "bytes": 2322680507
+      },
+      {
+        "name": "d60000.mat",
+        "path": "Trust-Region/inputs/d60000.mat",
+        "bytes": 32465370
+      },
+      {
+        "name": "d600000.mat",
+        "path": "Trust-Region/inputs/d600000.mat",
+        "bytes": 340913417
+      },
+      {
+        "name": "d6000000.mat",
+        "path": "Trust-Region/inputs/d6000000.mat",
+        "bytes": 3510919834
+      },
+      {
+        "name": "d80000.mat",
+        "path": "Trust-Region/inputs/d80000.mat",
+        "bytes": 43599539
+      },
+      {
+        "name": "d800000.mat",
+        "path": "Trust-Region/inputs/d800000.mat",
+        "bytes": 456184198
+      },
+      {
+        "name": "d8000000.mat",
+        "path": "Trust-Region/inputs/d8000000.mat",
+        "bytes": 4708202739
+      }
+    ],
+    "probe": "d10000.mat",
+    "note": ""
+  },
+  {
+    "id": "revision_TR_mat_large",
+    "variant": "tr_mat",
+    "module": "HPRSOCP",
+    "entry": "HPRSOCP.jl",
+    "kind": "tr_mat",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "d10000000.mat",
+        "path": "Trust-Region/inputs/large/d10000000.mat",
+        "bytes": 5911328962
+      },
+      {
+        "name": "d20000000.mat",
+        "path": "Trust-Region/inputs/large/d20000000.mat",
+        "bytes": 11988182881
+      }
+    ],
+    "probe": "d10000000.mat",
+    "note": ""
+  },
+  {
+    "id": "figure_QSCSD1",
+    "variant": "figure_QSCSD1",
+    "entry": "HPRQP_zxwyw.jl",
+    "module": "HPRQP_zxwyw",
+    "kind": "figure",
+    "cpu": false,
+    "params": {
+      "max_iter": 20000,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "CUSPARSE",
+      "sigma": 1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false,
+      "check_iter": 100,
+      "acc": true
+    },
+    "cases": [
+      {
+        "name": "no_restart",
+        "path": "MM/inputs/QSCSD1.mps",
+        "bytes": 123838,
+        "params": {
+          "restart": 0,
+          "sigma_fixed": true
+        }
+      },
+      {
+        "name": "adaptive_restart",
+        "path": "MM/inputs/QSCSD1.mps",
+        "bytes": 123838,
+        "params": {
+          "restart": -1,
+          "sigma_fixed": true
+        }
+      },
+      {
+        "name": "adaptive_restart_sigma",
+        "path": "MM/inputs/QSCSD1.mps",
+        "bytes": 123838,
+        "params": {
+          "restart": -1,
+          "sigma_fixed": false
+        }
+      }
+    ],
+    "probe": "adaptive_restart_sigma",
+    "note": "R1 Figure 1. Compare full optimality curves with local reproduction already verified against original PDF vector drawing. Nonrestarted run is expected to reach 20000 iterations above tolerance."
+  },
+  {
+    "id": "synthetic_paper",
+    "variant": "main",
+    "module": "HPRQP_zxwyw",
+    "entry": "HPRQP_zxwyw.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "control_1000.mps",
+        "path": "Synthetic-CQP/inputs/original/control_1000.mps",
+        "bytes": 823583571,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 2
+        }
+      },
+      {
+        "name": "control_1500.mps",
+        "path": "Synthetic-CQP/inputs/original/control_1500.mps",
+        "bytes": 1862505734,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 3
+        }
+      },
+      {
+        "name": "control_200.mps",
+        "path": "Synthetic-CQP/inputs/original/control_200.mps",
+        "bytes": 33061449,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 4
+        }
+      },
+      {
+        "name": "control_2000.mps",
+        "path": "Synthetic-CQP/inputs/original/control_2000.mps",
+        "bytes": 3319300749,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 5
+        }
+      },
+      {
+        "name": "control_500.mps",
+        "path": "Synthetic-CQP/inputs/original/control_500.mps",
+        "bytes": 205795184,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 6
+        }
+      },
+      {
+        "name": "equality_10000.mps",
+        "path": "Synthetic-CQP/inputs/original/equality_10000.mps",
+        "bytes": 359655388,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 7
+        }
+      },
+      {
+        "name": "equality_100000.mps",
+        "path": "Synthetic-CQP/inputs/original/equality_100000.mps",
+        "bytes": 3867292039,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 8
+        }
+      },
+      {
+        "name": "equality_20000.mps",
+        "path": "Synthetic-CQP/inputs/original/equality_20000.mps",
+        "bytes": 748450051,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 9
+        }
+      },
+      {
+        "name": "equality_5000.mps",
+        "path": "Synthetic-CQP/inputs/original/equality_5000.mps",
+        "bytes": 166386575,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 10
+        }
+      },
+      {
+        "name": "equality_50000.mps",
+        "path": "Synthetic-CQP/inputs/original/equality_50000.mps",
+        "bytes": 1917453272,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 11
+        }
+      },
+      {
+        "name": "huber_10000.mps",
+        "path": "Synthetic-CQP/inputs/original/huber_10000.mps",
+        "bytes": 303506132,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 12
+        }
+      },
+      {
+        "name": "huber_100000.mps",
+        "path": "Synthetic-CQP/inputs/original/huber_100000.mps",
+        "bytes": 3167030305,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 13
+        }
+      },
+      {
+        "name": "huber_20000.mps",
+        "path": "Synthetic-CQP/inputs/original/huber_20000.mps",
+        "bytes": 617179375,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 14
+        }
+      },
+      {
+        "name": "huber_5000.mps",
+        "path": "Synthetic-CQP/inputs/original/huber_5000.mps",
+        "bytes": 150252276,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 15
+        }
+      },
+      {
+        "name": "huber_50000.mps",
+        "path": "Synthetic-CQP/inputs/original/huber_50000.mps",
+        "bytes": 1568323627,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 16
+        }
+      },
+      {
+        "name": "portfolio_400.mps",
+        "path": "Synthetic-CQP/inputs/original/portfolio_400.mps",
+        "bytes": 416552544,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 17
+        }
+      },
+      {
+        "name": "portfolio_500.mps",
+        "path": "Synthetic-CQP/inputs/original/portfolio_500.mps",
+        "bytes": 649657441,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 18
+        }
+      },
+      {
+        "name": "portfolio_600.mps",
+        "path": "Synthetic-CQP/inputs/original/portfolio_600.mps",
+        "bytes": 934365825,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 19
+        }
+      },
+      {
+        "name": "portfolio_700.mps",
+        "path": "Synthetic-CQP/inputs/original/portfolio_700.mps",
+        "bytes": 1270651030,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 20
+        }
+      },
+      {
+        "name": "portfolio_800.mps",
+        "path": "Synthetic-CQP/inputs/original/portfolio_800.mps",
+        "bytes": 1658532854,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 21
+        }
+      },
+      {
+        "name": "random_1000k.mps",
+        "path": "Synthetic-CQP/inputs/original/random_1000k.mps",
+        "bytes": 2012536229,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 22
+        }
+      },
+      {
+        "name": "random_100k.mps",
+        "path": "Synthetic-CQP/inputs/original/random_100k.mps",
+        "bytes": 194755366,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 23
+        }
+      },
+      {
+        "name": "random_5000k.mps",
+        "path": "Synthetic-CQP/inputs/original/random_5000k.mps",
+        "bytes": 10364409380,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 24
+        }
+      },
+      {
+        "name": "random_500k.mps",
+        "path": "Synthetic-CQP/inputs/original/random_500k.mps",
+        "bytes": 1002681655,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 25
+        }
+      },
+      {
+        "name": "random_50k.mps",
+        "path": "Synthetic-CQP/inputs/original/random_50k.mps",
+        "bytes": 97136595,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 26
+        }
+      },
+      {
+        "name": "svm_100k.mps",
+        "path": "Synthetic-CQP/inputs/original/svm_100k.mps",
+        "bytes": 1382865120,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 27
+        }
+      },
+      {
+        "name": "svm_10k.mps",
+        "path": "Synthetic-CQP/inputs/original/svm_10k.mps",
+        "bytes": 132869306,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 28
+        }
+      },
+      {
+        "name": "svm_200k.mps",
+        "path": "Synthetic-CQP/inputs/original/svm_200k.mps",
+        "bytes": 2829990878,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 29
+        }
+      },
+      {
+        "name": "svm_20k.mps",
+        "path": "Synthetic-CQP/inputs/original/svm_20k.mps",
+        "bytes": 271708891,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 30
+        }
+      },
+      {
+        "name": "svm_50k.mps",
+        "path": "Synthetic-CQP/inputs/original/svm_50k.mps",
+        "bytes": 688283388,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/synthetic_paper/reference.csv",
+          "csv_row": 31
+        }
+      }
+    ],
+    "probe": "random_50k.mps",
+    "note": "Exact R1 synthetic references: June16 for control/equality/huber/portfolio, June14 for random/svm. June26 retained as separate historical comparison."
+  },
+  {
+    "id": "LASSO_UCI_R1_explicit",
+    "variant": "main",
+    "module": "HPRQP_zxwyw",
+    "entry": "HPRQP_zxwyw.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "E2006.test.mps",
+        "path": "Lasso-UCI/inputs/E2006_test.mps",
+        "bytes": 238507931,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 2
+        }
+      },
+      {
+        "name": "E2006.train.mps",
+        "path": "Lasso-UCI/inputs/E2006_train.mps",
+        "bytes": 930000412,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 3
+        }
+      },
+      {
+        "name": "abalone_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/abalone_scale_expanded7.mps",
+        "bytes": 1078343912,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 4
+        }
+      },
+      {
+        "name": "bodyfat_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/bodyfat_scale_expanded7.mps",
+        "bytes": 1398328688,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 5
+        }
+      },
+      {
+        "name": "housing_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/housing_scale_expanded7.mps",
+        "bytes": 1856585524,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 6
+        }
+      },
+      {
+        "name": "log1p.E2006.test.mps",
+        "path": "Lasso-UCI/inputs/log1p_E2006_test.mps",
+        "bytes": 1892153575,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 7
+        }
+      },
+      {
+        "name": "log1p.E2006.train.mps",
+        "path": "Lasso-UCI/inputs/log1p_E2006_train.mps",
+        "bytes": 4983930741,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 8
+        }
+      },
+      {
+        "name": "mpg_scale_expanded7.mps",
+        "path": "Lasso-UCI/inputs/mpg_scale_expanded7.mps",
+        "bytes": 54133598,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 9
+        }
+      },
+      {
+        "name": "pyrim_scaled_expanded5.mps",
+        "path": "Lasso-UCI/inputs/pyrim_scaled_expanded5.mps",
+        "bytes": 290449881,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 10
+        }
+      },
+      {
+        "name": "space_ga_scale_expanded9.mps",
+        "path": "Lasso-UCI/inputs/space_ga_scale_expanded9.mps",
+        "bytes": 719695519,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 11
+        }
+      },
+      {
+        "name": "triazines_scaled_expanded4.mps",
+        "path": "Lasso-UCI/inputs/triazines_scaled_expanded4.mps",
+        "bytes": 2320897033,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_UCI_R1_explicit/reference.csv",
+          "csv_row": 12
+        }
+      }
+    ],
+    "probe": "abalone_scale_expanded7.mps",
+    "note": "R1 explicit Lasso uses the main solver with force_general_q=true, preserving the November Q_is_diag=false setting. Historical batch-skip differences do not apply to per-case workers.",
+    "force_general_q": true
+  },
+  {
+    "id": "LASSO_synthetic_R1_explicit",
+    "variant": "main",
+    "module": "HPRQP_zxwyw",
+    "entry": "HPRQP_zxwyw.jl",
+    "kind": "standard",
+    "cpu": false,
+    "params": {
+      "max_iter": 2147483647,
+      "time_limit": 3600.0,
+      "stoptol": 1e-08,
+      "useGPU": true,
+      "sigma_fixed": false,
+      "restart": -1,
+      "mode": "linearize",
+      "sigma_method": 0,
+      "spmv_mode": "auto",
+      "sigma": -1.0,
+      "alpha": 2.0,
+      "lambda_factor": 1.05,
+      "do_warm_up": false
+    },
+    "cases": [
+      {
+        "name": "lasso_1000000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_1000000_10000000.mps",
+        "bytes": 49040976140,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 2
+        }
+      },
+      {
+        "name": "lasso_1000000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_1000000_5000000.mps",
+        "bytes": 24556996673,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 3
+        }
+      },
+      {
+        "name": "lasso_10000_1000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_10000_1000000.mps",
+        "bytes": 271948504,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 4
+        }
+      },
+      {
+        "name": "lasso_10000_500000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_10000_500000.mps",
+        "bytes": 136655797,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 5
+        }
+      },
+      {
+        "name": "lasso_200000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_200000_10000000.mps",
+        "bytes": 11656205605,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 6
+        }
+      },
+      {
+        "name": "lasso_200000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_200000_5000000.mps",
+        "bytes": 5807403343,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 7
+        }
+      },
+      {
+        "name": "lasso_400000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_400000_10000000.mps",
+        "bytes": 21002409232,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 8
+        }
+      },
+      {
+        "name": "lasso_400000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_400000_5000000.mps",
+        "bytes": 10494809737,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 9
+        }
+      },
+      {
+        "name": "lasso_600000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_600000_10000000.mps",
+        "bytes": 30348569580,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 10
+        }
+      },
+      {
+        "name": "lasso_600000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_600000_5000000.mps",
+        "bytes": 15182222114,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 11
+        }
+      },
+      {
+        "name": "lasso_800000_10000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_800000_10000000.mps",
+        "bytes": 39694751270,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 12
+        }
+      },
+      {
+        "name": "lasso_800000_5000000.mps",
+        "path": "Lasso-Synthetic/inputs/lasso_800000_5000000.mps",
+        "bytes": 19839621423,
+        "reference_source": {
+          "source": "results/reference/selected_HPR/LASSO_synthetic_R1_explicit/reference.csv",
+          "csv_row": 13
+        }
+      }
+    ],
+    "probe": "lasso_10000_500000.mps",
+    "note": "R1 explicit Lasso uses the main solver with force_general_q=true, preserving the November Q_is_diag=false setting. Historical batch-skip differences do not apply to per-case workers.",
+    "force_general_q": true
+  }
+]

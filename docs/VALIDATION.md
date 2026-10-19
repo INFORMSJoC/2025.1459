@@ -1,12 +1,12 @@
 # Reproduction coverage and result interpretation
 
-The package covers the revised paper's ten named experiments. The [README experiment table](../README.md#experiment-names-and-solvers) maps each command to its manuscript table or figure.
+The package covers the revised paper's ten named experiments. The [README experiment table](../README.md#replicating) maps each command to its manuscript table or figure.
 
 Completed HPR measurements cover **365/365 benchmark and curve checks**, including time-limit outcomes. The two-method appendix example is also included. Competing solvers were tested on selected cases across all 26 applicable solver/dataset combinations; they have not all been rerun on complete datasets. Completed coverage does not mean that every case converged or that every value is identical to its paper reference.
 
 ## Reading the results
 
-Start with `experiments/<name>/summary.html` or `summary.csv`. These report solved counts and SGM10. `results.csv` contains per-instance values and `comparison.csv` compares fresh and archived measurements. Each solver's `archived.csv` holds the paper reference values, while `fresh.csv` holds available rerun values. Native solver records and logs are retained under that solver's `raw/` directory. New runs write to `runs/<attempt>/` and update the experiment summary automatically.
+Start with `results/paper_results/experiments/<name>/summary.html` or `summary.csv`. These report solved counts and SGM10. `results.csv` contains per-instance values and `comparison.csv` compares fresh and archived measurements. Each solver's `archived.csv` holds the paper reference values, while `fresh.csv` holds available rerun values. Native solver records and logs are retained under `results/raw_results/<experiment>/<solver>/raw/`. New runs write to the sibling `runs/<attempt>/` and update the experiment summary automatically.
 
 Fresh results replace the corresponding archived rows, including unsuccessful outcomes. Unrun rows retain archived values, and mixed summaries identify their sources. External time or memory guard stops, interruptions and execution failures withhold the effective timing aggregate. Setup and input failures appear as attempt errors.
 
@@ -35,6 +35,6 @@ The numerical records, solver settings and environment information accompany the
 
 ## Package checks
 
-`./run.sh check` verifies release hashes, the 40 bundled input hashes, experiment scope, data-catalog consistency and relative Julia source dependencies. The manifests describe 315 inputs across HPR and explicit-QAP competitor formats. Full datasets are downloaded separately following the [data guide](../data/README.md).
+`./scripts/run.sh check` verifies release hashes, experiment scope, data-catalog consistency, the relocated result/data indexes, documentation links and relative Julia source dependencies. Benchmark files are external and can be checked separately with `scripts/manage_data.py verify`. The manifests describe 315 inputs across HPR and explicit-QAP competitor formats. Full datasets are downloaded separately following the [data guide](../data/README.md).
 
-The launcher has been checked for interruption, process cleanup, resuming completed runs, guard-failure reporting, paths containing spaces and split-archive extraction. Table and grayscale-figure generation is available through `./run.sh tables` and `./run.sh figures`. Solver records and per-instance comparisons remain available for inspecting numerical results.
+The launcher has been checked for interruption, process cleanup, resuming completed runs, guard-failure reporting, paths containing spaces and split-archive extraction. Table and grayscale-figure generation is available through `./scripts/run.sh tables` and `./scripts/run.sh figures`. Solver records and per-instance comparisons remain available for inspecting numerical results.

@@ -3,15 +3,16 @@
 from pathlib import Path
 import argparse,csv,json,math,re,hashlib
 ROOT=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'experiments/paper_exports');p.add_argument('--no-plots',action='store_true');a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
-groups=json.loads((ROOT/'config/experiments.json').read_text());by={g['id']:g for g in groups};papers=ROOT/'config/reference/paper'
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'results/paper_results/tables_and_figures');p.add_argument('--no-plots',action='store_true');a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
+from catalog import load_groups, load_catalog
+groups=load_groups();by={g['id']:g for g in groups};papers=ROOT/'results/raw_results/reference/paper'
 # Use the experiment's selected results for corrected synthetic tables/profiles.
 # Original raw paper files stay immutable and available as historical evidence.
 from experiment_results import refresh, read_csv
-catalog=json.loads((ROOT/'config/reviewer_experiments.json').read_text())
+catalog=load_catalog()
 synthetic=next(e for e in catalog if e['name']=='Synthetic-CQP')
-refresh(synthetic,ROOT/'experiments')
-selected=read_csv(ROOT/'experiments/Synthetic-CQP/results.csv')
+refresh(synthetic,ROOT/'results')
+selected=read_csv(ROOT/'results/paper_results/experiments/Synthetic-CQP/results.csv')
 corrected={(r['case_id'],r['tolerance']):r for r in selected if r['solver']=='HPR-QP'}
 if any(r['status']=='MODEL_CORRECTION_PENDING' for r in corrected.values()):
  raise SystemExit('Corrected synthetic results missing; refusing to export historical scaled-model values as current results.')
@@ -70,7 +71,7 @@ sizes=[]
 for i,r in raw_with_rows:sizes.append(dict(row_id=i,instance=r[0],m=r[16],n=r[17],nnzA=r[18],nnzQ=r[19],nnz_total=r[20],size_class='Medium' if num(r[20])<1e7 else 'Large' if num(r[20])<1e8 else 'Huge'))
 write('Synthetic_dimensions.csv',sizes)
 # Frozen transcription from the separately submitted manuscript.
-uci=list(csv.DictReader((ROOT/'config/reference/UCI_dimensions.csv').open()))
+uci=list(csv.DictReader((ROOT/'results/raw_results/reference/UCI_dimensions.csv').open()))
 assert len(uci)==11
 write('UCI_dimensions.csv',uci)
 
@@ -82,7 +83,7 @@ for j,tol in enumerate(['1e-4','1e-6','1e-8']):
   raise SystemExit('Synthetic HPR execution incomplete; consult experiment summary before generating profiles.')
  series['HPR-QP']=[cap(r['seconds']) if r['solved'] else 3600. for r in hpr_rows]
  profiles.append(('Random'+tol,series,60));source_map.append(dict(output='Random'+tol+'.pdf',source=str(source.relative_to(ROOT)),sha256=hashlib.sha256(source.read_bytes()).hexdigest()))
- selected_path=ROOT/'experiments/Synthetic-CQP/results.csv'
+ selected_path=ROOT/'results/paper_results/experiments/Synthetic-CQP/results.csv'
  source_map.append(dict(output='Random'+tol+'.pdf',source=str(selected_path.relative_to(ROOT)),sha256=hashlib.sha256(selected_path.read_bytes()).hexdigest()))
  write('Synthetic_HPR_selected_'+tol+'.csv',[dict(case_id=r['case_id'],case=r['case'],tolerance=tol,seconds=r['seconds'],solved=r['solved'],source=r['source'],raw_file=r['raw_file'],historical_paper_seconds=old) for r,old in zip(hpr_rows,historical_hpr)])
  for subset in ['all','Medium','Large','Huge']:
@@ -104,7 +105,7 @@ for j,tol in enumerate(['1e-4','1e-6','1e-8']):
  for s,v in series.items():combined_summary.append(dict(experiment='TR_17_MAT',subset='all',solver=s,tolerance=tol,n=17,time_SGM10=sgm(v),below_3600=sum(x<3600 for x in v)))
  trplots.append(('TR_solve_time_comparison_'+tol,series));source_map.append(dict(output=trplots[-1][0]+'.pdf',source=str(source.relative_to(ROOT)),sha256=hashlib.sha256(source.read_bytes()).hexdigest()))
  for i,r in enumerate(tr):trdetails.append(dict(alias_in_old_CSV=r[0],actual_MAT_name='d'+re.search(r'_d(\d+)_',r[0])[1]+'.mat',tolerance=tol,**{s:v[i] for s,v in series.items()}))
-qscsd=ROOT/'config/reference/QSCSD1_line_styles.pdf'
+qscsd=ROOT/'results/raw_results/reference/QSCSD1_line_styles.pdf'
 source_map.append(dict(output='QSCSD1.pdf',source=str(qscsd.relative_to(ROOT)),sha256=hashlib.sha256(qscsd.read_bytes()).hexdigest()))
 write('TR17_details.csv',trdetails);write('Combined_table_summaries.csv',combined_summary);write('Figure_source_map.csv',source_map)
 expected={'MM_test_version':[7.4,10.5,12.6],'LASSO_UCI':[4.3,8.5,13.2],'LASSO_synthetic':[11.2,18.5,25.5],'LASSO_UCI_R1_explicit':[27.9,44.9,66.8],'LASSO_synthetic_R1_explicit':[26.1,35.3,46.8],'QAPLIB':[.4,1.8,4.7]}
@@ -135,7 +136,7 @@ if not a.no_plots:
   ax.set(xscale='log',yscale='log',xlabel='Dimension',ylabel='Solving time (seconds; capped at 3600)');ax.legend(fontsize=9);fig.savefig(figdir/(name+'.pdf'));plt.close(fig)
  # Preserve the approved QSCSD1 drawing geometry, width=4, medium dash lengths and scientific x ticks.
  import shutil
- source=ROOT/'config/reference/QSCSD1_line_styles.pdf'
+ source=ROOT/'results/raw_results/reference/QSCSD1_line_styles.pdf'
  from pypdf import PdfReader,PdfWriter
  from pypdf.generic import ContentStream,FloatObject
  reader=PdfReader(source);writer=PdfWriter();writer.clone_document_from_reader(reader)

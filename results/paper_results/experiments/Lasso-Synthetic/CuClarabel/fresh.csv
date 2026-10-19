@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+CuClarabel,LASSO_synthetic__lasso_10000_500000.mps,lasso_10000_500000.mps,LASSO_synthetic,all,1e-08,OPTIMAL,True,13.0,2.383084707,34113.24109609073,2.696449645078997e-10,fresh,verification_run,results/raw_results/Lasso-Synthetic/CuClarabel/raw/verification/dataset_samples/LASSO_SYNTHETIC__lasso_10000_500000.mps__1.0e-8.json,native solver,native log objective,35.421,,

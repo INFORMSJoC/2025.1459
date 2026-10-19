@@ -1,2 +1,0 @@
-solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
-SCS,LASSO_UCI__E2006.test.mps,E2006.test.mps,LASSO_UCI,all,0.0001,OPTIMAL,True,250.0,161.078973107,288.68244502857823,0.00010291939612843625,fresh,verification_run,experiments/Lasso-UCI/SCS/raw/verification/dataset_samples/LASSO_UCI__E2006_test.mps__0.0001.json,native solver,native log objective,168.523,,

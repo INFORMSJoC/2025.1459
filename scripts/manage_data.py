@@ -23,15 +23,18 @@ class Joined(io.RawIOBase):
    if b:out.extend(b)
    else:self.f.close();self.f=None
   return bytes(out)
-p=argparse.ArgumentParser();p.add_argument('action',choices=['verify','fetch','extract']);p.add_argument('--data-root',type=Path,default=Path(os.environ.get('HPR_DATA_ROOT',str(ROOT/'data/inputs'))));p.add_argument('--groups',nargs='+');p.add_argument('--bundled',action='store_true');p.add_argument('--include-competitors',action='store_true',help='Also verify/fetch/extract explicit QAP inputs');p.add_argument('--index',type=Path,default=ROOT/'data/archives/archive_index.json');p.add_argument('--cache',type=Path,default=ROOT/'data/downloads');a=p.parse_args()
-entries=json.loads((ROOT/'data/manifest.json').read_text())
-if a.include_competitors:entries+=json.loads((ROOT/'data/competitor_qap_manifest.json').read_text())
+p=argparse.ArgumentParser();p.add_argument('action',choices=['verify','fetch','extract']);p.add_argument('--data-root',type=Path,default=Path(os.environ.get('HPR_DATA_ROOT',str(ROOT/'data'))));p.add_argument('--groups',nargs='+');p.add_argument('--bundled',action='store_true');p.add_argument('--include-competitors',action='store_true',help='Also verify/fetch/extract explicit QAP inputs');p.add_argument('--index',type=Path,default=ROOT/'scripts/config/data/archives/archive_index.json');p.add_argument('--cache',type=Path,default=ROOT/'downloads');a=p.parse_args()
+entries=json.loads((ROOT/'scripts/config/data/manifest.json').read_text())
+if a.include_competitors:entries+=json.loads((ROOT/'scripts/config/data/competitor_qap_manifest.json').read_text())
 chosen=[x for x in entries if (not a.groups or set(a.groups)&set(x['groups'])) and (not a.bundled or x.get('bundled'))]
-if not chosen:raise SystemExit('No matching inputs')
+if not chosen:
+ if a.bundled and not a.groups:
+  print('No third-party benchmark inputs are bundled. See data/README.md for acquisition.');raise SystemExit(0)
+ raise SystemExit('No matching inputs')
 if a.action!='verify':
  index=json.loads(a.index.read_text());wanted={x['path'] for x in chosen};a.cache.mkdir(parents=True,exist_ok=True)
- if a.include_competitors and a.index.resolve()==(ROOT/'data/archives/archive_index.json').resolve():
-  extra=json.loads((ROOT/'data/archives/competitor_qap_index.json').read_text())
+ if a.include_competitors and a.index.resolve()==(ROOT/'scripts/config/data/archives/archive_index.json').resolve():
+  extra=json.loads((ROOT/'scripts/config/data/archives/competitor_qap_index.json').read_text())
   index['datasets']+=extra['datasets']
  for d in index['datasets']:
   if not wanted & {x['path'] for x in d['inputs']}:continue

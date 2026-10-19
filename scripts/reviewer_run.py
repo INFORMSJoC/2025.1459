@@ -6,7 +6,8 @@ from concurrent.futures import ThreadPoolExecutor,as_completed
 from experiment_results import ROOT,atomic_json,row,refresh,hpr_rows,jump_rows,pdqp_rows,number
 from process_watchdog import run_guarded
 from data_paths import locate_input
-CAT=json.loads((ROOT/'config/reviewer_experiments.json').read_text())
+from catalog import load_catalog, load_groups
+CAT=load_catalog()
 def norm(s):return s.lower().replace('_','-')
 def resolve_exp(s):
  return next((e for e in CAT if norm(s) in [norm(e['name'])]+[norm(x) for x in e['aliases']]),None)
@@ -20,8 +21,8 @@ def main():
  p.add_argument('--cases',nargs='+',help='Exact names or group__name keys from the mapping; duplicate synthetic names select both groups')
  p.add_argument('--groups',nargs='+',help='Optional source group ids, e.g. synthetic_paper or revision_denser')
  p.add_argument('--tolerances',nargs='+',type=float,choices=[1e-4,1e-6,1e-8])
- p.add_argument('--data-root',type=Path,default=Path(os.environ.get('HPR_DATA_ROOT',str(ROOT/'data/inputs'))))
- p.add_argument('--output',type=Path,default=ROOT/'experiments')
+ p.add_argument('--data-root',type=Path,default=Path(os.environ.get('HPR_DATA_ROOT',str(ROOT/'data'))))
+ p.add_argument('--output',type=Path,default=ROOT/'results')
  p.add_argument('--julia',default=os.environ.get('JULIA_BIN','julia'))
  p.add_argument('--gpu',default='0');p.add_argument('--gpus',help='Comma-separated physical GPUs; one solver worker at a time on each GPU')
  p.add_argument('--jobs',type=int,default=1,help='Concurrent workers; default 1 for timing isolation')
@@ -38,11 +39,11 @@ def main():
  if a.experiment.lower() in ['list','help']:
   print('Command name         Paper experiment / solver choices')
   for e in CAT:print(f"{e['name']:20} {e['title']} | {', '.join(e['solvers'])}")
-  print('\nRecommended dataset: ./run.sh QAPLIB HPR-QP')
-  print('Preview:     ./run.sh QAPLIB HPR-QP --plan')
-  print('Optional case check: ./run.sh MM HPR-QP --cases CVXQP3_S.mps QSCSD1.mps')
+  print('\nRecommended dataset: ./scripts/run.sh QAPLIB HPR-QP')
+  print('Preview:     ./scripts/run.sh QAPLIB HPR-QP --plan')
+  print('Optional case check: ./scripts/run.sh MM HPR-QP --cases CVXQP3_S.mps QSCSD1.mps')
   print('Dataset costs and paper mapping: docs/EXPERIMENTS.md')
-  print('Results:     experiments/<name>/summary.html (source-labelled)')
+  print('Results:     results/paper_results/experiments/<name>/summary.html (source-labelled)')
   return 0
  if a.experiment.lower()=='refresh':
   for e in CAT:refresh(e,a.output)
@@ -52,7 +53,7 @@ def main():
  if a.experiment.lower()=='setup':
   names=['HPR-QP','PDQP','SCS','CuClarabel','Gurobi'] if solver=='ALL' else [solver]
   for s in names:
-   project=ROOT/'environment' if s.startswith('HPR') else ROOT/'environment'/s
+   project=ROOT/'scripts/environments' if s.startswith('HPR') else ROOT/'scripts/environments'/s
    env=dict(os.environ);env['JULIA_LOAD_PATH']='@:@stdlib';env.pop('LD_LIBRARY_PATH',None)
    env['JULIA_DEPOT_PATH']=os.environ.get('HPR_DEPOT_PATH' if s.startswith('HPR') else 'COMPETITOR_DEPOT_PATH',os.environ.get('JULIA_DEPOT_PATH',str(ROOT/'.julia-depot')))
    logfile=a.output/'setup_logs'/(s+'.log');print('Installing pinned environment:',s,flush=True)
@@ -60,7 +61,7 @@ def main():
    if result['state']!='completed':print('Setup failed:',result['state'],logfile);return 2
   return 0
  chosen=CAT if a.experiment.upper()=='ALL' else [resolve_exp(a.experiment)]
- if any(x is None for x in chosen):p.error('Unknown experiment; use ./run.sh list')
+ if any(x is None for x in chosen):p.error('Unknown experiment; use ./scripts/run.sh list')
  gpus=(a.gpus or a.gpu).split(',')
  if len(set(gpus))!=len(gpus) or any(not x.strip() for x in gpus):p.error('GPU identifiers must be nonempty and unique')
  tasks={};matched_filters=set();active=[]
@@ -126,8 +127,8 @@ def main():
   except (OSError,ValueError):return False
   return d.get('state')=='completed' and set(case['tolerances']) <= {r['tolerance'] for r in d.get('rows',[]) if not case.get('model_revision') or r.get('model_revision')==case['model_revision']}
  def execute(task):
-  e,sp,c0=task['targets'][0];c=copy.deepcopy(c0);c['tolerances']=sorted({t for _,_,cc in task['targets'] for t in cc['tolerances']});s=task['solver'];folders=[a.output/ee['name']/s for ee,_,_ in task['targets']]
-  if not a.rerun and all(any(completed_for(f,next(cc for ee,_,cc in task['targets'] if a.output/ee['name']/s==d)) for f in (d/'runs').glob('*_'+task['token']+'/record.json')) for d in folders):
+  e,sp,c0=task['targets'][0];c=copy.deepcopy(c0);c['tolerances']=sorted({t for _,_,cc in task['targets'] for t in cc['tolerances']});s=task['solver'];folders=[a.output/'raw_results'/ee['name']/s for ee,_,_ in task['targets']]
+  if not a.rerun and all(any(completed_for(f,next(cc for ee,_,cc in task['targets'] if a.output/'raw_results'/ee['name']/s==d)) for f in (d/'runs').glob('*_'+task['token']+'/record.json')) for d in folders):
    message('Resume: already completed '+e['name']+'/'+s+'/'+c['name']);return True
   if stop.is_set():return False
   gpu=None;lf=None
@@ -148,7 +149,7 @@ def main():
    def finish():
     record['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();atomic_json(run/'record.json',record)
     for ee,ss,cc in task['targets']:
-     dst=a.output/ee['name']/s/'runs'/stamp
+     dst=a.output/'raw_results'/ee['name']/s/'runs'/stamp
      atomic_json(dst/'record.json',dict(record,experiment=ee['name'],rows=[r for r in record['rows'] if r['tolerance'] in cc['tolerances']]))
      refresh(ee,a.output)
    if not task['input']:
@@ -168,17 +169,17 @@ def main():
     record.update(state='INPUT_ERROR',error='Input SHA256 mismatch: '+str(path));finish();message(record['error']);return False
    env=dict(os.environ);env.pop('LD_LIBRARY_PATH',None);env.update(JULIA_LOAD_PATH='@:@stdlib',JULIA_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',CUDA_VISIBLE_DEVICES=gpu or '',GKSwstype='100')
    env['JULIA_DEPOT_PATH']=os.environ.get('HPR_DEPOT_PATH' if s.startswith('HPR') else 'COMPETITOR_DEPOT_PATH',os.environ.get('JULIA_DEPOT_PATH',str(ROOT/'.julia-depot')))
-   project=ROOT/'environment' if s.startswith('HPR') else ROOT/'environment'/s
+   project=ROOT/'scripts/environments' if s.startswith('HPR') else ROOT/'scripts/environments'/s
    command=[exe,'--startup-file=no','--project='+str(project)]
    if task['kind'] in ['hpr','curve']:
-    g=copy.deepcopy(next(g for g in json.loads((ROOT/'config/experiments.json').read_text()) if g['id']==c['group']));case=next(x for x in g['cases'] if x['name']==c['name']);case['path']=str(path);g['params']['time_limit']=task['soft'];g['cases']=[case]
+    g=copy.deepcopy(next(g for g in load_groups() if g['id']==c['group']));case=next(x for x in g['cases'] if x['name']==c['name']);case['path']=str(path);g['params']['time_limit']=task['soft'];g['cases']=[case]
     job=dict(id=task['token'],group=g,cases=[case],phase='reviewer_entrypoint',output_root=str(run));atomic_json(run/'job.json',job)
     command += [str(ROOT/'scripts/run_worker.jl'),str(run/'job.json')]
    elif task['kind']=='jump':
     settings=dict(c.get('settings',{}))
     if s=='Gurobi':settings['Threads']=a.cpu_threads
     jc=dict(family=c['family'],name=Path(c['path']).name,path=str(path),tolerances=[task['tol']],settings=settings)
-    warm=dict(family='MM',name='CVXQP3_S.mps',path=str(ROOT/'data/inputs/MM_mps/CVXQP3_S.mps'))
+    warm=dict(family='MM',name='CVXQP3_S.mps',path=str(ROOT/'data/Support/warmup.mps'))
     atomic_json(run/'job.json',dict(solver=s,cases=[jc],tolerances=[task['tol']],output=str(run/'native'),warmup_case=warm,solver_time_limit=task['soft']))
     command += [str(ROOT/'scripts/jump_worker.jl'),str(run/'job.json')]
    elif task['kind']=='pdqp':

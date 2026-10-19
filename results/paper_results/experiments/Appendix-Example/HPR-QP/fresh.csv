@@ -1,0 +1,2 @@
+solver,case_id,case,group,subset,tolerance,status,solved,iterations,seconds,objective,residual,source,measurement_origin,raw_file,status_basis,objective_basis,wall_seconds,note,model_revision
+HPR-QP,appendix__dual,dual,appendix_concrete,all,1e-08,OPTIMAL,True,900.0,11.777687788009644,-2.50624999999641,3.608235931120376e-09,fresh,verification_run,results/raw_results/Appendix-Example/HPR-QP/raw/verification/appendix_concrete/dual.json,native solver,full objective,35.144,Reconstructed example; historical dual ~840 remains unverified,

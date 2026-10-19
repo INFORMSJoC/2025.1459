@@ -56,15 +56,15 @@ def sgm(values):
  return math.exp(sum(math.log(x+10) for x in values)/len(values))-10 if values else None
 def refresh(experiment,output):
  """Publish one experiment atomically; every fresh row overrides its archived row, even failures."""
- folder=Path(output)/experiment['name'];folder.mkdir(parents=True,exist_ok=True)
+ folder=Path(output)/'paper_results/experiments'/experiment['name'];folder.mkdir(parents=True,exist_ok=True)
  with (folder/'.summary.lock').open('w') as lock:
   fcntl.flock(lock,fcntl.LOCK_EX)
   effective=[];comparisons=[];summaries=[]
   for solver,spec in experiment['solvers'].items():
    sd=folder/solver;sd.mkdir(exist_ok=True)
    archive=[dict(r,source='archived',measurement_origin='paper_archive') for c in spec['cases'] for r in c['archived']]
-   prior=[r for r in read_csv(ROOT/'config/verification_snapshot.csv') if r.pop('experiment',None)==experiment['name'] and r['solver']==solver];fresh={(r['case_id'],r['tolerance']):r for r in prior};errors=0
-   for f in sorted((sd/'runs').glob('*/record.json')):
+   prior=[r for r in read_csv(ROOT/'results/raw_results/verification_snapshot.csv') if r.pop('experiment',None)==experiment['name'] and r['solver']==solver];fresh={(r['case_id'],r['tolerance']):r for r in prior};errors=0
+   for f in sorted((Path(output)/'raw_results'/experiment['name']/solver/'runs').glob('*/record.json')):
     try:d=json.loads(f.read_text())
     except (OSError,ValueError):continue
     if d.get('state') not in ['completed']:errors+=1

@@ -1121,7 +1121,7 @@ function run_dataset(data_path, result_path, params, device_number=0)
         powerlist = []
     end
 
-    FILE_NAME = normpath(joinpath(@__DIR__, "..", "..", "..", "data", "inputs", "MM_mps", "AUG2D.mps"))
+    FILE_NAME = normpath(joinpath(@__DIR__, "..", "..", "..", "data", "Support", "warmup.mps"))
     if params.do_warm_up
         println("warm up starts: ---------------------------------------------------------------------------------------------------------- ")
         t_start_all = time()

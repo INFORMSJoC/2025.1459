@@ -1,14 +1,14 @@
 # Installation and numerical environment
 
-Install Julia **1.10.4** and set `JULIA_BIN` to its executable. From the package root, run `./run.sh setup SOLVER`, or `./run.sh setup ALL` for all solver environments. Setup instantiates the supplied manifests and downloads missing dependencies; it does not update package versions or install Julia, GPU drivers or a Gurobi license. Linux x86_64 was tested.
+Install Julia **1.10.4** and set `JULIA_BIN` to its executable. From the package root, run `./scripts/run.sh setup SOLVER`, or `./scripts/run.sh setup ALL` for all solver environments. Setup instantiates the supplied manifests and downloads missing dependencies; it does not update package versions or install Julia, GPU drivers or a Gurobi license. Linux x86_64 was tested.
 
 | Solver | Pinned environment | Runtime / source |
 |---|---|---|
-| HPR-QP and its variants | `environment/` | CUDA.jl 5.11.0; CUDA 13.2; CUDSS.jl 0.6.7 |
-| PDQP | `environment/PDQP/` | Collected PDQP source; CUDA.jl 5.11.0; CUDA 13.2 |
-| SCS | `environment/SCS/` | SCS.jl 2.1.0, native SCS 3.2.7 GPU artifact; CUDA 11.8 |
-| CuClarabel | `environment/CuClarabel/` | CuClarabel 0.10.0; CUDA.jl 5.11.0; CUDSS.jl 0.6.7; CUDA 13.2 |
-| Gurobi | `environment/Gurobi/` | Gurobi.jl 1.9.2, native Gurobi 12.0.2; CPU; own valid license required |
+| HPR-QP and its variants | `scripts/environments/` | CUDA.jl 5.11.0; CUDA 13.2; CUDSS.jl 0.6.7 |
+| PDQP | `scripts/environments/PDQP/` | Collected PDQP source; CUDA.jl 5.11.0; CUDA 13.2 |
+| SCS | `scripts/environments/SCS/` | SCS.jl 2.1.0, native SCS 3.2.7 GPU artifact; CUDA 11.8 |
+| CuClarabel | `scripts/environments/CuClarabel/` | CuClarabel 0.10.0; CUDA.jl 5.11.0; CUDSS.jl 0.6.7; CUDA 13.2 |
+| Gurobi | `scripts/environments/Gurobi/` | Gurobi.jl 1.9.2, native Gurobi 12.0.2; CPU; own valid license required |
 
 JuMP 1.30.0 is pinned for SCS, CuClarabel and Gurobi. PDQP uses its original Julia command-line driver. Local package dependencies in the manifests resolve to `src/competitors/`. The default dependency cache is `.julia-depot`; `JULIA_DEPOT_PATH`, or separate `HPR_DEPOT_PATH` / `COMPETITOR_DEPOT_PATH`, can select existing caches. CuClarabel's Python dependency environment can initialize automatically on first use.
 

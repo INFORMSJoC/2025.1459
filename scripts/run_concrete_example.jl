@@ -10,13 +10,13 @@ include(joinpath(root,"src","variants","main","HPRQP_zxwyw.jl"))
 module PrimalExample
 include(joinpath(@__DIR__,"..","src","variants","primal1","solver.jl"))
 end
-input_path=joinpath(root,"config","appendix_example.json")
+input_path=joinpath(root,"data","Appendix-Example","instance.json")
 d=JSON.parsefile(input_path)
 if length(ARGS)>=2
  d["check_iter"]=parse(Int,ARGS[2]);@assert d["check_iter"]>0
  d["check_iter_provenance"]="Explicit diagnostic override; not evidence of the historical setting"
 end
-out=isempty(ARGS) ? joinpath(root,"experiments","Appendix-Example","standalone") : abspath(ARGS[1]);mkpath(out)
+out=isempty(ARGS) ? joinpath(root,"results","raw_results","Appendix-Example","standalone") : abspath(ARGS[1]);mkpath(out)
 Q=permutedims(hcat(d["Q"]...));A=permutedims(hcat(d["A"]...));c=Float64.(d["c"]);b=Float64.(d["b"])
 Sw=Q*(d["lambda_Q"]*I-Q);Sy=d["lambda_A"]*I-A*A';Sx=d["lambda_Q"]*I-Q+d["sigma"]*(d["lambda_A"]*I-A'*A)
 Ty=d["sigma"]*Sy+d["sigma"]^2*A*Q*inv(d["sigma"]*Q*Q+Q+d["sigma"]*Sw)*Q*A'

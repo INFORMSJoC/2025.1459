@@ -2,7 +2,8 @@
 """Check the release inventory against the manuscript's explicit case list."""
 from pathlib import Path
 import json,sys,csv,tomllib
-r=Path(__file__).resolve().parents[1];gs=json.loads((r/'config/experiments.json').read_text());scope=json.loads((r/'config/paper_scope.json').read_text());m=json.loads((r/'data/manifest.json').read_text());issues=[]
+from catalog import load_catalog
+r=Path(__file__).resolve().parents[1];gs=json.loads((r/'scripts/config/experiments.json').read_text());scope=json.loads((r/'scripts/config/paper_scope.json').read_text());m=json.loads((r/'scripts/config/data/manifest.json').read_text());issues=[]
 actual={g['id']:[c['name'] for c in g['cases']] for g in gs}
 if actual!=scope:issues.append('Experiment configuration differs from the paper scope')
 variants={g['variant'] for g in gs}
@@ -12,26 +13,26 @@ if {x['path'] for x in m}!=paths:issues.append('Data inventory differs from requ
 for x in m:
  expected={g['id'] for g in gs if any(c['path']==x['path'] for c in g['cases'])}
  if set(x['groups'])!=expected:issues.append('Incorrect input membership '+x['path'])
-for f in (r/'data/inputs').rglob('*'):
- if f.is_file() and str(f.relative_to(r/'data/inputs')) not in paths | {x['path'] for x in json.loads((r/'data/competitor_qap_manifest.json').read_text())}:issues.append('Extra bundled input '+str(f))
+for f in (r/'data').rglob('*'):
+ if f.is_file() and f.suffix in ['.mps','.mat'] and f.name!='warmup.mps' and str(f.relative_to(r/'data')) not in paths | {x['path'] for x in json.loads((r/'scripts/config/data/competitor_qap_manifest.json').read_text())}:issues.append('Extra bundled input '+str(f))
 for g in gs:
  if not (r/'src/variants'/g['variant']/g['entry']).is_file():issues.append('Missing source entry '+g['id'])
  if g['probe'] not in actual[g['id']]:issues.append('Probe outside paper scope '+g['id'])
-index=json.loads((r/'data/archives/archive_index.json').read_text())
+index=json.loads((r/'scripts/config/data/archives/archive_index.json').read_text())
 if index.get('complete') and {x['path'] for d in index['datasets'] for x in d['inputs']}!=paths:issues.append('Completed archive index does not cover every paper input')
 for d in index['datasets']:
  if any(x['path'] not in paths for x in d['inputs']):issues.append('Archive contains non-paper input '+d['dataset'])
-for path in ['config/appendix_example.json','scripts/run_concrete_example.jl']:
+for path in ['data/Appendix-Example/instance.json','scripts/run_concrete_example.jl']:
  if not (r/path).is_file():issues.append('Missing appendix example file '+path)
-for row in csv.DictReader((r/'config/verification_snapshot.csv').open()):
+for row in csv.DictReader((r/'results/raw_results/verification_snapshot.csv').open()):
  if not (r/row['raw_file']).is_file():issues.append('Missing native result '+row['raw_file'])
-cat=json.loads((r/'config/reviewer_experiments.json').read_text())
-inputs=m+json.loads((r/'data/competitor_qap_manifest.json').read_text())
+cat=load_catalog()
+inputs=m+json.loads((r/'scripts/config/data/competitor_qap_manifest.json').read_text())
 inventory={x['path']:x for x in inputs}
-extra_index=r/'data/archives/competitor_qap_index.json'
+extra_index=r/'scripts/config/data/archives/competitor_qap_index.json'
 if extra_index.exists():
  extra=json.loads(extra_index.read_text())
- expected={x['path'] for x in inputs if x['path'].startswith('QAP/mps/')}
+ expected={x['path'] for x in inputs if x['path'].startswith('QAPLIB/inputs/explicit/')}
  actual_extra={x['path'] for d in extra['datasets'] for x in d['inputs']}
  if extra.get('complete') and expected!=actual_extra:issues.append('Competitor archive index does not cover exact QAP inventory')
  for d in extra['datasets']:
@@ -42,7 +43,7 @@ for x in inputs:
  p=Path(x['path'])
  if p.is_absolute() or '..' in p.parts:issues.append('Nonportable canonical input '+str(p))
  if str(p).startswith('LASSO/') and p.parts[1] not in ['uci','synthetic']:issues.append('Obsolete Lasso input path '+str(p))
-for manifest in (r/'environment').rglob('Manifest.toml'):
+for manifest in (r/'scripts/environments').rglob('Manifest.toml'):
  for name,packages in tomllib.loads(manifest.read_text()).get('deps',{}).items():
   for package in packages:
    if 'path' in package:

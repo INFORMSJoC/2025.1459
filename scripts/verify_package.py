@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import hashlib,json,sys
 from pathlib import Path
-root=Path(__file__).resolve().parents[1];manifest=root/'SHA256SUMS.json'
+root=Path(__file__).resolve().parents[1];manifest=root/'scripts/config/SHA256SUMS.json'
 if not manifest.exists():raise SystemExit('Release checksum manifest has not been generated')
 issues=[];entries=json.loads(manifest.read_text())
 for x in entries:

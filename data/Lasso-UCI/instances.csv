@@ -1,0 +1,12 @@
+instance,representation,path,bytes,sha256,experiment_groups,origin
+E2006_test,mps,Lasso-UCI/inputs/E2006_test.mps,238507931,aa34f24d979ad1b057053891ac23fa33f1391c5935c711b80169880ea74c9ca4,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+E2006_train,mps,Lasso-UCI/inputs/E2006_train.mps,930000412,4c1c58c32c6b90d39395d1893e0dafac42ffefd2e29135072150d400802bc407,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+abalone_scale_expanded7,mps,Lasso-UCI/inputs/abalone_scale_expanded7.mps,1078343912,a48e902f2ce721b363ab1756933d50de35e656cfdee09b693071e6345fd4f588,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+bodyfat_scale_expanded7,mps,Lasso-UCI/inputs/bodyfat_scale_expanded7.mps,1398328688,887c08c1e7870eb2d0f599bf475abb91acff663535ea3e9aae346b6dbcb7567f,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+housing_scale_expanded7,mps,Lasso-UCI/inputs/housing_scale_expanded7.mps,1856585524,8ee2eb08e4fd51635f5bebb82112a384e2d52ec5951f6edf410c41c6fa20699c,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+log1p_E2006_test,mps,Lasso-UCI/inputs/log1p_E2006_test.mps,1892153575,05ee98eaf2628239174a8324b8caa5b456a96978a51c323965e49e6fc2251d21,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+log1p_E2006_train,mps,Lasso-UCI/inputs/log1p_E2006_train.mps,4983930741,78baeca09275bf485f8ad9b58e8e411164902c917600206fa2b2d16fd5e18c27,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+mpg_scale_expanded7,mps,Lasso-UCI/inputs/mpg_scale_expanded7.mps,54133598,de96f4469352095a47fa639e1b6725e3db709d3b476d95f15a485d04db2ed286,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+pyrim_scaled_expanded5,mps,Lasso-UCI/inputs/pyrim_scaled_expanded5.mps,290449881,4a1fe7a74cbd21dd806fa121a153b40b49daba4ee5ca0dac143199234fe50f51,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+space_ga_scale_expanded9,mps,Lasso-UCI/inputs/space_ga_scale_expanded9.mps,719695519,c428407c727f00d6c0f1cf31876fc5e1363a929e117e2de6df2852bb8a92ced3,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
+triazines_scaled_expanded4,mps,Lasso-UCI/inputs/triazines_scaled_expanded4.mps,2320897033,0e9c3ff2a2c365dedf9b2a114841972ea7235ca089428af9d2be56e67ba481f1,LASSO_UCI;LASSO_UCI_R1_explicit,"third-party benchmark, prepared by authors"
