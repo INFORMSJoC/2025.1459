@@ -13,8 +13,6 @@ Please cite both the paper and this repository using their respective DOIs:
 - Paper: [10.1287/ijoc.2025.1459](https://doi.org/10.1287/ijoc.2025.1459)
 - Repository: [10.1287/ijoc.2025.1459.cd](https://doi.org/10.1287/ijoc.2025.1459.cd)
 
-These identifiers are assigned to repository **2025.1459**. The DOI links will become available through the journal publication process; during review, use the [repository](https://github.com/INFORMSJoC/2025.1459).
-
 Below is the BibTeX for citing this repository snapshot:
 
 ```bibtex
@@ -69,7 +67,7 @@ The preserved verification evidence covers 365 HPR benchmark/curve checks, inclu
 
 The launcher is **`./scripts/run.sh EXPERIMENT SOLVER`**. Run commands from the repository root, or invoke the launcher by its absolute path. Command-line data/output paths remain relative to your working directory.
 
-Third-party MM and QAPLIB input files are not bundled. First read the [data acquisition guide](data/README.md). Existing prepared archives remain available through the previously supplied Dropbox link **while the editor considers whether this hosting is acceptable**; this is not a claim of approved permanent hosting or a grant of third-party rights. Original sources and exact instance lists are provided in each dataset directory.
+Prepared experiment inputs are hosted on Dropbox. See the [data acquisition guide](data/README.md) for download and extraction instructions, dataset sources, and applicable terms.
 
 For the compact, complete 36-case QAPLIB experiment, obtain the prepared MAT archive as described in [data/QAPLIB](data/QAPLIB/README.md), then:
 
@@ -83,15 +81,15 @@ The complete QAPLIB HPR-QP run historically takes about 40–90 minutes on the d
 
 | `EXP_NAME` | Paper experiment / reference | Cases per solver | Supported `SOLVER` arguments |
 |---|---|---:|---|
-| `Primal-Dual` | R2 Table 1; Online Supplement Table S1 | 30 | `HPR-QP`, `HPR-p1`, `HPR-p2` |
-| `MM` | R2 Table 2; Online Supplement Figure S1 | 137 | `HPR-QP`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
-| `Synthetic-CQP` | R2 Table 3; Online Supplement Table S2 and Figure S2 | 60 | `HPR-QP`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
-| `Lasso-UCI` | R2 Table 4; Online Supplement Tables S3 (dimensions) and S4 (results) | 11 | `HPR-QP`, `HPR-QP-explicit`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
-| `Lasso-Synthetic` | R2 Table 5; Online Supplement Table S5 | 12 | `HPR-QP`, `HPR-QP-explicit`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
-| `QAPLIB` | R2 Table 6; Online Supplement Figure S3 | 36 | `HPR-QP`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
-| `Large-QAP` | R2 Table 7 | 6 | `HPR-QP` |
-| `Trust-Region` | R2 Table 8; Online Supplement Figure S4 | 17 | `HPR-QP`, `SCS`, `CuClarabel`, `Gurobi` |
-| `Restart-Sigma` | R2 Figure 1 | 3 curves | `HPR-QP` |
+| `Primal-Dual` | Table 1; Online Supplement Table S1 | 30 | `HPR-QP`, `HPR-p1`, `HPR-p2` |
+| `MM` | Table 2; Online Supplement Figure S1 | 137 | `HPR-QP`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
+| `Synthetic-CQP` | Table 3; Online Supplement Table S2 and Figure S2 | 60 | `HPR-QP`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
+| `Lasso-UCI` | Table 4; Online Supplement Tables S3 (dimensions) and S4 (results) | 11 | `HPR-QP`, `HPR-QP-explicit`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
+| `Lasso-Synthetic` | Table 5; Online Supplement Table S5 | 12 | `HPR-QP`, `HPR-QP-explicit`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
+| `QAPLIB` | Table 6; Online Supplement Figure S3 | 36 | `HPR-QP`, `PDQP`, `SCS`, `CuClarabel`, `Gurobi` |
+| `Large-QAP` | Table 7 | 6 | `HPR-QP` |
+| `Trust-Region` | Table 8; Online Supplement Figure S4 | 17 | `HPR-QP`, `SCS`, `CuClarabel`, `Gurobi` |
+| `Restart-Sigma` | Figure 1 | 3 curves | `HPR-QP` |
 | `Appendix-Example` | Online Supplement Appendix E | 1 | `HPR-QP`, `HPR-p1` |
 
 `HPR-QP` uses the implicit implementation for Lasso and QAP. Standard explicit CQPs use `src/variants/main`; `HPR-QP-explicit` uses that main implementation for explicit Lasso, preserving the disabled diagonal-Q shortcut. `HPR-p1` and `HPR-p2` are the primal variants. `src/variants` contains the authors' implementations developed specifically for this project and used only in this project; see [provenance](src/variants/README.md).
@@ -113,4 +111,4 @@ The ongoing development repository is [PolyU-IOR/HPR-QP](https://github.com/Poly
 
 ## Support
 
-For questions about this submission, open an [issue](https://github.com/INFORMSJoC/2025.1459/issues) or contact the authors listed in [AUTHORS](AUTHORS).
+For questions about this package, open an [issue](https://github.com/INFORMSJoC/2025.1459/issues) or contact the authors listed in [AUTHORS](AUTHORS).

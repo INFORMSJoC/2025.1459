@@ -1,6 +1,6 @@
 # HPR-QP implementations and provenance
 
-The authors confirm that the code in this directory was developed specifically for the HPR-QP project and has been used only in this project. It is covered by the authors' [MIT license](../../LICENSE). Julia dependencies and the separate competing-solver snapshots retain their own licenses.
+The authors confirm that the code in this directory was developed specifically for the HPR-QP project and has been used only in this project. It is covered by the authors' [MIT license](LICENSE). Julia dependencies and the separate competing-solver snapshots retain their own licenses.
 
 | Directory | Role in the paper |
 |---|---|

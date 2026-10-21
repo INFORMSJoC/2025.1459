@@ -14,7 +14,7 @@ The authors’ rights in these generated trust-region inputs are CC BY 4.0.
 
 ## Acquisition and layout
 
-Prepared archive location in the existing Dropbox collection: `Trust-Region/ (30 parts)`. Dropbox hosting is under editorial consideration; see the [data guide](../README.md). The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
+Prepared archive location on Dropbox: `Trust-Region/ (30 parts)`. See the [data guide](../README.md) for download and extraction instructions. The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
 
 Extracted path beneath `--data-root`: `Trust-Region/inputs/*.mat and large/*.mat`.
 

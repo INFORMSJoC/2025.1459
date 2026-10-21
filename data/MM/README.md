@@ -14,7 +14,7 @@ No blanket dataset license is asserted. See also [third-party notices](../../doc
 
 ## Acquisition and layout
 
-Prepared archive location in the existing Dropbox collection: `MM/MM_mps.tar.gz.part000`. Dropbox hosting is under editorial consideration; see the [data guide](../README.md). The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
+Prepared archive location on Dropbox: `MM/MM_mps.tar.gz.part000`. See the [data guide](../README.md) for download and extraction instructions. The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
 
 Extracted path beneath `--data-root`: `MM/inputs/*.mps`.
 

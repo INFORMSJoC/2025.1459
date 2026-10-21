@@ -11,8 +11,8 @@ from catalog import load_catalog
 # No third-party benchmark bytes or GPU are required by this test suite.
 _FIXTURE=tempfile.TemporaryDirectory(prefix='hpr test package ')
 ROOT=Path(_FIXTURE.name)/'package'
-shutil.copytree(ORIGINAL_ROOT,ROOT,ignore=shutil.ignore_patterns('.git','__pycache__','.julia-depot','.reviewer_locks','runs','inputs'))
-_catalog=ROOT/'scripts/config/reviewer_experiments.json'
+shutil.copytree(ORIGINAL_ROOT,ROOT,ignore=shutil.ignore_patterns('.git','__pycache__','.julia-depot','.run_locks','runs','inputs'))
+_catalog=ROOT/'scripts/config/experiment_catalog.json'
 _cases=json.loads(_catalog.read_text())
 for name in ['CVXQP3_S.mps','QSCSD6.mps']:
  blob=('synthetic orchestration fixture, not a benchmark: '+name).encode()
@@ -46,7 +46,7 @@ j=json.load(open(sys.argv[-1]));c=j['cases'][0];f=pathlib.Path(j['output_root'])
 r=dict(name=c['name'],iter=300,iter_4=100,iter_6=200,alg_time=3,time_4=1,time_6=2,primal_obj=0,res=1e-9,status='OPTIMAL')
 with f.open('w',newline='') as out:w=csv.DictWriter(out,fieldnames=list(r));w.writeheader();w.writerow(r)
 ''');fake.chmod(0o755)
-   cmd=[sys.executable,str(ROOT/'scripts/reviewer_run.py'),'ALL','HPR-QP','--cases','QSCSD6.mps','--julia',str(fake),'--output',str(p/'out')]
+   cmd=[sys.executable,str(ROOT/'scripts/run_experiments.py'),'ALL','HPR-QP','--cases','QSCSD6.mps','--julia',str(fake),'--output',str(p/'out')]
    one=subprocess.run(cmd,capture_output=True,text=True);self.assertEqual(one.returncode,0,one.stdout+one.stderr)
    mm=load_run(next((p/'out/reproduced_results/exp_MM/solver_HPR-QP/raw/runs').glob('*/run.csv')).parent);pd=load_run(next((p/'out/reproduced_results/exp_Primal-Dual/solver_HPR-QP/raw/runs').glob('*/run.csv')).parent)
    self.assertEqual(len(mm['rows']),3);self.assertEqual(len(pd['rows']),1)
@@ -72,7 +72,7 @@ with f.open('w',newline='') as out:w=csv.DictWriter(out,fieldnames=list(r));w.wr
    for tol in ['1e-04','1e-06','1e-08']:
     (figures/f'profile_{tol}.pdf').write_bytes(b'old plot')
     (figures/f'profile_{tol}.csv').write_text('solver,source,cases\nHPR-QP,old.csv,137\n')
-   r=subprocess.run([sys.executable,str(ROOT/'scripts/reviewer_run.py'),'MM','HPR-QP','--cases','CVXQP3_S.mps','--julia',str(fake),'--hard-time-limit','.5','--output',str(p/'out')],capture_output=True,text=True)
+   r=subprocess.run([sys.executable,str(ROOT/'scripts/run_experiments.py'),'MM','HPR-QP','--cases','CVXQP3_S.mps','--julia',str(fake),'--hard-time-limit','.5','--output',str(p/'out')],capture_output=True,text=True)
    self.assertEqual(r.returncode,2,r.stdout+r.stderr)
    rows=read_csv(p/'out/reproduced_results/exp_MM/solver_HPR-QP/summary.csv');bad=[x for x in rows if x['solver']=='HPR-QP' and x['case']=='CVXQP3_S.mps'];self.assertEqual(len(bad),3);self.assertTrue(all(x['status']=='HARD_TIME_LIMIT' and x['source']=='fresh' for x in bad))
    summary=read_csv(p/'out/reproduced_results/exp_MM/summary.csv')
@@ -112,7 +112,7 @@ import json,pathlib,sys
 j=json.load(open(sys.argv[-1]));out=pathlib.Path(j['output']);out.mkdir(parents=True,exist_ok=True)
 (out/'sample.json').write_text(json.dumps(dict(execution='completed',tolerance=j['tolerances'][0],result=dict(status='OPTIMAL',iterations=7,solve_time=1.0,native_primal_objective=0.0))))
 ''');fake.chmod(0o755)
-   cmd=[sys.executable,str(ROOT/'scripts/reviewer_run.py'),'MM','CuClarabel','--cases','CVXQP3_S.mps','--cuclarabel-julia',str(fake),'--output',str(p/'out')]
+   cmd=[sys.executable,str(ROOT/'scripts/run_experiments.py'),'MM','CuClarabel','--cases','CVXQP3_S.mps','--cuclarabel-julia',str(fake),'--output',str(p/'out')]
    one=subprocess.run(cmd,capture_output=True,text=True);self.assertEqual(one.returncode,0,one.stdout+one.stderr)
    runs=p/'out/reproduced_results/exp_MM/solver_CuClarabel/raw/runs'
    before=set(runs.glob('*/run.csv'));self.assertEqual(len(before),3)
@@ -139,9 +139,9 @@ else:
     f=p/('julia-'+version);f.write_text(template.replace('EXPECTED',repr(version)));f.chmod(0o755)
    env=dict(os.environ,TEST_RUNTIME_CALLS=str(calls),CUCLARABEL_JULIA_BIN=str(p/'julia-1.11.5'))
    common=['--julia',str(p/'julia-1.10.4'),'--output',str(p/'out')]
-   r=subprocess.run([sys.executable,str(ROOT/'scripts/reviewer_run.py'),'setup','ALL',*common],env=env,capture_output=True,text=True)
+   r=subprocess.run([sys.executable,str(ROOT/'scripts/run_experiments.py'),'setup','ALL',*common],env=env,capture_output=True,text=True)
    self.assertEqual(r.returncode,0,r.stdout+r.stderr)
-   r=subprocess.run([sys.executable,str(ROOT/'scripts/reviewer_run.py'),'MM','CuClarabel','--cases','CVXQP3_S.mps','--tolerances','1e-8',*common],env=env,capture_output=True,text=True)
+   r=subprocess.run([sys.executable,str(ROOT/'scripts/run_experiments.py'),'MM','CuClarabel','--cases','CVXQP3_S.mps','--tolerances','1e-8',*common],env=env,capture_output=True,text=True)
    self.assertEqual(r.returncode,0,r.stdout+r.stderr)
    self.assertEqual(calls.read_text().splitlines().count('1.11.5 CuClarabel'),2)
    self.assertEqual(calls.read_text().splitlines().count('1.10.4 other'),4)

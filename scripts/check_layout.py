@@ -17,14 +17,14 @@ for row in rows:
  if row['sha256']!=index[row['path']]['sha256'] or int(row['bytes'])!=index[row['path']]['bytes']:issues.append('Instance list identity mismatch '+row['path'])
 for name in ['Synthetic-CQP','Lasso-Synthetic','Large-QAP','Trust-Region']:
  if not (ROOT/'data'/name/'LICENSE').is_file():issues.append('Missing author-generated data license '+name)
-for name in ['experiments.json','reviewer_experiments.json']:
+for name in ['experiments.json','experiment_catalog.json']:
  text=(ROOT/'scripts/config'/name).read_text()
  if '"reference":' in text or '"archived":' in text:issues.append('Numerical rows remain in runner configuration '+name)
 readme=(ROOT/'README.md').read_text()
 if not readme.startswith('[![INFORMS Journal on Computing Logo]'):issues.append('Missing IJOC banner')
 if re.search(r'^## (.+)$',readme,re.M).group(1)!='Cite':issues.append('Cite must be first README subheading')
 from result_paths import experiment_path,solver_path
-catalog=json.loads((ROOT/'scripts/config/reviewer_experiments.json').read_text())
+catalog=json.loads((ROOT/'scripts/config/experiment_catalog.json').read_text())
 for e in catalog:
  for paper in [False,True]:
   for solver in e['solvers']:

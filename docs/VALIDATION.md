@@ -1,6 +1,6 @@
 # Result coverage and interpretation
 
-The package covers the revised paper's ten named experiments. The [README experiment table](../README.md#replicating) maps each command to its manuscript table or figure.
+The package covers the paper's ten named experiments. The [README experiment table](../README.md#replicating) maps each command to its manuscript table or figure.
 
 The preserved HPR measurements cover 365 benchmark and curve checks, including time-limit outcomes. The two-method appendix example is also included. Competing solvers have selected rerun measurements across applicable dataset combinations; these are not complete reruns of every dataset. Completed coverage does not mean that every case converged or every value equals its paper reference.
 
@@ -22,9 +22,9 @@ At tolerance 1e-8, the 128 converged MM HPR cases agree with their reference obj
 
 The denser synthetic HPR runs use the corrected original-MPS objective. Their historical old-loader objectives are not valid targets for that formulation. Paper values remain unchanged in `paper_results`; corrected reruns remain in `reproduced_results`.
 
-The appendix example gives 900 dual and 1,700 primal iterations, consistent with R2 Online Supplement Appendix E. Objectives and the four matrix norms agree at the paper's precision.
+The appendix example gives 900 dual and 1,700 primal iterations, consistent with Online Supplement Appendix E. Objectives and the four matrix norms agree at the paper's precision.
 
-Preserved CuClarabel benchmark measurements retain their original environment information, including earlier compatibility-patched runs. The executable package now uses unmodified CuClarabel with its compatible Julia 1.11.5 environment. These old timings are not relabeled as measurements of the current environment. Separate development validation checks are excluded from the distributed results.
+Preserved CuClarabel benchmark measurements retain their original environment information, including earlier compatibility-patched runs. The executable package uses unmodified CuClarabel with its compatible Julia 1.11.5 environment. These old timings are not relabeled as measurements of the current environment. Separate development validation checks are excluded from the distributed results.
 
 ## Running and checking
 

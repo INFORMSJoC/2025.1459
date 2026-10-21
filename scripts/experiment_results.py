@@ -165,7 +165,7 @@ def difference_row(experiment,solver,old,new):
  return dict(solver=solver,case=old['case'],group=old['group'],subset=old.get('subset','all'),tolerance=old['tolerance'],differences='; '.join(differences),expected=expected,note=' '.join(notes),paper_status=old['status'],reproduced_status=new['status'],paper_iterations=ai,reproduced_iterations=bi,paper_objective=a,reproduced_objective=b,scaled_objective_difference=delta,paper_seconds=old['seconds'],reproduced_seconds=new.get('seconds'),paper_raw_file=old.get('raw_file'),reproduced_raw_file=new.get('raw_file'))
 
 def reported_statistics(experiment,statistics):
- """Use printed R2 aggregates in paper overviews; retain computed statistics."""
+ """Use printed paper aggregates in paper overviews; retain computed statistics."""
  from result_paths import experiment_path
  source=experiment_path(ROOT/'results',experiment,True)/'sources/reported_statistics.csv'
  reported={}

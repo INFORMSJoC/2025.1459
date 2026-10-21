@@ -18,7 +18,7 @@ The HPR inventory contains 279 inputs (476.7 GB uncompressed). Competitor QAP ru
 
 ## Download and extraction
 
-The previously supplied [Dropbox — 2025.1459](https://www.dropbox.com/scl/fo/y0n7luz0yvc192nsk0nwa/ABllkwQ2ZeWGe9HiR6EyJpk?rlkey=y3n3na48lb9f78kpki342dw57&dl=0) contains prepared experiment inputs. **The editor is checking whether Dropbox is acceptable for journal hosting.** This link is retained pending that decision; it does not establish redistribution permission for third-party datasets. The original collection links are provided in the corresponding family directories.
+[Dropbox — 2025.1459](https://www.dropbox.com/scl/fo/y0n7luz0yvc192nsk0nwa/ABllkwQ2ZeWGe9HiR6EyJpk?rlkey=y3n3na48lb9f78kpki342dw57&dl=0) hosts the prepared experiment inputs externally because of their size. Original collection links, attribution, and applicable data terms are provided in the corresponding family directories. Hosting does not change the datasets’ licenses.
 
 Prepared inputs include paper-specific conversions; original-source downloads are not claimed to match those files without preparation. Use the recorded hashes to verify exact experimental inputs.
 
@@ -45,8 +45,8 @@ python3 scripts/manage_data.py verify --groups MM --data-root /path/to/data
 ./scripts/run.sh MM HPR-QP --data-root /path/to/data --plan
 ```
 
-For every input, add `--include-competitors` and omit `--groups`. Default extraction writes into this `data` directory, with each instance under its family’s `inputs` directory. Downloads and extracted benchmark inputs are excluded from Git and release ZIPs. Existing installations using `MM_mps`, `LASSO`, `QAP`, `RANDOM` and `TR` paths remain accepted by `--data-root` through recorded aliases.
+For every input, add `--include-competitors` and omit `--groups`. Default extraction writes into this `data` directory, with each instance under its family’s `inputs` directory. Downloads and extracted benchmark inputs are not distributed in the source snapshot; the release builder excludes them from release ZIPs. Existing installations using `MM_mps`, `LASSO`, `QAP`, `RANDOM` and `TR` paths remain accepted by `--data-root` through recorded aliases.
 
 ## Why the JSON indexes are retained
 
-Machine-oriented manifests and archive indexes now live under [scripts/config/data](../scripts/config/data/README.md), not among dataset folders. They are required for input identity checks, legacy-path lookup, archive-volume checksums and safe extraction. Readers can use the simpler family-level CSV instance lists. No numerical solver results are stored in these data indexes.
+Machine-oriented manifests and archive indexes are stored under [scripts/config/data](../scripts/config/data/README.md), not among dataset folders. They are required for input identity checks, legacy-path lookup, archive-volume checksums and safe extraction. Readers can use the simpler family-level CSV instance lists. No numerical solver results are stored in these data indexes.

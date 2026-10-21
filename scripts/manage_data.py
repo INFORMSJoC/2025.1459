@@ -53,7 +53,7 @@ if a.action!='verify':
    if not verify(dest,part):
     if a.action=='extract':raise SystemExit('Missing or corrupted volume: '+str(dest))
     url=part.get('url')
-    if not url:raise SystemExit('Public download URL is not assigned for '+name+'. Copy owner-supplied volumes into --cache and use extract, or update the index after repository deposit.')
+    if not url:raise SystemExit('No direct download URL is configured for '+name+'. Download the archive from the Dropbox collection linked in data/README.md into --cache, then use extract.')
     if not url.startswith('https://'):raise SystemExit('Only HTTPS download URLs are accepted')
     dest.parent.mkdir(parents=True,exist_ok=True)
     tmp=dest.with_suffix(dest.suffix+'.partial')

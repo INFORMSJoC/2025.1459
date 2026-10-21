@@ -14,7 +14,7 @@ No third-party instance files are bundled. Applicable UCI data retain CC BY 4.0;
 
 ## Acquisition and layout
 
-Prepared archive location in the existing Dropbox collection: `Lasso-UCI/ (4 parts)`. Dropbox hosting is under editorial consideration; see the [data guide](../README.md). The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
+Prepared archive location on Dropbox: `Lasso-UCI/ (4 parts)`. See the [data guide](../README.md) for download and extraction instructions. The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
 
 Extracted path beneath `--data-root`: `Lasso-UCI/inputs/*.mps`.
 

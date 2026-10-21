@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Freeze a review ZIP with selected evidence, excluding unused attempts and caches."""
+"""Build a release ZIP with selected evidence, excluding unused attempts and caches."""
 from pathlib import Path
 import hashlib,json,zipfile,argparse,csv
 root=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=root.parent/'HPRQP_reproducibility_review.zip');a=p.parse_args();dest=a.output.resolve()
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=root.parent/'HPRQP_reproducibility.zip');a=p.parse_args();dest=a.output.resolve()
 if root==dest or root in dest.parents:raise SystemExit('ZIP output must be outside the package root')
 selected_runs=set()
 for table in (root/'results/reproduced_results').glob('*/solver_*/summary.csv'):
@@ -17,7 +17,7 @@ for table in (root/'results/reproduced_results').glob('*/solver_*/summary.csv'):
 def included(p):
  rel=p.relative_to(root);parts=rel.parts
  if not p.is_file() or p.is_symlink() or p.name=='SHA256SUMS.json':return False
- if any(x in ['.venv','.julia-depot','__pycache__','.git','.CondaPkg','.pixi','.reviewer_locks','.reviewer_runtime'] for x in parts):return False
+ if any(x in ['.venv','.julia-depot','__pycache__','.git','.CondaPkg','.pixi','.run_locks','.run_runtime'] for x in parts):return False
  if parts[0] not in ['src','data','scripts','results','docs'] and len(parts)>1:return False
  if parts[:2]==('results','setup_logs'):return False
  if parts[:2]==('results','reproduced_results') and 'runs' in parts and Path(*parts[:parts.index('runs')+2]) not in selected_runs:return False

@@ -7,4 +7,4 @@ Readers should start with the per-family [data guide](../../../data/README.md) a
 - `archives/archive_index.json`: archive volumes and the mapping from historical archive member paths to the current per-family paths.
 - `archives/competitor_qap_index.json`: the additional explicit-QAP archive volumes.
 
-The archive indexes support the existing prepared Dropbox archives. Hosting approval remains pending. They are not experimental results and are not data licenses. No third-party benchmark inputs are bundled in the revised Git snapshot. The `bundled` flag is false for all 315 benchmark representations.
+The archive indexes describe the prepared archives hosted on Dropbox. They are not experimental results and are not data licenses. No third-party benchmark inputs are bundled in the source snapshot. The `bundled` flag is false for all 315 benchmark representations.

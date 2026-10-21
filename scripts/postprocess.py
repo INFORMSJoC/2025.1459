@@ -57,7 +57,7 @@ for paper in [True,False]:
     ax.legend(fontsize=9,loc='best');dest.parent.mkdir(parents=True,exist_ok=True);fig.savefig(dest);plt.close(fig)
     write_csv(dest.with_suffix('.csv'),sources);outputs.append(dest)
   elif e['name']=='Restart-Sigma':
-   # The paper drawing is preserved as supplied; rerun curves use measured samples.
+   # Retain the saved presentation copy; rerun curves use measured samples.
    if paper:
     source=experiment_path(ROOT/'results',e['name'],True)/'QSCSD1.pdf';dest=folder/'QSCSD1.pdf'
     if source.resolve()!=dest.resolve():shutil.copy2(source,dest)

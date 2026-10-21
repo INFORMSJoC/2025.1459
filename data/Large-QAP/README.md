@@ -14,7 +14,7 @@ The authors’ rights in these random QAP inputs are CC BY 4.0.
 
 ## Acquisition and layout
 
-Prepared archive location in the existing Dropbox collection: `Large-QAP/ (4 parts)`. Dropbox hosting is under editorial consideration; see the [data guide](../README.md). The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
+Prepared archive location on Dropbox: `Large-QAP/ (4 parts)`. See the [data guide](../README.md) for download and extraction instructions. The original source is provided above where applicable; original downloads may need the paper’s transformations and are not asserted to match prepared MPS/MAT hashes directly.
 
 Extracted path beneath `--data-root`: `Large-QAP/inputs/*.mat and large/*.mat`.
 

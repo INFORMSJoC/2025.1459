@@ -17,7 +17,7 @@ case "$HPR_ACTION" in
   tables) exec "$HPR_PYTHON" "$HPR_ROOT/scripts/postprocess.py" --no-plots "$@" ;;
   figures) exec "$HPR_PYTHON" "$HPR_ROOT/scripts/postprocess.py" "$@" ;;
   help|-h|--help)
-    "$HPR_PYTHON" "$HPR_ROOT/scripts/reviewer_run.py" list
+    "$HPR_PYTHON" "$HPR_ROOT/scripts/run_experiments.py" list
     cat <<'HELP'
   ./scripts/run.sh setup SOLVER                    Install the selected pinned environment
   ./scripts/run.sh check                           Check package, references and bundled data
@@ -33,5 +33,5 @@ Set JULIA_BIN to Julia 1.10.4 and CUCLARABEL_JULIA_BIN to Julia 1.11.5.
 Use --help after an experiment for device, budget, data and output options.
 HELP
     ;;
-  *) exec "$HPR_PYTHON" "$HPR_ROOT/scripts/reviewer_run.py" "$HPR_ACTION" "$@" ;;
+  *) exec "$HPR_PYTHON" "$HPR_ROOT/scripts/run_experiments.py" "$HPR_ACTION" "$@" ;;
 esac

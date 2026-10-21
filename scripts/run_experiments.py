@@ -131,7 +131,7 @@ def main():
  for sig in old_handlers:signal.signal(sig,interrupted)
  run_budget=a.run_time_limit;timer=threading.Timer(run_budget,stop.set) if run_budget else None
  if timer:timer.start()
- locks=ROOT/'.reviewer_locks';locks.mkdir(exist_ok=True);hash_cache={};hash_lock=threading.Lock();print_lock=threading.Lock()
+ locks=ROOT/'.run_locks';locks.mkdir(exist_ok=True);hash_cache={};hash_lock=threading.Lock();print_lock=threading.Lock()
  def message(s):
   with print_lock:print(s,flush=True)
  def completed_for(path,case,tolerance):
@@ -192,10 +192,10 @@ def main():
    env['JULIA_DEPOT_PATH']=os.environ.get('HPR_DEPOT_PATH' if s.startswith('HPR') else 'COMPETITOR_DEPOT_PATH',os.environ.get('JULIA_DEPOT_PATH',str(ROOT/'.julia-depot')))
    project=ROOT/'scripts/environments' if s.startswith('HPR') else ROOT/'scripts/environments'/s
    command=[executables[s],'--startup-file=no','--project='+str(project)]
-   jobpath=ROOT/'.reviewer_runtime'/stamp/'job.json';jobpath.parent.mkdir(parents=True,exist_ok=True)
+   jobpath=ROOT/'.run_runtime'/stamp/'job.json';jobpath.parent.mkdir(parents=True,exist_ok=True)
    if task['kind'] in ['hpr','curve']:
     g=copy.deepcopy(next(g for g in load_groups() if g['id']==c['group']));case=next(x for x in g['cases'] if x['name']==c['name']);case['path']=str(path);g['params']['time_limit']=task['soft'];g['cases']=[case]
-    job=dict(id=task['token'],group=g,cases=[case],phase='reviewer_entrypoint',output_root=str(run));atomic_json(jobpath,job)
+    job=dict(id=task['token'],group=g,cases=[case],phase='experiment_entrypoint',output_root=str(run));atomic_json(jobpath,job)
     command += [str(ROOT/'scripts/run_worker.jl'),str(jobpath)]
    elif task['kind']=='jump':
     settings=dict(c.get('settings',{}))
@@ -229,7 +229,7 @@ def main():
      elif task['kind']=='pdqp':
       nf=next((run/'native').glob('*_summary.json'));rr=pdqp_rows(c,json.loads(nf.read_text()),str(nf))
      else:
-      nf=run/'native/raw_results.csv';native=next(x for x in csv.DictReader(nf.open()) if x['method']==c['method']);rr=[row(c,s,1e-8,status=native['status'],solved=native['status']=='OPTIMAL',iterations=number(native['iter']),seconds=number(native['time']),objective=number(native['primal_obj']),residual=number(native['residual']),raw_file=str(nf),note='R2 Online Supplement Appendix E example')]
+      nf=run/'native/raw_results.csv';native=next(x for x in csv.DictReader(nf.open()) if x['method']==c['method']);rr=[row(c,s,1e-8,status=native['status'],solved=native['status']=='OPTIMAL',iterations=number(native['iter']),seconds=number(native['time']),objective=number(native['primal_obj']),residual=number(native['residual']),raw_file=str(nf),note='Online Supplement Appendix E example')]
     except (OSError,ValueError,KeyError,StopIteration) as ex:record.update(state='MISSING_RESULT',error=str(ex))
    if record['state']!='completed':
     ts=[task['tol']] if task['tol'] else c['tolerances'];rr=[row(c,s,t,status=record['state'],solved=False,wall_seconds=result['wall_seconds'],raw_file=str(run/'launch.log'),note=record.get('error','External guard or interruption; no archived substitution for this attempted row')) for t in ts]

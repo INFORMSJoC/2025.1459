@@ -17,7 +17,7 @@ def load_groups():
  return groups
 
 def load_catalog():
- catalog=json.loads((ROOT/'scripts/config/reviewer_experiments.json').read_text())
+ catalog=json.loads((ROOT/'scripts/config/experiment_catalog.json').read_text())
  for e in catalog:
   for solver,sp in e['solvers'].items():
    with (solver_path(ROOT/'results',e['name'],solver,True)/'summary.csv').open(newline='') as f:rows=list(csv.DictReader(f))

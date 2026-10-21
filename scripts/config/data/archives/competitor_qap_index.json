@@ -281,7 +281,5 @@
       ]
     }
   ],
-  "server_host": "20031492r@10.21.6.103",
-  "server_archive_directory": "/home/20031492r/Results/HPRQP_submission_20261011/competitor_qap_archives",
-  "submission_status": "Hosting/deposit deferred by author"
+  "server_host": "20031492r@10.21.6.103"
 }

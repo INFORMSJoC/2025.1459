@@ -1,8 +1,7 @@
 cff-version: 1.2.0
-message: "Please cite both the accompanying HPR-QP paper (10.1287/ijoc.2025.1459) and this repository. This is a review candidate; the archival release follows IJOC review."
+message: "Please cite both the accompanying HPR-QP paper (10.1287/ijoc.2025.1459) and this repository."
 title: "HPR-QP: A dual Halpern Peaceman–Rachford method for solving large scale convex composite quadratic programming"
 type: software
-version: "0.1.0-review-candidate"
 license: MIT
 authors:
   - family-names: Chen
