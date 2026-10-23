@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+CuClarabel,all,1e-08,60,60,47,53.79277975435649,,True,0,Complete measured dataset
+CuClarabel,all,1e-06,60,60,47,52.06393397732992,,True,0,Complete measured dataset
+CuClarabel,all,0.0001,60,60,47,49.469079739839295,,True,0,Complete measured dataset
+CuClarabel,Huge,1e-08,11,11,4,495.8950136881751,,True,0,Complete measured dataset
+CuClarabel,Huge,1e-06,11,11,4,491.1563186280763,,True,0,Complete measured dataset
+CuClarabel,Huge,0.0001,11,11,4,486.3499694593157,,True,0,Complete measured dataset
+CuClarabel,Large,1e-08,33,33,27,46.807127118709154,,True,0,Complete measured dataset
+CuClarabel,Large,1e-06,33,33,27,44.97098236502561,,True,0,Complete measured dataset
+CuClarabel,Large,0.0001,33,33,27,41.95900886879496,,True,0,Complete measured dataset
+CuClarabel,Medium,1e-08,16,16,16,9.516227493018281,,True,0,Complete measured dataset
+CuClarabel,Medium,1e-06,16,16,16,8.962275580918366,,True,0,Complete measured dataset
+CuClarabel,Medium,0.0001,16,16,16,8.267844152335613,,True,0,Complete measured dataset

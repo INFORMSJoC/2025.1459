@@ -1,0 +1,34 @@
+-------------------------------------------------------------
+           Clarabel.jl v0.10.0  -  Clever Acronym              
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 1010000
+  constraints   = 2000000
+  nnz(P)        = 10000
+  nnz(A)        = 5999225
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 2000000
+
+settings:
+  linear algebra: direct / cudss, precision: Float64
+  max iter = 2147483647, time limit = 3600.000000,  max step = 0.990
+  tol_feas = 1.0e-04, tol_gap_abs = 1.0e-04, tol_gap_rel = 1.0e-04,
+  static reg : on, ϵ1 = 1.0e-08, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-07
+  iter refine: on, reltol = 1.0e-12, abstol = 1.0e-12, 
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-04, max_scale = 1.0e+04
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.3205e-01   1.0019e+06  1.00e+06  1.26e+00  8.91e-01  1.00e+00  2.01e+00   ------   
+  1   4.6399e+05   5.3608e+05  1.55e-01  1.02e-01  4.93e-02  2.06e-01  2.71e-01  9.90e-01  
+  2   4.9963e+05   5.0032e+05  1.39e-03  9.80e-04  4.63e-04  2.94e-03  2.79e-03  9.90e-01  
+  3   4.9997e+05   4.9998e+05  1.39e-05  9.79e-06  4.63e-06  2.94e-05  2.79e-05  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = solved
+total time =  68.4s (setup time =  65.5s, solve time =  2.92s)

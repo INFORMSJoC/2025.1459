@@ -1,0 +1,7 @@
+result_set,solver,subset,tolerance,expected_cases,measured_cases,pending_cases,solved,time_SGM10,iteration_SGM10,status,execution_failures,note
+paper,HPR-QP,all,1e-08,6,6,0,6,520.0428221775874,53970.419102451604,available,0,
+paper,HPR-QP,all,1e-06,6,6,0,6,266.7063293890024,22380.3139671927,available,0,
+paper,HPR-QP,all,0.0001,6,6,0,6,22.404752890525785,1161.9454074729297,available,0,
+reproduced,HPR-QP,all,1e-08,6,6,0,6,510.8843159371023,53970.419102451604,available,0,
+reproduced,HPR-QP,all,1e-06,6,6,0,6,261.09392379443926,22380.3139671927,available,0,
+reproduced,HPR-QP,all,0.0001,6,6,0,6,21.157351813149994,1161.9454074729297,available,0,

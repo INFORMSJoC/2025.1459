@@ -1,0 +1,72 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-04-29
+Set parameter FeasibilityTol to value 0.0001
+Set parameter Method to value 2
+Set parameter OptimalityTol to value 0.0001
+Set parameter BarConvTol to value 0.0001
+Set parameter Threads to value 1
+Set parameter TimeLimit to value 3600
+Set parameter OutputFlag to value 1
+Set parameter Presolve to value 0
+Set parameter FeasibilityTol to value 0.0001
+Set parameter Method to value 2
+Set parameter OptimalityTol to value 0.0001
+Set parameter BarConvTol to value 0.0001
+Set parameter Threads to value 1
+Set parameter TimeLimit to value 3600
+Set parameter OutputFlag to value 1
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel(R) Xeon(R) Platinum 8338C CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 64 physical cores, 128 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+FeasibilityTol  0.0001
+OptimalityTol  0.0001
+Method  2
+BarConvTol  0.0001
+Presolve  0
+Threads  1
+
+Optimize a model with 1000000 rows, 1010000 columns and 4999225 nonzeros
+Model fingerprint: 0x9362652a
+Model has 10000 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [9e-09, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+Elapsed ordering time = 5s
+Elapsed ordering time = 8s
+Elapsed ordering time = 10s
+Elapsed ordering time = 12s
+Elapsed ordering time = 15s
+Elapsed ordering time = 16s
+Elapsed ordering time = 20s
+Ordering time: 24.12s
+
+Barrier statistics:
+ Dense cols : 10000
+ Free vars  : 10000
+ AA' NZ     : 3.999e+06
+ Factor NZ  : 5.448e+07 (roughly 1.3 GB of memory)
+ Factor Ops : 3.272e+11 (roughly 5 seconds per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   5.00250001e+08  1.00000000e+00  0.00e+00 9.32e-08  1.00e+06    37s
+   1   5.00374573e+08  2.49463537e+05  0.00e+00 1.31e-07  1.00e+03    41s
+   2   2.84880271e+08  2.50089902e+05  0.00e+00 1.01e-09  1.42e+02    46s
+   3   7.85330342e+05  2.50748441e+05  0.00e+00 1.02e-09  2.67e-01    51s
+   4   5.10063505e+05  4.69157062e+05  0.00e+00 7.55e-09  2.05e-02    56s
+   5   4.99986530e+05  4.99944051e+05  0.00e+00 2.33e-11  2.12e-05    61s
+
+Barrier solved model in 5 iterations and 60.93 seconds (58.47 work units)
+Optimal objective 4.99986530e+05
+
+
+User-callback calls 22392, time in user-callback 0.02 sec

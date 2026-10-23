@@ -1,0 +1,100 @@
+case,section,key,value
+lasso_1000000_10000000.mps,environment,CUDA_jl,5.11.0
+lasso_1000000_10000000.mps,environment,blas_threads,1
+lasso_1000000_10000000.mps,environment,cuda_driver_api,13.2.0
+lasso_1000000_10000000.mps,environment,cuda_runtime,13.2.0
+lasso_1000000_10000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_1000000_10000000.mps,environment,julia,1.10.4
+lasso_1000000_10000000.mps,environment,julia_threads,1
+lasso_1000000_10000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_1000000_10000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_1000000_5000000.mps,environment,CUDA_jl,5.11.0
+lasso_1000000_5000000.mps,environment,blas_threads,1
+lasso_1000000_5000000.mps,environment,cuda_driver_api,13.2.0
+lasso_1000000_5000000.mps,environment,cuda_runtime,13.2.0
+lasso_1000000_5000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_1000000_5000000.mps,environment,julia,1.10.4
+lasso_1000000_5000000.mps,environment,julia_threads,1
+lasso_1000000_5000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_1000000_5000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_10000_500000.mps,environment,CUDA_jl,5.11.0
+lasso_10000_500000.mps,environment,blas_threads,1
+lasso_10000_500000.mps,environment,cuda_driver_api,13.2.0
+lasso_10000_500000.mps,environment,cuda_runtime,13.2.0
+lasso_10000_500000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_10000_500000.mps,environment,julia,1.10.4
+lasso_10000_500000.mps,environment,julia_threads,1
+lasso_10000_500000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_10000_500000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_200000_10000000.mps,environment,CUDA_jl,5.11.0
+lasso_200000_10000000.mps,environment,blas_threads,1
+lasso_200000_10000000.mps,environment,cuda_driver_api,13.2.0
+lasso_200000_10000000.mps,environment,cuda_runtime,13.2.0
+lasso_200000_10000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_200000_10000000.mps,environment,julia,1.10.4
+lasso_200000_10000000.mps,environment,julia_threads,1
+lasso_200000_10000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_200000_10000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_200000_5000000.mps,environment,CUDA_jl,5.11.0
+lasso_200000_5000000.mps,environment,blas_threads,1
+lasso_200000_5000000.mps,environment,cuda_driver_api,13.2.0
+lasso_200000_5000000.mps,environment,cuda_runtime,13.2.0
+lasso_200000_5000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_200000_5000000.mps,environment,julia,1.10.4
+lasso_200000_5000000.mps,environment,julia_threads,1
+lasso_200000_5000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_200000_5000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_400000_10000000.mps,environment,CUDA_jl,5.11.0
+lasso_400000_10000000.mps,environment,blas_threads,1
+lasso_400000_10000000.mps,environment,cuda_driver_api,13.2.0
+lasso_400000_10000000.mps,environment,cuda_runtime,13.2.0
+lasso_400000_10000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_400000_10000000.mps,environment,julia,1.10.4
+lasso_400000_10000000.mps,environment,julia_threads,1
+lasso_400000_10000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_400000_10000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_400000_5000000.mps,environment,CUDA_jl,5.11.0
+lasso_400000_5000000.mps,environment,blas_threads,1
+lasso_400000_5000000.mps,environment,cuda_driver_api,13.2.0
+lasso_400000_5000000.mps,environment,cuda_runtime,13.2.0
+lasso_400000_5000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_400000_5000000.mps,environment,julia,1.10.4
+lasso_400000_5000000.mps,environment,julia_threads,1
+lasso_400000_5000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_400000_5000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_600000_10000000.mps,environment,CUDA_jl,5.11.0
+lasso_600000_10000000.mps,environment,blas_threads,1
+lasso_600000_10000000.mps,environment,cuda_driver_api,13.2.0
+lasso_600000_10000000.mps,environment,cuda_runtime,13.2.0
+lasso_600000_10000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_600000_10000000.mps,environment,julia,1.10.4
+lasso_600000_10000000.mps,environment,julia_threads,1
+lasso_600000_10000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_600000_10000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_600000_5000000.mps,environment,CUDA_jl,5.11.0
+lasso_600000_5000000.mps,environment,blas_threads,1
+lasso_600000_5000000.mps,environment,cuda_driver_api,13.2.0
+lasso_600000_5000000.mps,environment,cuda_runtime,13.2.0
+lasso_600000_5000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_600000_5000000.mps,environment,julia,1.10.4
+lasso_600000_5000000.mps,environment,julia_threads,1
+lasso_600000_5000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_600000_5000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_800000_10000000.mps,environment,CUDA_jl,5.11.0
+lasso_800000_10000000.mps,environment,blas_threads,1
+lasso_800000_10000000.mps,environment,cuda_driver_api,13.2.0
+lasso_800000_10000000.mps,environment,cuda_runtime,13.2.0
+lasso_800000_10000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_800000_10000000.mps,environment,julia,1.10.4
+lasso_800000_10000000.mps,environment,julia_threads,1
+lasso_800000_10000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_800000_10000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+lasso_800000_5000000.mps,environment,CUDA_jl,5.11.0
+lasso_800000_5000000.mps,environment,blas_threads,1
+lasso_800000_5000000.mps,environment,cuda_driver_api,13.2.0
+lasso_800000_5000000.mps,environment,cuda_runtime,13.2.0
+lasso_800000_5000000.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+lasso_800000_5000000.mps,environment,julia,1.10.4
+lasso_800000_5000000.mps,environment,julia_threads,1
+lasso_800000_5000000.mps,environment,load_path,"['@', '@stdlib']"
+lasso_800000_5000000.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690

@@ -1,0 +1,60 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-04-29
+Set parameter FeasibilityTol to value 0.0001
+Set parameter Method to value 2
+Set parameter OptimalityTol to value 0.0001
+Set parameter BarConvTol to value 0.0001
+Set parameter Threads to value 1
+Set parameter TimeLimit to value 3600
+Set parameter OutputFlag to value 1
+Set parameter Presolve to value 0
+Set parameter FeasibilityTol to value 0.0001
+Set parameter Method to value 2
+Set parameter OptimalityTol to value 0.0001
+Set parameter BarConvTol to value 0.0001
+Set parameter Threads to value 1
+Set parameter TimeLimit to value 3600
+Set parameter OutputFlag to value 1
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel(R) Xeon(R) Platinum 8338C CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 64 physical cores, 128 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+FeasibilityTol  0.0001
+OptimalityTol  0.0001
+Method  2
+BarConvTol  0.0001
+Presolve  0
+Threads  1
+
+Optimize a model with 2500 rows, 5000 columns and 961021 nonzeros
+Model fingerprint: 0x23e1030e
+Model has 12502500 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [1e-06, 6e+00]
+  Objective range  [3e-04, 4e+00]
+  QObjective range [5e-06, 1e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 8e+01]
+Ordering time: 2.12s
+
+Barrier statistics:
+ Free vars  : 9999
+ AA' NZ     : 2.809e+07
+ Factor NZ  : 2.812e+07 (roughly 230 MB of memory)
+ Factor Ops : 1.406e+11 (roughly 13 seconds per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   5.37466498e+05 -5.37327275e+05  3.81e-11 5.39e+01  0.00e+00    30s
+   1   5.07185250e+05  5.07184319e+05  1.72e-05 5.39e-05  0.00e+00    51s
+
+Barrier solved model in 1 iterations and 51.43 seconds (146.96 work units)
+Optimal objective 5.07185250e+05
+
+
+User-callback calls 222, time in user-callback 0.00 sec

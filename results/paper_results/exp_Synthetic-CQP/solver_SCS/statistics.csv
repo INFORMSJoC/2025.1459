@@ -1,0 +1,13 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+SCS,all,1e-08,60,60,24,943.7065215145441,,True,0,Complete measured dataset
+SCS,all,1e-06,60,60,25,871.2152894396908,,True,0,Complete measured dataset
+SCS,all,0.0001,60,60,26,711.6215657739049,,True,0,Complete measured dataset
+SCS,Huge,1e-08,11,11,5,586.4441875398112,,True,0,Complete measured dataset
+SCS,Huge,1e-06,11,11,5,557.2729428767898,,True,0,Complete measured dataset
+SCS,Huge,0.0001,11,11,5,511.99743496790563,,True,0,Complete measured dataset
+SCS,Large,1e-08,33,33,11,1328.2577801745856,,True,0,Complete measured dataset
+SCS,Large,1e-06,33,33,11,1244.6888476158715,,True,0,Complete measured dataset
+SCS,Large,0.0001,33,33,12,1030.6408446010944,,True,0,Complete measured dataset
+SCS,Medium,1e-08,16,16,8,644.8062058595501,,True,0,Complete measured dataset
+SCS,Medium,1e-06,16,16,9,565.5657773717085,,True,0,Complete measured dataset
+SCS,Medium,0.0001,16,16,9,413.721592160889,,True,0,Complete measured dataset

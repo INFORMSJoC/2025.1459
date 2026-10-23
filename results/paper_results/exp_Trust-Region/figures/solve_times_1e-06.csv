@@ -1,0 +1,5 @@
+solver,source,cases,summary_sha256
+HPR-QP,paper_results/exp_Trust-Region/solver_HPR-QP/summary.csv,17,f35b6046fd0693736e01ad48841b04805b93077318421701ba77338e589e7361
+SCS,paper_results/exp_Trust-Region/solver_SCS/summary.csv,17,330ae764aa1d8da14b76298283ba7c2b23e82026eb020beff157460dda5292be
+CuClarabel,paper_results/exp_Trust-Region/solver_CuClarabel/summary.csv,17,c9596a13a0e2b58279b5cca89d5e51f2b54fde4b82e53c9fec98dd2a57fd0894
+Gurobi,paper_results/exp_Trust-Region/solver_Gurobi/summary.csv,17,5168d7654d62dbaf649eef7f564256cf1ffda07db8cf934e354a240c5f79e371

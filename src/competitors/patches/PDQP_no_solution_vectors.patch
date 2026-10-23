@@ -1,0 +1,16 @@
+--- original/PDQP/scripts/solve_0.jl
++++ src/competitors/PDQP/scripts/solve_0.jl
+@@ -72,11 +72,8 @@
+             write(io, JSON3.write(log, allow_inf = true))
+         end
+     
+-        primal_output_path = joinpath(output_dir, instance_name * "_primal.txt")
+-        write_vector_to_file(primal_output_path, output.primal_solution)
+-    
+-        dual_output_path = joinpath(output_dir, instance_name * "_dual.txt")
+-        write_vector_to_file(dual_output_path, output.dual_solution)
++        # Numerical summaries and trajectory logs are sufficient for the paper reports.
++        # Avoid exporting the unused large primal/dual solution vectors.
+     end     
+ 
+     inner_solve()

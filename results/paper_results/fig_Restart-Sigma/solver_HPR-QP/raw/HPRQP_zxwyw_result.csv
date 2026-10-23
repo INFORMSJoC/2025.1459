@@ -1,0 +1,4 @@
+name,iter,alg_time,res,primal_obj,status,iter_4,time_4,iter_6,time_6,power_time,iter_3,time_3
+no_restart,20000,0,0.02825834394718487,,MAX_ITER,,,,,,,
+adaptive_restart,7200,0,9.630597002065142e-10,,OPTIMAL,,,,,,,
+adaptive_restart_sigma,1500,0,3.178080314868813e-9,,OPTIMAL,,,,,,,

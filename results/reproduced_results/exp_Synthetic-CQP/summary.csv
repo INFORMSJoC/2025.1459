@@ -1,0 +1,121 @@
+result_set,solver,subset,tolerance,expected_cases,measured_cases,pending_cases,solved,time_SGM10,iteration_SGM10,status,execution_failures,note
+paper,HPR-QP,all,1e-08,60,60,0,60.0,21.3,6724.190109110608,available,0,
+paper,HPR-QP,all,1e-06,60,60,0,60.0,15.6,4588.202715035715,available,0,
+paper,HPR-QP,all,0.0001,60,60,0,60.0,10.2,2636.524726540969,available,0,
+paper,HPR-QP,Huge,1e-08,11,11,0,11.0,61.1,4075.6085359933995,available,0,
+paper,HPR-QP,Huge,1e-06,11,11,0,11.0,44.4,2693.777084282743,available,0,
+paper,HPR-QP,Huge,0.0001,11,11,0,11.0,29.3,1557.3075570770745,available,0,
+paper,HPR-QP,Large,1e-08,33,33,0,33.0,22.0,9037.410453776587,available,0,
+paper,HPR-QP,Large,1e-06,33,33,0,33.0,16.4,6438.891166481857,available,0,
+paper,HPR-QP,Large,0.0001,33,33,0,33.0,10.4,3846.387251559383,available,0,
+paper,HPR-QP,Medium,1e-08,16,16,0,16.0,7.1,5154.161014571271,available,0,
+paper,HPR-QP,Medium,1e-06,16,16,0,16.0,4.3,3287.3309030781643,available,0,
+paper,HPR-QP,Medium,0.0001,16,16,0,16.0,2.5,1735.2945658930553,available,0,
+paper,PDQP,all,1e-08,60,60,0,56.0,53.5,not available,available,0,
+paper,PDQP,all,1e-06,60,60,0,57.0,43.4,not available,available,0,
+paper,PDQP,all,0.0001,60,60,0,57.0,34.4,not available,available,0,
+paper,PDQP,Huge,1e-08,11,11,0,9.0,121.9,not available,available,0,
+paper,PDQP,Huge,1e-06,11,11,0,9.0,104.3,not available,available,0,
+paper,PDQP,Huge,0.0001,11,11,0,9.0,81.9,not available,available,0,
+paper,PDQP,Large,1e-08,33,33,0,31.0,59.1,not available,available,0,
+paper,PDQP,Large,1e-06,33,33,0,32.0,47.0,not available,available,0,
+paper,PDQP,Large,0.0001,33,33,0,32.0,38.0,not available,available,0,
+paper,PDQP,Medium,1e-08,16,16,0,16.0,22.4,not available,available,0,
+paper,PDQP,Medium,1e-06,16,16,0,16.0,17.6,not available,available,0,
+paper,PDQP,Medium,0.0001,16,16,0,16.0,13.0,not available,available,0,
+paper,SCS,all,1e-08,60,60,0,24.0,943.7,not available,available,0,
+paper,SCS,all,1e-06,60,60,0,25.0,871.2,not available,available,0,
+paper,SCS,all,0.0001,60,60,0,26.0,711.6,not available,available,0,
+paper,SCS,Huge,1e-08,11,11,0,5.0,586.4,not available,available,0,
+paper,SCS,Huge,1e-06,11,11,0,5.0,557.3,not available,available,0,
+paper,SCS,Huge,0.0001,11,11,0,5.0,512.0,not available,available,0,
+paper,SCS,Large,1e-08,33,33,0,11.0,1328.3,not available,available,0,
+paper,SCS,Large,1e-06,33,33,0,11.0,1244.7,not available,available,0,
+paper,SCS,Large,0.0001,33,33,0,12.0,1030.6,not available,available,0,
+paper,SCS,Medium,1e-08,16,16,0,8.0,644.8,not available,available,0,
+paper,SCS,Medium,1e-06,16,16,0,9.0,565.6,not available,available,0,
+paper,SCS,Medium,0.0001,16,16,0,9.0,413.7,not available,available,0,
+paper,CuClarabel,all,1e-08,60,60,0,47.0,53.8,not available,available,0,
+paper,CuClarabel,all,1e-06,60,60,0,47.0,52.1,not available,available,0,
+paper,CuClarabel,all,0.0001,60,60,0,47.0,49.5,not available,available,0,
+paper,CuClarabel,Huge,1e-08,11,11,0,4.0,495.9,not available,available,0,
+paper,CuClarabel,Huge,1e-06,11,11,0,4.0,491.2,not available,available,0,
+paper,CuClarabel,Huge,0.0001,11,11,0,4.0,486.3,not available,available,0,
+paper,CuClarabel,Large,1e-08,33,33,0,27.0,46.8,not available,available,0,
+paper,CuClarabel,Large,1e-06,33,33,0,27.0,45.0,not available,available,0,
+paper,CuClarabel,Large,0.0001,33,33,0,27.0,42.0,not available,available,0,
+paper,CuClarabel,Medium,1e-08,16,16,0,16.0,9.5,not available,available,0,
+paper,CuClarabel,Medium,1e-06,16,16,0,16.0,9.0,not available,available,0,
+paper,CuClarabel,Medium,0.0001,16,16,0,16.0,8.3,not available,available,0,
+paper,Gurobi,all,1e-08,60,60,0,35.0,311.9,not available,available,0,
+paper,Gurobi,all,1e-06,60,60,0,35.0,305.5,not available,available,0,
+paper,Gurobi,all,0.0001,60,60,0,36.0,296.2,not available,available,0,
+paper,Gurobi,Huge,1e-08,11,11,0,4.0,1650.0,not available,available,0,
+paper,Gurobi,Huge,1e-06,11,11,0,4.0,1637.8,not available,available,0,
+paper,Gurobi,Huge,0.0001,11,11,0,4.0,1538.6,not available,available,0,
+paper,Gurobi,Large,1e-08,33,33,0,19.0,321.1,not available,available,0,
+paper,Gurobi,Large,1e-06,33,33,0,19.0,313.9,not available,available,0,
+paper,Gurobi,Large,0.0001,33,33,0,20.0,304.5,not available,available,0,
+paper,Gurobi,Medium,1e-08,16,16,0,12.0,88.4,not available,available,0,
+paper,Gurobi,Medium,1e-06,16,16,0,12.0,85.9,not available,available,0,
+paper,Gurobi,Medium,0.0001,16,16,0,12.0,85.0,not available,available,0,
+reproduced,HPR-QP,all,1e-08,60,60,0,60,20.053748771797412,6303.22355650629,available,0,
+reproduced,HPR-QP,all,1e-06,60,60,0,60,15.01562970371921,4392.472722597637,available,0,
+reproduced,HPR-QP,all,0.0001,60,60,0,60,9.569577419243835,2422.2791159917083,available,0,
+reproduced,HPR-QP,Huge,1e-08,11,11,0,11,60.761125936808796,3995.343931493379,available,0,
+reproduced,HPR-QP,Huge,1e-06,11,11,0,11,43.75837731217253,2625.921694147231,available,0,
+reproduced,HPR-QP,Huge,0.0001,11,11,0,11,28.953619150212425,1502.7865197015747,available,0,
+reproduced,HPR-QP,Large,1e-08,33,33,0,33,21.250686004416963,8613.357700433276,available,0,
+reproduced,HPR-QP,Large,1e-06,33,33,0,33,15.867095575729312,6118.329747099303,available,0,
+reproduced,HPR-QP,Large,0.0001,33,33,0,33,9.664297614992563,3502.610440167174,available,0,
+reproduced,HPR-QP,Medium,1e-08,16,16,0,16,5.389986220928895,4527.267993428178,available,0,
+reproduced,HPR-QP,Medium,1e-06,16,16,0,16,3.7980941773594328,3156.491280052531,available,0,
+reproduced,HPR-QP,Medium,0.0001,16,16,0,16,2.0702711795778157,1569.7607139441734,available,0,
+reproduced,PDQP,all,1e-08,60,6,54,6,to be reproduced,to be reproduced,to be reproduced,0,54 cases to be reproduced. Solved count covers only the 6 measured cases.
+reproduced,PDQP,all,1e-06,60,6,54,6,to be reproduced,to be reproduced,to be reproduced,0,54 cases to be reproduced. Solved count covers only the 6 measured cases.
+reproduced,PDQP,all,0.0001,60,6,54,6,to be reproduced,to be reproduced,to be reproduced,0,54 cases to be reproduced. Solved count covers only the 6 measured cases.
+reproduced,PDQP,Huge,1e-08,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,PDQP,Huge,1e-06,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,PDQP,Huge,0.0001,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,PDQP,Large,1e-08,33,2,31,2,to be reproduced,to be reproduced,to be reproduced,0,31 cases to be reproduced. Solved count covers only the 2 measured cases.
+reproduced,PDQP,Large,1e-06,33,2,31,2,to be reproduced,to be reproduced,to be reproduced,0,31 cases to be reproduced. Solved count covers only the 2 measured cases.
+reproduced,PDQP,Large,0.0001,33,2,31,2,to be reproduced,to be reproduced,to be reproduced,0,31 cases to be reproduced. Solved count covers only the 2 measured cases.
+reproduced,PDQP,Medium,1e-08,16,4,12,4,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 4 measured cases.
+reproduced,PDQP,Medium,1e-06,16,4,12,4,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 4 measured cases.
+reproduced,PDQP,Medium,0.0001,16,4,12,4,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 4 measured cases.
+reproduced,SCS,all,1e-08,60,0,60,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,60 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,1e-06,60,0,60,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,60 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,0.0001,60,4,56,4,to be reproduced,to be reproduced,to be reproduced,0,56 cases to be reproduced. Solved count covers only the 4 measured cases.
+reproduced,SCS,Huge,1e-08,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Huge,1e-06,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Huge,0.0001,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Large,1e-08,33,0,33,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,33 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Large,1e-06,33,0,33,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,33 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Large,0.0001,33,1,32,1,to be reproduced,to be reproduced,to be reproduced,0,32 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,SCS,Medium,1e-08,16,0,16,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,16 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Medium,1e-06,16,0,16,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,16 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,Medium,0.0001,16,3,13,3,to be reproduced,to be reproduced,to be reproduced,0,13 cases to be reproduced. Solved count covers only the 3 measured cases.
+reproduced,CuClarabel,all,1e-08,60,0,60,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,60 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,1e-06,60,0,60,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,60 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,0.0001,60,7,53,7,to be reproduced,to be reproduced,to be reproduced,0,53 cases to be reproduced. Solved count covers only the 7 measured cases.
+reproduced,CuClarabel,Huge,1e-08,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Huge,1e-06,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Huge,0.0001,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Large,1e-08,33,0,33,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,33 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Large,1e-06,33,0,33,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,33 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Large,0.0001,33,2,31,2,to be reproduced,to be reproduced,to be reproduced,0,31 cases to be reproduced. Solved count covers only the 2 measured cases.
+reproduced,CuClarabel,Medium,1e-08,16,0,16,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,16 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Medium,1e-06,16,0,16,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,16 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,Medium,0.0001,16,5,11,5,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 5 measured cases.
+reproduced,Gurobi,all,1e-08,60,0,60,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,60 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,1e-06,60,0,60,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,60 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,0.0001,60,5,55,5,to be reproduced,to be reproduced,to be reproduced,0,55 cases to be reproduced. Solved count covers only the 5 measured cases.
+reproduced,Gurobi,Huge,1e-08,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Huge,1e-06,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Huge,0.0001,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Large,1e-08,33,0,33,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,33 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Large,1e-06,33,0,33,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,33 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Large,0.0001,33,1,32,1,to be reproduced,to be reproduced,to be reproduced,0,32 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,Gurobi,Medium,1e-08,16,0,16,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,16 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Medium,1e-06,16,0,16,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,16 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,Medium,0.0001,16,4,12,4,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 4 measured cases.

@@ -1,0 +1,25 @@
+result_set,solver,subset,tolerance,expected_cases,measured_cases,pending_cases,solved,time_SGM10,iteration_SGM10,status,execution_failures,note
+paper,HPR-QP,all,1e-08,17,17,0,17.0,8.9,427.18191284002796,available,0,
+paper,HPR-QP,all,1e-06,17,17,0,17.0,8.4,337.82360742003806,available,0,
+paper,HPR-QP,all,0.0001,17,17,0,17.0,7.8,199.99999999999994,available,0,
+paper,SCS,all,1e-08,17,17,0,12.0,214.2,not available,available,0,
+paper,SCS,all,1e-06,17,17,0,12.0,211.9,not available,available,0,
+paper,SCS,all,0.0001,17,17,0,12.0,208.5,not available,available,0,
+paper,CuClarabel,all,1e-08,17,17,0,6.0,852.2,not available,available,0,
+paper,CuClarabel,all,1e-06,17,17,0,6.0,821.0,not available,available,0,
+paper,CuClarabel,all,0.0001,17,17,0,6.0,792.8,not available,available,0,
+paper,Gurobi,all,1e-08,17,17,0,2.0,2626.5,not available,available,0,
+paper,Gurobi,all,1e-06,17,17,0,2.0,2626.5,not available,available,0,
+paper,Gurobi,all,0.0001,17,17,0,2.0,2626.5,not available,available,0,
+reproduced,HPR-QP,all,1e-08,17,17,0,17,8.736892365390482,427.18191284002796,available,0,
+reproduced,HPR-QP,all,1e-06,17,17,0,17,8.219364635231848,337.82360742003806,available,0,
+reproduced,HPR-QP,all,0.0001,17,17,0,17,7.68234044499669,199.99999999999994,available,0,
+reproduced,SCS,all,1e-08,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,1e-06,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,0.0001,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,1e-08,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,1e-06,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,0.0001,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,1e-08,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,1e-06,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,0.0001,17,0,17,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,17 cases to be reproduced. Solved count covers only the 0 measured cases.

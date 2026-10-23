@@ -1,0 +1,68 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-04-29
+Set parameter FeasibilityTol to value 0.0001
+Set parameter Method to value 2
+Set parameter OptimalityTol to value 0.0001
+Set parameter BarConvTol to value 0.0001
+Set parameter Threads to value 1
+Set parameter TimeLimit to value 3600
+Set parameter OutputFlag to value 1
+Set parameter Presolve to value 0
+Set parameter FeasibilityTol to value 0.0001
+Set parameter Method to value 2
+Set parameter OptimalityTol to value 0.0001
+Set parameter BarConvTol to value 0.0001
+Set parameter Threads to value 1
+Set parameter TimeLimit to value 3600
+Set parameter OutputFlag to value 1
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel(R) Xeon(R) Platinum 8338C CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 64 physical cores, 128 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+FeasibilityTol  0.0001
+OptimalityTol  0.0001
+Method  2
+BarConvTol  0.0001
+Presolve  0
+Threads  1
+
+Optimize a model with 7256 rows, 7256 columns and 1174184 nonzeros
+Model fingerprint: 0xdf98412f
+Model has 392 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [1e-13, 1e+00]
+  Objective range  [9e+00, 9e+00]
+  QObjective range [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [9e+00, 5e+01]
+Ordering time: 0.19s
+
+Barrier statistics:
+ Free vars  : 7256
+ AA' NZ     : 2.400e+06
+ Factor NZ  : 2.447e+06 (roughly 30 MB of memory)
+ Factor Ops : 8.532e+08 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   5.96200919e+02 -5.96200919e+02  1.05e+01 9.19e+00  1.00e+06     1s
+   1   3.12540144e+07  6.65572303e+02  1.79e-05 9.82e-04  4.55e+03     1s
+   2   1.15484366e+05  6.84466432e+02  1.83e-07 5.30e-06  1.67e+01     1s
+   3   9.55361732e+03  1.22521230e+03  1.24e-06 3.62e-06  1.21e+00     2s
+   4   3.51334960e+03  1.56836984e+03  2.87e-07 7.76e-07  2.83e-01     2s
+   5   2.25529292e+03  1.65317379e+03  1.35e-08 3.66e-08  8.77e-02     2s
+   6   1.85782172e+03  1.66568605e+03  6.35e-10 1.74e-09  2.80e-02     3s
+   7   1.73628436e+03  1.66803882e+03  1.88e-09 4.25e-09  9.94e-03     3s
+   8   1.67826055e+03  1.66890034e+03  3.70e-12 1.13e-12  1.36e-03     3s
+   9   1.66912070e+03  1.66898644e+03  6.38e-13 7.99e-13  1.96e-05     4s
+
+Barrier solved model in 9 iterations and 3.64 seconds (2.50 work units)
+Optimal objective 1.66912070e+03
+
+
+User-callback calls 147, time in user-callback 0.00 sec

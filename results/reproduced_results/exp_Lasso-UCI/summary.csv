@@ -1,0 +1,37 @@
+result_set,solver,subset,tolerance,expected_cases,measured_cases,pending_cases,solved,time_SGM10,iteration_SGM10,status,execution_failures,note
+paper,HPR-QP,all,1e-08,11,11,0,11.0,13.2,10148.492935186196,available,0,
+paper,HPR-QP,all,1e-06,11,11,0,11.0,8.5,6165.675810297918,available,0,
+paper,HPR-QP,all,0.0001,11,11,0,11.0,4.3,2919.964088963766,available,0,
+paper,HPR-QP-explicit,all,1e-08,11,11,0,11.0,66.8,43968.59662795704,available,0,
+paper,HPR-QP-explicit,all,1e-06,11,11,0,11.0,44.9,28027.738976603672,available,0,
+paper,HPR-QP-explicit,all,0.0001,11,11,0,11.0,27.9,15451.462225797664,available,0,
+paper,PDQP,all,1e-08,11,11,0,11.0,161.8,not available,available,0,
+paper,PDQP,all,1e-06,11,11,0,11.0,124.2,not available,available,0,
+paper,PDQP,all,0.0001,11,11,0,11.0,74.1,not available,available,0,
+paper,SCS,all,1e-08,11,11,0,2.0,3091.0,not available,available,0,
+paper,SCS,all,1e-06,11,11,0,2.0,2898.0,not available,available,0,
+paper,SCS,all,0.0001,11,11,0,4.0,1671.5,not available,available,0,
+paper,CuClarabel,all,1e-08,11,11,0,11.0,26.1,not available,available,0,
+paper,CuClarabel,all,1e-06,11,11,0,11.0,24.5,not available,available,0,
+paper,CuClarabel,all,0.0001,11,11,0,11.0,22.9,not available,available,0,
+paper,Gurobi,all,1e-08,11,11,0,11.0,91.2,not available,available,0,
+paper,Gurobi,all,1e-06,11,11,0,11.0,78.0,not available,available,0,
+paper,Gurobi,all,0.0001,11,11,0,11.0,71.3,not available,available,0,
+reproduced,HPR-QP,all,1e-08,11,11,0,11,12.920597966164564,10148.492935186196,available,0,
+reproduced,HPR-QP,all,1e-06,11,11,0,11,8.256221298224322,6165.675810297918,available,0,
+reproduced,HPR-QP,all,0.0001,11,11,0,11,4.290922959586206,2919.964088963766,available,0,
+reproduced,HPR-QP-explicit,all,1e-08,11,11,0,11,67.11937324122918,43810.87620261495,available,0,
+reproduced,HPR-QP-explicit,all,1e-06,11,11,0,11,45.36347718938659,28027.738976603672,available,0,
+reproduced,HPR-QP-explicit,all,0.0001,11,11,0,11,27.89270665745751,15451.462225797664,available,0,
+reproduced,PDQP,all,1e-08,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,PDQP,all,1e-06,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,PDQP,all,0.0001,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,SCS,all,1e-08,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,1e-06,11,0,11,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,0.0001,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,CuClarabel,all,1e-08,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,CuClarabel,all,1e-06,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,CuClarabel,all,0.0001,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,Gurobi,all,1e-08,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,Gurobi,all,1e-06,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,Gurobi,all,0.0001,11,1,10,1,to be reproduced,to be reproduced,to be reproduced,0,10 cases to be reproduced. Solved count covers only the 1 measured cases.

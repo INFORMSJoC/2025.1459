@@ -1,0 +1,1251 @@
+case,section,key,value
+AUG2D.mps,environment,CUDA_jl,5.11.0
+AUG2D.mps,environment,blas_threads,1
+AUG2D.mps,environment,cuda_driver_api,13.2.0
+AUG2D.mps,environment,cuda_runtime,13.2.0
+AUG2D.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG2D.mps,environment,julia,1.10.4
+AUG2D.mps,environment,julia_threads,1
+AUG2D.mps,environment,load_path,"['@', '@stdlib']"
+AUG2D.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG2DC.mps,environment,CUDA_jl,5.11.0
+AUG2DC.mps,environment,blas_threads,1
+AUG2DC.mps,environment,cuda_driver_api,13.2.0
+AUG2DC.mps,environment,cuda_runtime,13.2.0
+AUG2DC.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG2DC.mps,environment,julia,1.10.4
+AUG2DC.mps,environment,julia_threads,1
+AUG2DC.mps,environment,load_path,"['@', '@stdlib']"
+AUG2DC.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG2DCQP.mps,environment,CUDA_jl,5.11.0
+AUG2DCQP.mps,environment,blas_threads,1
+AUG2DCQP.mps,environment,cuda_driver_api,13.2.0
+AUG2DCQP.mps,environment,cuda_runtime,13.2.0
+AUG2DCQP.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG2DCQP.mps,environment,julia,1.10.4
+AUG2DCQP.mps,environment,julia_threads,1
+AUG2DCQP.mps,environment,load_path,"['@', '@stdlib']"
+AUG2DCQP.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG2DQP.mps,environment,CUDA_jl,5.11.0
+AUG2DQP.mps,environment,blas_threads,1
+AUG2DQP.mps,environment,cuda_driver_api,13.2.0
+AUG2DQP.mps,environment,cuda_runtime,13.2.0
+AUG2DQP.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG2DQP.mps,environment,julia,1.10.4
+AUG2DQP.mps,environment,julia_threads,1
+AUG2DQP.mps,environment,load_path,"['@', '@stdlib']"
+AUG2DQP.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG3D.mps,environment,CUDA_jl,5.11.0
+AUG3D.mps,environment,blas_threads,1
+AUG3D.mps,environment,cuda_driver_api,13.2.0
+AUG3D.mps,environment,cuda_runtime,13.2.0
+AUG3D.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG3D.mps,environment,julia,1.10.4
+AUG3D.mps,environment,julia_threads,1
+AUG3D.mps,environment,load_path,"['@', '@stdlib']"
+AUG3D.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG3DC.mps,environment,CUDA_jl,5.11.0
+AUG3DC.mps,environment,blas_threads,1
+AUG3DC.mps,environment,cuda_driver_api,13.2.0
+AUG3DC.mps,environment,cuda_runtime,13.2.0
+AUG3DC.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG3DC.mps,environment,julia,1.10.4
+AUG3DC.mps,environment,julia_threads,1
+AUG3DC.mps,environment,load_path,"['@', '@stdlib']"
+AUG3DC.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG3DCQP.mps,environment,CUDA_jl,5.11.0
+AUG3DCQP.mps,environment,blas_threads,1
+AUG3DCQP.mps,environment,cuda_driver_api,13.2.0
+AUG3DCQP.mps,environment,cuda_runtime,13.2.0
+AUG3DCQP.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG3DCQP.mps,environment,julia,1.10.4
+AUG3DCQP.mps,environment,julia_threads,1
+AUG3DCQP.mps,environment,load_path,"['@', '@stdlib']"
+AUG3DCQP.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+AUG3DQP.mps,environment,CUDA_jl,5.11.0
+AUG3DQP.mps,environment,blas_threads,1
+AUG3DQP.mps,environment,cuda_driver_api,13.2.0
+AUG3DQP.mps,environment,cuda_runtime,13.2.0
+AUG3DQP.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+AUG3DQP.mps,environment,julia,1.10.4
+AUG3DQP.mps,environment,julia_threads,1
+AUG3DQP.mps,environment,load_path,"['@', '@stdlib']"
+AUG3DQP.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+BOYD1.mps,environment,CUDA_jl,5.11.0
+BOYD1.mps,environment,blas_threads,1
+BOYD1.mps,environment,cuda_driver_api,13.2.0
+BOYD1.mps,environment,cuda_runtime,13.2.0
+BOYD1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+BOYD1.mps,environment,julia,1.10.4
+BOYD1.mps,environment,julia_threads,1
+BOYD1.mps,environment,load_path,"['@', '@stdlib']"
+BOYD1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+BOYD2.mps,environment,CUDA_jl,5.11.0
+BOYD2.mps,environment,blas_threads,1
+BOYD2.mps,environment,cuda_driver_api,13.2.0
+BOYD2.mps,environment,cuda_runtime,13.2.0
+BOYD2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+BOYD2.mps,environment,julia,1.10.4
+BOYD2.mps,environment,julia_threads,1
+BOYD2.mps,environment,load_path,"['@', '@stdlib']"
+BOYD2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CONT-050.mps,environment,CUDA_jl,5.11.0
+CONT-050.mps,environment,blas_threads,1
+CONT-050.mps,environment,cuda_driver_api,13.2.0
+CONT-050.mps,environment,cuda_runtime,13.2.0
+CONT-050.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CONT-050.mps,environment,julia,1.10.4
+CONT-050.mps,environment,julia_threads,1
+CONT-050.mps,environment,load_path,"['@', '@stdlib']"
+CONT-050.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CONT-100.mps,environment,CUDA_jl,5.11.0
+CONT-100.mps,environment,blas_threads,1
+CONT-100.mps,environment,cuda_driver_api,13.2.0
+CONT-100.mps,environment,cuda_runtime,13.2.0
+CONT-100.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CONT-100.mps,environment,julia,1.10.4
+CONT-100.mps,environment,julia_threads,1
+CONT-100.mps,environment,load_path,"['@', '@stdlib']"
+CONT-100.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CONT-101.mps,environment,CUDA_jl,5.11.0
+CONT-101.mps,environment,blas_threads,1
+CONT-101.mps,environment,cuda_driver_api,13.2.0
+CONT-101.mps,environment,cuda_runtime,13.2.0
+CONT-101.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CONT-101.mps,environment,julia,1.10.4
+CONT-101.mps,environment,julia_threads,1
+CONT-101.mps,environment,load_path,"['@', '@stdlib']"
+CONT-101.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CONT-200.mps,environment,CUDA_jl,5.11.0
+CONT-200.mps,environment,blas_threads,1
+CONT-200.mps,environment,cuda_driver_api,13.2.0
+CONT-200.mps,environment,cuda_runtime,13.2.0
+CONT-200.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CONT-200.mps,environment,julia,1.10.4
+CONT-200.mps,environment,julia_threads,1
+CONT-200.mps,environment,load_path,"['@', '@stdlib']"
+CONT-200.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CONT-201.mps,environment,CUDA_jl,5.11.0
+CONT-201.mps,environment,blas_threads,1
+CONT-201.mps,environment,cuda_driver_api,13.2.0
+CONT-201.mps,environment,cuda_runtime,13.2.0
+CONT-201.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CONT-201.mps,environment,julia,1.10.4
+CONT-201.mps,environment,julia_threads,1
+CONT-201.mps,environment,load_path,"['@', '@stdlib']"
+CONT-201.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CONT-300.mps,environment,CUDA_jl,5.11.0
+CONT-300.mps,environment,blas_threads,1
+CONT-300.mps,environment,cuda_driver_api,13.2.0
+CONT-300.mps,environment,cuda_runtime,13.2.0
+CONT-300.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CONT-300.mps,environment,julia,1.10.4
+CONT-300.mps,environment,julia_threads,1
+CONT-300.mps,environment,load_path,"['@', '@stdlib']"
+CONT-300.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP1_L.mps,environment,CUDA_jl,5.11.0
+CVXQP1_L.mps,environment,blas_threads,1
+CVXQP1_L.mps,environment,cuda_driver_api,13.2.0
+CVXQP1_L.mps,environment,cuda_runtime,13.2.0
+CVXQP1_L.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP1_L.mps,environment,julia,1.10.4
+CVXQP1_L.mps,environment,julia_threads,1
+CVXQP1_L.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP1_L.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP1_M.mps,environment,CUDA_jl,5.11.0
+CVXQP1_M.mps,environment,blas_threads,1
+CVXQP1_M.mps,environment,cuda_driver_api,13.2.0
+CVXQP1_M.mps,environment,cuda_runtime,13.2.0
+CVXQP1_M.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP1_M.mps,environment,julia,1.10.4
+CVXQP1_M.mps,environment,julia_threads,1
+CVXQP1_M.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP1_M.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP1_S.mps,environment,CUDA_jl,5.11.0
+CVXQP1_S.mps,environment,blas_threads,1
+CVXQP1_S.mps,environment,cuda_driver_api,13.2.0
+CVXQP1_S.mps,environment,cuda_runtime,13.2.0
+CVXQP1_S.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP1_S.mps,environment,julia,1.10.4
+CVXQP1_S.mps,environment,julia_threads,1
+CVXQP1_S.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP1_S.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP2_L.mps,environment,CUDA_jl,5.11.0
+CVXQP2_L.mps,environment,blas_threads,1
+CVXQP2_L.mps,environment,cuda_driver_api,13.2.0
+CVXQP2_L.mps,environment,cuda_runtime,13.2.0
+CVXQP2_L.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP2_L.mps,environment,julia,1.10.4
+CVXQP2_L.mps,environment,julia_threads,1
+CVXQP2_L.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP2_L.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP2_M.mps,environment,CUDA_jl,5.11.0
+CVXQP2_M.mps,environment,blas_threads,1
+CVXQP2_M.mps,environment,cuda_driver_api,13.2.0
+CVXQP2_M.mps,environment,cuda_runtime,13.2.0
+CVXQP2_M.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP2_M.mps,environment,julia,1.10.4
+CVXQP2_M.mps,environment,julia_threads,1
+CVXQP2_M.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP2_M.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP2_S.mps,environment,CUDA_jl,5.11.0
+CVXQP2_S.mps,environment,blas_threads,1
+CVXQP2_S.mps,environment,cuda_driver_api,13.2.0
+CVXQP2_S.mps,environment,cuda_runtime,13.2.0
+CVXQP2_S.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP2_S.mps,environment,julia,1.10.4
+CVXQP2_S.mps,environment,julia_threads,1
+CVXQP2_S.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP2_S.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP3_L.mps,environment,CUDA_jl,5.11.0
+CVXQP3_L.mps,environment,blas_threads,1
+CVXQP3_L.mps,environment,cuda_driver_api,13.2.0
+CVXQP3_L.mps,environment,cuda_runtime,13.2.0
+CVXQP3_L.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP3_L.mps,environment,julia,1.10.4
+CVXQP3_L.mps,environment,julia_threads,1
+CVXQP3_L.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP3_L.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+CVXQP3_M.mps,environment,CUDA_jl,5.11.0
+CVXQP3_M.mps,environment,blas_threads,1
+CVXQP3_M.mps,environment,cuda_driver_api,13.2.0
+CVXQP3_M.mps,environment,cuda_runtime,13.2.0
+CVXQP3_M.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP3_M.mps,environment,julia,1.10.4
+CVXQP3_M.mps,environment,julia_threads,1
+CVXQP3_M.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP3_M.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+CVXQP3_M.mps,parameters,alpha,2.0
+CVXQP3_M.mps,parameters,do_warm_up,False
+CVXQP3_M.mps,parameters,lambda_factor,1.05
+CVXQP3_M.mps,parameters,max_iter,2147483647
+CVXQP3_M.mps,parameters,mode,linearize
+CVXQP3_M.mps,parameters,restart,-1
+CVXQP3_M.mps,parameters,sigma,-1.0
+CVXQP3_M.mps,parameters,sigma_fixed,False
+CVXQP3_M.mps,parameters,sigma_method,0
+CVXQP3_M.mps,parameters,spmv_mode,auto
+CVXQP3_M.mps,parameters,stoptol,1e-08
+CVXQP3_M.mps,parameters,time_limit,3600.0
+CVXQP3_M.mps,parameters,useGPU,True
+CVXQP3_S.mps,environment,CUDA_jl,5.11.0
+CVXQP3_S.mps,environment,blas_threads,1
+CVXQP3_S.mps,environment,cuda_driver_api,13.2.0
+CVXQP3_S.mps,environment,cuda_runtime,13.2.0
+CVXQP3_S.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+CVXQP3_S.mps,environment,julia,1.10.4
+CVXQP3_S.mps,environment,julia_threads,1
+CVXQP3_S.mps,environment,load_path,"['@', '@stdlib']"
+CVXQP3_S.mps,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+CVXQP3_S.mps,parameters,alpha,2.0
+CVXQP3_S.mps,parameters,do_warm_up,False
+CVXQP3_S.mps,parameters,lambda_factor,1.05
+CVXQP3_S.mps,parameters,max_iter,2147483647
+CVXQP3_S.mps,parameters,mode,linearize
+CVXQP3_S.mps,parameters,restart,-1
+CVXQP3_S.mps,parameters,sigma,-1.0
+CVXQP3_S.mps,parameters,sigma_fixed,False
+CVXQP3_S.mps,parameters,sigma_method,0
+CVXQP3_S.mps,parameters,spmv_mode,auto
+CVXQP3_S.mps,parameters,stoptol,1e-08
+CVXQP3_S.mps,parameters,time_limit,3600.0
+CVXQP3_S.mps,parameters,useGPU,True
+DPKLO1.mps,environment,CUDA_jl,5.11.0
+DPKLO1.mps,environment,blas_threads,1
+DPKLO1.mps,environment,cuda_driver_api,13.2.0
+DPKLO1.mps,environment,cuda_runtime,13.2.0
+DPKLO1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DPKLO1.mps,environment,julia,1.10.4
+DPKLO1.mps,environment,julia_threads,1
+DPKLO1.mps,environment,load_path,"['@', '@stdlib']"
+DPKLO1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DTOC3.mps,environment,CUDA_jl,5.11.0
+DTOC3.mps,environment,blas_threads,1
+DTOC3.mps,environment,cuda_driver_api,13.2.0
+DTOC3.mps,environment,cuda_runtime,13.2.0
+DTOC3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DTOC3.mps,environment,julia,1.10.4
+DTOC3.mps,environment,julia_threads,1
+DTOC3.mps,environment,load_path,"['@', '@stdlib']"
+DTOC3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUAL1.mps,environment,CUDA_jl,5.11.0
+DUAL1.mps,environment,blas_threads,1
+DUAL1.mps,environment,cuda_driver_api,13.2.0
+DUAL1.mps,environment,cuda_runtime,13.2.0
+DUAL1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUAL1.mps,environment,julia,1.10.4
+DUAL1.mps,environment,julia_threads,1
+DUAL1.mps,environment,load_path,"['@', '@stdlib']"
+DUAL1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUAL2.mps,environment,CUDA_jl,5.11.0
+DUAL2.mps,environment,blas_threads,1
+DUAL2.mps,environment,cuda_driver_api,13.2.0
+DUAL2.mps,environment,cuda_runtime,13.2.0
+DUAL2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUAL2.mps,environment,julia,1.10.4
+DUAL2.mps,environment,julia_threads,1
+DUAL2.mps,environment,load_path,"['@', '@stdlib']"
+DUAL2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUAL3.mps,environment,CUDA_jl,5.11.0
+DUAL3.mps,environment,blas_threads,1
+DUAL3.mps,environment,cuda_driver_api,13.2.0
+DUAL3.mps,environment,cuda_runtime,13.2.0
+DUAL3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUAL3.mps,environment,julia,1.10.4
+DUAL3.mps,environment,julia_threads,1
+DUAL3.mps,environment,load_path,"['@', '@stdlib']"
+DUAL3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUAL4.mps,environment,CUDA_jl,5.11.0
+DUAL4.mps,environment,blas_threads,1
+DUAL4.mps,environment,cuda_driver_api,13.2.0
+DUAL4.mps,environment,cuda_runtime,13.2.0
+DUAL4.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUAL4.mps,environment,julia,1.10.4
+DUAL4.mps,environment,julia_threads,1
+DUAL4.mps,environment,load_path,"['@', '@stdlib']"
+DUAL4.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUALC1.mps,environment,CUDA_jl,5.11.0
+DUALC1.mps,environment,blas_threads,1
+DUALC1.mps,environment,cuda_driver_api,13.2.0
+DUALC1.mps,environment,cuda_runtime,13.2.0
+DUALC1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUALC1.mps,environment,julia,1.10.4
+DUALC1.mps,environment,julia_threads,1
+DUALC1.mps,environment,load_path,"['@', '@stdlib']"
+DUALC1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUALC2.mps,environment,CUDA_jl,5.11.0
+DUALC2.mps,environment,blas_threads,1
+DUALC2.mps,environment,cuda_driver_api,13.2.0
+DUALC2.mps,environment,cuda_runtime,13.2.0
+DUALC2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUALC2.mps,environment,julia,1.10.4
+DUALC2.mps,environment,julia_threads,1
+DUALC2.mps,environment,load_path,"['@', '@stdlib']"
+DUALC2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUALC5.mps,environment,CUDA_jl,5.11.0
+DUALC5.mps,environment,blas_threads,1
+DUALC5.mps,environment,cuda_driver_api,13.2.0
+DUALC5.mps,environment,cuda_runtime,13.2.0
+DUALC5.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUALC5.mps,environment,julia,1.10.4
+DUALC5.mps,environment,julia_threads,1
+DUALC5.mps,environment,load_path,"['@', '@stdlib']"
+DUALC5.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+DUALC8.mps,environment,CUDA_jl,5.11.0
+DUALC8.mps,environment,blas_threads,1
+DUALC8.mps,environment,cuda_driver_api,13.2.0
+DUALC8.mps,environment,cuda_runtime,13.2.0
+DUALC8.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+DUALC8.mps,environment,julia,1.10.4
+DUALC8.mps,environment,julia_threads,1
+DUALC8.mps,environment,load_path,"['@', '@stdlib']"
+DUALC8.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+EXDATA.mps,environment,CUDA_jl,5.11.0
+EXDATA.mps,environment,blas_threads,1
+EXDATA.mps,environment,cuda_driver_api,13.2.0
+EXDATA.mps,environment,cuda_runtime,13.2.0
+EXDATA.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+EXDATA.mps,environment,julia,1.10.4
+EXDATA.mps,environment,julia_threads,1
+EXDATA.mps,environment,load_path,"['@', '@stdlib']"
+EXDATA.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+GENHS28.mps,environment,CUDA_jl,5.11.0
+GENHS28.mps,environment,blas_threads,1
+GENHS28.mps,environment,cuda_driver_api,13.2.0
+GENHS28.mps,environment,cuda_runtime,13.2.0
+GENHS28.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+GENHS28.mps,environment,julia,1.10.4
+GENHS28.mps,environment,julia_threads,1
+GENHS28.mps,environment,load_path,"['@', '@stdlib']"
+GENHS28.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+GOULDQP2.mps,environment,CUDA_jl,5.11.0
+GOULDQP2.mps,environment,blas_threads,1
+GOULDQP2.mps,environment,cuda_driver_api,13.2.0
+GOULDQP2.mps,environment,cuda_runtime,13.2.0
+GOULDQP2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+GOULDQP2.mps,environment,julia,1.10.4
+GOULDQP2.mps,environment,julia_threads,1
+GOULDQP2.mps,environment,load_path,"['@', '@stdlib']"
+GOULDQP2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+GOULDQP3.mps,environment,CUDA_jl,5.11.0
+GOULDQP3.mps,environment,blas_threads,1
+GOULDQP3.mps,environment,cuda_driver_api,13.2.0
+GOULDQP3.mps,environment,cuda_runtime,13.2.0
+GOULDQP3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+GOULDQP3.mps,environment,julia,1.10.4
+GOULDQP3.mps,environment,julia_threads,1
+GOULDQP3.mps,environment,load_path,"['@', '@stdlib']"
+GOULDQP3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS118.mps,environment,CUDA_jl,5.11.0
+HS118.mps,environment,blas_threads,1
+HS118.mps,environment,cuda_driver_api,13.2.0
+HS118.mps,environment,cuda_runtime,13.2.0
+HS118.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS118.mps,environment,julia,1.10.4
+HS118.mps,environment,julia_threads,1
+HS118.mps,environment,load_path,"['@', '@stdlib']"
+HS118.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS21.mps,environment,CUDA_jl,5.11.0
+HS21.mps,environment,blas_threads,1
+HS21.mps,environment,cuda_driver_api,13.2.0
+HS21.mps,environment,cuda_runtime,13.2.0
+HS21.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS21.mps,environment,julia,1.10.4
+HS21.mps,environment,julia_threads,1
+HS21.mps,environment,load_path,"['@', '@stdlib']"
+HS21.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS268.mps,environment,CUDA_jl,5.11.0
+HS268.mps,environment,blas_threads,1
+HS268.mps,environment,cuda_driver_api,13.2.0
+HS268.mps,environment,cuda_runtime,13.2.0
+HS268.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS268.mps,environment,julia,1.10.4
+HS268.mps,environment,julia_threads,1
+HS268.mps,environment,load_path,"['@', '@stdlib']"
+HS268.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS35.mps,environment,CUDA_jl,5.11.0
+HS35.mps,environment,blas_threads,1
+HS35.mps,environment,cuda_driver_api,13.2.0
+HS35.mps,environment,cuda_runtime,13.2.0
+HS35.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS35.mps,environment,julia,1.10.4
+HS35.mps,environment,julia_threads,1
+HS35.mps,environment,load_path,"['@', '@stdlib']"
+HS35.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS35MOD.mps,environment,CUDA_jl,5.11.0
+HS35MOD.mps,environment,blas_threads,1
+HS35MOD.mps,environment,cuda_driver_api,13.2.0
+HS35MOD.mps,environment,cuda_runtime,13.2.0
+HS35MOD.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS35MOD.mps,environment,julia,1.10.4
+HS35MOD.mps,environment,julia_threads,1
+HS35MOD.mps,environment,load_path,"['@', '@stdlib']"
+HS35MOD.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS51.mps,environment,CUDA_jl,5.11.0
+HS51.mps,environment,blas_threads,1
+HS51.mps,environment,cuda_driver_api,13.2.0
+HS51.mps,environment,cuda_runtime,13.2.0
+HS51.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS51.mps,environment,julia,1.10.4
+HS51.mps,environment,julia_threads,1
+HS51.mps,environment,load_path,"['@', '@stdlib']"
+HS51.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS52.mps,environment,CUDA_jl,5.11.0
+HS52.mps,environment,blas_threads,1
+HS52.mps,environment,cuda_driver_api,13.2.0
+HS52.mps,environment,cuda_runtime,13.2.0
+HS52.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS52.mps,environment,julia,1.10.4
+HS52.mps,environment,julia_threads,1
+HS52.mps,environment,load_path,"['@', '@stdlib']"
+HS52.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS53.mps,environment,CUDA_jl,5.11.0
+HS53.mps,environment,blas_threads,1
+HS53.mps,environment,cuda_driver_api,13.2.0
+HS53.mps,environment,cuda_runtime,13.2.0
+HS53.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS53.mps,environment,julia,1.10.4
+HS53.mps,environment,julia_threads,1
+HS53.mps,environment,load_path,"['@', '@stdlib']"
+HS53.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HS76.mps,environment,CUDA_jl,5.11.0
+HS76.mps,environment,blas_threads,1
+HS76.mps,environment,cuda_driver_api,13.2.0
+HS76.mps,environment,cuda_runtime,13.2.0
+HS76.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HS76.mps,environment,julia,1.10.4
+HS76.mps,environment,julia_threads,1
+HS76.mps,environment,load_path,"['@', '@stdlib']"
+HS76.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HUES-MOD.mps,environment,CUDA_jl,5.11.0
+HUES-MOD.mps,environment,blas_threads,1
+HUES-MOD.mps,environment,cuda_driver_api,13.2.0
+HUES-MOD.mps,environment,cuda_runtime,13.2.0
+HUES-MOD.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HUES-MOD.mps,environment,julia,1.10.4
+HUES-MOD.mps,environment,julia_threads,1
+HUES-MOD.mps,environment,load_path,"['@', '@stdlib']"
+HUES-MOD.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+HUESTIS.mps,environment,CUDA_jl,5.11.0
+HUESTIS.mps,environment,blas_threads,1
+HUESTIS.mps,environment,cuda_driver_api,13.2.0
+HUESTIS.mps,environment,cuda_runtime,13.2.0
+HUESTIS.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+HUESTIS.mps,environment,julia,1.10.4
+HUESTIS.mps,environment,julia_threads,1
+HUESTIS.mps,environment,load_path,"['@', '@stdlib']"
+HUESTIS.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+KSIP.mps,environment,CUDA_jl,5.11.0
+KSIP.mps,environment,blas_threads,1
+KSIP.mps,environment,cuda_driver_api,13.2.0
+KSIP.mps,environment,cuda_runtime,13.2.0
+KSIP.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+KSIP.mps,environment,julia,1.10.4
+KSIP.mps,environment,julia_threads,1
+KSIP.mps,environment,load_path,"['@', '@stdlib']"
+KSIP.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LASER.mps,environment,CUDA_jl,5.11.0
+LASER.mps,environment,blas_threads,1
+LASER.mps,environment,cuda_driver_api,13.2.0
+LASER.mps,environment,cuda_runtime,13.2.0
+LASER.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LASER.mps,environment,julia,1.10.4
+LASER.mps,environment,julia_threads,1
+LASER.mps,environment,load_path,"['@', '@stdlib']"
+LASER.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET3.mps,environment,CUDA_jl,5.11.0
+LISWET3.mps,environment,blas_threads,1
+LISWET3.mps,environment,cuda_driver_api,13.2.0
+LISWET3.mps,environment,cuda_runtime,13.2.0
+LISWET3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET3.mps,environment,julia,1.10.4
+LISWET3.mps,environment,julia_threads,1
+LISWET3.mps,environment,load_path,"['@', '@stdlib']"
+LISWET3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET4.mps,environment,CUDA_jl,5.11.0
+LISWET4.mps,environment,blas_threads,1
+LISWET4.mps,environment,cuda_driver_api,13.2.0
+LISWET4.mps,environment,cuda_runtime,13.2.0
+LISWET4.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET4.mps,environment,julia,1.10.4
+LISWET4.mps,environment,julia_threads,1
+LISWET4.mps,environment,load_path,"['@', '@stdlib']"
+LISWET4.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET5.mps,environment,CUDA_jl,5.11.0
+LISWET5.mps,environment,blas_threads,1
+LISWET5.mps,environment,cuda_driver_api,13.2.0
+LISWET5.mps,environment,cuda_runtime,13.2.0
+LISWET5.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET5.mps,environment,julia,1.10.4
+LISWET5.mps,environment,julia_threads,1
+LISWET5.mps,environment,load_path,"['@', '@stdlib']"
+LISWET5.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET6.mps,environment,CUDA_jl,5.11.0
+LISWET6.mps,environment,blas_threads,1
+LISWET6.mps,environment,cuda_driver_api,13.2.0
+LISWET6.mps,environment,cuda_runtime,13.2.0
+LISWET6.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET6.mps,environment,julia,1.10.4
+LISWET6.mps,environment,julia_threads,1
+LISWET6.mps,environment,load_path,"['@', '@stdlib']"
+LISWET6.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LOTSCHD.mps,environment,CUDA_jl,5.11.0
+LOTSCHD.mps,environment,blas_threads,1
+LOTSCHD.mps,environment,cuda_driver_api,13.2.0
+LOTSCHD.mps,environment,cuda_runtime,13.2.0
+LOTSCHD.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LOTSCHD.mps,environment,julia,1.10.4
+LOTSCHD.mps,environment,julia_threads,1
+LOTSCHD.mps,environment,load_path,"['@', '@stdlib']"
+LOTSCHD.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+MOSARQP1.mps,environment,CUDA_jl,5.11.0
+MOSARQP1.mps,environment,blas_threads,1
+MOSARQP1.mps,environment,cuda_driver_api,13.2.0
+MOSARQP1.mps,environment,cuda_runtime,13.2.0
+MOSARQP1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+MOSARQP1.mps,environment,julia,1.10.4
+MOSARQP1.mps,environment,julia_threads,1
+MOSARQP1.mps,environment,load_path,"['@', '@stdlib']"
+MOSARQP1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+MOSARQP2.mps,environment,CUDA_jl,5.11.0
+MOSARQP2.mps,environment,blas_threads,1
+MOSARQP2.mps,environment,cuda_driver_api,13.2.0
+MOSARQP2.mps,environment,cuda_runtime,13.2.0
+MOSARQP2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+MOSARQP2.mps,environment,julia,1.10.4
+MOSARQP2.mps,environment,julia_threads,1
+MOSARQP2.mps,environment,load_path,"['@', '@stdlib']"
+MOSARQP2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+POWELL20.mps,environment,CUDA_jl,5.11.0
+POWELL20.mps,environment,blas_threads,1
+POWELL20.mps,environment,cuda_driver_api,13.2.0
+POWELL20.mps,environment,cuda_runtime,13.2.0
+POWELL20.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+POWELL20.mps,environment,julia,1.10.4
+POWELL20.mps,environment,julia_threads,1
+POWELL20.mps,environment,load_path,"['@', '@stdlib']"
+POWELL20.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMAL1.mps,environment,CUDA_jl,5.11.0
+PRIMAL1.mps,environment,blas_threads,1
+PRIMAL1.mps,environment,cuda_driver_api,13.2.0
+PRIMAL1.mps,environment,cuda_runtime,13.2.0
+PRIMAL1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMAL1.mps,environment,julia,1.10.4
+PRIMAL1.mps,environment,julia_threads,1
+PRIMAL1.mps,environment,load_path,"['@', '@stdlib']"
+PRIMAL1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMAL2.mps,environment,CUDA_jl,5.11.0
+PRIMAL2.mps,environment,blas_threads,1
+PRIMAL2.mps,environment,cuda_driver_api,13.2.0
+PRIMAL2.mps,environment,cuda_runtime,13.2.0
+PRIMAL2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMAL2.mps,environment,julia,1.10.4
+PRIMAL2.mps,environment,julia_threads,1
+PRIMAL2.mps,environment,load_path,"['@', '@stdlib']"
+PRIMAL2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMAL3.mps,environment,CUDA_jl,5.11.0
+PRIMAL3.mps,environment,blas_threads,1
+PRIMAL3.mps,environment,cuda_driver_api,13.2.0
+PRIMAL3.mps,environment,cuda_runtime,13.2.0
+PRIMAL3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMAL3.mps,environment,julia,1.10.4
+PRIMAL3.mps,environment,julia_threads,1
+PRIMAL3.mps,environment,load_path,"['@', '@stdlib']"
+PRIMAL3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMAL4.mps,environment,CUDA_jl,5.11.0
+PRIMAL4.mps,environment,blas_threads,1
+PRIMAL4.mps,environment,cuda_driver_api,13.2.0
+PRIMAL4.mps,environment,cuda_runtime,13.2.0
+PRIMAL4.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMAL4.mps,environment,julia,1.10.4
+PRIMAL4.mps,environment,julia_threads,1
+PRIMAL4.mps,environment,load_path,"['@', '@stdlib']"
+PRIMAL4.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMALC1.mps,environment,CUDA_jl,5.11.0
+PRIMALC1.mps,environment,blas_threads,1
+PRIMALC1.mps,environment,cuda_driver_api,13.2.0
+PRIMALC1.mps,environment,cuda_runtime,13.2.0
+PRIMALC1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMALC1.mps,environment,julia,1.10.4
+PRIMALC1.mps,environment,julia_threads,1
+PRIMALC1.mps,environment,load_path,"['@', '@stdlib']"
+PRIMALC1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMALC2.mps,environment,CUDA_jl,5.11.0
+PRIMALC2.mps,environment,blas_threads,1
+PRIMALC2.mps,environment,cuda_driver_api,13.2.0
+PRIMALC2.mps,environment,cuda_runtime,13.2.0
+PRIMALC2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMALC2.mps,environment,julia,1.10.4
+PRIMALC2.mps,environment,julia_threads,1
+PRIMALC2.mps,environment,load_path,"['@', '@stdlib']"
+PRIMALC2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMALC5.mps,environment,CUDA_jl,5.11.0
+PRIMALC5.mps,environment,blas_threads,1
+PRIMALC5.mps,environment,cuda_driver_api,13.2.0
+PRIMALC5.mps,environment,cuda_runtime,13.2.0
+PRIMALC5.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMALC5.mps,environment,julia,1.10.4
+PRIMALC5.mps,environment,julia_threads,1
+PRIMALC5.mps,environment,load_path,"['@', '@stdlib']"
+PRIMALC5.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+PRIMALC8.mps,environment,CUDA_jl,5.11.0
+PRIMALC8.mps,environment,blas_threads,1
+PRIMALC8.mps,environment,cuda_driver_api,13.2.0
+PRIMALC8.mps,environment,cuda_runtime,13.2.0
+PRIMALC8.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+PRIMALC8.mps,environment,julia,1.10.4
+PRIMALC8.mps,environment,julia_threads,1
+PRIMALC8.mps,environment,load_path,"['@', '@stdlib']"
+PRIMALC8.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+Q25FV47.mps,environment,CUDA_jl,5.11.0
+Q25FV47.mps,environment,blas_threads,1
+Q25FV47.mps,environment,cuda_driver_api,13.2.0
+Q25FV47.mps,environment,cuda_runtime,13.2.0
+Q25FV47.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+Q25FV47.mps,environment,julia,1.10.4
+Q25FV47.mps,environment,julia_threads,1
+Q25FV47.mps,environment,load_path,"['@', '@stdlib']"
+Q25FV47.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QADLITTL.mps,environment,CUDA_jl,5.11.0
+QADLITTL.mps,environment,blas_threads,1
+QADLITTL.mps,environment,cuda_driver_api,13.2.0
+QADLITTL.mps,environment,cuda_runtime,13.2.0
+QADLITTL.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QADLITTL.mps,environment,julia,1.10.4
+QADLITTL.mps,environment,julia_threads,1
+QADLITTL.mps,environment,load_path,"['@', '@stdlib']"
+QADLITTL.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QAFIRO.mps,environment,CUDA_jl,5.11.0
+QAFIRO.mps,environment,blas_threads,1
+QAFIRO.mps,environment,cuda_driver_api,13.2.0
+QAFIRO.mps,environment,cuda_runtime,13.2.0
+QAFIRO.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QAFIRO.mps,environment,julia,1.10.4
+QAFIRO.mps,environment,julia_threads,1
+QAFIRO.mps,environment,load_path,"['@', '@stdlib']"
+QAFIRO.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QBANDM.mps,environment,CUDA_jl,5.11.0
+QBANDM.mps,environment,blas_threads,1
+QBANDM.mps,environment,cuda_driver_api,13.2.0
+QBANDM.mps,environment,cuda_runtime,13.2.0
+QBANDM.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QBANDM.mps,environment,julia,1.10.4
+QBANDM.mps,environment,julia_threads,1
+QBANDM.mps,environment,load_path,"['@', '@stdlib']"
+QBANDM.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QBEACONF.mps,environment,CUDA_jl,5.11.0
+QBEACONF.mps,environment,blas_threads,1
+QBEACONF.mps,environment,cuda_driver_api,13.2.0
+QBEACONF.mps,environment,cuda_runtime,13.2.0
+QBEACONF.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QBEACONF.mps,environment,julia,1.10.4
+QBEACONF.mps,environment,julia_threads,1
+QBEACONF.mps,environment,load_path,"['@', '@stdlib']"
+QBEACONF.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QBORE3D.mps,environment,CUDA_jl,5.11.0
+QBORE3D.mps,environment,blas_threads,1
+QBORE3D.mps,environment,cuda_driver_api,13.2.0
+QBORE3D.mps,environment,cuda_runtime,13.2.0
+QBORE3D.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QBORE3D.mps,environment,julia,1.10.4
+QBORE3D.mps,environment,julia_threads,1
+QBORE3D.mps,environment,load_path,"['@', '@stdlib']"
+QBORE3D.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QBRANDY.mps,environment,CUDA_jl,5.11.0
+QBRANDY.mps,environment,blas_threads,1
+QBRANDY.mps,environment,cuda_driver_api,13.2.0
+QBRANDY.mps,environment,cuda_runtime,13.2.0
+QBRANDY.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QBRANDY.mps,environment,julia,1.10.4
+QBRANDY.mps,environment,julia_threads,1
+QBRANDY.mps,environment,load_path,"['@', '@stdlib']"
+QBRANDY.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QCAPRI.mps,environment,CUDA_jl,5.11.0
+QCAPRI.mps,environment,blas_threads,1
+QCAPRI.mps,environment,cuda_driver_api,13.2.0
+QCAPRI.mps,environment,cuda_runtime,13.2.0
+QCAPRI.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QCAPRI.mps,environment,julia,1.10.4
+QCAPRI.mps,environment,julia_threads,1
+QCAPRI.mps,environment,load_path,"['@', '@stdlib']"
+QCAPRI.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QE226.mps,environment,CUDA_jl,5.11.0
+QE226.mps,environment,blas_threads,1
+QE226.mps,environment,cuda_driver_api,13.2.0
+QE226.mps,environment,cuda_runtime,13.2.0
+QE226.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QE226.mps,environment,julia,1.10.4
+QE226.mps,environment,julia_threads,1
+QE226.mps,environment,load_path,"['@', '@stdlib']"
+QE226.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QETAMACR.mps,environment,CUDA_jl,5.11.0
+QETAMACR.mps,environment,blas_threads,1
+QETAMACR.mps,environment,cuda_driver_api,13.2.0
+QETAMACR.mps,environment,cuda_runtime,13.2.0
+QETAMACR.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QETAMACR.mps,environment,julia,1.10.4
+QETAMACR.mps,environment,julia_threads,1
+QETAMACR.mps,environment,load_path,"['@', '@stdlib']"
+QETAMACR.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QFFFFF80.mps,environment,CUDA_jl,5.11.0
+QFFFFF80.mps,environment,blas_threads,1
+QFFFFF80.mps,environment,cuda_driver_api,13.2.0
+QFFFFF80.mps,environment,cuda_runtime,13.2.0
+QFFFFF80.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QFFFFF80.mps,environment,julia,1.10.4
+QFFFFF80.mps,environment,julia_threads,1
+QFFFFF80.mps,environment,load_path,"['@', '@stdlib']"
+QFFFFF80.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QFORPLAN.mps,environment,CUDA_jl,5.11.0
+QFORPLAN.mps,environment,blas_threads,1
+QFORPLAN.mps,environment,cuda_driver_api,13.2.0
+QFORPLAN.mps,environment,cuda_runtime,13.2.0
+QFORPLAN.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QFORPLAN.mps,environment,julia,1.10.4
+QFORPLAN.mps,environment,julia_threads,1
+QFORPLAN.mps,environment,load_path,"['@', '@stdlib']"
+QFORPLAN.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QGFRDXPN.mps,environment,CUDA_jl,5.11.0
+QGFRDXPN.mps,environment,blas_threads,1
+QGFRDXPN.mps,environment,cuda_driver_api,13.2.0
+QGFRDXPN.mps,environment,cuda_runtime,13.2.0
+QGFRDXPN.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QGFRDXPN.mps,environment,julia,1.10.4
+QGFRDXPN.mps,environment,julia_threads,1
+QGFRDXPN.mps,environment,load_path,"['@', '@stdlib']"
+QGFRDXPN.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QGROW15.mps,environment,CUDA_jl,5.11.0
+QGROW15.mps,environment,blas_threads,1
+QGROW15.mps,environment,cuda_driver_api,13.2.0
+QGROW15.mps,environment,cuda_runtime,13.2.0
+QGROW15.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QGROW15.mps,environment,julia,1.10.4
+QGROW15.mps,environment,julia_threads,1
+QGROW15.mps,environment,load_path,"['@', '@stdlib']"
+QGROW15.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QGROW22.mps,environment,CUDA_jl,5.11.0
+QGROW22.mps,environment,blas_threads,1
+QGROW22.mps,environment,cuda_driver_api,13.2.0
+QGROW22.mps,environment,cuda_runtime,13.2.0
+QGROW22.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QGROW22.mps,environment,julia,1.10.4
+QGROW22.mps,environment,julia_threads,1
+QGROW22.mps,environment,load_path,"['@', '@stdlib']"
+QGROW22.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QGROW7.mps,environment,CUDA_jl,5.11.0
+QGROW7.mps,environment,blas_threads,1
+QGROW7.mps,environment,cuda_driver_api,13.2.0
+QGROW7.mps,environment,cuda_runtime,13.2.0
+QGROW7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QGROW7.mps,environment,julia,1.10.4
+QGROW7.mps,environment,julia_threads,1
+QGROW7.mps,environment,load_path,"['@', '@stdlib']"
+QGROW7.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QISRAEL.mps,environment,CUDA_jl,5.11.0
+QISRAEL.mps,environment,blas_threads,1
+QISRAEL.mps,environment,cuda_driver_api,13.2.0
+QISRAEL.mps,environment,cuda_runtime,13.2.0
+QISRAEL.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QISRAEL.mps,environment,julia,1.10.4
+QISRAEL.mps,environment,julia_threads,1
+QISRAEL.mps,environment,load_path,"['@', '@stdlib']"
+QISRAEL.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QPCBLEND.mps,environment,CUDA_jl,5.11.0
+QPCBLEND.mps,environment,blas_threads,1
+QPCBLEND.mps,environment,cuda_driver_api,13.2.0
+QPCBLEND.mps,environment,cuda_runtime,13.2.0
+QPCBLEND.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QPCBLEND.mps,environment,julia,1.10.4
+QPCBLEND.mps,environment,julia_threads,1
+QPCBLEND.mps,environment,load_path,"['@', '@stdlib']"
+QPCBLEND.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QPCBOEI1.mps,environment,CUDA_jl,5.11.0
+QPCBOEI1.mps,environment,blas_threads,1
+QPCBOEI1.mps,environment,cuda_driver_api,13.2.0
+QPCBOEI1.mps,environment,cuda_runtime,13.2.0
+QPCBOEI1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QPCBOEI1.mps,environment,julia,1.10.4
+QPCBOEI1.mps,environment,julia_threads,1
+QPCBOEI1.mps,environment,load_path,"['@', '@stdlib']"
+QPCBOEI1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QPCBOEI2.mps,environment,CUDA_jl,5.11.0
+QPCBOEI2.mps,environment,blas_threads,1
+QPCBOEI2.mps,environment,cuda_driver_api,13.2.0
+QPCBOEI2.mps,environment,cuda_runtime,13.2.0
+QPCBOEI2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QPCBOEI2.mps,environment,julia,1.10.4
+QPCBOEI2.mps,environment,julia_threads,1
+QPCBOEI2.mps,environment,load_path,"['@', '@stdlib']"
+QPCBOEI2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QPCSTAIR.mps,environment,CUDA_jl,5.11.0
+QPCSTAIR.mps,environment,blas_threads,1
+QPCSTAIR.mps,environment,cuda_driver_api,13.2.0
+QPCSTAIR.mps,environment,cuda_runtime,13.2.0
+QPCSTAIR.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QPCSTAIR.mps,environment,julia,1.10.4
+QPCSTAIR.mps,environment,julia_threads,1
+QPCSTAIR.mps,environment,load_path,"['@', '@stdlib']"
+QPCSTAIR.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QPILOTNO.mps,environment,CUDA_jl,5.11.0
+QPILOTNO.mps,environment,blas_threads,1
+QPILOTNO.mps,environment,cuda_driver_api,13.2.0
+QPILOTNO.mps,environment,cuda_runtime,13.2.0
+QPILOTNO.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QPILOTNO.mps,environment,julia,1.10.4
+QPILOTNO.mps,environment,julia_threads,1
+QPILOTNO.mps,environment,load_path,"['@', '@stdlib']"
+QPILOTNO.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QPTEST.mps,environment,CUDA_jl,5.11.0
+QPTEST.mps,environment,blas_threads,1
+QPTEST.mps,environment,cuda_driver_api,13.2.0
+QPTEST.mps,environment,cuda_runtime,13.2.0
+QPTEST.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QPTEST.mps,environment,julia,1.10.4
+QPTEST.mps,environment,julia_threads,1
+QPTEST.mps,environment,load_path,"['@', '@stdlib']"
+QPTEST.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QRECIPE.mps,environment,CUDA_jl,5.11.0
+QRECIPE.mps,environment,blas_threads,1
+QRECIPE.mps,environment,cuda_driver_api,13.2.0
+QRECIPE.mps,environment,cuda_runtime,13.2.0
+QRECIPE.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QRECIPE.mps,environment,julia,1.10.4
+QRECIPE.mps,environment,julia_threads,1
+QRECIPE.mps,environment,load_path,"['@', '@stdlib']"
+QRECIPE.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSC205.mps,environment,CUDA_jl,5.11.0
+QSC205.mps,environment,blas_threads,1
+QSC205.mps,environment,cuda_driver_api,13.2.0
+QSC205.mps,environment,cuda_runtime,13.2.0
+QSC205.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSC205.mps,environment,julia,1.10.4
+QSC205.mps,environment,julia_threads,1
+QSC205.mps,environment,load_path,"['@', '@stdlib']"
+QSC205.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCAGR25.mps,environment,CUDA_jl,5.11.0
+QSCAGR25.mps,environment,blas_threads,1
+QSCAGR25.mps,environment,cuda_driver_api,13.2.0
+QSCAGR25.mps,environment,cuda_runtime,13.2.0
+QSCAGR25.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCAGR25.mps,environment,julia,1.10.4
+QSCAGR25.mps,environment,julia_threads,1
+QSCAGR25.mps,environment,load_path,"['@', '@stdlib']"
+QSCAGR25.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCAGR7.mps,environment,CUDA_jl,5.11.0
+QSCAGR7.mps,environment,blas_threads,1
+QSCAGR7.mps,environment,cuda_driver_api,13.2.0
+QSCAGR7.mps,environment,cuda_runtime,13.2.0
+QSCAGR7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCAGR7.mps,environment,julia,1.10.4
+QSCAGR7.mps,environment,julia_threads,1
+QSCAGR7.mps,environment,load_path,"['@', '@stdlib']"
+QSCAGR7.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCFXM1.mps,environment,CUDA_jl,5.11.0
+QSCFXM1.mps,environment,blas_threads,1
+QSCFXM1.mps,environment,cuda_driver_api,13.2.0
+QSCFXM1.mps,environment,cuda_runtime,13.2.0
+QSCFXM1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCFXM1.mps,environment,julia,1.10.4
+QSCFXM1.mps,environment,julia_threads,1
+QSCFXM1.mps,environment,load_path,"['@', '@stdlib']"
+QSCFXM1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCFXM2.mps,environment,CUDA_jl,5.11.0
+QSCFXM2.mps,environment,blas_threads,1
+QSCFXM2.mps,environment,cuda_driver_api,13.2.0
+QSCFXM2.mps,environment,cuda_runtime,13.2.0
+QSCFXM2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCFXM2.mps,environment,julia,1.10.4
+QSCFXM2.mps,environment,julia_threads,1
+QSCFXM2.mps,environment,load_path,"['@', '@stdlib']"
+QSCFXM2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCFXM3.mps,environment,CUDA_jl,5.11.0
+QSCFXM3.mps,environment,blas_threads,1
+QSCFXM3.mps,environment,cuda_driver_api,13.2.0
+QSCFXM3.mps,environment,cuda_runtime,13.2.0
+QSCFXM3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCFXM3.mps,environment,julia,1.10.4
+QSCFXM3.mps,environment,julia_threads,1
+QSCFXM3.mps,environment,load_path,"['@', '@stdlib']"
+QSCFXM3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCORPIO.mps,environment,CUDA_jl,5.11.0
+QSCORPIO.mps,environment,blas_threads,1
+QSCORPIO.mps,environment,cuda_driver_api,13.2.0
+QSCORPIO.mps,environment,cuda_runtime,13.2.0
+QSCORPIO.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCORPIO.mps,environment,julia,1.10.4
+QSCORPIO.mps,environment,julia_threads,1
+QSCORPIO.mps,environment,load_path,"['@', '@stdlib']"
+QSCORPIO.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCRS8.mps,environment,CUDA_jl,5.11.0
+QSCRS8.mps,environment,blas_threads,1
+QSCRS8.mps,environment,cuda_driver_api,13.2.0
+QSCRS8.mps,environment,cuda_runtime,13.2.0
+QSCRS8.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCRS8.mps,environment,julia,1.10.4
+QSCRS8.mps,environment,julia_threads,1
+QSCRS8.mps,environment,load_path,"['@', '@stdlib']"
+QSCRS8.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCSD1.mps,environment,CUDA_jl,5.11.0
+QSCSD1.mps,environment,blas_threads,1
+QSCSD1.mps,environment,cuda_driver_api,13.2.0
+QSCSD1.mps,environment,cuda_runtime,13.2.0
+QSCSD1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCSD1.mps,environment,julia,1.10.4
+QSCSD1.mps,environment,julia_threads,1
+QSCSD1.mps,environment,load_path,"['@', '@stdlib']"
+QSCSD1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCSD6.mps,environment,CUDA_jl,5.11.0
+QSCSD6.mps,environment,blas_threads,1
+QSCSD6.mps,environment,cuda_driver_api,13.2.0
+QSCSD6.mps,environment,cuda_runtime,13.2.0
+QSCSD6.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCSD6.mps,environment,julia,1.10.4
+QSCSD6.mps,environment,julia_threads,1
+QSCSD6.mps,environment,load_path,"['@', '@stdlib']"
+QSCSD6.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCSD8.mps,environment,CUDA_jl,5.11.0
+QSCSD8.mps,environment,blas_threads,1
+QSCSD8.mps,environment,cuda_driver_api,13.2.0
+QSCSD8.mps,environment,cuda_runtime,13.2.0
+QSCSD8.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCSD8.mps,environment,julia,1.10.4
+QSCSD8.mps,environment,julia_threads,1
+QSCSD8.mps,environment,load_path,"['@', '@stdlib']"
+QSCSD8.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCTAP1.mps,environment,CUDA_jl,5.11.0
+QSCTAP1.mps,environment,blas_threads,1
+QSCTAP1.mps,environment,cuda_driver_api,13.2.0
+QSCTAP1.mps,environment,cuda_runtime,13.2.0
+QSCTAP1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCTAP1.mps,environment,julia,1.10.4
+QSCTAP1.mps,environment,julia_threads,1
+QSCTAP1.mps,environment,load_path,"['@', '@stdlib']"
+QSCTAP1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCTAP2.mps,environment,CUDA_jl,5.11.0
+QSCTAP2.mps,environment,blas_threads,1
+QSCTAP2.mps,environment,cuda_driver_api,13.2.0
+QSCTAP2.mps,environment,cuda_runtime,13.2.0
+QSCTAP2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCTAP2.mps,environment,julia,1.10.4
+QSCTAP2.mps,environment,julia_threads,1
+QSCTAP2.mps,environment,load_path,"['@', '@stdlib']"
+QSCTAP2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSCTAP3.mps,environment,CUDA_jl,5.11.0
+QSCTAP3.mps,environment,blas_threads,1
+QSCTAP3.mps,environment,cuda_driver_api,13.2.0
+QSCTAP3.mps,environment,cuda_runtime,13.2.0
+QSCTAP3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSCTAP3.mps,environment,julia,1.10.4
+QSCTAP3.mps,environment,julia_threads,1
+QSCTAP3.mps,environment,load_path,"['@', '@stdlib']"
+QSCTAP3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSEBA.mps,environment,CUDA_jl,5.11.0
+QSEBA.mps,environment,blas_threads,1
+QSEBA.mps,environment,cuda_driver_api,13.2.0
+QSEBA.mps,environment,cuda_runtime,13.2.0
+QSEBA.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSEBA.mps,environment,julia,1.10.4
+QSEBA.mps,environment,julia_threads,1
+QSEBA.mps,environment,load_path,"['@', '@stdlib']"
+QSEBA.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHARE1B.mps,environment,CUDA_jl,5.11.0
+QSHARE1B.mps,environment,blas_threads,1
+QSHARE1B.mps,environment,cuda_driver_api,13.2.0
+QSHARE1B.mps,environment,cuda_runtime,13.2.0
+QSHARE1B.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHARE1B.mps,environment,julia,1.10.4
+QSHARE1B.mps,environment,julia_threads,1
+QSHARE1B.mps,environment,load_path,"['@', '@stdlib']"
+QSHARE1B.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHARE2B.mps,environment,CUDA_jl,5.11.0
+QSHARE2B.mps,environment,blas_threads,1
+QSHARE2B.mps,environment,cuda_driver_api,13.2.0
+QSHARE2B.mps,environment,cuda_runtime,13.2.0
+QSHARE2B.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHARE2B.mps,environment,julia,1.10.4
+QSHARE2B.mps,environment,julia_threads,1
+QSHARE2B.mps,environment,load_path,"['@', '@stdlib']"
+QSHARE2B.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHELL.mps,environment,CUDA_jl,5.11.0
+QSHELL.mps,environment,blas_threads,1
+QSHELL.mps,environment,cuda_driver_api,13.2.0
+QSHELL.mps,environment,cuda_runtime,13.2.0
+QSHELL.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHELL.mps,environment,julia,1.10.4
+QSHELL.mps,environment,julia_threads,1
+QSHELL.mps,environment,load_path,"['@', '@stdlib']"
+QSHELL.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHIP04L.mps,environment,CUDA_jl,5.11.0
+QSHIP04L.mps,environment,blas_threads,1
+QSHIP04L.mps,environment,cuda_driver_api,13.2.0
+QSHIP04L.mps,environment,cuda_runtime,13.2.0
+QSHIP04L.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHIP04L.mps,environment,julia,1.10.4
+QSHIP04L.mps,environment,julia_threads,1
+QSHIP04L.mps,environment,load_path,"['@', '@stdlib']"
+QSHIP04L.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHIP04S.mps,environment,CUDA_jl,5.11.0
+QSHIP04S.mps,environment,blas_threads,1
+QSHIP04S.mps,environment,cuda_driver_api,13.2.0
+QSHIP04S.mps,environment,cuda_runtime,13.2.0
+QSHIP04S.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHIP04S.mps,environment,julia,1.10.4
+QSHIP04S.mps,environment,julia_threads,1
+QSHIP04S.mps,environment,load_path,"['@', '@stdlib']"
+QSHIP04S.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHIP08L.mps,environment,CUDA_jl,5.11.0
+QSHIP08L.mps,environment,blas_threads,1
+QSHIP08L.mps,environment,cuda_driver_api,13.2.0
+QSHIP08L.mps,environment,cuda_runtime,13.2.0
+QSHIP08L.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHIP08L.mps,environment,julia,1.10.4
+QSHIP08L.mps,environment,julia_threads,1
+QSHIP08L.mps,environment,load_path,"['@', '@stdlib']"
+QSHIP08L.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHIP08S.mps,environment,CUDA_jl,5.11.0
+QSHIP08S.mps,environment,blas_threads,1
+QSHIP08S.mps,environment,cuda_driver_api,13.2.0
+QSHIP08S.mps,environment,cuda_runtime,13.2.0
+QSHIP08S.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHIP08S.mps,environment,julia,1.10.4
+QSHIP08S.mps,environment,julia_threads,1
+QSHIP08S.mps,environment,load_path,"['@', '@stdlib']"
+QSHIP08S.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHIP12L.mps,environment,CUDA_jl,5.11.0
+QSHIP12L.mps,environment,blas_threads,1
+QSHIP12L.mps,environment,cuda_driver_api,13.2.0
+QSHIP12L.mps,environment,cuda_runtime,13.2.0
+QSHIP12L.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHIP12L.mps,environment,julia,1.10.4
+QSHIP12L.mps,environment,julia_threads,1
+QSHIP12L.mps,environment,load_path,"['@', '@stdlib']"
+QSHIP12L.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSHIP12S.mps,environment,CUDA_jl,5.11.0
+QSHIP12S.mps,environment,blas_threads,1
+QSHIP12S.mps,environment,cuda_driver_api,13.2.0
+QSHIP12S.mps,environment,cuda_runtime,13.2.0
+QSHIP12S.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSHIP12S.mps,environment,julia,1.10.4
+QSHIP12S.mps,environment,julia_threads,1
+QSHIP12S.mps,environment,load_path,"['@', '@stdlib']"
+QSHIP12S.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSIERRA.mps,environment,CUDA_jl,5.11.0
+QSIERRA.mps,environment,blas_threads,1
+QSIERRA.mps,environment,cuda_driver_api,13.2.0
+QSIERRA.mps,environment,cuda_runtime,13.2.0
+QSIERRA.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSIERRA.mps,environment,julia,1.10.4
+QSIERRA.mps,environment,julia_threads,1
+QSIERRA.mps,environment,load_path,"['@', '@stdlib']"
+QSIERRA.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSTAIR.mps,environment,CUDA_jl,5.11.0
+QSTAIR.mps,environment,blas_threads,1
+QSTAIR.mps,environment,cuda_driver_api,13.2.0
+QSTAIR.mps,environment,cuda_runtime,13.2.0
+QSTAIR.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSTAIR.mps,environment,julia,1.10.4
+QSTAIR.mps,environment,julia_threads,1
+QSTAIR.mps,environment,load_path,"['@', '@stdlib']"
+QSTAIR.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+QSTANDAT.mps,environment,CUDA_jl,5.11.0
+QSTANDAT.mps,environment,blas_threads,1
+QSTANDAT.mps,environment,cuda_driver_api,13.2.0
+QSTANDAT.mps,environment,cuda_runtime,13.2.0
+QSTANDAT.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+QSTANDAT.mps,environment,julia,1.10.4
+QSTANDAT.mps,environment,julia_threads,1
+QSTANDAT.mps,environment,load_path,"['@', '@stdlib']"
+QSTANDAT.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+S268.mps,environment,CUDA_jl,5.11.0
+S268.mps,environment,blas_threads,1
+S268.mps,environment,cuda_driver_api,13.2.0
+S268.mps,environment,cuda_runtime,13.2.0
+S268.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+S268.mps,environment,julia,1.10.4
+S268.mps,environment,julia_threads,1
+S268.mps,environment,load_path,"['@', '@stdlib']"
+S268.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+STADAT1.mps,environment,CUDA_jl,5.11.0
+STADAT1.mps,environment,blas_threads,1
+STADAT1.mps,environment,cuda_driver_api,13.2.0
+STADAT1.mps,environment,cuda_runtime,13.2.0
+STADAT1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+STADAT1.mps,environment,julia,1.10.4
+STADAT1.mps,environment,julia_threads,1
+STADAT1.mps,environment,load_path,"['@', '@stdlib']"
+STADAT1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+STADAT2.mps,environment,CUDA_jl,5.11.0
+STADAT2.mps,environment,blas_threads,1
+STADAT2.mps,environment,cuda_driver_api,13.2.0
+STADAT2.mps,environment,cuda_runtime,13.2.0
+STADAT2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+STADAT2.mps,environment,julia,1.10.4
+STADAT2.mps,environment,julia_threads,1
+STADAT2.mps,environment,load_path,"['@', '@stdlib']"
+STADAT2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+STADAT3.mps,environment,CUDA_jl,5.11.0
+STADAT3.mps,environment,blas_threads,1
+STADAT3.mps,environment,cuda_driver_api,13.2.0
+STADAT3.mps,environment,cuda_runtime,13.2.0
+STADAT3.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+STADAT3.mps,environment,julia,1.10.4
+STADAT3.mps,environment,julia_threads,1
+STADAT3.mps,environment,load_path,"['@', '@stdlib']"
+STADAT3.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+STCQP1.mps,environment,CUDA_jl,5.11.0
+STCQP1.mps,environment,blas_threads,1
+STCQP1.mps,environment,cuda_driver_api,13.2.0
+STCQP1.mps,environment,cuda_runtime,13.2.0
+STCQP1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+STCQP1.mps,environment,julia,1.10.4
+STCQP1.mps,environment,julia_threads,1
+STCQP1.mps,environment,load_path,"['@', '@stdlib']"
+STCQP1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+STCQP2.mps,environment,CUDA_jl,5.11.0
+STCQP2.mps,environment,blas_threads,1
+STCQP2.mps,environment,cuda_driver_api,13.2.0
+STCQP2.mps,environment,cuda_runtime,13.2.0
+STCQP2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+STCQP2.mps,environment,julia,1.10.4
+STCQP2.mps,environment,julia_threads,1
+STCQP2.mps,environment,load_path,"['@', '@stdlib']"
+STCQP2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+UBH1.mps,environment,CUDA_jl,5.11.0
+UBH1.mps,environment,blas_threads,1
+UBH1.mps,environment,cuda_driver_api,13.2.0
+UBH1.mps,environment,cuda_runtime,13.2.0
+UBH1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+UBH1.mps,environment,julia,1.10.4
+UBH1.mps,environment,julia_threads,1
+UBH1.mps,environment,load_path,"['@', '@stdlib']"
+UBH1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+YAO.mps,environment,CUDA_jl,5.11.0
+YAO.mps,environment,blas_threads,1
+YAO.mps,environment,cuda_driver_api,13.2.0
+YAO.mps,environment,cuda_runtime,13.2.0
+YAO.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+YAO.mps,environment,julia,1.10.4
+YAO.mps,environment,julia_threads,1
+YAO.mps,environment,load_path,"['@', '@stdlib']"
+YAO.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+ZECEVIC2.mps,environment,CUDA_jl,5.11.0
+ZECEVIC2.mps,environment,blas_threads,1
+ZECEVIC2.mps,environment,cuda_driver_api,13.2.0
+ZECEVIC2.mps,environment,cuda_runtime,13.2.0
+ZECEVIC2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+ZECEVIC2.mps,environment,julia,1.10.4
+ZECEVIC2.mps,environment,julia_threads,1
+ZECEVIC2.mps,environment,load_path,"['@', '@stdlib']"
+ZECEVIC2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET1.mps,environment,CUDA_jl,5.11.0
+LISWET1.mps,environment,blas_threads,1
+LISWET1.mps,environment,cuda_driver_api,13.2.0
+LISWET1.mps,environment,cuda_runtime,13.2.0
+LISWET1.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET1.mps,environment,julia,1.10.4
+LISWET1.mps,environment,julia_threads,1
+LISWET1.mps,environment,load_path,"['@', '@stdlib']"
+LISWET1.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET10.mps,environment,CUDA_jl,5.11.0
+LISWET10.mps,environment,blas_threads,1
+LISWET10.mps,environment,cuda_driver_api,13.2.0
+LISWET10.mps,environment,cuda_runtime,13.2.0
+LISWET10.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET10.mps,environment,julia,1.10.4
+LISWET10.mps,environment,julia_threads,1
+LISWET10.mps,environment,load_path,"['@', '@stdlib']"
+LISWET10.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET11.mps,environment,CUDA_jl,5.11.0
+LISWET11.mps,environment,blas_threads,1
+LISWET11.mps,environment,cuda_driver_api,13.2.0
+LISWET11.mps,environment,cuda_runtime,13.2.0
+LISWET11.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET11.mps,environment,julia,1.10.4
+LISWET11.mps,environment,julia_threads,1
+LISWET11.mps,environment,load_path,"['@', '@stdlib']"
+LISWET11.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET12.mps,environment,CUDA_jl,5.11.0
+LISWET12.mps,environment,blas_threads,1
+LISWET12.mps,environment,cuda_driver_api,13.2.0
+LISWET12.mps,environment,cuda_runtime,13.2.0
+LISWET12.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET12.mps,environment,julia,1.10.4
+LISWET12.mps,environment,julia_threads,1
+LISWET12.mps,environment,load_path,"['@', '@stdlib']"
+LISWET12.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET2.mps,environment,CUDA_jl,5.11.0
+LISWET2.mps,environment,blas_threads,1
+LISWET2.mps,environment,cuda_driver_api,13.2.0
+LISWET2.mps,environment,cuda_runtime,13.2.0
+LISWET2.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET2.mps,environment,julia,1.10.4
+LISWET2.mps,environment,julia_threads,1
+LISWET2.mps,environment,load_path,"['@', '@stdlib']"
+LISWET2.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET7.mps,environment,CUDA_jl,5.11.0
+LISWET7.mps,environment,blas_threads,1
+LISWET7.mps,environment,cuda_driver_api,13.2.0
+LISWET7.mps,environment,cuda_runtime,13.2.0
+LISWET7.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET7.mps,environment,julia,1.10.4
+LISWET7.mps,environment,julia_threads,1
+LISWET7.mps,environment,load_path,"['@', '@stdlib']"
+LISWET7.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET8.mps,environment,CUDA_jl,5.11.0
+LISWET8.mps,environment,blas_threads,1
+LISWET8.mps,environment,cuda_driver_api,13.2.0
+LISWET8.mps,environment,cuda_runtime,13.2.0
+LISWET8.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET8.mps,environment,julia,1.10.4
+LISWET8.mps,environment,julia_threads,1
+LISWET8.mps,environment,load_path,"['@', '@stdlib']"
+LISWET8.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690
+LISWET9.mps,environment,CUDA_jl,5.11.0
+LISWET9.mps,environment,blas_threads,1
+LISWET9.mps,environment,cuda_driver_api,13.2.0
+LISWET9.mps,environment,cuda_runtime,13.2.0
+LISWET9.mps,environment,gpu_name,NVIDIA A100-SXM4-80GB
+LISWET9.mps,environment,julia,1.10.4
+LISWET9.mps,environment,julia_threads,1
+LISWET9.mps,environment,load_path,"['@', '@stdlib']"
+LISWET9.mps,environment,manifest_sha256,03cf239f47a565935346cd3360a9525b75e51faf50d15ce3caa880bf7deb0690

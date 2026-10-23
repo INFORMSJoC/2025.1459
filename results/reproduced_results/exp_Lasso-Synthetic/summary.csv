@@ -1,0 +1,37 @@
+result_set,solver,subset,tolerance,expected_cases,measured_cases,pending_cases,solved,time_SGM10,iteration_SGM10,status,execution_failures,note
+paper,HPR-QP,all,1e-08,12,12,0,12.0,25.5,1490.510108757491,available,0,
+paper,HPR-QP,all,1e-06,12,12,0,12.0,18.5,1021.5619543245969,available,0,
+paper,HPR-QP,all,0.0001,12,12,0,12.0,11.2,554.1501812856228,available,0,
+paper,HPR-QP-explicit,all,1e-08,12,12,0,12.0,46.8,2708.9836920731227,available,0,
+paper,HPR-QP-explicit,all,1e-06,12,12,0,12.0,35.3,1960.9235206914138,available,0,
+paper,HPR-QP-explicit,all,0.0001,12,12,0,12.0,26.1,1322.2075376245832,available,0,
+paper,PDQP,all,1e-08,12,12,0,11.0,139.3,not available,available,0,
+paper,PDQP,all,1e-06,12,12,0,11.0,113.2,not available,available,0,
+paper,PDQP,all,0.0001,12,12,0,11.0,90.6,not available,available,0,
+paper,SCS,all,1e-08,12,12,0,0.0,3600.0,not available,available,0,
+paper,SCS,all,1e-06,12,12,0,0.0,3600.0,not available,available,0,
+paper,SCS,all,0.0001,12,12,0,0.0,3600.0,not available,available,0,
+paper,CuClarabel,all,1e-08,12,12,0,2.0,1405.3,not available,available,0,
+paper,CuClarabel,all,1e-06,12,12,0,2.0,1401.3,not available,available,0,
+paper,CuClarabel,all,0.0001,12,12,0,2.0,1395.2,not available,available,0,
+paper,Gurobi,all,1e-08,12,12,0,2.0,1701.0,not available,available,0,
+paper,Gurobi,all,1e-06,12,12,0,2.0,1691.8,not available,available,0,
+paper,Gurobi,all,0.0001,12,12,0,2.0,1684.4,not available,available,0,
+reproduced,HPR-QP,all,1e-08,12,12,0,12,25.426054559714117,1490.510108757491,available,0,
+reproduced,HPR-QP,all,1e-06,12,12,0,12,18.472909884704737,1021.5619543245969,available,0,
+reproduced,HPR-QP,all,0.0001,12,12,0,12,11.156764103962228,554.1501812856228,available,0,
+reproduced,HPR-QP-explicit,all,1e-08,12,12,0,12,46.74301930361151,2708.9836920731227,available,0,
+reproduced,HPR-QP-explicit,all,1e-06,12,12,0,12,35.21174413241846,1960.9235206914138,available,0,
+reproduced,HPR-QP-explicit,all,0.0001,12,12,0,12,26.05745421068297,1322.2075376245832,available,0,
+reproduced,PDQP,all,1e-08,12,1,11,1,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,PDQP,all,1e-06,12,1,11,1,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,PDQP,all,0.0001,12,1,11,1,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,SCS,all,1e-08,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,1e-06,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,SCS,all,0.0001,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,1e-08,12,1,11,1,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,CuClarabel,all,1e-06,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,CuClarabel,all,0.0001,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,1e-08,12,1,11,1,to be reproduced,to be reproduced,to be reproduced,0,11 cases to be reproduced. Solved count covers only the 1 measured cases.
+reproduced,Gurobi,all,1e-06,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.
+reproduced,Gurobi,all,0.0001,12,0,12,to be reproduced,to be reproduced,to be reproduced,to be reproduced,0,12 cases to be reproduced. Solved count covers only the 0 measured cases.

@@ -1,0 +1,15 @@
+--- original/src/MOI_wrapper/MOI_wrapper.jl
++++ source/SCS/src/MOI_wrapper/MOI_wrapper.jl
+@@ -1,3 +1,4 @@
++const HPR_SAMPLE_LAST_INFO = Ref{Any}(nothing)
+ # Copyright (c) 2014: SCS.jl contributors
+ #
+ # Use of this source code is governed by an MIT-style license that can be found
+@@ -409,6 +410,7 @@
+     )
+     # If the solution is an infeasibility certificate, the objective values are
+     # left as infinite, not the value corresponding to the ray.
++    HPR_SAMPLE_LAST_INFO[] = sol.info
+     if !isfinite(sol.info.dobj)
+         sol.info.dobj = -Ab.constants.b' * sol.y
+     end

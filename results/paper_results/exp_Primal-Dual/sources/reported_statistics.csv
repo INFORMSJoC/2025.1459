@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,time_SGM10,iteration_SGM10,solved,source
+HPR-QP,all,1e-08,30,4.1,18420,,HPR-QP-IJOC-R2.tex Table 1 (tab:d-p1-p2-30)
+HPR-p1,all,1e-08,30,7.3,29732,,HPR-QP-IJOC-R2.tex Table 1 (tab:d-p1-p2-30)
+HPR-p2,all,1e-08,30,8.6,39704,,HPR-QP-IJOC-R2.tex Table 1 (tab:d-p1-p2-30)

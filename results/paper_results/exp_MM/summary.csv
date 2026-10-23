@@ -1,0 +1,16 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+HPR-QP,all,1e-08,137,137,128.0,12.6,23155.45680493984,True,0,Complete measured dataset
+HPR-QP,all,1e-06,137,137,129.0,10.5,16498.23014460939,True,0,Complete measured dataset
+HPR-QP,all,0.0001,137,137,130.0,7.4,8552.169088989072,True,0,Complete measured dataset
+PDQP,all,1e-08,137,137,124.0,42.5,,True,0,Complete measured dataset
+PDQP,all,1e-06,137,137,125.0,33.1,,True,0,Complete measured dataset
+PDQP,all,0.0001,137,137,133.0,11.3,,True,0,Complete measured dataset
+SCS,all,1e-08,137,137,93.0,165.0,,True,0,Complete measured dataset
+SCS,all,1e-06,137,137,103.0,126.0,,True,0,Complete measured dataset
+SCS,all,0.0001,137,137,123.0,38.1,,True,0,Complete measured dataset
+CuClarabel,all,1e-08,137,137,124.0,7.8,,True,0,Complete measured dataset
+CuClarabel,all,1e-06,137,137,130.0,3.7,,True,0,Complete measured dataset
+CuClarabel,all,0.0001,137,137,136.0,0.7,,True,0,Complete measured dataset
+Gurobi,all,1e-08,137,137,135.0,1.2,,True,0,Complete measured dataset
+Gurobi,all,1e-06,137,137,137.0,0.4,,True,0,Complete measured dataset
+Gurobi,all,0.0001,137,137,137.0,0.4,,True,0,Complete measured dataset

@@ -1,0 +1,24 @@
+case,section,key,value
+dual,environment,CUDA_jl,5.11.0
+dual,environment,blas_threads,1
+dual,environment,cuda_driver_api,13.2.0
+dual,environment,cuda_runtime,13.2.0
+dual,environment,gpu_name,NVIDIA A100-SXM4-80GB
+dual,environment,julia,1.10.4
+dual,environment,julia_threads,1
+dual,environment,load_path,"['@', '@stdlib']"
+dual,environment,manifest_sha256,12ef9fbfa14ca27588e595f472109acb118056bb69a23f04c2b29aca06f64fa3
+dual,parameters,source,"HPR-QP-IJOC-R1.tex, example-concrete"
+dual,parameters,Q,"[[20.0, 0.1], [0.1, 0.2]]"
+dual,parameters,A,"[[1.0, 1.0], [3.0, 1.0]]"
+dual,parameters,c,"[-1.0, -1.0]"
+dual,parameters,b,"[5.0, 10.0]"
+dual,parameters,constraint,A*x <= b; x >= 0
+dual,parameters,lambda_A,12.2
+dual,parameters,lambda_Q,21.0
+dual,parameters,sigma,1.0
+dual,parameters,stoptol,1e-08
+dual,parameters,restart,-1
+dual,parameters,check_iter,100
+dual,parameters,check_iter_provenance,Packaged solver default; original appendix driver has not been located.
+dual,parameters,paper_approximate_iterations,"{'dual': 840, 'primal1': 1700}"

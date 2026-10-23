@@ -1,0 +1,4 @@
+solver,subset,tolerance,expected_cases,measured_cases,solved,time_SGM10,iteration_SGM10,complete_fresh,guard_or_execution_failures,note
+SCS,all,1e-08,36,36,36,86.0453320233372,,True,0,Complete measured dataset
+SCS,all,1e-06,36,36,36,11.28719389295657,,True,0,Complete measured dataset
+SCS,all,0.0001,36,36,36,0.5186386216723271,,True,0,Complete measured dataset
